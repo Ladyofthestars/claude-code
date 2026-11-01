@@ -1,98 +1,90 @@
-# New Earth: One Leaf at a Time
+# The New Earth
 
-Vertical video (9:16) · about 30 seconds · 77 words · one calm narrator
+Vertical video (9:16) · about 30 seconds · 76 words · one calm narrator
 
-**Idea:** how to help build the new earth. Here, "new earth" means new soil: how a fallen leaf becomes ground that feeds the next plant, and what anyone can do to help.
+**Idea:** what the New Earth is, in the spiritual sense: a shift in human consciousness toward unity and love. It is not a new planet but this one, seen differently.
+**Voice:** a believer sharing it warmly with a friend.
 
 ---
 
 ## 1. Narration (word for word)
 
-> This fallen leaf is about to become new earth.
-> Fungi creep in and slowly break it down.
-> Earthworms drag the pieces underground and eat them.
-> Their droppings make the soil dark and rich.
-> One handful holds billions of living things.
-> A seed takes root, fed by what the leaf left behind.
-> You can help: let some leaves stay where they fall.
-> Compost your food scraps, don't trash them.
-> New earth gets made one leaf at a time.
+> This is the New Earth, and you're already standing on it.
+> Not a new planet. This one, seen in a new light.
+> It begins quietly, as a small light inside one person.
+> Fear loosens its grip. Kindness comes more easily.
+> We stop seeing strangers, and start seeing family.
+> That light doesn't stay put. It spreads from heart to heart.
+> Home by home, the whole world slowly wakes up.
+> It's the same Earth. We're the ones becoming new.
 
 ---
 
 ## 2. Shot list
 
-The whole video is one continuous camera move. It starts on the ground, goes **down** into the soil, comes back **up** through the surface, and pulls back to the whole tree. Then it follows a falling leaf down to land exactly where the video began, so it loops.
+The whole video is one continuous camera move. It starts on the whole Earth, dives down into one house and one person, finds the light inside them, then pulls back out as that light spreads from person to person, home to home, until the camera is back on the whole Earth. The last frame matches the first, so the video loops.
 
-**Shot 1 · 0:00–0:04**
-- **Line:** "This fallen leaf is about to become new earth."
-- **On screen:** `leaf.png` lying on the top surface of `soil_block.png`, centered in frame.
-- **Camera:** Starts close at ground level on the leaf. Slow, steady push-in.
+**Shot 1 · 0:00–0:04.5**
+- **Line:** "This is the New Earth, and you're already standing on it."
+- **On screen:** `earth.png`, the whole globe, turning slowly against the dark background. Faint stars around it.
+- **Text (animation):** "The New Earth" fades in softly, then fades out.
+- **Camera:** Slow push toward the globe.
 
-**Shot 2 · 0:04–0:07**
-- **Line:** "Fungi creep in and slowly break it down."
-- **On screen:** `fungal_threads.png` grows across the leaf (drawn on by the animation). Small holes open in the leaf as the threads spread. A soft blue pulse travels along the threads.
-- **Text (animation):** small textbook label with a thin leader line: "fungi".
-- **Camera:** Keeps pushing into the leaf surface and tilts down a little toward the ground's edge.
+**Shot 2 · 0:04.5–0:08.5**
+- **Line:** "Not a new planet. This one, seen in a new light."
+- **On screen:** The same globe. A soft gold line of sunrise sweeps across its surface, from the dark side into light.
+- **Camera:** Keeps pushing in, drifting toward the still-dark side of the globe.
 
-**Shot 3 · 0:07–0:10.5**
-- **Line:** "Earthworms drag the pieces underground and eat them."
-- **On screen:** `earthworm.png` comes up from its tunnel at the surface, grips a torn piece of the leaf (a cut-out of `leaf.png`), and pulls it down into the tunnel. A faint blue trail follows its path.
-- **Text (animation):** label "earthworm".
-- **Camera:** Drops below the ground line with the worm, into the cut-away soil of `soil_block.png`.
+**Shot 3 · 0:08.5–0:12.5**
+- **Line:** "It begins quietly, as a small light inside one person."
+- **On screen:** The globe grows until one point fills the frame and becomes `house.png`, a single small house with one window. Through the window stands `person.png`. A small warm gold light appears in the center of their chest.
+- **Camera:** Dives toward the globe, through the window, and settles close on the person's chest.
 
-**Shot 4 · 0:10.5–0:14**
-- **Line:** "Their droppings make the soil dark and rich."
-- **On screen:** The worm moves along its tunnel. Behind it, the soil darkens in a soft graphite wash.
-- **Camera:** Tracks along the tunnel, still sinking deeper.
+**Shot 4 · 0:12.5–0:16**
+- **Line:** "Fear loosens its grip. Kindness comes more easily."
+- **On screen:** `fist.png`, a tightly clenched hand, slowly opens and becomes `open_hand.png`. A small gold light rests in the open palm.
+- **Camera:** Holds close and steady. This is the stillest moment of the video.
 
-**Shot 5 · 0:14–0:17**
-- **Line:** "One handful holds billions of living things."
-- **On screen:** `soil_clump.png` fills the frame. Countless tiny soft-blue specks drift and wriggle around and inside it.
-- **Text (animation):** "1 handful = billions of living things".
-- **Camera:** Slow macro push into the clump. This is the slowest, closest moment of the video.
+**Shot 5 · 0:16–0:19**
+- **Line:** "We stop seeing strangers, and start seeing family."
+- **On screen:** Back on the person. Other copies of `person.png` appear around them at different sizes, at first separate and apart. Then thin gold threads draw between them, joining them together.
+- **Camera:** Begins to pull back from the first person to show the others around them.
 
-**Shot 6 · 0:17–0:21.5**
-- **Line:** "A seed takes root, fed by what the leaf left behind."
-- **On screen:** The roots of `seedling.png` reach down into the soil beside the clump (they grow in as the animation draws them). A soft blue glow rises from the soil up through the roots and stem.
-- **Camera:** Turns around and starts to rise, following the roots up the stem toward the surface.
+**Shot 6 · 0:19–0:23.5**
+- **Line:** "That light doesn't stay put. It spreads from heart to heart."
+- **On screen:** The gold light travels along the threads. As it reaches each figure, a small light appears in their chest too.
+- **Camera:** Keeps pulling back and starts to rise.
 
-**Shot 7 · 0:21.5–0:25.5**
-- **Line:** "You can help: let some leaves stay where they fall."
-- **On screen:** The camera breaks back through the ground surface. The seedling stands in the soil. Several copies of `leaf.png` (turned and scaled differently) rest on the ground around it, and one more drifts down and lands with a blue motion trail.
-- **Camera:** Keeps rising, then eases into a wider view at ground level.
+**Shot 7 · 0:23.5–0:27**
+- **Line:** "Home by home, the whole world slowly wakes up."
+- **On screen:** Many copies of `house.png` spread out below. Their windows light up gold one after another, and gold threads join house to house.
+- **Camera:** Rises higher and faster, until the houses shrink into tiny points of light on the dark side of `earth.png`.
 
-**Shot 8 · 0:25.5–0:28**
-- **Line:** "Compost your food scraps, don't trash them."
-- **On screen:** `apple_core.png` drops onto the leafy ground and sinks partway into the soil. It leaves a small blue arc as it falls.
-- **Camera:** Slow, steady pull back.
+**Shot 8 · 0:27–0:31**
+- **Line:** "It's the same Earth. We're the ones becoming new."
+- **On screen:** The whole globe again, now covered in a soft web of gold lights joined across its surface.
+- **Camera:** Pulls all the way back and settles on the exact framing of Shot 1, so the video loops cleanly.
 
-**Shot 9 · 0:28–0:32**
-- **Line:** "New earth gets made one leaf at a time."
-- **On screen:** `tree.png` comes into view as the camera keeps pulling back, with the seedling small at its base. One leaf lets go from the crown and drifts down with a blue trail.
-- **Camera:** Pulls back and up to show the whole tree, then follows the falling leaf down and pushes in as it lands. It ends on the exact framing of Shot 1, so the video loops cleanly.
+**Captions:** the animation adds the narration as on-screen captions, since many people watch Shorts with the sound off.
 
 ---
 
-## 3. Picture list (8 pictures)
+## 3. Picture list (5 pictures)
 
-Each picture shows one object on its own, with no text, labels or numbers.
+Each picture shows one object on its own, with no text, labels or numbers. The people have no facial features, which suits a faceless channel and keeps the figures universal.
 
 | File | What's in it |
 |---|---|
-| `leaf.png` | One fallen oak leaf lying flat, seen from directly above. Whole, slightly dry, edges curling a little, veins clearly drawn. |
-| `fungal_threads.png` | A loose, branching web of fine fungal threads (mycelium) fanning out from one side. Nothing under it (no leaf, no ground), so it can be laid over the leaf. |
-| `soil_block.png` | A tall, narrow cut-away block of earth, like a slice lifted out of the ground. A thin layer of leaf litter on the top surface, crumbly soil below with a few small stones, and one empty worm tunnel winding down. Clean straight cut edges. No worm, no roots, no plants. |
-| `earthworm.png` | One earthworm, side view, body in a gentle S-curve, ring segments and the smooth band near the front clearly drawn. |
-| `soil_clump.png` | One handful-sized clump of dark, crumbly soil with a few loose crumbs at its base, a tiny pebble and a few fine fibers in it. No hand. |
-| `seedling.png` | A young seedling just sprouted: two small rounded seed leaves on a short stem, the split seed coat still attached, and its full root system below (a main root with fine side roots). Drawn as if lifted cleanly out of the soil. |
-| `apple_core.png` | One eaten apple core standing upright, stem on top, a few seeds showing in the middle. |
-| `tree.png` | One broad, mature oak tree in full leaf, the whole tree from the flared base of the trunk to the top of the crown. No ground, no grass. |
+| `earth.png` | The whole Earth seen from space, a perfect circle, continents and soft cloud swirls clearly drawn, shaded so one side is in shadow. |
+| `house.png` | One small, simple house with a pitched roof, a chimney, a door and one front window, seen straight on. The window is empty and unlit. |
+| `person.png` | One standing person, seen slightly from the side, simple loose clothes, arms relaxed at their sides, calm upright posture. No facial features. |
+| `fist.png` | One human hand, tightly clenched into a fist, seen from the side, wrist at the bottom. |
+| `open_hand.png` | The same hand, seen at the same angle and size, now open with the palm facing up, fingers gently relaxed, wrist at the bottom. |
 
 ---
 
 ## 4. Style line (use word for word for every picture)
 
-> Black and white scientific illustration, fine ink lines and soft graphite shading, like a page from an old textbook; one single object, isolated and centered on a plain off-white paper background, nothing else in the frame, no text, no labels, no numbers, no color.
+> Hand-drawn illustration in fine pale cream ink lines with soft chalk-like shading, on a plain flat deep midnight-blue background, like a page from an old hand-drawn star atlas; calm and quiet; one single object, isolated and centered, nothing else in the frame, no text, no labels, no numbers, no other colors.
 
-*The one accent color, a soft blue, is added only by the animation for light and movement. It is never drawn in the pictures.*
+*The one accent color, a warm gold, is added only by the animation for light and movement. It is never drawn in the pictures.*
