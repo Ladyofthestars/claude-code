@@ -1,0 +1,164 @@
+// Everything a video needs lives in one settings.json (see public/videos/<name>/settings.json).
+// These types describe that file.
+
+// A moment in the narration. Either seconds, or a text reference:
+//   "start" | "end" (video end, after the tail) | "voiceEnd"
+//   "<line>:<phrase>"       start of that phrase in that narration line (lines are numbered from 1)
+//   "<line>:<phrase>@end"   end of the phrase's last word
+//   any of the above + or - seconds, e.g. "3:small light-0.2"
+export type TimeRef = number | string;
+
+// A point on a picture, as a fraction of its width and height (0,0 = top left, 1,1 = bottom right).
+export type UV = [number, number];
+
+export interface Theme {
+	background: string;
+	dotColor: string;
+	dotSpacing: number;
+	dotSize: number;
+	// How much the dot grid follows the camera (1 = exactly with the page).
+	dotParallax: number;
+	ink: string;
+	accent: string;
+	// 'screen' makes lights add light (for dark pages), 'normal' paints them (for light pages).
+	lightBlend: 'screen' | 'normal';
+	font: string;
+}
+
+export interface PictureDef {
+	src: string;
+	// width / height of the image file
+	aspect: number;
+	// Where the drawn object sits inside the image, as fractions [left, top, right, bottom].
+	content?: [number, number, number, number];
+}
+
+export interface ItemDef {
+	id: string;
+	picture: string;
+	// Centre of the image on the page, in page units (1 unit = 1 output pixel at zoom 1).
+	x: number;
+	y: number;
+	width: number;
+	// 1 = on the page. Bigger = further away: moves slower and is a little blurred.
+	depth?: number;
+	in?: TimeRef;
+	out?: TimeRef;
+	fade?: number;
+}
+
+export interface CameraKey {
+	at: TimeRef;
+	// Frame one or more items: their drawn content fits inside the safe area, times `fit`.
+	focus?: string | string[];
+	fit?: number;
+	// Or place the camera directly (page units / zoom factor).
+	x?: number;
+	y?: number;
+	zoom?: number;
+	// Nudge the framed centre (page units).
+	dx?: number;
+	dy?: number;
+	// Stay on this framing for this many seconds before the next move.
+	hold?: number;
+}
+
+export interface Anchor {
+	item: string;
+	at: UV;
+}
+
+export interface LightDef {
+	// A light that travels along a path drawn on a picture...
+	item?: string;
+	path?: UV[];
+	// ...or along a thread...
+	thread?: string;
+	// ...or a light that glows in place at one or more points of a picture.
+	at?: UV;
+	points?: UV[];
+	stagger?: number;
+	from: TimeRef;
+	to?: TimeRef;
+	duration?: number;
+	// Glow diameter in page units.
+	size?: number;
+	intensity?: number;
+}
+
+export interface ThreadDef {
+	id: string;
+	from: Anchor;
+	to: Anchor;
+	// Sideways bow of the line, as a fraction of its length.
+	bend?: number;
+	draw: TimeRef;
+	duration?: number;
+	out?: TimeRef;
+	color?: 'ink' | 'accent';
+	width?: number;
+}
+
+export interface MagnifierContent {
+	picture: string;
+	from?: TimeRef;
+	to?: TimeRef;
+	// Picture width as a fraction of the circle's diameter, and offset as fractions of it.
+	scale?: number;
+	dx?: number;
+	dy?: number;
+	lights?: {at: UV; from: TimeRef; size?: number; to?: TimeRef}[];
+}
+
+export interface MagnifierDef {
+	source: Anchor & {radius: number};
+	// Centre and radius of the big circle on the page.
+	x: number;
+	y: number;
+	radius: number;
+	open: TimeRef;
+	close?: TimeRef;
+	contents: MagnifierContent[];
+}
+
+export interface LabelDef {
+	text: string;
+	// Screen pixels (space "screen") or page units (space "world").
+	x: number;
+	y: number;
+	space?: 'screen' | 'world';
+	size?: number;
+	in: TimeRef;
+	out?: TimeRef;
+	color?: 'ink' | 'accent';
+}
+
+export interface Settings {
+	title: string;
+	audio: string;
+	words: string;
+	tailSeconds: number;
+	// Fractions of the frame that must stay free of anything important.
+	safeArea: {top: number; bottom: number; side: number};
+	theme: Theme;
+	pictures: Record<string, PictureDef>;
+	items: ItemDef[];
+	camera: CameraKey[];
+	threads: ThreadDef[];
+	lights: LightDef[];
+	magnifiers: MagnifierDef[];
+	labels: LabelDef[];
+}
+
+export interface Word {
+	text: string;
+	start: number;
+	end: number;
+	// Narration line the word belongs to (1-based).
+	line: number;
+}
+
+export interface Words {
+	duration: number;
+	words: Word[];
+}

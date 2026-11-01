@@ -1,0 +1,93 @@
+{
+	"title": "The New Earth",
+	"audio": "narration.mp3",
+	"words": "words.json",
+	"tailSeconds": 1,
+	"safeArea": {"top": 0.08, "bottom": 0.18, "side": 0.05},
+	"theme": {
+		"background": "#ffffff",
+		"dotColor": "rgba(29, 36, 64, 0.10)",
+		"dotSpacing": 38,
+		"dotSize": 1.6,
+		"dotParallax": 0.75,
+		"ink": "#1d2440",
+		"accent": "#e3a73d",
+		"lightBlend": "normal",
+		"font": "Montserrat"
+	},
+	"pictures": {
+		"earth": {"src": "images/earth.png", "aspect": 1, "content": [0.127, 0.127, 0.874, 0.874]},
+		"house": {"src": "images/house.png", "aspect": 1, "content": [0.3027, 0.292, 0.6982, 0.7451]},
+		"person": {"src": "images/person.png", "aspect": 0.67089, "content": [0.3844, 0.1171, 0.6179, 0.8726]},
+		"fist": {"src": "images/fist.png", "aspect": 1, "content": [0.3613, 0.3203, 0.6396, 0.8037]},
+		"open_hand": {"src": "images/open_hand.png", "aspect": 1, "content": [0.3418, 0.2422, 0.6592, 0.8037]}
+	},
+	"items": [
+		{"id": "earth", "picture": "earth", "x": 0, "y": 0, "width": 900, "out": "3:It begins"},
+		{"id": "house", "picture": "house", "x": 0, "y": 1340, "width": 620, "in": "3:begins+0.55", "out": "4:Fear-0.35"},
+		{"id": "me", "picture": "person", "x": 0, "y": 1900, "width": 560, "in": "3:inside", "out": "7:Home"},
+		{"id": "stranger1", "picture": "person", "x": -300, "y": 1960, "width": 420, "depth": 1.45, "in": "5:stop", "out": "7:Home+0.15"},
+		{"id": "stranger2", "picture": "person", "x": 300, "y": 1950, "width": 440, "depth": 1.3, "in": "5:strangers", "out": "7:Home+0.3"},
+		{"id": "stranger3", "picture": "person", "x": -150, "y": 1790, "width": 300, "depth": 2.2, "in": "5:strangers+0.35", "out": "7:Home+0.45"},
+		{"id": "home1", "picture": "house", "x": 0, "y": 1340, "width": 520, "in": "7:Home", "out": "8:It's"},
+		{"id": "home2", "picture": "house", "x": -330, "y": 1240, "width": 420, "depth": 1.4, "in": "7:by home", "out": "8:It's+0.15"},
+		{"id": "home3", "picture": "house", "x": 330, "y": 1260, "width": 440, "depth": 1.3, "in": "7:home@end", "out": "8:It's+0.3"},
+		{"id": "home4", "picture": "house", "x": -170, "y": 1080, "width": 320, "depth": 2.1, "in": "7:the whole", "out": "8:It's+0.45"},
+		{"id": "home5", "picture": "house", "x": 200, "y": 1060, "width": 300, "depth": 2.4, "in": "7:world", "out": "8:It's+0.6"},
+		{"id": "earth_again", "picture": "earth", "x": 0, "y": 0, "width": 900, "in": "8:same"}
+	],
+	"camera": [
+		{"at": "start", "focus": "earth", "fit": 0.8},
+		{"at": "1:standing@end", "focus": "earth", "fit": 0.86},
+		{"at": "2:light@end", "focus": "earth", "fit": 0.89},
+		{"at": "3:It begins", "focus": "earth", "fit": 0.89},
+		{"at": "3:quietly@end+0.5", "focus": ["house", "me"], "fit": 0.88},
+		{"at": "5:We", "focus": ["house", "me"], "fit": 0.88},
+		{"at": "5:family@end", "focus": ["me", "stranger1", "stranger2", "stranger3"], "fit": 0.86},
+		{"at": "6:heart@end", "focus": ["me", "stranger1", "stranger2", "stranger3"], "fit": 0.8},
+		{"at": "7:Home", "focus": ["me", "stranger1", "stranger2", "stranger3"], "fit": 0.79},
+		{"at": "7:wakes up@end", "focus": ["home1", "home2", "home3", "home4", "home5"], "fit": 0.84},
+		{"at": "8:It's", "focus": ["home1", "home2", "home3", "home4", "home5"], "fit": 0.82},
+		{"at": "8:Earth@end+0.5", "focus": "earth", "fit": 0.85},
+		{"at": "end", "focus": "earth", "fit": 0.8}
+	],
+	"threads": [
+		{"id": "me-s2", "from": {"item": "me", "at": [0.5, 0.33]}, "to": {"item": "stranger2", "at": [0.5, 0.33]}, "bend": -0.18, "draw": "5:start", "duration": 0.8, "out": "7:Home"},
+		{"id": "me-s1", "from": {"item": "me", "at": [0.5, 0.33]}, "to": {"item": "stranger1", "at": [0.5, 0.33]}, "bend": 0.18, "draw": "5:seeing family", "duration": 0.8, "out": "7:Home"},
+		{"id": "s1-s3", "from": {"item": "stranger1", "at": [0.5, 0.33]}, "to": {"item": "stranger3", "at": [0.5, 0.33]}, "bend": 0.15, "draw": "5:family", "duration": 0.7, "out": "7:Home"}
+	],
+	"lights": [
+		{"item": "earth", "path": [[0.5, 0.128], [0.3728, 0.1504], [0.2609, 0.215], [0.1778, 0.314], [0.1337, 0.4354], [0.1337, 0.5646], [0.1778, 0.686], [0.2609, 0.785], [0.3728, 0.8496], [0.5, 0.872]], "from": "2:new light-0.15", "duration": 1.8, "size": 70},
+		{"item": "house", "at": [0.598, 0.547], "from": "3:small light", "to": "4:Fear-0.35", "size": 90},
+		{"item": "me", "at": [0.5, 0.33], "from": "3:one person", "to": "7:Home", "size": 70},
+		{"thread": "me-s2", "from": "6:stay put-0.3", "duration": 1.1, "size": 60},
+		{"item": "stranger2", "at": [0.5, 0.33], "from": "6:stay put+0.75", "to": "7:Home+0.3", "size": 70},
+		{"thread": "me-s1", "from": "6:spreads", "duration": 1.1, "size": 60},
+		{"item": "stranger1", "at": [0.5, 0.33], "from": "6:spreads+1.05", "to": "7:Home+0.15", "size": 70},
+		{"thread": "s1-s3", "from": "6:heart to heart", "duration": 0.9, "size": 50},
+		{"item": "stranger3", "at": [0.5, 0.33], "from": "6:heart to heart+0.85", "to": "7:Home+0.45", "size": 60},
+		{"item": "home1", "at": [0.598, 0.547], "from": "7:the whole", "to": "8:It's", "size": 80},
+		{"item": "home2", "at": [0.598, 0.547], "from": "7:whole world", "to": "8:It's+0.15", "size": 80},
+		{"item": "home3", "at": [0.598, 0.547], "from": "7:world", "to": "8:It's+0.3", "size": 80},
+		{"item": "home4", "at": [0.598, 0.547], "from": "7:slowly", "to": "8:It's+0.45", "size": 80},
+		{"item": "home5", "at": [0.598, 0.547], "from": "7:wakes", "to": "8:It's+0.6", "size": 80},
+		{"item": "earth_again", "points": [[0.3, 0.4], [0.36, 0.55], [0.28, 0.62], [0.42, 0.7], [0.33, 0.3], [0.22, 0.48], [0.4, 0.42]], "stagger": 0.13, "from": "8:becoming", "to": "end-0.75", "size": 34}
+	],
+	"magnifiers": [
+		{
+			"source": {"item": "me", "at": [0.61, 0.475], "radius": 46},
+			"x": 0,
+			"y": 1360,
+			"radius": 205,
+			"open": "4:Fear",
+			"close": "5:We-0.1",
+			"contents": [
+				{"picture": "fist", "scale": 1.25, "dy": 0.04, "to": "4:Kindness"},
+				{"picture": "open_hand", "scale": 1.25, "dy": 0.04, "from": "4:Kindness", "lights": [{"at": [0.5, 0.47], "from": "4:comes", "size": 0.16}]}
+			]
+		}
+	],
+	"labels": [
+		{"text": "The New Earth", "x": 540, "y": 300, "size": 52, "in": "1:New Earth", "out": "2:Not"}
+	]
+}
