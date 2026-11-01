@@ -42,5 +42,10 @@ Every fact and number in the narration, with where it comes from. Each source wa
 | 35 | Dying stars return their elements to space, enriching the gas and dust that form new stars and planets. | OpenStax *Astronomy 2e*, 23.2 (as #23) and 22.4 "Cosmic Recycling" (as #18) |
 | 36 | Stars end up with a layered structure "like an onion". | OpenStax *Astronomy 2e*, 22.4 (as #18) |
 | 37 | The body's main elements are shown as a ranked list (oxygen, carbon, hydrogen, nitrogen), not as bars with percentages, because only the order was checked. | OpenStax *Anatomy & Physiology 2e*, 2.1 (as #8) |
+| 38 | Fusing one kilogram of hydrogen would supply all the electricity used by a typical U.S. household for roughly 17,000 years. | OpenStax *Astronomy 2e*, 16.2 (as #16) |
+| 39 | The most luminous supernovae reach about 10 billion times the luminosity of the Sun. | OpenStax *Astronomy 2e*, 23.3 (as #26) |
+| 40 | Supernovae eject material at typical speeds of about 10,000 km per second. | OpenStax *Astronomy 2e*, 23.3 (as #26) |
+| 41 | About two seconds after the gravitational waves of GW170817, NASA's Fermi and ESA's INTEGRAL space observatories detected a short gamma-ray burst from the same area of the sky. | ESO press release eso1733 (as #28) |
+| 42 | The primitive meteorites (unaltered building blocks of the planetary system) all have radioactive ages near 4.5 billion years. | OpenStax *Astronomy 2e*, 14.3 (as #30) |
 
 **Cut for lack of a solid source:** the share of the body that is water (I couldn't open the USGS page), how long sunlight takes to reach Earth (not needed), and the exact number of atoms in a body.

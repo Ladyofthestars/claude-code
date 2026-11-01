@@ -19,9 +19,9 @@ Tick each box as it is done. If work stops, continue from the first unticked box
 - [x] `images/prompts.md` with every prompt used
 
 ## Step 3: voice
-- [ ] ElevenLabs, voice Brian (calm, deep), one paragraph at a time, same settings, stitched with previous/next text
-- [ ] Join paragraphs with natural pauses; one audio file + word timings per part
-- [ ] Check word for word against script.md
+- [x] ElevenLabs, voice Brian (calm, deep), one paragraph at a time, same settings, stitched with previous/next text
+- [x] Join paragraphs with natural pauses; one audio file + word timings per part
+- [x] Check word for word against script.md (1,499 words; total 9:28.7 with pauses). Added four sourced passages (facts 38–42) to reach about 10 minutes
 
 ## Step 4: animation
 - [ ] Template: any frame size (1920x1080), multi-part videos, counting numbers, self-drawing diagrams, lights on diagrams

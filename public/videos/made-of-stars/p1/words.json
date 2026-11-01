@@ -1,0 +1,918 @@
+{
+ "duration": 57.087,
+ "source": "ElevenLabs, voice Brian (nPczCjzI2devNBz1zQrb), eleven_multilingual_v2, one paragraph at a time with previous/next text, character timestamps",
+ "words": [
+  {
+   "text": "Let's",
+   "start": 2.6,
+   "end": 2.832,
+   "line": 1
+  },
+  {
+   "text": "start",
+   "start": 2.855,
+   "end": 3.064,
+   "line": 1
+  },
+  {
+   "text": "with",
+   "start": 3.099,
+   "end": 3.227,
+   "line": 1
+  },
+  {
+   "text": "you",
+   "start": 3.285,
+   "end": 3.703,
+   "line": 1
+  },
+  {
+   "text": "Your",
+   "start": 4.237,
+   "end": 4.411,
+   "line": 1
+  },
+  {
+   "text": "body",
+   "start": 4.469,
+   "end": 4.713,
+   "line": 1
+  },
+  {
+   "text": "is",
+   "start": 4.759,
+   "end": 4.829,
+   "line": 1
+  },
+  {
+   "text": "built",
+   "start": 4.887,
+   "end": 5.085,
+   "line": 1
+  },
+  {
+   "text": "from",
+   "start": 5.119,
+   "end": 5.247,
+   "line": 1
+  },
+  {
+   "text": "tiny",
+   "start": 5.317,
+   "end": 5.642,
+   "line": 1
+  },
+  {
+   "text": "pieces",
+   "start": 5.7,
+   "end": 6.071,
+   "line": 1
+  },
+  {
+   "text": "called",
+   "start": 6.118,
+   "end": 6.338,
+   "line": 1
+  },
+  {
+   "text": "atoms",
+   "start": 6.385,
+   "end": 6.896,
+   "line": 1
+  },
+  {
+   "text": "There",
+   "start": 7.302,
+   "end": 7.476,
+   "line": 1
+  },
+  {
+   "text": "are",
+   "start": 7.511,
+   "end": 7.627,
+   "line": 1
+  },
+  {
+   "text": "many",
+   "start": 7.708,
+   "end": 7.906,
+   "line": 1
+  },
+  {
+   "text": "kinds",
+   "start": 7.964,
+   "end": 8.208,
+   "line": 1
+  },
+  {
+   "text": "of",
+   "start": 8.242,
+   "end": 8.289,
+   "line": 1
+  },
+  {
+   "text": "atoms",
+   "start": 8.359,
+   "end": 8.684,
+   "line": 1
+  },
+  {
+   "text": "called",
+   "start": 8.718,
+   "end": 8.939,
+   "line": 1
+  },
+  {
+   "text": "elements",
+   "start": 8.997,
+   "end": 9.531,
+   "line": 1
+  },
+  {
+   "text": "But",
+   "start": 9.938,
+   "end": 10.1,
+   "line": 1
+  },
+  {
+   "text": "only",
+   "start": 10.146,
+   "end": 10.355,
+   "line": 1
+  },
+  {
+   "text": "a",
+   "start": 10.402,
+   "end": 10.437,
+   "line": 1
+  },
+  {
+   "text": "few",
+   "start": 10.506,
+   "end": 10.669,
+   "line": 1
+  },
+  {
+   "text": "of",
+   "start": 10.715,
+   "end": 10.773,
+   "line": 1
+  },
+  {
+   "text": "them",
+   "start": 10.82,
+   "end": 10.959,
+   "line": 1
+  },
+  {
+   "text": "do",
+   "start": 11.029,
+   "end": 11.122,
+   "line": 1
+  },
+  {
+   "text": "most",
+   "start": 11.203,
+   "end": 11.412,
+   "line": 1
+  },
+  {
+   "text": "of",
+   "start": 11.458,
+   "end": 11.505,
+   "line": 1
+  },
+  {
+   "text": "the",
+   "start": 11.54,
+   "end": 11.609,
+   "line": 1
+  },
+  {
+   "text": "work",
+   "start": 11.644,
+   "end": 12.538,
+   "line": 1
+  },
+  {
+   "text": "By",
+   "start": 13.288,
+   "end": 13.462,
+   "line": 2
+  },
+  {
+   "text": "weight",
+   "start": 13.543,
+   "end": 13.822,
+   "line": 2
+  },
+  {
+   "text": "the",
+   "start": 13.845,
+   "end": 13.938,
+   "line": 2
+  },
+  {
+   "text": "biggest",
+   "start": 14.008,
+   "end": 14.31,
+   "line": 2
+  },
+  {
+   "text": "part",
+   "start": 14.368,
+   "end": 14.53,
+   "line": 2
+  },
+  {
+   "text": "of",
+   "start": 14.565,
+   "end": 14.612,
+   "line": 2
+  },
+  {
+   "text": "you",
+   "start": 14.658,
+   "end": 14.739,
+   "line": 2
+  },
+  {
+   "text": "is",
+   "start": 14.786,
+   "end": 14.867,
+   "line": 2
+  },
+  {
+   "text": "oxygen",
+   "start": 14.937,
+   "end": 15.552,
+   "line": 2
+  },
+  {
+   "text": "Next",
+   "start": 15.889,
+   "end": 16.132,
+   "line": 2
+  },
+  {
+   "text": "comes",
+   "start": 16.179,
+   "end": 16.399,
+   "line": 2
+  },
+  {
+   "text": "carbon",
+   "start": 16.469,
+   "end": 17.026,
+   "line": 2
+  },
+  {
+   "text": "Then",
+   "start": 17.363,
+   "end": 17.549,
+   "line": 2
+  },
+  {
+   "text": "hydrogen",
+   "start": 17.63,
+   "end": 18.315,
+   "line": 2
+  },
+  {
+   "text": "Then",
+   "start": 18.721,
+   "end": 18.907,
+   "line": 2
+  },
+  {
+   "text": "nitrogen",
+   "start": 18.989,
+   "end": 19.627,
+   "line": 2
+  },
+  {
+   "text": "Add",
+   "start": 20.033,
+   "end": 20.266,
+   "line": 2
+  },
+  {
+   "text": "phosphorus",
+   "start": 20.312,
+   "end": 20.985,
+   "line": 2
+  },
+  {
+   "text": "and",
+   "start": 21.032,
+   "end": 21.125,
+   "line": 2
+  },
+  {
+   "text": "sulfur",
+   "start": 21.183,
+   "end": 21.787,
+   "line": 2
+  },
+  {
+   "text": "and",
+   "start": 22.007,
+   "end": 22.158,
+   "line": 2
+  },
+  {
+   "text": "these",
+   "start": 22.204,
+   "end": 22.379,
+   "line": 2
+  },
+  {
+   "text": "six",
+   "start": 22.425,
+   "end": 22.646,
+   "line": 2
+  },
+  {
+   "text": "elements",
+   "start": 22.727,
+   "end": 23.11,
+   "line": 2
+  },
+  {
+   "text": "make",
+   "start": 23.18,
+   "end": 23.342,
+   "line": 2
+  },
+  {
+   "text": "up",
+   "start": 23.377,
+   "end": 23.458,
+   "line": 2
+  },
+  {
+   "text": "more",
+   "start": 23.516,
+   "end": 23.644,
+   "line": 2
+  },
+  {
+   "text": "than",
+   "start": 23.667,
+   "end": 23.783,
+   "line": 2
+  },
+  {
+   "text": "97",
+   "start": 23.876,
+   "end": 24.434,
+   "line": 2
+  },
+  {
+   "text": "percent",
+   "start": 24.515,
+   "end": 24.805,
+   "line": 2
+  },
+  {
+   "text": "of",
+   "start": 24.84,
+   "end": 24.886,
+   "line": 2
+  },
+  {
+   "text": "your",
+   "start": 24.921,
+   "end": 25.014,
+   "line": 2
+  },
+  {
+   "text": "body",
+   "start": 25.061,
+   "end": 26.059,
+   "line": 2
+  },
+  {
+   "text": "Each",
+   "start": 26.809,
+   "end": 27.053,
+   "line": 3
+  },
+  {
+   "text": "one",
+   "start": 27.122,
+   "end": 27.285,
+   "line": 3
+  },
+  {
+   "text": "has",
+   "start": 27.331,
+   "end": 27.482,
+   "line": 3
+  },
+  {
+   "text": "a",
+   "start": 27.529,
+   "end": 27.564,
+   "line": 3
+  },
+  {
+   "text": "job",
+   "start": 27.633,
+   "end": 28.191,
+   "line": 3
+  },
+  {
+   "text": "Hydrogen",
+   "start": 28.597,
+   "end": 29.166,
+   "line": 3
+  },
+  {
+   "text": "and",
+   "start": 29.212,
+   "end": 29.294,
+   "line": 3
+  },
+  {
+   "text": "oxygen",
+   "start": 29.363,
+   "end": 29.851,
+   "line": 3
+  },
+  {
+   "text": "join",
+   "start": 29.944,
+   "end": 30.188,
+   "line": 3
+  },
+  {
+   "text": "to",
+   "start": 30.234,
+   "end": 30.28,
+   "line": 3
+  },
+  {
+   "text": "make",
+   "start": 30.327,
+   "end": 30.478,
+   "line": 3
+  },
+  {
+   "text": "the",
+   "start": 30.513,
+   "end": 30.582,
+   "line": 3
+  },
+  {
+   "text": "water",
+   "start": 30.629,
+   "end": 30.861,
+   "line": 3
+  },
+  {
+   "text": "inside",
+   "start": 30.907,
+   "end": 31.279,
+   "line": 3
+  },
+  {
+   "text": "you",
+   "start": 31.314,
+   "end": 31.581,
+   "line": 3
+  },
+  {
+   "text": "Carbon",
+   "start": 32.045,
+   "end": 32.451,
+   "line": 3
+  },
+  {
+   "text": "is",
+   "start": 32.509,
+   "end": 32.591,
+   "line": 3
+  },
+  {
+   "text": "the",
+   "start": 32.637,
+   "end": 32.707,
+   "line": 3
+  },
+  {
+   "text": "backbone",
+   "start": 32.765,
+   "end": 33.299,
+   "line": 3
+  },
+  {
+   "text": "of",
+   "start": 33.334,
+   "end": 33.403,
+   "line": 3
+  },
+  {
+   "text": "the",
+   "start": 33.438,
+   "end": 33.508,
+   "line": 3
+  },
+  {
+   "text": "big",
+   "start": 33.554,
+   "end": 33.705,
+   "line": 3
+  },
+  {
+   "text": "molecules",
+   "start": 33.775,
+   "end": 34.379,
+   "line": 3
+  },
+  {
+   "text": "that",
+   "start": 34.414,
+   "end": 34.541,
+   "line": 3
+  },
+  {
+   "text": "build",
+   "start": 34.576,
+   "end": 34.762,
+   "line": 3
+  },
+  {
+   "text": "your",
+   "start": 34.797,
+   "end": 34.901,
+   "line": 3
+  },
+  {
+   "text": "cells",
+   "start": 34.936,
+   "end": 35.505,
+   "line": 3
+  },
+  {
+   "text": "Nitrogen",
+   "start": 35.969,
+   "end": 36.55,
+   "line": 3
+  },
+  {
+   "text": "and",
+   "start": 36.608,
+   "end": 36.677,
+   "line": 3
+  },
+  {
+   "text": "phosphorus",
+   "start": 36.736,
+   "end": 37.316,
+   "line": 3
+  },
+  {
+   "text": "are",
+   "start": 37.362,
+   "end": 37.49,
+   "line": 3
+  },
+  {
+   "text": "part",
+   "start": 37.525,
+   "end": 37.688,
+   "line": 3
+  },
+  {
+   "text": "of",
+   "start": 37.711,
+   "end": 37.757,
+   "line": 3
+  },
+  {
+   "text": "your",
+   "start": 37.804,
+   "end": 37.908,
+   "line": 3
+  },
+  {
+   "text": "DNA",
+   "start": 37.954,
+   "end": 38.651,
+   "line": 3
+  },
+  {
+   "text": "Calcium",
+   "start": 39.115,
+   "end": 39.708,
+   "line": 3
+  },
+  {
+   "text": "makes",
+   "start": 39.766,
+   "end": 39.94,
+   "line": 3
+  },
+  {
+   "text": "your",
+   "start": 39.975,
+   "end": 40.079,
+   "line": 3
+  },
+  {
+   "text": "bones",
+   "start": 40.126,
+   "end": 40.369,
+   "line": 3
+  },
+  {
+   "text": "hard",
+   "start": 40.416,
+   "end": 40.88,
+   "line": 3
+  },
+  {
+   "text": "And",
+   "start": 41.217,
+   "end": 41.356,
+   "line": 3
+  },
+  {
+   "text": "a",
+   "start": 41.414,
+   "end": 41.449,
+   "line": 3
+  },
+  {
+   "text": "little",
+   "start": 41.519,
+   "end": 41.774,
+   "line": 3
+  },
+  {
+   "text": "iron",
+   "start": 41.821,
+   "end": 42.122,
+   "line": 3
+  },
+  {
+   "text": "in",
+   "start": 42.169,
+   "end": 42.227,
+   "line": 3
+  },
+  {
+   "text": "your",
+   "start": 42.273,
+   "end": 42.389,
+   "line": 3
+  },
+  {
+   "text": "blood",
+   "start": 42.436,
+   "end": 42.68,
+   "line": 3
+  },
+  {
+   "text": "carries",
+   "start": 42.738,
+   "end": 43.04,
+   "line": 3
+  },
+  {
+   "text": "oxygen",
+   "start": 43.109,
+   "end": 43.574,
+   "line": 3
+  },
+  {
+   "text": "around",
+   "start": 43.62,
+   "end": 43.829,
+   "line": 3
+  },
+  {
+   "text": "your",
+   "start": 43.864,
+   "end": 43.957,
+   "line": 3
+  },
+  {
+   "text": "body",
+   "start": 44.003,
+   "end": 45.013,
+   "line": 3
+  },
+  {
+   "text": "None",
+   "start": 45.764,
+   "end": 46.008,
+   "line": 4
+  },
+  {
+   "text": "of",
+   "start": 46.031,
+   "end": 46.077,
+   "line": 4
+  },
+  {
+   "text": "these",
+   "start": 46.124,
+   "end": 46.286,
+   "line": 4
+  },
+  {
+   "text": "atoms",
+   "start": 46.333,
+   "end": 46.612,
+   "line": 4
+  },
+  {
+   "text": "were",
+   "start": 46.646,
+   "end": 46.786,
+   "line": 4
+  },
+  {
+   "text": "made",
+   "start": 46.809,
+   "end": 46.971,
+   "line": 4
+  },
+  {
+   "text": "inside",
+   "start": 47.006,
+   "end": 47.378,
+   "line": 4
+  },
+  {
+   "text": "you",
+   "start": 47.413,
+   "end": 47.656,
+   "line": 4
+  },
+  {
+   "text": "You",
+   "start": 48.121,
+   "end": 48.249,
+   "line": 4
+  },
+  {
+   "text": "took",
+   "start": 48.318,
+   "end": 48.516,
+   "line": 4
+  },
+  {
+   "text": "them",
+   "start": 48.562,
+   "end": 48.701,
+   "line": 4
+  },
+  {
+   "text": "in",
+   "start": 48.759,
+   "end": 48.829,
+   "line": 4
+  },
+  {
+   "text": "with",
+   "start": 48.875,
+   "end": 49.003,
+   "line": 4
+  },
+  {
+   "text": "your",
+   "start": 49.05,
+   "end": 49.166,
+   "line": 4
+  },
+  {
+   "text": "food",
+   "start": 49.235,
+   "end": 49.7,
+   "line": 4
+  },
+  {
+   "text": "your",
+   "start": 49.92,
+   "end": 50.071,
+   "line": 4
+  },
+  {
+   "text": "water",
+   "start": 50.141,
+   "end": 50.431,
+   "line": 4
+  },
+  {
+   "text": "and",
+   "start": 50.478,
+   "end": 50.547,
+   "line": 4
+  },
+  {
+   "text": "your",
+   "start": 50.594,
+   "end": 50.71,
+   "line": 4
+  },
+  {
+   "text": "air",
+   "start": 50.768,
+   "end": 51.186,
+   "line": 4
+  },
+  {
+   "text": "And",
+   "start": 51.523,
+   "end": 51.697,
+   "line": 4
+  },
+  {
+   "text": "almost",
+   "start": 51.766,
+   "end": 52.103,
+   "line": 4
+  },
+  {
+   "text": "none",
+   "start": 52.231,
+   "end": 52.428,
+   "line": 4
+  },
+  {
+   "text": "of",
+   "start": 52.451,
+   "end": 52.498,
+   "line": 4
+  },
+  {
+   "text": "them",
+   "start": 52.544,
+   "end": 52.66,
+   "line": 4
+  },
+  {
+   "text": "were",
+   "start": 52.718,
+   "end": 52.846,
+   "line": 4
+  },
+  {
+   "text": "made",
+   "start": 52.881,
+   "end": 53.043,
+   "line": 4
+  },
+  {
+   "text": "on",
+   "start": 53.078,
+   "end": 53.148,
+   "line": 4
+  },
+  {
+   "text": "Earth",
+   "start": 53.194,
+   "end": 53.369,
+   "line": 4
+  },
+  {
+   "text": "either",
+   "start": 53.461,
+   "end": 53.879,
+   "line": 4
+  },
+  {
+   "text": "So",
+   "start": 54.216,
+   "end": 54.367,
+   "line": 4
+  },
+  {
+   "text": "where",
+   "start": 54.437,
+   "end": 54.622,
+   "line": 4
+  },
+  {
+   "text": "were",
+   "start": 54.646,
+   "end": 54.773,
+   "line": 4
+  },
+  {
+   "text": "they",
+   "start": 54.797,
+   "end": 54.913,
+   "line": 4
+  },
+  {
+   "text": "made",
+   "start": 54.971,
+   "end": 55.888,
+   "line": 4
+  }
+ ]
+}

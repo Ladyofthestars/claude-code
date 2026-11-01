@@ -5,3 +5,4 @@ out/
 public/videos/_test/
 # Local secrets written by `elevenlabs onboard`
 /.env.local
+*.wav

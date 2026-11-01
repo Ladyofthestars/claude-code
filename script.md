@@ -39,7 +39,7 @@ Each `>` line is one paragraph. The voice is recorded one paragraph at a time an
 
 > Hydrogen atoms crash into each other and join together. They become helium. This is called fusion. And each time it happens, a tiny bit of mass turns into energy.
 
-> The numbers are huge. Every second, the Sun turns about 600 million tons of hydrogen into helium. About 4 million tons of that becomes energy. That energy is the sunlight that reaches your face.
+> The numbers are huge. Every second, the Sun turns about 600 million tons of hydrogen into helium. About 4 million tons of that becomes energy. Just one kilogram of hydrogen, fused like this, would give enough electricity to power an American home for about 17,000 years. And all that energy is the sunlight that reaches your face.
 
 > The Sun has been doing this for about 4.5 billion years. In a way, every star is a furnace. It takes light atoms and presses them into heavier ones. But a star like the Sun mostly makes helium. And you can't build bones out of helium. So where does the carbon come from?
 
@@ -63,7 +63,7 @@ Each `>` line is one paragraph. The voice is recorded one paragraph at a time an
 
 > What happens next is fast. In less than a second, a core about the size of the Earth collapses to less than 20 kilometers across. Then the rest of the star is blown apart. This is a supernova.
 
-> For a short time, one exploding star can outshine its whole galaxy. The blast throws carbon, oxygen, calcium and iron out into space. NASA says much of the iron in your blood was made in explosions like this, long ago and far away.
+> For a short time, one exploding star can outshine its whole galaxy. The brightest ones shine about 10 billion times brighter than the Sun. Their gas flies out at around 10,000 kilometers every second. The blast throws carbon, oxygen, calcium and iron out into space. NASA says much of the iron in your blood was made in explosions like this, long ago and far away.
 
 > But the story doesn't end there. The crushed core left behind is one of the strangest things in the universe. And it may be where gold comes from.
 
@@ -72,7 +72,7 @@ Each `>` line is one paragraph. The voice is recorded one paragraph at a time an
 
 > Sometimes, two neutron stars circle each other. Little by little, they spiral closer. And then, they crash.
 
-> On August 17th, 2017, scientists caught this happening for the first time. Detectors in the United States and Italy picked up ripples in space itself, called gravitational waves. Then telescopes around the world saw the light from the crash, about 130 million light-years away.
+> On August 17th, 2017, scientists caught this happening for the first time. Detectors in the United States and Italy picked up ripples in space itself, called gravitational waves. About two seconds later, space telescopes caught a short burst of gamma rays from the same part of the sky. Then telescopes around the world saw the light from the crash, about 130 million light-years away.
 
 > In that light, they found signs of heavy elements being made, including gold and platinum. NASA says the gold in your jewelry was likely made in crashes like this. Scientists are still working out how much comes from these crashes, and how much from other kinds of exploding stars.
 
@@ -81,7 +81,7 @@ Each `>` line is one paragraph. The voice is recorded one paragraph at a time an
 ### Part 7: How did it end up in you?
 > The space between the stars isn't empty. It holds thin clouds of gas and dust. Every time a star dies, it adds new atoms to these clouds.
 
-> About 4.5 billion years ago, one of these clouds began to collapse. Most of it fell into the center and became our Sun. The rest spun into a flat disk around it. Inside that disk, tiny grains of dust stuck together, then grew into rocks, and then into planets. One of them was Earth.
+> About 4.5 billion years ago, one of these clouds began to collapse. Most of it fell into the center and became our Sun. The rest spun into a flat disk around it. Inside that disk, tiny grains of dust stuck together, then grew into rocks, and then into planets. One of them was Earth. We can even check the date. The oldest meteorites, leftover building blocks from that disk, are about 4.5 billion years old.
 
 > So the Earth, and everything on it, was built from the leftovers of older stars. Since then, the same atoms have been passed around again and again. A carbon atom might spend time in a rock, then in the air, then in a plant, then in an apple, and then in you.
 
@@ -175,7 +175,8 @@ Picture names refer to the picture list in section 3. "Tile" means an element ti
 | 3.8 | The numbers are huge. | Sun moves to the left of the frame; empty space on the right | Pan right |
 | 3.9 | Every second, the Sun turns about 600 million tons of hydrogen into helium. | Number counts up "600,000,000 TONS"; label "OF HYDROGEN, EVERY SECOND" | Hold |
 | 3.10 | About 4 million tons of that becomes energy. | Second number counts up "4,000,000 TONS"; label "BECOMES ENERGY" | Hold |
-| 3.11 | That energy is the sunlight that reaches your face. | `person` fades in at the right; a light travels from the Sun to the person's face along a drawn line | Pull back to show both |
+| 3.10b | Just one kilogram of hydrogen, fused like this, would give enough electricity to power an American home for about 17,000 years. | `house` fades in on the right; a light travels from the Sun to the house's window; number counts up "17,000 YEARS" | Pan right to the house |
+| 3.11 | And all that energy is the sunlight that reaches your face. | `person` fades in at the right; a light travels from the Sun to the person's face along a drawn line | Pull back to show both |
 | 3.12 | The Sun has been doing this for about 4.5 billion years. | Number counts up "4.5 BILLION YEARS"; `hourglass` far behind | Drift |
 | 3.13 | In a way, every star is a furnace. | Many small star lights appear across the page; label "EVERY STAR IS A FURNACE" | Pull back wide |
 | 3.14 | It takes light atoms and presses them into heavier ones. | Diagram: small circle, arrow, bigger circle, arrow, bigger circle, drawing left to right | Push in |
@@ -225,6 +226,8 @@ Picture names refer to the picture list in section 3. "Tile" means an element ti
 | 5.15 | Then the rest of the star is blown apart. | `supernova` fades in large; rings draw outward | Pull back |
 | 5.16 | This is a supernova. | Label "SUPERNOVA" | Hold |
 | 5.17 | For a short time, one exploding star can outshine its whole galaxy. | A spiral galaxy draws itself beside the supernova; the supernova glows brighter | Pull back to show both |
+| 5.17b | The brightest ones shine about 10 billion times brighter than the Sun. | Small `sun` beside the supernova; number counts up "10,000,000,000 × THE SUN" | Hold |
+| 5.17c | Their gas flies out at around 10,000 kilometers every second. | Lights fly outward from the supernova along straight paths; number "10,000 KM EVERY SECOND" | Slight pull back |
 | 5.18 | The blast throws carbon, oxygen, calcium and iron out into space. | Lights fly outward; tiles C, O, Ca, Fe appear at their ends, one per word | Hold |
 | 5.19 | NASA says much of the iron in your blood was made in explosions like this, long ago and far away. | `blood_cell` fades in; a light travels from the supernova to it | Pan to the blood cell |
 | 5.20 | But the story doesn't end there. | Pictures fade except the supernova | Pan back |
@@ -243,6 +246,7 @@ Picture names refer to the picture list in section 3. "Tile" means an element ti
 | 6.6 | And then, they crash. | Bright glow at the center; rings draw outward | Hold |
 | 6.7 | On August 17th, 2017, scientists caught this happening for the first time. | Label "17 AUGUST 2017" | Hold |
 | 6.8 | Detectors in the United States and Italy picked up ripples in space itself, called gravitational waves. | A wave line draws across the page, getting faster; labels "USA" and "ITALY"; label "GRAVITATIONAL WAVES" | Pan along the wave |
+| 6.8b | About two seconds later, space telescopes caught a short burst of gamma rays from the same part of the sky. | Label "2 SECONDS LATER"; a sharp burst of light at the crash, with a short ray drawing outward | Hold |
 | 6.9 | Then telescopes around the world saw the light from the crash, about 130 million light-years away. | `telescope` fades in; a light travels from the crash to the telescope; number counts up "130 MILLION LIGHT-YEARS" | Pull back to show both |
 | 6.10 | In that light, they found signs of heavy elements being made, including gold and platinum. | Tiles Au and Pt draw | Hold |
 | 6.11 | NASA says the gold in your jewelry was likely made in crashes like this. | `gold_ring` fades in; a light travels around the ring | Push in |
@@ -262,6 +266,8 @@ Picture names refer to the picture list in section 3. "Tile" means an element ti
 | 7.6 | The rest spun into a flat disk around it. | A light travels around the disk | Hold |
 | 7.7 | Inside that disk, tiny grains of dust stuck together, then grew into rocks, and then into planets. | Magnifying circle from the disk; inside, dots draw, then `rock`, then a small planet circle | Hold on the circle |
 | 7.8 | One of them was Earth. | `earth` fades in | Pan to the Earth |
+| 7.8b | We can even check the date. | `rock` (a meteorite) fades in beside the Earth | Drift to the rock |
+| 7.8c | The oldest meteorites, leftover building blocks from that disk, are about 4.5 billion years old. | Number counts up "4.5 BILLION YEARS OLD"; a light travels around the rock's outline | Hold |
 | 7.9 | So the Earth, and everything on it, was built from the leftovers of older stars. | Faint star lights around the Earth; lines draw from them to the Earth | Pull back |
 | 7.10 | Since then, the same atoms have been passed around again and again. | A big circle with an arrow draws around the page (a cycle) | Pull back wide |
 | 7.11 | A carbon atom might spend time in a rock, then in the air, then in a plant, then in an apple, and then in you. | Along the cycle: `rock`, wavy "AIR" lines, `plant`, `apple`, `person`, each on its word; a light travels from one to the next | Pan along the cycle |
@@ -286,9 +292,9 @@ Picture names refer to the picture list in section 3. "Tile" means an element ti
 
 ---
 
-## 3. Picture list (21 pictures)
+## 3. Picture list (22 pictures)
 
-Each picture shows one object on its own. Labels, numbers and text are added by the animation, never drawn in the pictures. 4 are reused from "The New Earth" short and redrawn in the same ink.
+Each picture shows one object on its own. Labels, numbers and text are added by the animation, never drawn in the pictures. 5 are reused from "The New Earth" short and redrawn in the same ink.
 
 | File | What's in it | New? |
 |---|---|---|
@@ -296,6 +302,7 @@ Each picture shows one object on its own. Labels, numbers and text are added by 
 | `person.png` | A standing person, no facial features | reused |
 | `open_hand.png` | An open hand, palm up | reused |
 | `fist.png` | A clenched fist (gravity "squeezing") | reused |
+| `house.png` | A small house (an "American home") | reused |
 | `sun.png` | The Sun as a sphere with a grainy surface and a few small flares at its edge, seen straight on | new |
 | `red_giant.png` | A huge, swollen old star with a mottled, bubbling surface, seen straight on | new |
 | `supernova.png` | An exploding star: a bright core with an expanding shell of gas and streaks, seen straight on | new |
