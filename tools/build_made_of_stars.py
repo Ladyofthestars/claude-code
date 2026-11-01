@@ -131,14 +131,14 @@ def part1(p):
         y = ly + i * 104
         p.tile(sym, None, lx, y, at, '3:Each-0.2', s=86)
         p.label(f'{i + 1} · {name}', lx + 70, y, T(at, 0.2), '3:Each-0.2', size=34, align='left')
-    p.line([(lx + 420, ly - 40), (lx + 460, ly - 40), (lx + 460, ly + 5 * 104 + 40), (lx + 420, ly + 5 * 104 + 40)], '2:these six', '3:Each-0.2', width=2.2, duration=0.8)
-    p.label('MORE THAN', lx + 700, -70, '2:more than', '3:Each-0.2', size=30)
-    p.label('{n}%', lx + 700, 30, '2:97', '3:Each-0.2', size=110, spacing=0.04, count={'to': 97, 'duration': 1.3})
-    p.label('OF YOUR BODY', lx + 700, 130, '2:your body', '3:Each-0.2', size=30)
+    p.line([(lx + 640, ly - 40), (lx + 680, ly - 40), (lx + 680, ly + 5 * 104 + 40), (lx + 640, ly + 5 * 104 + 40)], '2:these six', '3:Each-0.2', width=2.2, duration=0.8)
+    p.label('MORE THAN', lx + 940, -70, '2:more than', '3:Each-0.2', size=30)
+    p.label('{n}%', lx + 940, 30, '2:97', '3:Each-0.2', size=110, spacing=0.04, count={'to': 97, 'duration': 1.3})
+    p.label('OF YOUR BODY', lx + 940, 130, '2:your body', '3:Each-0.2', size=30)
     p.hold_cam('2:By-0.3')
-    p.cam('2:By weight@end', x=lx + 220, y=-20, zoom=1.05)
-    p.cam('2:sulfur', x=lx + 220, y=0, zoom=1.05)
-    p.cam('2:body@end', x=lx + 360, y=0, zoom=0.92)
+    p.cam('2:By weight@end', x=lx + 280, y=-20, zoom=1.0)
+    p.cam('2:sulfur', x=lx + 300, y=0, zoom=1.0)
+    p.cam('2:body@end', x=lx + 470, y=0, zoom=0.9)
     # Jobs around a person
     jx = 4700
     me2 = p.pic('person', jx, 30, h=640, at='3:Each', id='me2')
@@ -171,11 +171,11 @@ def part1(p):
     p.travel(loop, '3:carries oxygen', dur=2.2, size=46)
     p.hold_cam('3:Each-0.3')
     p.cam('3:Each@end', x=jx, y=0, zoom=0.86)
-    p.cam('3:inside you@end', x=jx - 330, y=0, zoom=1.08)
-    p.cam('3:cells@end', x=jx - 40, y=-180, zoom=1.12)
-    p.cam('3:DNA@end', x=jx + 380, y=-110, zoom=1.12)
-    p.cam('3:hard@end', x=jx + 420, y=180, zoom=1.12)
-    p.cam('3:iron in', x=jx - 120, y=150, zoom=1.0)
+    p.cam('3:inside you@end', x=jx - 160, y=0, zoom=0.94)
+    p.cam('3:cells@end', x=jx - 20, y=-60, zoom=0.95)
+    p.cam('3:DNA@end', x=jx + 160, y=-40, zoom=0.95)
+    p.cam('3:hard@end', x=jx + 160, y=50, zoom=0.95)
+    p.cam('3:iron in', x=jx - 120, y=60, zoom=0.94)
     p.cam('3:body@end', x=jx, y=20, zoom=0.86)
     # None made inside you; food, water, air; not made on Earth
     p.label('NOT MADE INSIDE YOU', jx, 470, '4:None of these', '4:food-0.2', size=36)
@@ -302,12 +302,12 @@ def part3(p):
     cx, cy = 820, -20
     p.mag(sun, (0.5, 0.5), 30, cx, cy, 235, '2:Hydrogen', '3:The numbers-0.3')
     for sx in (-1, 1):
-        p.circle(cx + sx * 120, cy, 26, '2:Hydrogen+0.6', width=2.2, fill='accent', fillOpacity=0.3, out='2:helium')
-        p.label('H', cx + sx * 120, cy, '2:Hydrogen+0.7', '2:helium', size=22, upper=False)
-        ln = p.line([(cx + sx * 94, cy), (cx + sx * 40, cy)], '2:crash', width=1.4, color='muted', duration=0.6, out='2:helium')
+        p.circle(cx + sx * 140, cy, 40, '2:Hydrogen+0.6', width=2.4, fill='accent', fillOpacity=0.3, out='2:helium')
+        p.label('H', cx + sx * 140, cy, '2:Hydrogen+0.7', '2:helium', size=30, upper=False)
+        ln = p.line([(cx + sx * 98, cy), (cx + sx * 64, cy)], '2:crash', width=1.4, color='muted', duration=0.6, out='2:helium')
         p.travel(ln, '2:crash+0.3', dur=0.8, size=40)
-    p.circle(cx, cy, 42, '2:helium', width=2.4, fill='accent', fillOpacity=0.35, out='3:The numbers-0.3')
-    p.label('He', cx, cy, '2:helium+0.2', '3:The numbers-0.3', size=30, upper=False)
+    p.circle(cx, cy, 60, '2:helium', width=2.6, fill='accent', fillOpacity=0.35, out='3:The numbers-0.3')
+    p.label('He', cx, cy, '2:helium+0.2', '3:The numbers-0.3', size=40, upper=False)
     p.label('FUSION', cx, cy + 300, '2:fusion', '3:The numbers-0.3', size=46)
     for i, (x, y) in enumerate(ring_points(cx, cy, 160, 6, start=-60)):
         ray = p.line([((x - cx) * 0.38 + cx, (y - cy) * 0.38 + cy), (x, y)], T('2:energy', -0.6 + 0.07 * i), width=1.6, color='accent', duration=0.4, out='3:The numbers-0.3')
@@ -318,7 +318,8 @@ def part3(p):
     # The numbers
     nx = 1150
     p.label('{n} TONS', nx, -140, '3:600', '3:Just-0.2', size=44, count={'to': 600000000, 'duration': 1.6})
-    p.label('OF HYDROGEN, EVERY SECOND', nx, -60, '3:hydrogen into', '3:Just-0.2', size=26)
+    p.label('EVERY SECOND', nx, -250, '3:Every second', '3:Just-0.2', size=34, color='accent')
+    p.label('OF HYDROGEN BECOMES HELIUM', nx, -60, '3:into helium', '3:Just-0.2', size=26)
     p.label('{n} TONS', nx, 110, '3:4 million', '3:Just-0.2', size=44, count={'to': 4000000, 'duration': 1.4})
     p.label('BECOMES ENERGY', nx, 190, '3:becomes energy', '3:Just-0.2', size=26)
     p.hold_cam('3:The numbers-0.3')
@@ -330,11 +331,11 @@ def part3(p):
     p.travel(to_house, '3:power', dur=1.4, size=50)
     p.glow(house, (0.592, 0.548), T('3:power', 1.3), '4:In a way-0.2', size=80)
     p.label('{n} YEARS', 1750, 300, '3:17,000', '4:In a way-0.2', size=54, count={'to': 17000, 'duration': 1.4})
-    p.cam('3:years@end', x=900, y=40, zoom=0.82)
+    p.cam('3:years@end', x=780, y=40, zoom=0.75)
     me = p.pic('person', 2350, 0, h=600, at='3:sunlight', out='4:In a way-0.2')
     face = p.line([(320, -120), (1500, -420), p.pt(me, FACE)], '3:sunlight', width=1.4, color='muted', curve=True, dashed=True, out='4:In a way-0.2')
     p.travel(face, '3:reaches', dur=1.8, size=56)
-    p.cam('3:face@end', x=1180, y=0, zoom=0.64)
+    p.cam('3:face@end', x=1120, y=0, zoom=0.58)
     # 4.5 billion years; every star a furnace
     p.label('{n} BILLION YEARS', 1300, -380, '4:4.5', '4:In a way-0.2', size=50, count={'to': 4.5, 'decimals': 1, 'duration': 1.2})
     p.pic('hourglass', 2100, -260, h=300, at='4:doing this', out='4:In a way-0.2', depth=1.8)
@@ -342,10 +343,12 @@ def part3(p):
     p.glows(stars, '4:every star', '4:light atoms', size=46, stagger=0.06)
     p.label('EVERY STAR IS A FURNACE', 1300, 430, '4:every star', '4:light atoms', size=38)
     p.cam('4:furnace@end', x=1300, y=0, zoom=0.68)
-    for i, (x, r) in enumerate(((1000, 20), (1250, 32), (1520, 46))):
-        p.circle(x, 0, r, T('4:light atoms', 0.35 * i), width=2.2, fill='accent', fillOpacity=0.3, out='4:But a-0.2')
+    sizes = ((960, 30), (1240, 48), (1560, 70))
+    for i, (x, r) in enumerate(sizes):
+        p.circle(x, 0, r, T('4:light atoms', 0.35 * i), width=2.4, fill='accent', fillOpacity=0.3, out='4:But a-0.2')
         if i:
-            p.arrow((x - 225 + (20 if i == 1 else 32) + 14, 0), (x - r - 14, 0), T('4:presses', 0.3 * i), width=1.8, out='4:But a-0.2')
+            px, pr = sizes[i - 1]
+            p.arrow((px + pr + 18, 0), (x - r - 18, 0), T('4:presses', 0.3 * i), width=2.0, out='4:But a-0.2')
     p.cam('4:ones@end', x=1260, y=0, zoom=1.0)
     p.cam('4:But a star', x=700, y=0, zoom=0.9)
     p.tile('He', 'HELIUM', 420, -320, '4:like the Sun', s=110)

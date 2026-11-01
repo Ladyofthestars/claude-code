@@ -343,7 +343,9 @@ export const buildScene = (settings: Settings, words: Words) => {
 					}
 					const p = toScreen({x: wp[0], y: wp[1]}, cam);
 					const breathe = 1 + 0.06 * Math.sin(((t - start) / 3.2 + i * 0.37) * Math.PI * 2);
-					out.push({x: p.x, y: p.y, size: (L.size ?? 40) * cam.z * lerp(0.7, 1, k) * breathe, alpha: intensity * k});
+					const size = (L.size ?? 40) * cam.z * lerp(0.7, 1, k) * breathe;
+					const g = edgeGuard({x0: p.x - size * 0.25, y0: p.y - size * 0.25, x1: p.x + size * 0.25, y1: p.y + size * 0.25});
+					out.push({x: p.x, y: p.y, size, alpha: intensity * k * g});
 				});
 				continue;
 			}

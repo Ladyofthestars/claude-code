@@ -211,15 +211,15 @@
   },
   {
    "at": "3:years@end",
-   "x": 15470.0,
+   "x": 15350.0,
    "y": -1540.0,
-   "zoom": 0.82
+   "zoom": 0.75
   },
   {
    "at": "3:face@end",
-   "x": 15750.0,
+   "x": 15690.0,
    "y": -1580.0,
-   "zoom": 0.64
+   "zoom": 0.58
   },
   {
    "at": "4:furnace@end",
@@ -415,11 +415,11 @@
   {
    "id": "circle12",
    "kind": "circle",
-   "cx": 15270.0,
+   "cx": 15250.0,
    "cy": -1600.0,
-   "r": 26,
+   "r": 40,
    "draw": "2:Hydrogen+0.6",
-   "width": 2.2,
+   "width": 2.4,
    "fill": "accent",
    "fillOpacity": 0.3,
    "out": "2:helium"
@@ -429,11 +429,11 @@
    "kind": "path",
    "points": [
     [
-     15296.0,
+     15292.0,
      -1600.0
     ],
     [
-     15350.0,
+     15326.0,
      -1600.0
     ]
    ],
@@ -446,11 +446,11 @@
   {
    "id": "circle14",
    "kind": "circle",
-   "cx": 15510.0,
+   "cx": 15530.0,
    "cy": -1600.0,
-   "r": 26,
+   "r": 40,
    "draw": "2:Hydrogen+0.6",
-   "width": 2.2,
+   "width": 2.4,
    "fill": "accent",
    "fillOpacity": 0.3,
    "out": "2:helium"
@@ -460,11 +460,11 @@
    "kind": "path",
    "points": [
     [
-     15484.0,
+     15488.0,
      -1600.0
     ],
     [
-     15430.0,
+     15454.0,
      -1600.0
     ]
    ],
@@ -479,9 +479,9 @@
    "kind": "circle",
    "cx": 15390.0,
    "cy": -1600.0,
-   "r": 42,
+   "r": 60,
    "draw": "2:helium",
-   "width": 2.4,
+   "width": 2.6,
    "fill": "accent",
    "fillOpacity": 0.35,
    "out": "3:The numbers-0.3"
@@ -651,11 +651,11 @@
   {
    "id": "circle28",
    "kind": "circle",
-   "cx": 15570.0,
+   "cx": 15530.0,
    "cy": -1580.0,
-   "r": 20,
+   "r": 30,
    "draw": "4:light atoms",
-   "width": 2.2,
+   "width": 2.4,
    "fill": "accent",
    "fillOpacity": 0.3,
    "out": "4:But a-0.2"
@@ -663,11 +663,11 @@
   {
    "id": "circle29",
    "kind": "circle",
-   "cx": 15820.0,
+   "cx": 15810.0,
    "cy": -1580.0,
-   "r": 32,
+   "r": 48,
    "draw": "4:light atoms+0.35",
-   "width": 2.2,
+   "width": 2.4,
    "fill": "accent",
    "fillOpacity": 0.3,
    "out": "4:But a-0.2"
@@ -677,27 +677,27 @@
    "kind": "path",
    "points": [
     [
-     15629.0,
+     15578.0,
      -1580.0
     ],
     [
-     15774.0,
+     15744.0,
      -1580.0
     ]
    ],
    "draw": "4:presses+0.3",
    "arrow": true,
-   "width": 1.8,
+   "width": 2.0,
    "out": "4:But a-0.2"
   },
   {
    "id": "circle31",
    "kind": "circle",
-   "cx": 16090.0,
+   "cx": 16130.0,
    "cy": -1580.0,
-   "r": 46,
+   "r": 70,
    "draw": "4:light atoms+0.7",
-   "width": 2.2,
+   "width": 2.4,
    "fill": "accent",
    "fillOpacity": 0.3,
    "out": "4:But a-0.2"
@@ -707,17 +707,17 @@
    "kind": "path",
    "points": [
     [
-     15911.0,
+     15876.0,
      -1580.0
     ],
     [
-     16030.0,
+     16042.0,
      -1580.0
     ]
    ],
    "draw": "4:presses+0.6",
    "arrow": true,
-   "width": 1.8,
+   "width": 2.0,
    "out": "4:But a-0.2"
   },
   {
@@ -1329,20 +1329,20 @@
   },
   {
    "text": "H",
-   "x": 15270.0,
+   "x": 15250.0,
    "y": -1600.0,
    "space": "world",
-   "size": 28,
+   "size": 38,
    "in": "2:Hydrogen+0.7",
    "out": "2:helium",
    "upper": false
   },
   {
    "text": "H",
-   "x": 15510.0,
+   "x": 15530.0,
    "y": -1600.0,
    "space": "world",
-   "size": 28,
+   "size": 38,
    "in": "2:Hydrogen+0.7",
    "out": "2:helium",
    "upper": false
@@ -1352,7 +1352,7 @@
    "x": 15390.0,
    "y": -1600.0,
    "space": "world",
-   "size": 38,
+   "size": 50,
    "in": "2:helium+0.2",
    "out": "3:The numbers-0.3",
    "upper": false
@@ -1380,12 +1380,22 @@
    }
   },
   {
-   "text": "OF HYDROGEN, EVERY SECOND",
+   "text": "EVERY SECOND",
+   "x": 15720.0,
+   "y": -1830.0,
+   "space": "world",
+   "size": 42,
+   "in": "3:Every second",
+   "out": "3:Just-0.2",
+   "color": "accent"
+  },
+  {
+   "text": "OF HYDROGEN BECOMES HELIUM",
    "x": 15720.0,
    "y": -1640.0,
    "space": "world",
    "size": 32,
-   "in": "3:hydrogen into",
+   "in": "3:into helium",
    "out": "3:Just-0.2"
   },
   {
