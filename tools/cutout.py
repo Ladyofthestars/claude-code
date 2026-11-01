@@ -48,6 +48,11 @@ def main():
 
     # Solid silhouette of the drawn object.
     marks = (dist > lo).astype(np.uint8)
+    # Drop loose specks of background texture before joining strokes together.
+    n0, lab0, st0, _ = cv2.connectedComponentsWithStats(marks, 8)
+    big = np.zeros(n0, bool)
+    big[1:] = st0[1:, cv2.CC_STAT_AREA] >= max(30, h * w * 0.00004)
+    marks = big[lab0].astype(np.uint8)
     k = max(3, int(min(h, w) * 0.025)) | 1
     closed = cv2.morphologyEx(marks, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k)))
     n, labels, stats, _ = cv2.connectedComponentsWithStats(closed, 8)
@@ -62,6 +67,9 @@ def main():
     mask = np.zeros((h + 2, w + 2), np.uint8)
     cv2.floodFill(ff, mask, (0, 0), 2)
     solid = np.where(ff == 2, 0, 1).astype(np.uint8)
+    # Smooth the outline: shave off small bumps, then grow back slightly so no stroke is clipped.
+    ko = max(5, int(min(h, w) * 0.012)) | 1
+    solid = cv2.morphologyEx(solid, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (ko, ko)))
     solid = cv2.dilate(solid, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5)))
     alpha = cv2.GaussianBlur(solid.astype(np.float32), (0, 0), 1.2)
     alpha = np.clip(alpha, 0, 1)
@@ -70,10 +78,16 @@ def main():
         out_rgb = rgb
     else:
         ink, paper = hex_rgb(a.ink), hex_rgb(a.paper)
-        s = strength[..., None]
+        # Map the drawing's tones onto ink without flattening bright areas into solid ink:
+        # scale to the object's own brightest strokes and keep some paper showing through.
+        inside = solid.astype(bool)
+        top = np.percentile(dist[inside], 99.5) if inside.any() else 255.0
+        tone = np.clip((dist - lo) / max(1.0, top - lo), 0, 1) ** 1.12 * 0.93
+        s = tone[..., None]
         out_rgb = paper * (1 - s) + ink * s
 
     rgba = np.dstack([np.clip(out_rgb, 0, 255), alpha * 255]).astype(np.uint8)
+    rgba[alpha <= 0.002] = 0  # fully clear pixels carry no colour, so files stay small
     Image.fromarray(rgba, 'RGBA').save(a.dst, optimize=True)
 
     ys, xs = np.where(alpha > 0.5)
