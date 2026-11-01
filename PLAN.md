@@ -30,9 +30,9 @@ Tick each box as it is done. If work stops, continue from the first unticked box
 - [x] Frame check passes for every part (template now fades anything out before it could be cut off)
 - [x] Stills every half second and at every sentence start; review and fix
 - [x] Background music (original, generated here) and a few soft sound effects
-- [ ] Render all parts, join them, mix voice and music, normalise loudness for YouTube
-- [ ] Final checks: length, audio, a few frames
-- [ ] Commit and push
+- [x] Render all parts, join them (frame-exact, 33,993 frames), mix voice and music, normalise loudness for YouTube (-14.5 LUFS, true peak -1.2 dB)
+- [x] Final checks: length 9:26.5, audio, frames from every part (part 8 got a title card instead of a blank page)
+- [x] Commit and push
 
 ## Step 5: packaging
 - [x] Thumbnail (`packaging/thumbnail.png`, made from the video's own drawings with `tools/make_thumbnail.py`)
