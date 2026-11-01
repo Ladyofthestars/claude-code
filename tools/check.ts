@@ -57,7 +57,8 @@ for (let f = 0; f < frames; f++) {
 		if (s.opacity > 0.5) {
 			const halfW = (s.text.length * s.size * (0.66 + (l.spacing ?? 0.32))) / 2;
 			const halfH = s.size * 0.6;
-			if (s.y - halfH < safe.top - tol || s.y + halfH > safe.bottom + tol || s.x - halfW < -tol || s.x + halfW > FRAME.width + tol) {
+			const left = s.align === 'left' ? s.x : s.x - halfW;
+			if (s.y - halfH < safe.top - tol || s.y + halfH > safe.bottom + tol || left < -tol || left + 2 * halfW > FRAME.width + tol) {
 				note(`label "${l.text}": outside the safe area`, t, `centre ${s.x.toFixed(0)},${s.y.toFixed(0)} size ${s.size.toFixed(0)}`);
 			}
 		}

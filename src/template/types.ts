@@ -132,6 +132,10 @@ export interface LabelDef {
 	text: string;
 	count?: {from?: number; to: number; decimals?: number; duration?: number};
 	weight?: 500 | 700;
+	// false keeps the text's own case (element symbols like Fe, Au)
+	upper?: boolean;
+	// left: x is where the text starts (for lists)
+	align?: 'center' | 'left';
 	spacing?: number;
 	// Screen pixels (space "screen") or page units (space "world").
 	x: number;

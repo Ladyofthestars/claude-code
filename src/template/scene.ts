@@ -265,9 +265,12 @@ export const buildScene = (settings: Settings, words: Words) => {
 			const back = pointAlong(pts, Math.max(0, progress - 0.02));
 			head = {x: end.x, y: end.y, angle: Math.atan2(end.y - back.y, end.x - back.x)};
 		}
+		// Shapes and short lines fade near the edge like pictures; long lines (timelines, waves) may run off.
 		let guard = 1;
-		if (d.kind === 'rect' || d.kind === 'circle') {
-			guard = edgeGuard({x0: Math.min(...pts.map((q) => q.x)), y0: Math.min(...pts.map((q) => q.y)), x1: Math.max(...pts.map((q) => q.x)), y1: Math.max(...pts.map((q) => q.y))});
+		const bx = {x0: Math.min(...pts.map((q) => q.x)), y0: Math.min(...pts.map((q) => q.y)), x1: Math.max(...pts.map((q) => q.x)), y1: Math.max(...pts.map((q) => q.y))};
+		const small = bx.x1 - bx.x0 < W * 0.6 && bx.y1 - bx.y0 < H * 0.6;
+		if (d.kind === 'rect' || d.kind === 'circle' || small) {
+			guard = edgeGuard(bx);
 		}
 		return {pts, progress, opacity: visible * guard, zoom: cam.z, fill: fillK * guard, head, blur: (depth - 1) * 2};
 	};
@@ -429,9 +432,10 @@ export const buildScene = (settings: Settings, words: Words) => {
 		if (l.space === 'world') {
 			const halfW = (text.length * size * (0.66 + (l.spacing ?? 0.32))) / 2;
 			const halfH = size * 0.6;
-			guard = edgeGuard({x0: x - halfW, y0: y - halfH, x1: x + halfW, y1: y + halfH});
+			const left = l.align === 'left' ? x : x - halfW;
+			guard = edgeGuard({x0: left, y0: y - halfH, x1: left + 2 * halfW, y1: y + halfH});
 		}
-		return {x, y, size, text, opacity: k * guard, blur: (1 - k) * 8, scale: lerp(0.96, 1, kIn)};
+		return {x, y, size, text, opacity: k * guard, blur: (1 - k) * 8, scale: lerp(0.96, 1, kIn), align: l.align ?? 'center'};
 	};
 
 	return {settings, words, total, resolve, safe, frame, camAt, itemAt, anchorAt, threadAt, drawingAt, lightsAt, magnifierAt, labelAt, layerCam, toScreen};

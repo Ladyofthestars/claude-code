@@ -10,7 +10,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
-from stars_lib import T, Part, Pictures  # noqa: E402
+from stars_lib import AMBIGUOUS, T, Part, Pictures  # noqa: E402
 
 ROOT = 'public/videos/made-of-stars'
 PICS = Pictures(f'{ROOT}/images', '/videos/made-of-stars/images')
@@ -58,22 +58,24 @@ def part0(p):
     p.cam('1:Earth@end', x=-220, y=20, zoom=1.0)
     glass = p.pic('water_glass', 650, 130, h=300, at='1:hydrogen', out='2:So-0.4')
     p.tile('H', 'HYDROGEN', 650, -230, '1:hydrogen+0.3', '2:So-0.4')
-    p.pic('hourglass', 1080, -120, h=420, at='1:first few', out='2:So-0.4', depth=1.8)
+    p.pic('hourglass', 1080, -120, h=420, at='1:first few', out='2:So-0.4')
     p.label('FIRST FEW MINUTES', 870, 400, '1:few minutes', '2:So-0.4', size=36)
     p.hold_cam('1:hydrogen-0.1')
     p.cam('1:universe@end', x=820, y=40, zoom=0.92)
     blood = p.pic('blood_cell', 1500, 170, h=170, at='1:iron', out='2:So-0.4')
     p.tile('Fe', 'IRON', 1500, -150, '1:iron+0.3', '2:So-0.4')
-    p.pic('supernova', 2080, -160, h=560, at='1:stars that', out='2:So-0.4', depth=2.0)
+    p.pic('supernova', 2100, -120, h=480, at='1:stars that', out='2:So-0.4')
     ln = p.line([(1930, -60), (1760, 40), (1590, 140)], '1:blew', out='2:So-0.4', dashed=True, color='muted', curve=True)
     p.travel(ln, '1:blew up', dur=1.3, size=60)
     p.hold_cam('1:iron-0.2')
     p.cam('1:far away@end', x=1700, y=40, zoom=0.9)
     # Part 2 of the opening: back to the person, five tiles around them
+    p.items[[i['id'] for i in p.items].index(me)]['out'] = '1:hydrogen'
+    me = p.pic('person', 2900, 0, h=720, at='2:So', id='me_b')
     p.hold_cam('2:So-0.3')
-    p.cam('2:come from@end', x=-500, y=30, zoom=0.92)
+    p.cam('2:come from@end', x=2900, y=30, zoom=0.92)
     chest = p.pt(me, CHEST)
-    spots = [('H', 'HYDROGEN', (-960, -260)), ('C', 'CARBON', (-1010, 0)), ('O', 'OXYGEN', (-960, 260)), ('Fe', 'IRON', (-40, -200)), ('Au', 'GOLD', (-40, 200))]
+    spots = [('H', 'HYDROGEN', (2440, -260)), ('C', 'CARBON', (2390, 0)), ('O', 'OXYGEN', (2440, 260)), ('Fe', 'IRON', (3360, -200)), ('Au', 'GOLD', (3360, 200))]
     for i, (sym, name, (x, y)) in enumerate(spots):
         dx, dy = x - chest[0], y - chest[1]
         L = math.hypot(dx, dy)
@@ -83,8 +85,8 @@ def part0(p):
         p.tile(sym, name, x, y, T('2:By the end', 0.35 * i), s=105)
         p.travel(ln, T('2:fair', 0.22 * i), dur=1.0, size=46, reverse=True)
     p.glow(me, CHEST, '2:made of stars', size=90)
-    p.label('YOU ARE MADE OF STARS', -500, 480, '2:made of stars', 'end-0.8', size=52)
-    p.cam('2:stars@end', x=-500, y=40, zoom=0.95)
+    p.label('YOU ARE MADE OF STARS', 2900, 470, '2:made of stars', 'end-0.8', size=46)
+    p.cam('2:stars@end', x=2900, y=40, zoom=0.95)
     p.end_all()
 
 
@@ -100,8 +102,8 @@ def part1(p):
     for k, rot in enumerate((0, 60, 120)):
         orb = p.ellipse(470, -60, 168, 58, T('1:tiny+0.2', 0.25 * k), rot=rot, width=1.8, out='1:many-0.35')
         if k == 0:
-            p.travel(orb, '1:atoms', dur=1.6, size=40)
-    p.label('ATOMS', 470, 215, '1:atoms', '1:many-0.35', size=34)
+            p.travel(orb, '1:called atoms', dur=1.6, size=40)
+    p.label('ATOMS', 470, 215, '1:called atoms', '1:many-0.35', size=34)
     # Elements: the first three rows of the periodic table (main groups)
     rows = [['H', '', '', '', '', '', '', 'He'], ['Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne'], ['Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar']]
     gx0, gy0, pitch, s = 1450, -100, 96, 86
@@ -114,67 +116,69 @@ def part1(p):
             x, y = gx0 + c * pitch, gy0 + r * pitch
             fill = 'accent' if sym in life else None
             p.rect(x, y, s, s, T('1:many kinds', 0.035 * k), width=2.0, duration=0.5, fill=fill or 'paper', fillOpacity=0.3 if fill else 1,
-                   fillAt=T('1:few', 0.12 * sorted(life).index(sym)) if fill else T('1:many kinds', 0.035 * k + 0.1), id=f'g_{sym}', out='2:By-0.2')
-            p.label(sym, x, y, T('1:many kinds', 0.035 * k + 0.2), '2:By-0.2', size=34, spacing=0.02)
+                   fillAt=T('1:few', 0.12 * sorted(life).index(sym)) if fill else T('1:many kinds', 0.035 * k + 0.1), id=f'g_{sym}', out='2:oxygen')
+            p.label(sym, x, y, T('1:many kinds', 0.035 * k + 0.2), '2:oxygen', size=34, spacing=0.02, upper=False)
             k += 1
-    p.label('ELEMENTS', gx0 + 3.5 * pitch, gy0 + 3 * pitch + 10, '1:elements', '2:By-0.2', size=34)
+    p.label('ELEMENTS', gx0 + 3.5 * pitch, gy0 + 3 * pitch + 10, '1:elements', '2:oxygen', size=34)
     p.hold_cam('1:many-0.2')
     p.cam('1:elements@end', x=gx0 + 3.5 * pitch, y=gy0 + pitch, zoom=1.1)
     p.cam('1:work@end', x=gx0 + 3.5 * pitch, y=gy0 + pitch, zoom=1.15)
     # Ranked list by weight
     lx, ly = 2750, -260
     names = [('O', 'OXYGEN', '2:oxygen'), ('C', 'CARBON', '2:carbon'), ('H', 'HYDROGEN', '2:Then hydrogen'), ('N', 'NITROGEN', '2:nitrogen'), ('P', 'PHOSPHORUS', '2:phosphorus'), ('S', 'SULFUR', '2:sulfur')]
+    p.label('BY WEIGHT', lx + 150, ly - 120, '2:By weight', '3:Each-0.2', size=36, color='accent')
     for i, (sym, name, at) in enumerate(names):
         y = ly + i * 104
-        p.tile(sym, None, lx, y, at, '3:Each-0.2', s=82)
-        p.label(f'{i + 1} · {name}', lx + 230, y, T(at, 0.2), '3:Each-0.2', size=34)
+        p.tile(sym, None, lx, y, at, '3:Each-0.2', s=86)
+        p.label(f'{i + 1} · {name}', lx + 70, y, T(at, 0.2), '3:Each-0.2', size=34, align='left')
     p.line([(lx + 420, ly - 40), (lx + 460, ly - 40), (lx + 460, ly + 5 * 104 + 40), (lx + 420, ly + 5 * 104 + 40)], '2:these six', '3:Each-0.2', width=2.2, duration=0.8)
     p.label('MORE THAN', lx + 700, -70, '2:more than', '3:Each-0.2', size=30)
     p.label('{n}%', lx + 700, 30, '2:97', '3:Each-0.2', size=110, spacing=0.04, count={'to': 97, 'duration': 1.3})
     p.label('OF YOUR BODY', lx + 700, 130, '2:your body', '3:Each-0.2', size=30)
     p.hold_cam('2:By-0.3')
-    p.cam('2:oxygen@end', x=lx + 220, y=0, zoom=1.0)
-    p.cam('2:sulfur', x=lx + 220, y=0, zoom=1.0)
+    p.cam('2:By weight@end', x=lx + 220, y=-20, zoom=1.05)
+    p.cam('2:sulfur', x=lx + 220, y=0, zoom=1.05)
     p.cam('2:body@end', x=lx + 360, y=0, zoom=0.92)
     # Jobs around a person
     jx = 4700
     me2 = p.pic('person', jx, 30, h=640, at='3:Each', id='me2')
-    p.pic('water_glass', jx - 480, -200, h=200, at='3:Hydrogen and', out='4:None+0.2')
-    o = p.circle(jx - 480, 100, 36, '3:join', width=2.2, fill='paper', out='4:None+0.2')
+    p.pic('water_glass', jx - 480, -200, h=200, at='3:Hydrogen and', out='4:None of these+0.2')
+    o = p.circle(jx - 480, 100, 36, '3:join', width=2.2, fill='paper', out='4:None of these+0.2')
     for sx in (-1, 1):
-        p.line([(jx - 480 + sx * 26, 126), (jx - 480 + sx * 44, 146)], '3:join+0.2', width=2.2, out='4:None+0.2')
-        p.circle(jx - 480 + sx * 58, 158, 20, '3:join+0.3', width=2.2, fill='paper', out='4:None+0.2')
-    p.label('O', jx - 480, 100, '3:join+0.4', '4:None+0.2', size=26)
-    p.label('H', jx - 538, 158, '3:join+0.5', '4:None+0.2', size=18)
-    p.label('H', jx - 422, 158, '3:join+0.5', '4:None+0.2', size=18)
-    p.label('WATER', jx - 480, 230, '3:water', '4:None+0.2', size=28)
+        p.line([(jx - 480 + sx * 26, 126), (jx - 480 + sx * 44, 146)], '3:join+0.2', width=2.2, out='4:None of these+0.2')
+        p.circle(jx - 480 + sx * 58, 158, 20, '3:join+0.3', width=2.2, fill='paper', out='4:None of these+0.2')
+    p.label('O', jx - 480, 100, '3:join+0.4', '4:None of these+0.2', size=26, upper=False)
+    p.label('H', jx - 538, 158, '3:join+0.5', '4:None of these+0.2', size=18, upper=False)
+    p.label('H', jx - 422, 158, '3:join+0.5', '4:None of these+0.2', size=18, upper=False)
+    p.label('WATER', jx - 480, 230, '3:water', '4:None of these+0.2', size=28)
     chain = [(jx - 160 + 80 * i, -420 + (20 if i % 2 else -20)) for i in range(5)]
     for i, (x, y) in enumerate(chain):
-        p.circle(x, y, 17, T('3:Carbon is', 0.12 * i), width=2.0, fill='paper', out='4:None+0.2')
-        p.label('C', x, y, T('3:Carbon is', 0.12 * i + 0.15), '4:None+0.2', size=16)
-    cl = p.line(chain, '3:backbone', width=1.6, duration=0.8, out='4:None+0.2', color='muted')
+        p.circle(x, y, 17, T('3:Carbon is', 0.12 * i), width=2.0, fill='paper', out='4:None of these+0.2')
+        p.label('C', x, y, T('3:Carbon is', 0.12 * i + 0.15), '4:None of these+0.2', size=16, upper=False)
+    cl = p.line(chain, '3:backbone', width=1.6, duration=0.8, out='4:None of these+0.2', color='muted')
     p.travel(cl, '3:molecules', dur=1.2, size=40)
-    dna = p.pic('dna', jx + 480, -150, h=320, at='3:Nitrogen', out='4:None+0.2')
-    p.tile('N', None, jx + 660, -250, '3:Nitrogen+0.3', '4:None+0.2', s=70)
-    p.tile('P', None, jx + 660, -110, '3:phosphorus', '4:None+0.2', s=70)
+    dna = p.pic('dna', jx + 480, -150, h=320, at='3:Nitrogen', out='4:None of these+0.2')
+    p.tile('N', None, jx + 660, -250, '3:Nitrogen+0.3', '4:None of these+0.2', s=70)
+    p.tile('P', None, jx + 660, -110, '3:phosphorus', '4:None of these+0.2', s=70)
     p.travel_on(dna, PICS.outline('dna', 0.0, 0.5, 40), '3:DNA', dur=1.4, size=40)
-    bone = p.pic('bone', jx + 480, 250, w=230, at='3:Calcium', out='4:None+0.2')
-    p.tile('Ca', None, jx + 680, 250, '3:Calcium+0.3', '4:None+0.2', s=70)
+    bone = p.pic('bone', jx + 480, 250, w=230, at='3:Calcium', out='4:None of these+0.2')
+    p.tile('Ca', None, jx + 680, 250, '3:Calcium+0.3', '4:None of these+0.2', s=70)
     p.travel_on(bone, PICS.outline('bone', 0.0, 1.0, 60), '3:bones', dur=1.4, size=40)
-    p.pic('blood_cell', jx - 480, 390, h=80, at='3:iron', out='4:None+0.2')
-    p.tile('Fe', None, jx - 640, 390, '3:iron+0.3', '4:None+0.2', s=66)
+    p.pic('blood_cell', jx - 480, 390, h=80, at='3:iron', out='4:None of these+0.2')
+    p.tile('Fe', None, jx - 640, 390, '3:iron+0.3', '4:None of these+0.2', s=66)
     chest2 = p.pt(me2, CHEST)
-    loop = p.ellipse(chest2[0], chest2[1] + 120, 110, 220, '3:blood', width=1.4, color='muted', out='4:None+0.2', dashed=True)
+    loop = p.ellipse(chest2[0], chest2[1] + 120, 110, 220, '3:blood', width=1.4, color='muted', out='4:None of these+0.2', dashed=True)
     p.travel(loop, '3:carries oxygen', dur=2.2, size=46)
     p.hold_cam('3:Each-0.3')
-    p.cam('3:Each@end', x=jx, y=0, zoom=0.82)
-    p.cam('3:inside you@end', x=jx - 120, y=0, zoom=0.84)
-    p.cam('3:cells@end', x=jx, y=-40, zoom=0.84)
-    p.cam('3:DNA@end', x=jx + 120, y=-20, zoom=0.84)
-    p.cam('3:hard@end', x=jx + 120, y=40, zoom=0.84)
-    p.cam('3:body@end', x=jx, y=20, zoom=0.82)
+    p.cam('3:Each@end', x=jx, y=0, zoom=0.86)
+    p.cam('3:inside you@end', x=jx - 330, y=0, zoom=1.08)
+    p.cam('3:cells@end', x=jx - 40, y=-180, zoom=1.12)
+    p.cam('3:DNA@end', x=jx + 380, y=-110, zoom=1.12)
+    p.cam('3:hard@end', x=jx + 420, y=180, zoom=1.12)
+    p.cam('3:iron in', x=jx - 120, y=150, zoom=1.0)
+    p.cam('3:body@end', x=jx, y=20, zoom=0.86)
     # None made inside you; food, water, air; not made on Earth
-    p.label('NOT MADE INSIDE YOU', jx, 470, '4:None', '4:food-0.2', size=36)
+    p.label('NOT MADE INSIDE YOU', jx, 470, '4:None of these', '4:food-0.2', size=36)
     p.pic('apple', jx + 620, -230, h=170, at='4:food', out='4:So where-0.2')
     p.pic('water_glass', jx + 620, 30, h=180, at='4:your water', out='4:So where-0.2')
     for i in range(3):
@@ -182,30 +186,30 @@ def part1(p):
         p.line([(jx + 520 + 30 * k, y + (10 if k % 2 else -10)) for k in range(8)], T('4:air', 0.1 * i), width=1.8, curve=True, out='4:So where-0.2')
     for at, y in (('4:food', -230), ('4:your water', 30), ('4:air', 280)):
         p.arrow((jx + 520, y), (jx + 170, y * 0.4), T(at, 0.2), width=1.8, color='muted', out='4:So where-0.2')
-    p.cam('4:None@end', x=jx + 100, y=20, zoom=0.82)
+    p.cam('4:None of these@end', x=jx + 100, y=20, zoom=0.82)
     earth = p.pic('earth', jx + 1500, 0, h=480, at='4:Earth', out='4:So where-0.2')
     p.label('NOT MADE ON EARTH', jx + 1500, 340, '4:made on Earth', '4:So where-0.2', size=36)
     p.hold_cam('4:almost-0.2')
     p.cam('4:either@end', x=jx + 1500, y=30, zoom=1.0)
     stars = [(jx + 1500 + dx, -720 + dy) for dx, dy in [(-420, -60), (-250, 120), (-60, -150), (140, 60), (330, -90), (460, 140), (-560, 160), (20, 190)]]
     p.glows(stars, '4:So where', size=40, stagger=0.12)
-    p.cam('4:made@end', x=jx + 1500, y=-700, zoom=1.0)
+    p.cam('4:they made@end', x=jx + 1500, y=-700, zoom=1.0)
     p.end_all()
 
 
 def part2(p):
-    chapter(p, 2, 'To')
+    chapter(p, 2, 'To find')
     p.cam('start', x=0, y=0, zoom=1.0)
     hg = p.pic('hourglass', 0, 0, h=560, at='1:To find')
     p.travel_on(hg, [[0.5, 0.33], [0.5, 0.45], [0.5, 0.52], [0.5, 0.6], [0.5, 0.74]], '1:beginning', dur=1.6, size=40)
-    p.hold_cam('1:To-0.3')
+    p.hold_cam('1:To find-0.3')
     p.cam('1:beginning@end', x=0, y=0, zoom=1.1)
     # Timeline and the Big Bang
     bx = 900
     tl = p.arrow((bx, 0), (bx + 2300, 0), '1:About', width=2.4, duration=2.2)
     p.glows([(bx, 0)], '1:Big Bang', size=160)
     p.label('BIG BANG', bx, 110, '1:Big Bang', '2:In the-0.2', size=34)
-    p.label('{n} BILLION YEARS AGO', bx + 480, -170, '1:13.8', '1:far too-0.2', size=48, count={'to': 13.8, 'decimals': 1, 'duration': 1.4})
+    p.label('{n} BILLION YEARS AGO', bx + 430, -170, '1:13.8', '1:far too-0.2', size=38, count={'to': 13.8, 'decimals': 1, 'duration': 1.4})
     p.hold_cam('1:About-0.3')
     p.cam('1:Big Bang@end', x=bx + 400, y=0, zoom=1.0)
     hot = [(bx + 110 * math.cos(a) * r, 110 * math.sin(a) * r) for a, r in zip([i * 2.4 for i in range(14)], [0.3, 0.9, 0.6, 1.0, 0.4, 0.8, 0.7, 1.0, 0.5, 0.95, 0.6, 0.85, 0.35, 0.75])]
@@ -235,17 +239,17 @@ def part2(p):
     p.cam('2:stars@end', x=sun_x - 300, y=0, zoom=0.95)
     # The strange part: a glass of water
     gx = sun_x + 1300
-    glass = p.pic('water_glass', gx, 30, h=430, at='3:glass')
-    p.cam('3:part@end', x=gx - 300, y=0, zoom=1.0)
-    p.cam('3:water@end', x=gx, y=0, zoom=1.05)
+    glass = p.pic('water_glass', gx, 30, h=430, at='3:strange')
+    p.cam('3:strange@end', x=gx - 150, y=0, zoom=1.0)
+    p.cam('3:of water@end', x=gx, y=0, zoom=1.05)
     mx, my = gx + 560, -60
     p.mag(glass, (0.5, 0.6), 30, mx, my, 210, '3:Every water', '3:So the-0.3')
     p.circle(mx, my - 10, 50, '3:molecule', width=2.4, fill='paper', out='3:So the-0.3')
     for sx in (-1, 1):
         p.line([(mx + sx * 36, my + 26), (mx + sx * 62, my + 56)], '3:molecule+0.2', width=2.4, out='3:So the-0.3')
         p.circle(mx + sx * 82, my + 78, 28, '3:two hydrogen', width=2.4, fill='accent', fillOpacity=0.35, out='3:So the-0.3')
-        p.label('H', mx + sx * 82, my + 78, T('3:two hydrogen', 0.2), '3:So the-0.3', size=24)
-    p.label('O', mx, my - 10, '3:molecule+0.3', '3:So the-0.3', size=32)
+        p.label('H', mx + sx * 82, my + 78, T('3:two hydrogen', 0.2), '3:So the-0.3', size=24, upper=False)
+    p.label('O', mx, my - 10, '3:molecule+0.3', '3:So the-0.3', size=32, upper=False)
     p.cam('3:atoms@end', x=gx + 280, y=0, zoom=1.0)
     bb = (gx - 300, -420)
     back = p.line([(mx - 82, my + 78), (gx + 150, -300), bb], '3:NASA', width=1.8, color='muted', curve=True, dashed=True, out='3:So the')
@@ -256,7 +260,7 @@ def part2(p):
     p.label('NO OTHER REAL SOURCE', bb[0] - 220, bb[1] + 95, '3:no other real', '3:So the', size=28)
     p.cam('3:Bang@end', x=gx, y=-150, zoom=0.9)
     me = p.pic('person', gx + 650, 20, h=600, at='3:hydrogen in you')
-    to_me = p.line([(gx + 90, -40), (gx + 330, -120), p.pt(me, CHEST)], '3:as old', width=1.6, color='muted', curve=True)
+    to_me = p.line([(gx + 90, -40), (gx + 330, -120), p.pt(me, CHEST)], '3:as old', '4:So who-0.2', width=1.6, color='muted', curve=True)
     p.travel(to_me, '3:as old', dur=1.3, size=50)
     p.label('ABOUT 13.8 BILLION YEARS OLD', gx + 330, 430, '3:old as', '4:But-0.2', size=36)
     p.cam('3:itself@end', x=gx + 330, y=20, zoom=0.92)
@@ -299,11 +303,11 @@ def part3(p):
     p.mag(sun, (0.5, 0.5), 30, cx, cy, 235, '2:Hydrogen', '3:The numbers-0.3')
     for sx in (-1, 1):
         p.circle(cx + sx * 120, cy, 26, '2:Hydrogen+0.6', width=2.2, fill='accent', fillOpacity=0.3, out='2:helium')
-        p.label('H', cx + sx * 120, cy, '2:Hydrogen+0.7', '2:helium', size=22)
+        p.label('H', cx + sx * 120, cy, '2:Hydrogen+0.7', '2:helium', size=22, upper=False)
         ln = p.line([(cx + sx * 94, cy), (cx + sx * 40, cy)], '2:crash', width=1.4, color='muted', duration=0.6, out='2:helium')
         p.travel(ln, '2:crash+0.3', dur=0.8, size=40)
     p.circle(cx, cy, 42, '2:helium', width=2.4, fill='accent', fillOpacity=0.35, out='3:The numbers-0.3')
-    p.label('He', cx, cy, '2:helium+0.2', '3:The numbers-0.3', size=30)
+    p.label('He', cx, cy, '2:helium+0.2', '3:The numbers-0.3', size=30, upper=False)
     p.label('FUSION', cx, cy + 300, '2:fusion', '3:The numbers-0.3', size=46)
     for i, (x, y) in enumerate(ring_points(cx, cy, 160, 6, start=-60)):
         ray = p.line([((x - cx) * 0.38 + cx, (y - cy) * 0.38 + cy), (x, y)], T('2:energy', -0.6 + 0.07 * i), width=1.6, color='accent', duration=0.4, out='3:The numbers-0.3')
@@ -312,14 +316,14 @@ def part3(p):
     p.cam('2:together@end', x=430, y=0, zoom=0.88)
     p.cam('2:energy@end', x=480, y=0, zoom=0.9)
     # The numbers
-    nx = 1250
-    p.label('{n} TONS', nx, -140, '3:600', '3:Just-0.2', size=58, count={'to': 600000000, 'duration': 1.6})
+    nx = 1150
+    p.label('{n} TONS', nx, -140, '3:600', '3:Just-0.2', size=44, count={'to': 600000000, 'duration': 1.6})
     p.label('OF HYDROGEN, EVERY SECOND', nx, -60, '3:hydrogen into', '3:Just-0.2', size=26)
-    p.label('{n} TONS', nx, 110, '3:4 million', '3:Just-0.2', size=58, count={'to': 4000000, 'duration': 1.4})
+    p.label('{n} TONS', nx, 110, '3:4 million', '3:Just-0.2', size=44, count={'to': 4000000, 'duration': 1.4})
     p.label('BECOMES ENERGY', nx, 190, '3:becomes energy', '3:Just-0.2', size=26)
     p.hold_cam('3:The numbers-0.3')
-    p.cam('3:huge@end', x=620, y=0, zoom=0.92)
-    p.cam('3:energy@end', x=650, y=0, zoom=0.95)
+    p.cam('3:huge@end', x=640, y=0, zoom=0.84)
+    p.cam('3:becomes energy@end', x=660, y=0, zoom=0.86)
     house = p.pic('house', 1750, 40, h=300, at='3:American home', out='4:In a way-0.2')
     p.label('1 KG OF HYDROGEN', 1000, -200, '3:one kilogram', '4:In a way-0.2', size=34)
     to_house = p.line([(300, -60), (1000, -120), p.pt(house, (0.592, 0.548))], '3:electricity', width=1.6, color='muted', curve=True, dashed=True, out='4:In a way-0.2')
@@ -327,29 +331,30 @@ def part3(p):
     p.glow(house, (0.592, 0.548), T('3:power', 1.3), '4:In a way-0.2', size=80)
     p.label('{n} YEARS', 1750, 300, '3:17,000', '4:In a way-0.2', size=54, count={'to': 17000, 'duration': 1.4})
     p.cam('3:years@end', x=900, y=40, zoom=0.82)
-    me = p.pic('person', 2650, 0, h=620, at='3:sunlight', out='4:In a way-0.2')
+    me = p.pic('person', 2350, 0, h=600, at='3:sunlight', out='4:In a way-0.2')
     face = p.line([(320, -120), (1500, -420), p.pt(me, FACE)], '3:sunlight', width=1.4, color='muted', curve=True, dashed=True, out='4:In a way-0.2')
     p.travel(face, '3:reaches', dur=1.8, size=56)
-    p.cam('3:face@end', x=1320, y=0, zoom=0.6)
+    p.cam('3:face@end', x=1180, y=0, zoom=0.64)
     # 4.5 billion years; every star a furnace
     p.label('{n} BILLION YEARS', 1300, -380, '4:4.5', '4:In a way-0.2', size=50, count={'to': 4.5, 'decimals': 1, 'duration': 1.2})
     p.pic('hourglass', 2100, -260, h=300, at='4:doing this', out='4:In a way-0.2', depth=1.8)
     stars = [(1300 + dx, dy) for dx, dy in [(-700, -300), (-420, 260), (-150, -380), (130, 300), (380, -260), (620, 220), (860, -120), (-900, 120), (1050, 280), (-560, -60), (300, 20), (980, -360)]]
     p.glows(stars, '4:every star', '4:light atoms', size=46, stagger=0.06)
-    p.label('EVERY STAR IS A FURNACE', 1300, 430, '4:furnace', '4:light atoms', size=38)
+    p.label('EVERY STAR IS A FURNACE', 1300, 430, '4:every star', '4:light atoms', size=38)
     p.cam('4:furnace@end', x=1300, y=0, zoom=0.68)
     for i, (x, r) in enumerate(((1000, 20), (1250, 32), (1520, 46))):
         p.circle(x, 0, r, T('4:light atoms', 0.35 * i), width=2.2, fill='accent', fillOpacity=0.3, out='4:But a-0.2')
         if i:
             p.arrow((x - 225 + (20 if i == 1 else 32) + 14, 0), (x - r - 14, 0), T('4:presses', 0.3 * i), width=1.8, out='4:But a-0.2')
     p.cam('4:ones@end', x=1260, y=0, zoom=1.0)
-    p.tile('He', 'HELIUM', 420, -320, '4:mostly makes', s=110)
+    p.cam('4:But a star', x=700, y=0, zoom=0.9)
+    p.tile('He', 'HELIUM', 420, -320, '4:like the Sun', s=110)
     p.pic('bone', 750, -80, w=230, at='4:bones')
     p.line([(560, -300), (690, -110)], T('4:bones', 0.3), width=2.6, duration=0.4, color='muted')
     p.line([(640, -190), (580, -230)], T('4:bones', 0.5), width=2.6, duration=0.3)
     p.tile('C', 'CARBON', 750, 180, '4:carbon', s=110, dashed=True)
     p.glows([(750, 168)], T('4:carbon', 0.3), size=80)
-    p.cam('4:helium@end', x=300, y=0, zoom=0.95)
+    p.cam('4:makes helium@end', x=300, y=0, zoom=0.95)
     p.cam('4:from@end', x=420, y=0, zoom=1.0)
     p.end_all()
 
@@ -383,16 +388,16 @@ def part4(p):
     p.mag(rg, (0.5, 0.5), 30, cx, cy, 240, '2:Three', '3:Why-0.3')
     for i, (x, y) in enumerate(ring_points(cx, cy, 130, 3)):
         p.circle(x, y, 28, T('2:Three', 0.6 + 0.12 * i), width=2.2, fill='accent', fillOpacity=0.3, out='2:carbon atom')
-        p.label('He', x, y, T('2:Three', 0.7 + 0.12 * i), '2:carbon atom', size=20)
+        p.label('He', x, y, T('2:Three', 0.7 + 0.12 * i), '2:carbon atom', size=20, upper=False)
         ln = p.line([(x + (cx - x) * 0.25, y + (cy - y) * 0.25), (x + (cx - x) * 0.75, y + (cy - y) * 0.75)], '2:slam', width=1.4, color='muted', duration=0.5, out='2:carbon atom')
         p.travel(ln, '2:slam+0.2', dur=0.7, size=40)
     p.circle(cx, cy, 48, '2:one carbon', width=2.6, fill='accent', fillOpacity=0.4, out='3:Why-0.3')
-    p.label('C', cx, cy, '2:one carbon+0.2', '3:Why-0.3', size=36)
+    p.label('C', cx, cy, '2:one carbon+0.2', '3:Why-0.3', size=36, upper=False)
     p.cam('2:degrees@end', x=200, y=-60, zoom=0.92)
     p.cam('2:atom@end', x=430, y=0, zoom=0.9)
     # Why three and not two
     wx = 2000
-    for side, (n, tag, at) in enumerate(((2, 'TWO', '3:two'), (3, 'THREE', '3:Why three'))):
+    for side, (n, tag, at) in enumerate(((2, 'TWO', '3:not two'), (3, 'THREE', '3:Why three'))):
         x0 = wx + (0 if n == 2 else 640)
         for i in range(n):
             px, py = (x0 - 70 + 140 * i, 0) if n == 2 else ring_points(x0, 0, 85, 3)[i]
@@ -408,17 +413,17 @@ def part4(p):
     p.glows([(wx + 640, 0)], '3:same time', '4:In the-0.2', size=110)
     p.label('LASTS', wx + 640, 170, '3:lasts', '4:In the-0.2', size=30)
     p.circle(wx + 1240, 0, 46, '3:carbon atom', width=2.6, fill='accent', fillOpacity=0.3, out='4:In the-0.2')
-    p.label('C', wx + 1240, 0, '3:carbon atom+0.2', '4:In the-0.2', size=32)
+    p.label('C', wx + 1240, 0, '3:carbon atom+0.2', '4:In the-0.2', size=32, upper=False)
     he = p.circle(wx + 1240 - 190, -110, 26, '3:one more helium', width=2.2, out='3:makes oxygen')
     feed = p.line([(wx + 1240 - 165, -95), (wx + 1240 - 50, -25)], '3:grab', width=1.4, color='muted', duration=0.5, out='3:makes oxygen')
     p.travel(feed, '3:grab+0.3', dur=0.8, size=40)
     p.tile('O', 'OXYGEN', wx + 1240, 210, '3:oxygen', '4:In the-0.2', s=110)
     p.hold_cam('3:Why-0.3')
-    p.cam('3:two@end', x=wx + 320, y=0, zoom=1.0)
+    p.cam('3:not two@end', x=wx + 320, y=0, zoom=1.0)
     p.cam('3:lasts@end', x=wx + 400, y=0, zoom=0.95)
     p.cam('3:oxygen@end', x=wx + 900, y=50, zoom=1.0)
     # Planetary nebula: outer layers out, carbon drifts away
-    nx = wx + 2500
+    nx = wx + 1950
     neb = p.pic('nebula', nx, 0, h=520, at='4:In the')
     for i, r in enumerate((200, 290, 380)):
         p.circle(nx, 0, r, T('4:pushes', 0.3 * i), width=1.4, color='muted', duration=0.9, out='4:NASA-0.2')
@@ -431,9 +436,9 @@ def part4(p):
         drift.append(pts[-1])
     for i, (x, y) in enumerate(drift[:3]):
         p.tile('C', None, x, y, T('4:between', 0.15 * i), '4:NASA-0.2', s=64)
-    p.hold_cam('4:In the-0.3')
+    p.cam('4:In the', x=nx - 300, y=0, zoom=0.85)
     p.cam('4:space@end', x=nx, y=0, zoom=0.9)
-    p.cam('4:stars@end', x=nx, y=0, zoom=0.82)
+    p.cam('4:the stars@end', x=nx, y=0, zoom=0.82)
     me = p.pic('person', nx + 1150, 20, h=600, at='4:NASA')
     p.label('MADE INSIDE STARS', nx + 1150, 420, '4:inside stars', size=34)
     to_me = p.line([(nx + 260, -80), (nx + 700, -260), p.pt(me, CHEST)], '4:carbon in your', width=1.6, color='muted', curve=True, dashed=True)
@@ -489,7 +494,7 @@ def part5(p):
     p.arrow((900, cy), (990, cy), "3:doesn't", '3:So when-0.2', width=2.0, duration=0.4)
     p.line([(1010, cy - 50), (1010, cy + 50)], "3:doesn't+0.3", '3:So when-0.2', width=4.0, duration=0.3)
     p.label('GIVES OFF ENERGY', 175, cy + 110, '3:gives off', '3:So when-0.2', size=28)
-    p.hold_cam('3:Up-0.3')
+    p.hold_cam('3:Up to-0.3')
     p.cam('3:energy@end', x=300, y=cy, zoom=1.0)
     p.cam("3:doesn't@end", x=420, y=cy, zoom=1.0)
     p.glows([(200, 0)], '3:fills up', '3:goes out', size=160)
@@ -497,13 +502,14 @@ def part5(p):
     p.cam('3:anymore@end', x=200, y=0, zoom=1.08)
     # Collapse
     ex = 1700
-    p.pic('earth', ex, 0, h=420, at='4:core about', out='4:Then the-0.2')
+    p.pic('earth', ex, 0, h=420, at='4:What happens', out='4:Then the-0.2')
     p.label('SIZE OF THE EARTH', ex, 290, '4:size of', '4:Then the-0.2', size=30)
     p.arrow((ex + 280, 0), (ex + 640, 0), '4:collapses', '4:Then the-0.2', width=2.2)
     p.circle(ex + 760, 0, 8, '4:collapses+0.5', '4:Then the-0.2', width=2.4, fill='accent', fillOpacity=0.8)
     p.label('LESS THAN 20 KM', ex + 760, 110, '4:20 kilometers', '4:Then the-0.2', size=30)
-    p.label('LESS THAN A SECOND', ex + 380, -300, '4:less than', '4:Then the-0.2', size=40, color='accent')
-    p.hold_cam('4:What-0.3')
+    p.label('LESS THAN A SECOND', ex + 380, -300, '4:In less than', '4:Then the-0.2', size=40, color='accent')
+    p.hold_cam('4:What-0.6')
+    p.cam('4:What happens@end', x=ex + 200, y=0, zoom=0.95)
     p.cam('4:fast@end', x=ex + 380, y=0, zoom=0.95)
     p.cam('4:across@end', x=ex + 420, y=0, zoom=1.0)
     snx = ex + 2100
@@ -520,8 +526,9 @@ def part5(p):
         spiral.append(p.line(pts, T('5:galaxy', 0.2 * (arm > 0)), width=1.8, curve=True, duration=1.2, out='5:The blast-0.2'))
     p.label('ITS WHOLE GALAXY', gx, 260, '5:galaxy', '5:The blast-0.2', size=30)
     p.glows([(snx, 0)], '5:outshine', '5:The blast', size=320)
-    p.pic('sun', gx + 380, -250, h=110, at='5:brightest', out='5:The blast-0.2')
-    p.label('{n} × THE SUN', gx, -330, '5:10 billion', '5:The blast-0.2', size=44, count={'to': 10000000000, 'duration': 1.5})
+    p.pic('sun', gx + 300, -200, h=110, at='5:brightest', out='5:The blast-0.2')
+    p.label('{n}', gx - 80, -330, '5:10 billion', '5:The blast-0.2', size=40, count={'to': 10000000000, 'duration': 1.5})
+    p.label('TIMES BRIGHTER THAN THE SUN', gx - 80, -270, '5:brighter', '5:The blast-0.2', size=24)
     rays = []
     for i, ang in enumerate(range(-150, 210, 45)):
         a = math.radians(ang)
@@ -552,11 +559,11 @@ def part5(p):
 
 
 def part6(p):
-    chapter(p, 6, 'That')
+    chapter(p, 6, 'That crushed')
     p.cam('start', x=0, y=0, zoom=1.0)
-    ns = p.pic('neutron_star', 0, 0, h=420, at='1:That')
+    ns = p.pic('neutron_star', 0, 0, h=420, at='1:That crushed')
     p.label('NEUTRON STAR', 0, 300, '1:neutron star', '1:packed-0.2', size=40)
-    p.hold_cam('1:That-0.2')
+    p.hold_cam('1:That crushed-0.2')
     p.cam('1:star@end', x=0, y=20, zoom=1.08)
     # Same mass as the Sun, size of a city
     p.pic('sun', -1100, 0, h=520, at='1:as much mass', out='1:packed-0.2')
@@ -565,7 +572,7 @@ def part6(p):
     p.cam('1:Sun@end', x=-550, y=0, zoom=0.75)
     p.cam('1:city@end', x=-500, y=0, zoom=0.78)
     cube = p.pic('sugar_cube', 900, 30, h=240, at='1:sugar cube')
-    p.label('{n} TONS', 900, 280, '1:billion tons', '2:Sometimes-0.2', size=50, count={'to': 1000000000, 'duration': 1.4})
+    p.label('{n} TONS', 900, 280, '1:would weigh', '2:Sometimes-0.2', size=40, count={'to': 1000000000, 'duration': 1.6})
     p.label('A SUGAR-CUBE-SIZED PIECE', 900, -200, '1:sugar cube+0.3', '2:Sometimes-0.2', size=28)
     p.cam('1:tons@end', x=450, y=20, zoom=0.9)
     # Two neutron stars spiral in and crash
@@ -601,6 +608,7 @@ def part6(p):
     p.hold_cam('3:Detectors-0.3')
     p.cam('3:Italy@end', x=cx, y=wy, zoom=0.95)
     p.cam('3:waves@end', x=cx, y=wy - 60, zoom=0.92)
+    p.hold_cam('3:About two')
     # Gamma-ray burst two seconds later
     p.label('2 SECONDS LATER', cx, -230, '3:two seconds', '3:Then-0.2', size=38, color='accent')
     p.glows([(cx, 0)], '3:burst', '3:Then', size=220)
@@ -610,15 +618,16 @@ def part6(p):
     p.cam('3:later@end', x=cx, y=-60, zoom=0.95)
     p.cam('3:sky@end', x=cx, y=-40, zoom=1.0)
     # Telescopes saw the light
-    tx = cx + 1500
+    tx = cx + 1150
     tel = p.pic('telescope', tx, 60, h=460, at='3:telescopes around')
     to_t = p.line([(cx + 60, -20), (cx + 700, -260), p.pt(tel, (0.78, 0.15))], '3:saw the light', width=1.6, color='muted', curve=True, dashed=True, out='4:Scientists-0.2')
     p.travel(to_t, '3:saw the light', dur=1.6, size=56)
-    p.label('{n} MILLION LIGHT-YEARS', cx + 750, 380, '3:130', '4:NASA-0.2', size=40, count={'to': 130, 'duration': 1.3})
-    p.cam('3:crash@end', x=cx + 750, y=40, zoom=0.62)
-    p.cam('3:away@end', x=cx + 750, y=40, zoom=0.65)
+    p.label('{n} MILLION LIGHT-YEARS', cx + 600, 380, '3:130', '4:NASA-0.2', size=40, count={'to': 130, 'duration': 1.3})
+    p.cam('3:Then telescopes', x=cx + 500, y=20, zoom=0.75)
+    p.cam('3:crash@end', x=cx + 600, y=40, zoom=0.68)
+    p.cam('3:away@end', x=cx + 600, y=40, zoom=0.7)
     # Gold and platinum
-    p.tile('Au', 'GOLD', cx - 120, 330, '4:gold', '4:Scientists-0.2', s=110)
+    p.tile('Au', 'GOLD', cx - 120, 330, '4:including gold', '4:Scientists-0.2', s=110)
     p.tile('Pt', 'PLATINUM', cx + 60, 330, '4:platinum', '4:Scientists-0.2', s=110)
     p.label('HEAVY ELEMENTS', cx - 30, 180, '4:heavy elements', '4:Scientists-0.2', size=30)
     p.cam('4:being made@end', x=cx + 200, y=150, zoom=0.92)
@@ -629,7 +638,7 @@ def part6(p):
     # Still being studied
     p.pic('supernova', cx + 1350, -60, h=260, at='4:other kinds', out='5:So now-0.2')
     p.label('STILL BEING STUDIED', cx + 900, -380, '4:still working', '5:So now-0.2', size=36, color='accent')
-    p.cam('4:crashes@end', x=cx + 800, y=-40, zoom=0.75)
+    p.cam('4:these crashes@end', x=cx + 800, y=-40, zoom=0.75)
     p.cam('4:exploding stars@end', x=cx + 850, y=-40, zoom=0.72)
     # Scattered elements, then you
     px = cx + 2700
@@ -649,25 +658,25 @@ def part6(p):
 
 
 def part7(p):
-    chapter(p, 7, 'The')
+    chapter(p, 7, 'The space')
     p.cam('start', x=0, y=0, zoom=0.88)
     neb = p.pic('nebula', 0, 0, h=600, at='1:The space')
-    p.label('GAS AND DUST', 0, 380, '1:gas and dust', '2:About-0.2', size=36)
+    p.label('GAS AND DUST', 0, 380, '1:gas and dust', '2:4.5 billion years ago-0.2', size=36)
     drift = [(dx, dy) for dx, dy in [(-180, -120), (-60, 90), (120, -60), (200, 120), (-260, 60), (40, -200)]]
     p.glows(drift, '1:thin clouds', '2:collapse', size=40, stagger=0.15)
-    p.hold_cam('1:The-0.2')
+    p.hold_cam('1:The space-0.2')
     p.cam('1:empty@end', x=0, y=0, zoom=1.0)
-    p.pic('supernova', -950, -100, h=280, at='1:star dies', out='2:About-0.2')
+    p.pic('supernova', -950, -100, h=280, at='1:star dies', out='2:4.5 billion years ago-0.2')
     for i, dy in enumerate((-160, -60, 40)):
-        ln = p.line([(-800, -100 + dy * 0.3), (-480, dy), (-240, dy * 0.6)], T('1:adds new', 0.15 * i), width=1.2, color='muted', curve=True, dashed=True, out='2:About-0.2')
+        ln = p.line([(-800, -100 + dy * 0.3), (-480, dy), (-240, dy * 0.6)], T('1:adds new', 0.15 * i), width=1.2, color='muted', curve=True, dashed=True, out='2:4.5 billion years ago-0.2')
         p.travel(ln, T('1:adds new', 0.15 * i + 0.1), dur=1.3, size=40)
     p.cam('1:dies@end', x=-450, y=0, zoom=0.85)
-    p.cam('1:clouds@end', x=-350, y=0, zoom=0.88)
+    p.cam('1:these clouds@end', x=-350, y=0, zoom=0.88)
     # Collapse into the Sun and disk
-    p.label('{n} BILLION YEARS AGO', 0, -390, '2:4.5', '2:Most of-0.2', size=46, count={'to': 4.5, 'decimals': 1, 'duration': 1.2})
+    p.label('{n} BILLION YEARS AGO', 0, -390, '2:4.5 billion years ago', '2:Most of-0.2', size=46, count={'to': 4.5, 'decimals': 1, 'duration': 1.2})
     for i, (x, y) in enumerate(ring_points(0, 0, 420, 8, start=-67.5)):
         p.arrow((x, y), (x * 0.72, y * 0.72), T('2:collapse', 0.08 * i), '2:Most of-0.2', width=1.8, duration=0.5)
-    p.hold_cam('2:About-0.3')
+    p.hold_cam('2:4.5 billion years ago-0.3')
     p.cam('2:collapse@end', x=0, y=0, zoom=0.92)
     disk = p.pic('young_sun_disk', 0, 0, w=1100, at='2:center', id='disk')
     p.items[[i['id'] for i in p.items].index(neb)]['out'] = '2:center+0.2'
@@ -715,7 +724,7 @@ def part7(p):
         else:
             p.pic(name, x, y, h=260 if name == 'person' else 160, at=at)
     p.travel(cyc, '3:A carbon atom', dur=5.4, size=56)
-    p.cam('3:again@end', x=cx, y=0, zoom=0.88)
+    p.cam('3:and again@end', x=cx, y=0, zoom=0.88)
     p.cam('3:you@end', x=cx, y=0, zoom=0.9)
     # Stars made of the same ingredients
     sx = cx + 1900
@@ -751,7 +760,7 @@ def part8(p):
     p.tile('H', None, 650, -200, '1:hydrogen+0.3', s=96)
     ln = p.line([(-150, -480), (300, -420), (600, -280)], '1:first few', width=1.4, color='muted', curve=True, dashed=True)
     p.travel(ln, '1:first few', dur=1.4, size=50)
-    p.pic('red_giant', 1180, -150, h=300, at='1:carbon', depth=1.6)
+    p.pic('red_giant', 1180, -150, h=300, at='1:carbon')
     p.tile('C', None, 1180, 200, '1:carbon+0.3', s=96)
     p.cam('1:universe@end', x=300, y=20, zoom=0.82)
     p.cam('1:stars@end', x=600, y=20, zoom=0.78)
@@ -759,13 +768,13 @@ def part8(p):
     p.tile('Ca', None, 1650, -40, '2:calcium+0.3', s=90)
     p.pic('blood_cell', 1650, 160, h=110, at='2:iron')
     p.tile('Fe', None, 1650, 330, '2:iron+0.3', s=90)
-    p.pic('supernova', 2150, -60, h=360, at='2:exploding', depth=1.8)
-    p.hold_cam('2:The-0.3')
+    p.pic('supernova', 2150, -60, h=360, at='2:exploding')
+    p.hold_cam('2:The calcium-0.3')
     p.cam('2:exploding stars@end', x=1350, y=40, zoom=0.82)
     p.pic('gold_ring', 2650, 30, h=230, at='2:gold')
     p.tile('Au', None, 2650, -200, '2:gold+0.3', s=96)
-    p.pic('neutron_star', 3150, -160, h=140, at='2:two dead', depth=1.7)
-    p.pic('neutron_star', 3300, 60, h=140, at='2:two dead+0.3', depth=1.7)
+    p.pic('neutron_star', 3100, -150, h=140, at='2:two dead')
+    p.pic('neutron_star', 3250, 60, h=140, at='2:two dead+0.3')
     p.cam('2:together@end', x=2450, y=20, zoom=0.82)
     # Everything around the person
     p.hold_cam('3:Carl-0.3')
@@ -822,8 +831,11 @@ def main():
         ox, oy, oz = p.camera[-1]['x'], p.camera[-1]['y'], p.camera[-1]['zoom']
         title = 'You Are Made of Stars' + ('' if n == 0 else f' — part {n}')
         json.dump(p.settings(THEME, title), open(f'{d}/settings.json', 'w'), indent=1)
+        pass
         print(f'p{n}: {len(p.items)} pictures, {len(p.drawings)} drawings, {len(p.lights)} lights, {len(p.labels)} labels, {len(p.camera)} camera keys')
 
 
 if __name__ == '__main__':
     main()
+    for a in sorted(AMBIGUOUS):
+        print('ambiguous:', a)

@@ -14,6 +14,7 @@ import numpy as np
 from PIL import Image
 
 W, H = 1920, 1080
+AMBIGUOUS = set()  # phrases that match more than once in their paragraph
 SAFE = {'top': 0.06, 'bottom': 0.06, 'side': 0.05}
 SAFE_W = W * (1 - 2 * SAFE['side'])
 SAFE_H = H * (1 - SAFE['top'] - SAFE['bottom'])
@@ -83,9 +84,11 @@ class Part:
         line = int(m.group(1))
         toks = [norm(t) for t in m.group(2).split() if norm(t)]
         ws = [norm(w['text']) for w in self.words['words'] if w['line'] == line]
-        for i in range(len(ws) - len(toks) + 1):
-            if ws[i:i + len(toks)] == toks:
-                return
+        hits = [i for i in range(len(ws) - len(toks) + 1) if ws[i:i + len(toks)] == toks]
+        if len(hits) > 1:
+            AMBIGUOUS.add(f'p{self.n} "{ref}" ({len(hits)} matches)')
+        if hits:
+            return
         raise SystemExit(f'Part {self.n}: phrase "{m.group(2)}" not in paragraph {line}')
 
     def uid(self, p):
@@ -168,13 +171,17 @@ class Part:
         return self.line([a, b], at, out, arrow=True, **kw)
 
     # ---- text -----------------------------------------------------------------------------
-    def label(self, text, x, y, at, out=None, size=40, space='world', color=None, weight=None, spacing=None, count=None):
+    LABEL_SCALE = 1.25  # labels a little bigger, so they read well on phones
+
+    def label(self, text, x, y, at, out=None, size=40, space='world', color=None, weight=None, spacing=None, count=None, upper=None, align=None):
         self.check_ref(at)
+        if space == 'world':
+            size = round(size * self.LABEL_SCALE)
         d = {'text': text, 'x': round(x, 1), 'y': round(y, 1), 'space': space, 'size': size, 'in': at}
         if out is not None:
             self.check_ref(out)
             d['out'] = out
-        for k, v in (('color', color), ('weight', weight), ('spacing', spacing), ('count', count)):
+        for k, v in (('color', color), ('weight', weight), ('spacing', spacing), ('count', count), ('upper', upper), ('align', align)):
             if v is not None:
                 d[k] = v
         self.labels.append(d)
@@ -184,9 +191,10 @@ class Part:
         """An element tile: a square with the symbol and, below it, the element's name."""
         rid = self.rect(x, y, s, s, at, out=out, width=2.6, duration=0.6, fill=fill or 'paper',
                         fillOpacity=0.28 if fill == 'accent' else 1, fillAt=fill_at or T(at, 0.1), dashed=dashed, color='muted' if dashed else None)
-        self.label(sym, x, y - s * 0.06, T(at, 0.25), out, size=round(s * 0.42), spacing=0.02)
+        big = name is not None
+        self.label(sym, x, y - (s * 0.1 if big else 0), T(at, 0.25), out, size=round(s * (0.36 if big else 0.42) / self.LABEL_SCALE), spacing=0.02, upper=False)
         if name:
-            self.label(name, x, y + s * 0.3, T(at, 0.35), out, size=round(s * 0.105), weight=500, spacing=0.18)
+            self.label(name, x, y + s * 0.3, T(at, 0.35), out, size=round(s * 0.135 / self.LABEL_SCALE), weight=500, spacing=0.08)
         return rid
 
     # ---- lights --------------------------------------------------------------------------------
