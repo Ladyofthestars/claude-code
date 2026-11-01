@@ -26,15 +26,18 @@ const main = async () => {
 	for (let f = 0; f < composition.durationInFrames; f += fps / 2) {
 		shots.set(f, `t=${(f / fps).toFixed(1)}s`);
 	}
+	// Every sentence start (or every line start, if the timings don't mark sentences).
 	const seen = new Set<number>();
-	for (const w of words.words) {
-		if (!seen.has(w.line)) {
-			seen.add(w.line);
+	const marked = words.words.some((w) => (w as {sentence?: boolean}).sentence);
+	words.words.forEach((w, i) => {
+		const isStart = marked ? (w as {sentence?: boolean}).sentence : !seen.has(w.line);
+		seen.add(w.line);
+		if (isStart) {
 			// A beat after the first word starts, so its visual has begun.
 			const f = Math.min(composition.durationInFrames - 1, Math.round(w.start * fps) + 6);
-			shots.set(f, `line ${w.line} "${w.text}…"`);
+			shots.set(f, `${w.line}: "${words.words.slice(i, i + 3).map((x) => x.text).join(' ')}…"`);
 		}
-	}
+	});
 	const list = [...shots.entries()].sort((a, b) => a[0] - b[0]);
 	const index: {frame: number; file: string; label: string}[] = [];
 	for (const [frame, label] of list) {

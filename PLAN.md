@@ -24,10 +24,10 @@ Tick each box as it is done. If work stops, continue from the first unticked box
 - [x] Check word for word against script.md (1,499 words; total 9:28.7 with pauses). Added four sourced passages (facts 38–42) to reach about 10 minutes
 
 ## Step 4: animation
-- [ ] Template: any frame size (1920x1080), multi-part videos, counting numbers, self-drawing diagrams, lights on diagrams
-- [ ] Check tool: also reports gaps of more than 5 s with nothing new on screen
-- [ ] Settings for each part (9 parts), following the shot list
-- [ ] Frame check passes for every part
+- [x] Template: any frame size (1920x1080), multi-part videos, counting numbers, self-drawing diagrams, lights on diagrams
+- [x] Check tool: also reports gaps of more than 5 s with nothing new on screen
+- [x] Settings for each part (9 parts), following the shot list
+- [x] Frame check passes for every part (template now fades anything out before it could be cut off)
 - [ ] Stills every half second and at every sentence start; review and fix
 - [ ] Background music (original, generated here) and a few soft sound effects
 - [ ] Render all parts, join them, mix voice and music, normalise loudness for YouTube

@@ -1,0 +1,1492 @@
+{
+ "title": "You Are Made of Stars \u2014 part 3",
+ "size": {
+  "width": 1920,
+  "height": 1080
+ },
+ "audio": "narration.mp3",
+ "words": "words.json",
+ "tailSeconds": 0,
+ "safeArea": {
+  "top": 0.06,
+  "bottom": 0.06,
+  "side": 0.05
+ },
+ "theme": {
+  "background": "#ffffff",
+  "dotColor": "rgba(36, 38, 43, 0.11)",
+  "dotSpacing": 40,
+  "dotSize": 1.7,
+  "dotParallax": 0.75,
+  "ink": "#24262b",
+  "accent": "#5b8fd8",
+  "lightBlend": "normal",
+  "font": "Montserrat"
+ },
+ "pictures": {
+  "bone": {
+   "src": "/videos/made-of-stars/images/bone.png",
+   "aspect": 1.0,
+   "content": [
+    0.0898,
+    0.2783,
+    0.9102,
+    0.7158
+   ]
+  },
+  "fist": {
+   "src": "/videos/made-of-stars/images/fist.png",
+   "aspect": 1.0,
+   "content": [
+    0.3311,
+    0.2236,
+    0.668,
+    0.8301
+   ]
+  },
+  "hourglass": {
+   "src": "/videos/made-of-stars/images/hourglass.png",
+   "aspect": 1.0,
+   "content": [
+    0.3311,
+    0.1699,
+    0.6699,
+    0.8301
+   ]
+  },
+  "house": {
+   "src": "/videos/made-of-stars/images/house.png",
+   "aspect": 1.0,
+   "content": [
+    0.332,
+    0.3447,
+    0.666,
+    0.6543
+   ]
+  },
+  "person": {
+   "src": "/videos/made-of-stars/images/person.png",
+   "aspect": 0.67089,
+   "content": [
+    0.3856,
+    0.2524,
+    0.6108,
+    0.7579
+   ]
+  },
+  "sun": {
+   "src": "/videos/made-of-stars/images/sun.png",
+   "aspect": 1.0,
+   "content": [
+    0.1113,
+    0.1445,
+    0.9092,
+    0.8438
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "sun1",
+   "picture": "sun",
+   "x": 11162.4,
+   "y": -1575.6,
+   "width": 743.6,
+   "in": "1:Look",
+   "out": "end-1.1"
+  },
+  {
+   "id": "fist10",
+   "picture": "fist",
+   "x": 10410.2,
+   "y": -1594.6,
+   "width": 544.1,
+   "in": "1:own weight",
+   "out": "2:Hydrogen"
+  },
+  {
+   "id": "house23",
+   "picture": "house",
+   "x": 12921.0,
+   "y": -1539.5,
+   "width": 969.0,
+   "in": "3:American home",
+   "out": "4:In a way-0.2"
+  },
+  {
+   "id": "person25",
+   "picture": "person",
+   "x": 13821.5,
+   "y": -1586.3,
+   "width": 822.9,
+   "in": "3:sunlight",
+   "out": "4:In a way-0.2"
+  },
+  {
+   "id": "hourglass27",
+   "picture": "hourglass",
+   "x": 13269.8,
+   "y": -1840.0,
+   "width": 454.4,
+   "in": "4:doing this",
+   "out": "4:In a way-0.2",
+   "depth": 1.8
+  },
+  {
+   "id": "bone34",
+   "picture": "bone",
+   "x": 11920.0,
+   "y": -1659.2,
+   "width": 280.4,
+   "in": "4:bones",
+   "out": "end-1.1"
+  }
+ ],
+ "camera": [
+  {
+   "at": "start",
+   "x": 11170.0,
+   "y": -1580.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "1:Look-0.2",
+   "x": 11170.0,
+   "y": -1580.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "1:Sun@end",
+   "x": 11170.0,
+   "y": -1580.0,
+   "zoom": 1.08
+  },
+  {
+   "at": "1:center@end",
+   "x": 10920.0,
+   "y": -1580.0,
+   "zoom": 0.92
+  },
+  {
+   "at": "1:happen@end",
+   "x": 11020.0,
+   "y": -1580.0,
+   "zoom": 0.95
+  },
+  {
+   "at": "2:Hydrogen-0.2",
+   "x": 11020.0,
+   "y": -1580.0,
+   "zoom": 0.95
+  },
+  {
+   "at": "2:together@end",
+   "x": 11600.0,
+   "y": -1580.0,
+   "zoom": 0.88
+  },
+  {
+   "at": "2:energy@end",
+   "x": 11650.0,
+   "y": -1580.0,
+   "zoom": 0.9
+  },
+  {
+   "at": "3:The numbers-0.3",
+   "x": 11650.0,
+   "y": -1580.0,
+   "zoom": 0.9
+  },
+  {
+   "at": "3:huge@end",
+   "x": 11790.0,
+   "y": -1580.0,
+   "zoom": 0.92
+  },
+  {
+   "at": "3:energy@end",
+   "x": 11820.0,
+   "y": -1580.0,
+   "zoom": 0.95
+  },
+  {
+   "at": "3:years@end",
+   "x": 12070.0,
+   "y": -1540.0,
+   "zoom": 0.82
+  },
+  {
+   "at": "3:face@end",
+   "x": 12490.0,
+   "y": -1580.0,
+   "zoom": 0.6
+  },
+  {
+   "at": "4:furnace@end",
+   "x": 12470.0,
+   "y": -1580.0,
+   "zoom": 0.68
+  },
+  {
+   "at": "4:ones@end",
+   "x": 12430.0,
+   "y": -1580.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "4:helium@end",
+   "x": 11470.0,
+   "y": -1580.0,
+   "zoom": 0.95
+  },
+  {
+   "at": "4:from@end",
+   "x": 11590.0,
+   "y": -1580.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "end",
+   "x": 11590.0,
+   "y": -1580.0,
+   "zoom": 1.0
+  }
+ ],
+ "threads": [],
+ "drawings": [
+  {
+   "id": "line2",
+   "kind": "path",
+   "points": [
+    [
+     11170.0,
+     -1990.0
+    ],
+    [
+     11170.0,
+     -1850.6
+    ]
+   ],
+   "draw": "1:squeezes",
+   "arrow": true,
+   "width": 2.0,
+   "duration": 0.5,
+   "out": "2:Hydrogen"
+  },
+  {
+   "id": "line3",
+   "kind": "path",
+   "points": [
+    [
+     11459.9,
+     -1869.9
+    ],
+    [
+     11361.3,
+     -1771.3
+    ]
+   ],
+   "draw": "1:squeezes+0.15",
+   "arrow": true,
+   "width": 2.0,
+   "duration": 0.5,
+   "out": "2:Hydrogen"
+  },
+  {
+   "id": "line4",
+   "kind": "path",
+   "points": [
+    [
+     11580.0,
+     -1580.0
+    ],
+    [
+     11440.6,
+     -1580.0
+    ]
+   ],
+   "draw": "1:squeezes+0.3",
+   "arrow": true,
+   "width": 2.0,
+   "duration": 0.5,
+   "out": "2:Hydrogen"
+  },
+  {
+   "id": "line5",
+   "kind": "path",
+   "points": [
+    [
+     11459.9,
+     -1290.1
+    ],
+    [
+     11361.3,
+     -1388.7
+    ]
+   ],
+   "draw": "1:squeezes+0.45",
+   "arrow": true,
+   "width": 2.0,
+   "duration": 0.5,
+   "out": "2:Hydrogen"
+  },
+  {
+   "id": "line6",
+   "kind": "path",
+   "points": [
+    [
+     11170.0,
+     -1170.0
+    ],
+    [
+     11170.0,
+     -1309.4
+    ]
+   ],
+   "draw": "1:squeezes+0.6",
+   "arrow": true,
+   "width": 2.0,
+   "duration": 0.5,
+   "out": "2:Hydrogen"
+  },
+  {
+   "id": "line7",
+   "kind": "path",
+   "points": [
+    [
+     10880.1,
+     -1290.1
+    ],
+    [
+     10978.7,
+     -1388.7
+    ]
+   ],
+   "draw": "1:squeezes+0.75",
+   "arrow": true,
+   "width": 2.0,
+   "duration": 0.5,
+   "out": "2:Hydrogen"
+  },
+  {
+   "id": "line8",
+   "kind": "path",
+   "points": [
+    [
+     10760.0,
+     -1580.0
+    ],
+    [
+     10899.4,
+     -1580.0
+    ]
+   ],
+   "draw": "1:squeezes+0.9",
+   "arrow": true,
+   "width": 2.0,
+   "duration": 0.5,
+   "out": "2:Hydrogen"
+  },
+  {
+   "id": "line9",
+   "kind": "path",
+   "points": [
+    [
+     10880.1,
+     -1869.9
+    ],
+    [
+     10978.7,
+     -1771.3
+    ]
+   ],
+   "draw": "1:squeezes+1.05",
+   "arrow": true,
+   "width": 2.0,
+   "duration": 0.5,
+   "out": "2:Hydrogen"
+  },
+  {
+   "id": "circle12",
+   "kind": "circle",
+   "cx": 11870.0,
+   "cy": -1600.0,
+   "r": 26,
+   "draw": "2:Hydrogen+0.6",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.3,
+   "out": "2:helium"
+  },
+  {
+   "id": "line13",
+   "kind": "path",
+   "points": [
+    [
+     11896.0,
+     -1600.0
+    ],
+    [
+     11950.0,
+     -1600.0
+    ]
+   ],
+   "draw": "2:crash",
+   "width": 1.4,
+   "color": "muted",
+   "duration": 0.6,
+   "out": "2:helium"
+  },
+  {
+   "id": "circle14",
+   "kind": "circle",
+   "cx": 12110.0,
+   "cy": -1600.0,
+   "r": 26,
+   "draw": "2:Hydrogen+0.6",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.3,
+   "out": "2:helium"
+  },
+  {
+   "id": "line15",
+   "kind": "path",
+   "points": [
+    [
+     12084.0,
+     -1600.0
+    ],
+    [
+     12030.0,
+     -1600.0
+    ]
+   ],
+   "draw": "2:crash",
+   "width": 1.4,
+   "color": "muted",
+   "duration": 0.6,
+   "out": "2:helium"
+  },
+  {
+   "id": "circle16",
+   "kind": "circle",
+   "cx": 11990.0,
+   "cy": -1600.0,
+   "r": 42,
+   "draw": "2:helium",
+   "width": 2.4,
+   "fill": "accent",
+   "fillOpacity": 0.35,
+   "out": "3:The numbers-0.3"
+  },
+  {
+   "id": "line17",
+   "kind": "path",
+   "points": [
+    [
+     12020.4,
+     -1652.7
+    ],
+    [
+     12070.0,
+     -1738.6
+    ]
+   ],
+   "draw": "2:energy-0.6",
+   "width": 1.6,
+   "color": "accent",
+   "duration": 0.4,
+   "out": "3:The numbers-0.3"
+  },
+  {
+   "id": "line18",
+   "kind": "path",
+   "points": [
+    [
+     12050.8,
+     -1600.0
+    ],
+    [
+     12150.0,
+     -1600.0
+    ]
+   ],
+   "draw": "2:energy-0.53",
+   "width": 1.6,
+   "color": "accent",
+   "duration": 0.4,
+   "out": "3:The numbers-0.3"
+  },
+  {
+   "id": "line19",
+   "kind": "path",
+   "points": [
+    [
+     12020.4,
+     -1547.3
+    ],
+    [
+     12070.0,
+     -1461.4
+    ]
+   ],
+   "draw": "2:energy-0.46",
+   "width": 1.6,
+   "color": "accent",
+   "duration": 0.4,
+   "out": "3:The numbers-0.3"
+  },
+  {
+   "id": "line20",
+   "kind": "path",
+   "points": [
+    [
+     11959.6,
+     -1547.3
+    ],
+    [
+     11910.0,
+     -1461.4
+    ]
+   ],
+   "draw": "2:energy-0.39",
+   "width": 1.6,
+   "color": "accent",
+   "duration": 0.4,
+   "out": "3:The numbers-0.3"
+  },
+  {
+   "id": "line21",
+   "kind": "path",
+   "points": [
+    [
+     11929.2,
+     -1600.0
+    ],
+    [
+     11830.0,
+     -1600.0
+    ]
+   ],
+   "draw": "2:energy-0.32",
+   "width": 1.6,
+   "color": "accent",
+   "duration": 0.4,
+   "out": "3:The numbers-0.3"
+  },
+  {
+   "id": "line22",
+   "kind": "path",
+   "points": [
+    [
+     11959.6,
+     -1652.7
+    ],
+    [
+     11910.0,
+     -1738.6
+    ]
+   ],
+   "draw": "2:energy-0.25",
+   "width": 1.6,
+   "color": "accent",
+   "duration": 0.4,
+   "out": "3:The numbers-0.3"
+  },
+  {
+   "id": "line24",
+   "kind": "path",
+   "points": [
+    [
+     11470.0,
+     -1640.0
+    ],
+    [
+     12170.0,
+     -1700.0
+    ],
+    [
+     13010.1,
+     -1493.0
+    ]
+   ],
+   "draw": "3:electricity",
+   "width": 1.6,
+   "color": "muted",
+   "curve": true,
+   "dashed": true,
+   "out": "4:In a way-0.2"
+  },
+  {
+   "id": "line26",
+   "kind": "path",
+   "points": [
+    [
+     11490.0,
+     -1700.0
+    ],
+    [
+     12670.0,
+     -2000.0
+    ],
+    [
+     13817.4,
+     -1843.9
+    ]
+   ],
+   "draw": "3:sunlight",
+   "width": 1.4,
+   "color": "muted",
+   "curve": true,
+   "dashed": true,
+   "out": "4:In a way-0.2"
+  },
+  {
+   "id": "circle28",
+   "kind": "circle",
+   "cx": 12170.0,
+   "cy": -1580.0,
+   "r": 20,
+   "draw": "4:light atoms",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.3,
+   "out": "4:But a-0.2"
+  },
+  {
+   "id": "circle29",
+   "kind": "circle",
+   "cx": 12420.0,
+   "cy": -1580.0,
+   "r": 32,
+   "draw": "4:light atoms+0.35",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.3,
+   "out": "4:But a-0.2"
+  },
+  {
+   "id": "line30",
+   "kind": "path",
+   "points": [
+    [
+     12229.0,
+     -1580.0
+    ],
+    [
+     12374.0,
+     -1580.0
+    ]
+   ],
+   "draw": "4:presses+0.3",
+   "arrow": true,
+   "width": 1.8,
+   "out": "4:But a-0.2"
+  },
+  {
+   "id": "circle31",
+   "kind": "circle",
+   "cx": 12690.0,
+   "cy": -1580.0,
+   "r": 46,
+   "draw": "4:light atoms+0.7",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.3,
+   "out": "4:But a-0.2"
+  },
+  {
+   "id": "line32",
+   "kind": "path",
+   "points": [
+    [
+     12511.0,
+     -1580.0
+    ],
+    [
+     12630.0,
+     -1580.0
+    ]
+   ],
+   "draw": "4:presses+0.6",
+   "arrow": true,
+   "width": 1.8,
+   "out": "4:But a-0.2"
+  },
+  {
+   "id": "rect33",
+   "kind": "rect",
+   "x": 11590.0,
+   "y": -1900.0,
+   "w": 110,
+   "h": 110,
+   "draw": "4:mostly makes",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "4:mostly makes+0.1",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line35",
+   "kind": "path",
+   "points": [
+    [
+     11730.0,
+     -1880.0
+    ],
+    [
+     11860.0,
+     -1690.0
+    ]
+   ],
+   "draw": "4:bones+0.3",
+   "width": 2.6,
+   "duration": 0.4,
+   "color": "muted",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line36",
+   "kind": "path",
+   "points": [
+    [
+     11810.0,
+     -1770.0
+    ],
+    [
+     11750.0,
+     -1810.0
+    ]
+   ],
+   "draw": "4:bones+0.5",
+   "width": 2.6,
+   "duration": 0.3,
+   "out": "end-1.1"
+  },
+  {
+   "id": "rect37",
+   "kind": "rect",
+   "x": 11920.0,
+   "y": -1400.0,
+   "w": 110,
+   "h": 110,
+   "draw": "4:carbon",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "4:carbon+0.1",
+   "dashed": true,
+   "color": "muted",
+   "out": "end-1.1"
+  }
+ ],
+ "lights": [
+  {
+   "item": "sun1",
+   "path": [
+    [
+     0.3999,
+     0.1514
+    ],
+    [
+     0.3779,
+     0.1725
+    ],
+    [
+     0.354,
+     0.1945
+    ],
+    [
+     0.3262,
+     0.2098
+    ],
+    [
+     0.2994,
+     0.228
+    ],
+    [
+     0.2736,
+     0.25
+    ],
+    [
+     0.2458,
+     0.2682
+    ],
+    [
+     0.2296,
+     0.2931
+    ],
+    [
+     0.198,
+     0.2883
+    ],
+    [
+     0.175,
+     0.2998
+    ],
+    [
+     0.1865,
+     0.3304
+    ],
+    [
+     0.1913,
+     0.362
+    ],
+    [
+     0.1683,
+     0.3821
+    ],
+    [
+     0.1396,
+     0.3955
+    ],
+    [
+     0.1195,
+     0.4184
+    ],
+    [
+     0.13,
+     0.4491
+    ],
+    [
+     0.1492,
+     0.4739
+    ],
+    [
+     0.1588,
+     0.5046
+    ],
+    [
+     0.1645,
+     0.5361
+    ],
+    [
+     0.1702,
+     0.5677
+    ],
+    [
+     0.1722,
+     0.6012
+    ],
+    [
+     0.1865,
+     0.6299
+    ],
+    [
+     0.2037,
+     0.6567
+    ],
+    [
+     0.22,
+     0.6845
+    ],
+    [
+     0.2411,
+     0.7113
+    ],
+    [
+     0.2535,
+     0.74
+    ],
+    [
+     0.265,
+     0.7697
+    ],
+    [
+     0.2765,
+     0.7993
+    ],
+    [
+     0.2966,
+     0.8185
+    ],
+    [
+     0.3262,
+     0.8166
+    ],
+    [
+     0.3569,
+     0.8118
+    ],
+    [
+     0.3789,
+     0.829
+    ],
+    [
+     0.4076,
+     0.8213
+    ],
+    [
+     0.4392,
+     0.829
+    ],
+    [
+     0.4717,
+     0.8338
+    ],
+    [
+     0.5052,
+     0.8357
+    ],
+    [
+     0.5387,
+     0.8328
+    ],
+    [
+     0.5712,
+     0.8271
+    ],
+    [
+     0.6028,
+     0.8185
+    ],
+    [
+     0.6325,
+     0.8079
+    ],
+    [
+     0.6612,
+     0.7936
+    ],
+    [
+     0.6889,
+     0.7764
+    ],
+    [
+     0.7167,
+     0.763
+    ],
+    [
+     0.7445,
+     0.7515
+    ],
+    [
+     0.7751,
+     0.7572
+    ],
+    [
+     0.8009,
+     0.7486
+    ],
+    [
+     0.8047,
+     0.718
+    ],
+    [
+     0.8105,
+     0.6864
+    ],
+    [
+     0.8114,
+     0.6606
+    ],
+    [
+     0.8105,
+     0.629
+    ],
+    [
+     0.822,
+     0.5993
+    ],
+    [
+     0.8306,
+     0.5677
+    ],
+    [
+     0.8354,
+     0.5352
+    ],
+    [
+     0.8382,
+     0.5017
+    ],
+    [
+     0.8411,
+     0.4692
+    ],
+    [
+     0.8574,
+     0.4414
+    ],
+    [
+     0.8354,
+     0.4184
+    ],
+    [
+     0.8411,
+     0.3916
+    ],
+    [
+     0.8306,
+     0.3668
+    ],
+    [
+     0.8564,
+     0.3514
+    ],
+    [
+     0.8813,
+     0.3342
+    ],
+    [
+     0.8995,
+     0.3065
+    ],
+    [
+     0.9005,
+     0.2768
+    ],
+    [
+     0.8813,
+     0.2624
+    ],
+    [
+     0.8488,
+     0.2586
+    ],
+    [
+     0.822,
+     0.2423
+    ],
+    [
+     0.7942,
+     0.2586
+    ],
+    [
+     0.7655,
+     0.2624
+    ],
+    [
+     0.7349,
+     0.2567
+    ],
+    [
+     0.709,
+     0.2337
+    ],
+    [
+     0.6822,
+     0.2155
+    ],
+    [
+     0.6545,
+     0.1993
+    ],
+    [
+     0.6258,
+     0.1859
+    ],
+    [
+     0.5952,
+     0.1753
+    ],
+    [
+     0.5636,
+     0.1677
+    ],
+    [
+     0.531,
+     0.1629
+    ],
+    [
+     0.4975,
+     0.161
+    ],
+    [
+     0.464,
+     0.16
+    ],
+    [
+     0.4325,
+     0.1562
+    ],
+    [
+     0.3999,
+     0.1514
+    ]
+   ],
+   "from": "1:huge ball",
+   "duration": 2.4,
+   "size": 60
+  },
+  {
+   "worldPoints": [
+    [
+     11170.0,
+     -1580.0
+    ]
+   ],
+   "from": "1:hot enough",
+   "size": 180,
+   "stagger": 0.0,
+   "to": "end-1.1"
+  },
+  {
+   "drawing": "line13",
+   "from": "2:crash+0.3",
+   "duration": 0.8,
+   "size": 40
+  },
+  {
+   "drawing": "line15",
+   "from": "2:crash+0.3",
+   "duration": 0.8,
+   "size": 40
+  },
+  {
+   "drawing": "line17",
+   "from": "2:energy",
+   "duration": 0.8,
+   "size": 34
+  },
+  {
+   "drawing": "line18",
+   "from": "2:energy+0.05",
+   "duration": 0.8,
+   "size": 34
+  },
+  {
+   "drawing": "line19",
+   "from": "2:energy+0.1",
+   "duration": 0.8,
+   "size": 34
+  },
+  {
+   "drawing": "line20",
+   "from": "2:energy+0.15",
+   "duration": 0.8,
+   "size": 34
+  },
+  {
+   "drawing": "line21",
+   "from": "2:energy+0.2",
+   "duration": 0.8,
+   "size": 34
+  },
+  {
+   "drawing": "line22",
+   "from": "2:energy+0.25",
+   "duration": 0.8,
+   "size": 34
+  },
+  {
+   "drawing": "line24",
+   "from": "3:power",
+   "duration": 1.4,
+   "size": 50
+  },
+  {
+   "item": "house23",
+   "at": [
+    0.592,
+    0.548
+   ],
+   "from": "3:power+1.3",
+   "size": 80,
+   "to": "4:In a way-0.2"
+  },
+  {
+   "drawing": "line26",
+   "from": "3:reaches",
+   "duration": 1.8,
+   "size": 56
+  },
+  {
+   "worldPoints": [
+    [
+     11770.0,
+     -1880.0
+    ],
+    [
+     12050.0,
+     -1320.0
+    ],
+    [
+     12320.0,
+     -1960.0
+    ],
+    [
+     12600.0,
+     -1280.0
+    ],
+    [
+     12850.0,
+     -1840.0
+    ],
+    [
+     13090.0,
+     -1360.0
+    ],
+    [
+     13330.0,
+     -1700.0
+    ],
+    [
+     11570.0,
+     -1460.0
+    ],
+    [
+     13520.0,
+     -1300.0
+    ],
+    [
+     11910.0,
+     -1640.0
+    ],
+    [
+     12770.0,
+     -1560.0
+    ],
+    [
+     13450.0,
+     -1940.0
+    ]
+   ],
+   "from": "4:every star",
+   "size": 46,
+   "stagger": 0.06,
+   "to": "4:light atoms"
+  },
+  {
+   "worldPoints": [
+    [
+     11920.0,
+     -1412.0
+    ]
+   ],
+   "from": "4:carbon+0.3",
+   "size": 80,
+   "stagger": 0.0,
+   "to": "end-1.1"
+  }
+ ],
+ "magnifiers": [
+  {
+   "source": {
+    "item": "sun1",
+    "at": [
+     0.5,
+     0.5
+    ],
+    "radius": 30
+   },
+   "x": 11990.0,
+   "y": -1600.0,
+   "radius": 235,
+   "open": "2:Hydrogen",
+   "contents": [],
+   "close": "3:The numbers-0.3"
+  }
+ ],
+ "labels": [
+  {
+   "text": "CHAPTER 3",
+   "x": 960,
+   "y": 470,
+   "space": "screen",
+   "size": 28,
+   "in": 0.25,
+   "out": "1:Look-0.55",
+   "color": "accent",
+   "spacing": 0.5
+  },
+  {
+   "text": "WHAT DO STARS DO?",
+   "x": 960,
+   "y": 548,
+   "space": "screen",
+   "size": 58,
+   "in": 0.45,
+   "out": "1:Look-0.55"
+  },
+  {
+   "text": "MOSTLY HYDROGEN",
+   "x": 11170.0,
+   "y": -1210.0,
+   "space": "world",
+   "size": 36,
+   "in": "1:mostly of hydrogen",
+   "out": "2:Hydrogen"
+  },
+  {
+   "text": "GRAVITY",
+   "x": 10410.0,
+   "y": -1350.0,
+   "space": "world",
+   "size": 32,
+   "in": "1:weight",
+   "out": "2:Hydrogen"
+  },
+  {
+   "text": "H",
+   "x": 11870.0,
+   "y": -1600.0,
+   "space": "world",
+   "size": 22,
+   "in": "2:Hydrogen+0.7",
+   "out": "2:helium"
+  },
+  {
+   "text": "H",
+   "x": 12110.0,
+   "y": -1600.0,
+   "space": "world",
+   "size": 22,
+   "in": "2:Hydrogen+0.7",
+   "out": "2:helium"
+  },
+  {
+   "text": "He",
+   "x": 11990.0,
+   "y": -1600.0,
+   "space": "world",
+   "size": 30,
+   "in": "2:helium+0.2",
+   "out": "3:The numbers-0.3"
+  },
+  {
+   "text": "FUSION",
+   "x": 11990.0,
+   "y": -1300.0,
+   "space": "world",
+   "size": 46,
+   "in": "2:fusion",
+   "out": "3:The numbers-0.3"
+  },
+  {
+   "text": "{n} TONS",
+   "x": 12420.0,
+   "y": -1720.0,
+   "space": "world",
+   "size": 58,
+   "in": "3:600",
+   "out": "3:Just-0.2",
+   "count": {
+    "to": 600000000,
+    "duration": 1.6
+   }
+  },
+  {
+   "text": "OF HYDROGEN, EVERY SECOND",
+   "x": 12420.0,
+   "y": -1640.0,
+   "space": "world",
+   "size": 26,
+   "in": "3:hydrogen into",
+   "out": "3:Just-0.2"
+  },
+  {
+   "text": "{n} TONS",
+   "x": 12420.0,
+   "y": -1470.0,
+   "space": "world",
+   "size": 58,
+   "in": "3:4 million",
+   "out": "3:Just-0.2",
+   "count": {
+    "to": 4000000,
+    "duration": 1.4
+   }
+  },
+  {
+   "text": "BECOMES ENERGY",
+   "x": 12420.0,
+   "y": -1390.0,
+   "space": "world",
+   "size": 26,
+   "in": "3:becomes energy",
+   "out": "3:Just-0.2"
+  },
+  {
+   "text": "1 KG OF HYDROGEN",
+   "x": 12170.0,
+   "y": -1780.0,
+   "space": "world",
+   "size": 34,
+   "in": "3:one kilogram",
+   "out": "4:In a way-0.2"
+  },
+  {
+   "text": "{n} YEARS",
+   "x": 12920.0,
+   "y": -1280.0,
+   "space": "world",
+   "size": 54,
+   "in": "3:17,000",
+   "out": "4:In a way-0.2",
+   "count": {
+    "to": 17000,
+    "duration": 1.4
+   }
+  },
+  {
+   "text": "{n} BILLION YEARS",
+   "x": 12470.0,
+   "y": -1960.0,
+   "space": "world",
+   "size": 50,
+   "in": "4:4.5",
+   "out": "4:In a way-0.2",
+   "count": {
+    "to": 4.5,
+    "decimals": 1,
+    "duration": 1.2
+   }
+  },
+  {
+   "text": "EVERY STAR IS A FURNACE",
+   "x": 12470.0,
+   "y": -1150.0,
+   "space": "world",
+   "size": 38,
+   "in": "4:furnace",
+   "out": "4:light atoms"
+  },
+  {
+   "text": "He",
+   "x": 11590.0,
+   "y": -1906.6,
+   "space": "world",
+   "size": 46,
+   "in": "4:mostly makes+0.25",
+   "spacing": 0.02,
+   "out": "end-1.1"
+  },
+  {
+   "text": "HELIUM",
+   "x": 11590.0,
+   "y": -1867.0,
+   "space": "world",
+   "size": 12,
+   "in": "4:mostly makes+0.35",
+   "weight": 500,
+   "spacing": 0.18,
+   "out": "end-1.1"
+  },
+  {
+   "text": "C",
+   "x": 11920.0,
+   "y": -1406.6,
+   "space": "world",
+   "size": 46,
+   "in": "4:carbon+0.25",
+   "spacing": 0.02,
+   "out": "end-1.1"
+  },
+  {
+   "text": "CARBON",
+   "x": 11920.0,
+   "y": -1367.0,
+   "space": "world",
+   "size": 12,
+   "in": "4:carbon+0.35",
+   "weight": 500,
+   "spacing": 0.18,
+   "out": "end-1.1"
+  }
+ ]
+}

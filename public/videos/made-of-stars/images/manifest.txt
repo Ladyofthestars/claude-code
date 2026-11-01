@@ -19,3 +19,4 @@ earth {"aspect": 1.0, "content": [0.2637, 0.2656, 0.7393, 0.7354], "background":
 person {"aspect": 0.67089, "content": [0.3856, 0.2524, 0.6108, 0.7579], "background": [22, 43, 65], "kept_parts": 1, "dropped_parts": 0}
 open_hand {"aspect": 1.0, "content": [0.1689, 0.3086, 0.8271, 0.7266], "background": [8, 31, 56], "kept_parts": 1, "dropped_parts": 0}
 fist {"aspect": 1.0, "content": [0.3311, 0.2236, 0.668, 0.8301], "background": [10, 31, 53], "kept_parts": 1, "dropped_parts": 0}
+house {"aspect": 1.0, "content": [0.332, 0.3447, 0.666, 0.6543], "background": [16, 37, 55], "kept_parts": 1, "dropped_parts": 0}

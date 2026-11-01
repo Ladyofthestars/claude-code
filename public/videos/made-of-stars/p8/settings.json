@@ -1,0 +1,720 @@
+{
+ "title": "You Are Made of Stars \u2014 part 8",
+ "size": {
+  "width": 1920,
+  "height": 1080
+ },
+ "audio": "narration.mp3",
+ "words": "words.json",
+ "tailSeconds": 0,
+ "safeArea": {
+  "top": 0.06,
+  "bottom": 0.06,
+  "side": 0.05
+ },
+ "theme": {
+  "background": "#ffffff",
+  "dotColor": "rgba(36, 38, 43, 0.11)",
+  "dotSpacing": 40,
+  "dotSize": 1.7,
+  "dotParallax": 0.75,
+  "ink": "#24262b",
+  "accent": "#5b8fd8",
+  "lightBlend": "normal",
+  "font": "Montserrat"
+ },
+ "pictures": {
+  "blood_cell": {
+   "src": "/videos/made-of-stars/images/blood_cell.png",
+   "aspect": 1.0,
+   "content": [
+    0.2832,
+    0.332,
+    0.7129,
+    0.6631
+   ]
+  },
+  "bone": {
+   "src": "/videos/made-of-stars/images/bone.png",
+   "aspect": 1.0,
+   "content": [
+    0.0898,
+    0.2783,
+    0.9102,
+    0.7158
+   ]
+  },
+  "earth": {
+   "src": "/videos/made-of-stars/images/earth.png",
+   "aspect": 1.0,
+   "content": [
+    0.2637,
+    0.2656,
+    0.7393,
+    0.7354
+   ]
+  },
+  "gold_ring": {
+   "src": "/videos/made-of-stars/images/gold_ring.png",
+   "aspect": 1.0,
+   "content": [
+    0.3057,
+    0.2461,
+    0.6963,
+    0.7432
+   ]
+  },
+  "neutron_star": {
+   "src": "/videos/made-of-stars/images/neutron_star.png",
+   "aspect": 1.0,
+   "content": [
+    0.2842,
+    0.2158,
+    0.7061,
+    0.751
+   ]
+  },
+  "open_hand": {
+   "src": "/videos/made-of-stars/images/open_hand.png",
+   "aspect": 1.0,
+   "content": [
+    0.1689,
+    0.3086,
+    0.8271,
+    0.7266
+   ]
+  },
+  "person": {
+   "src": "/videos/made-of-stars/images/person.png",
+   "aspect": 0.67089,
+   "content": [
+    0.3856,
+    0.2524,
+    0.6108,
+    0.7579
+   ]
+  },
+  "red_giant": {
+   "src": "/videos/made-of-stars/images/red_giant.png",
+   "aspect": 1.0,
+   "content": [
+    0.2607,
+    0.2607,
+    0.7422,
+    0.7412
+   ]
+  },
+  "supernova": {
+   "src": "/videos/made-of-stars/images/supernova.png",
+   "aspect": 1.0,
+   "content": [
+    0.1572,
+    0.1826,
+    0.8174,
+    0.8174
+   ]
+  },
+  "water_glass": {
+   "src": "/videos/made-of-stars/images/water_glass.png",
+   "aspect": 1.0,
+   "content": [
+    0.3643,
+    0.3193,
+    0.6318,
+    0.6826
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "me8",
+   "picture": "person",
+   "x": 32161.7,
+   "y": -1507.1,
+   "width": 929.0,
+   "in": "1:Let's",
+   "out": "3:So the-0.2"
+  },
+  {
+   "id": "earth1",
+   "picture": "earth",
+   "x": 32718.9,
+   "y": -1540.4,
+   "width": 702.4,
+   "in": "1:where we",
+   "out": "3:So the-0.2"
+  },
+  {
+   "id": "water_glass2",
+   "picture": "water_glass",
+   "x": 33311.4,
+   "y": -1370.7,
+   "width": 715.7,
+   "in": "1:hydrogen",
+   "out": "3:So the-0.2"
+  },
+  {
+   "id": "red_giant5",
+   "picture": "red_giant",
+   "x": 33839.1,
+   "y": -1650.6,
+   "width": 624.3,
+   "in": "1:carbon",
+   "depth": 1.6,
+   "out": "3:So the-0.2"
+  },
+  {
+   "id": "bone7",
+   "picture": "bone",
+   "x": 34310.0,
+   "y": -1729.1,
+   "width": 316.9,
+   "in": "2:calcium",
+   "out": "3:So the-0.2"
+  },
+  {
+   "id": "blood_cell9",
+   "picture": "blood_cell",
+   "x": 34310.6,
+   "y": -1339.2,
+   "width": 332.2,
+   "in": "2:iron",
+   "out": "3:So the-0.2"
+  },
+  {
+   "id": "supernova11",
+   "picture": "supernova",
+   "x": 34817.2,
+   "y": -1560.0,
+   "width": 567.1,
+   "in": "2:exploding",
+   "depth": 1.8,
+   "out": "3:So the-0.2"
+  },
+  {
+   "id": "gold_ring12",
+   "picture": "gold_ring",
+   "x": 35309.5,
+   "y": -1467.5,
+   "width": 462.7,
+   "in": "2:gold",
+   "out": "3:So the-0.2"
+  },
+  {
+   "id": "neutron_star14",
+   "picture": "neutron_star",
+   "x": 35811.3,
+   "y": -1655.7,
+   "width": 261.6,
+   "in": "2:two dead",
+   "depth": 1.7,
+   "out": "3:So the-0.2"
+  },
+  {
+   "id": "neutron_star15",
+   "picture": "neutron_star",
+   "x": 35961.3,
+   "y": -1435.7,
+   "width": 261.6,
+   "in": "2:two dead+0.3",
+   "depth": 1.7,
+   "out": "3:So the-0.2"
+  },
+  {
+   "id": "open_hand16",
+   "picture": "open_hand",
+   "x": 33761.4,
+   "y": -2752.6,
+   "width": 717.7,
+   "in": "3:look up",
+   "out": "end-0.9"
+  }
+ ],
+ "camera": [
+  {
+   "at": "start",
+   "x": 32660.0,
+   "y": -1500.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "1:Let's-0.2",
+   "x": 32660.0,
+   "y": -1500.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "1:started@end",
+   "x": 32440.0,
+   "y": -1480.0,
+   "zoom": 0.95
+  },
+  {
+   "at": "1:Earth@end",
+   "x": 32440.0,
+   "y": -1480.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "1:universe@end",
+   "x": 32960.0,
+   "y": -1480.0,
+   "zoom": 0.82
+  },
+  {
+   "at": "1:stars@end",
+   "x": 33260.0,
+   "y": -1480.0,
+   "zoom": 0.78
+  },
+  {
+   "at": "2:The-0.3",
+   "x": 33260.0,
+   "y": -1480.0,
+   "zoom": 0.78
+  },
+  {
+   "at": "2:exploding stars@end",
+   "x": 34010.0,
+   "y": -1460.0,
+   "zoom": 0.82
+  },
+  {
+   "at": "2:together@end",
+   "x": 35110.0,
+   "y": -1480.0,
+   "zoom": 0.82
+  },
+  {
+   "at": "3:Carl-0.3",
+   "x": 35110.0,
+   "y": -1480.0,
+   "zoom": 0.82
+  },
+  {
+   "at": "3:best@end",
+   "x": 33760.0,
+   "y": -1500.0,
+   "zoom": 0.42
+  },
+  {
+   "at": "3:star-stuff@end",
+   "x": 33760.0,
+   "y": -1620.0,
+   "zoom": 0.45
+  },
+  {
+   "at": "3:So the-0.4",
+   "x": 33760.0,
+   "y": -1620.0,
+   "zoom": 0.45
+  },
+  {
+   "at": "3:sky@end",
+   "x": 33760.0,
+   "y": -3000.0,
+   "zoom": 0.92
+  },
+  {
+   "at": "3:stars@end",
+   "x": 33760.0,
+   "y": -2940.0,
+   "zoom": 0.92
+  },
+  {
+   "at": "3:came from@end",
+   "x": 33760.0,
+   "y": -2900.0,
+   "zoom": 0.88
+  },
+  {
+   "at": "end",
+   "x": 33760.0,
+   "y": -2880.0,
+   "zoom": 0.82
+  }
+ ],
+ "threads": [],
+ "drawings": [
+  {
+   "id": "rect3",
+   "kind": "rect",
+   "x": 33310.0,
+   "y": -1700.0,
+   "w": 96,
+   "h": 96,
+   "draw": "1:hydrogen+0.3",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "1:hydrogen+0.4",
+   "out": "3:So the-0.2"
+  },
+  {
+   "id": "line4",
+   "kind": "path",
+   "points": [
+    [
+     32510.0,
+     -1980.0
+    ],
+    [
+     32960.0,
+     -1920.0
+    ],
+    [
+     33260.0,
+     -1780.0
+    ]
+   ],
+   "draw": "1:first few",
+   "width": 1.4,
+   "color": "muted",
+   "curve": true,
+   "dashed": true,
+   "out": "3:So the-0.2"
+  },
+  {
+   "id": "rect6",
+   "kind": "rect",
+   "x": 33840.0,
+   "y": -1300.0,
+   "w": 96,
+   "h": 96,
+   "draw": "1:carbon+0.3",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "1:carbon+0.4",
+   "out": "3:So the-0.2"
+  },
+  {
+   "id": "rect8",
+   "kind": "rect",
+   "x": 34310.0,
+   "y": -1540.0,
+   "w": 90,
+   "h": 90,
+   "draw": "2:calcium+0.3",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "2:calcium+0.4",
+   "out": "3:So the-0.2"
+  },
+  {
+   "id": "rect10",
+   "kind": "rect",
+   "x": 34310.0,
+   "y": -1170.0,
+   "w": 90,
+   "h": 90,
+   "draw": "2:iron+0.3",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "2:iron+0.4",
+   "out": "3:So the-0.2"
+  },
+  {
+   "id": "rect13",
+   "kind": "rect",
+   "x": 35310.0,
+   "y": -1700.0,
+   "w": 96,
+   "h": 96,
+   "draw": "2:gold+0.3",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "2:gold+0.4",
+   "out": "3:So the-0.2"
+  },
+  {
+   "id": "line17",
+   "kind": "path",
+   "points": [
+    [
+     33280.0,
+     -3150.0
+    ],
+    [
+     33732.7,
+     -2818.5
+    ]
+   ],
+   "draw": "3:where you",
+   "width": 1.0,
+   "color": "muted",
+   "duration": 0.8,
+   "out": "end-0.9"
+  },
+  {
+   "id": "line18",
+   "kind": "path",
+   "points": [
+    [
+     33720.0,
+     -3190.0
+    ],
+    [
+     33776.7,
+     -2818.5
+    ]
+   ],
+   "draw": "3:where you+0.1",
+   "width": 1.0,
+   "color": "muted",
+   "duration": 0.8,
+   "out": "end-0.9"
+  },
+  {
+   "id": "line19",
+   "kind": "path",
+   "points": [
+    [
+     34180.0,
+     -3170.0
+    ],
+    [
+     33822.7,
+     -2818.5
+    ]
+   ],
+   "draw": "3:where you+0.2",
+   "width": 1.0,
+   "color": "muted",
+   "duration": 0.8,
+   "out": "end-0.9"
+  },
+  {
+   "id": "line20",
+   "kind": "path",
+   "points": [
+    [
+     33160.0,
+     -3050.0
+    ],
+    [
+     33720.7,
+     -2818.5
+    ]
+   ],
+   "draw": "3:where you+0.3",
+   "width": 1.0,
+   "color": "muted",
+   "duration": 0.8,
+   "out": "end-0.9"
+  },
+  {
+   "id": "line21",
+   "kind": "path",
+   "points": [
+    [
+     33760.0,
+     -3460.0
+    ],
+    [
+     33780.7,
+     -2818.5
+    ]
+   ],
+   "draw": "3:where you+0.4",
+   "width": 1.0,
+   "color": "muted",
+   "duration": 0.8,
+   "out": "end-0.9"
+  }
+ ],
+ "lights": [
+  {
+   "drawing": "line4",
+   "from": "1:first few",
+   "duration": 1.4,
+   "size": 50
+  },
+  {
+   "worldPoints": [
+    [
+     33060.0,
+     -3310.0
+    ],
+    [
+     33280.0,
+     -3170.0
+    ],
+    [
+     33500.0,
+     -3370.0
+    ],
+    [
+     33720.0,
+     -3210.0
+    ],
+    [
+     33960.0,
+     -3390.0
+    ],
+    [
+     34180.0,
+     -3190.0
+    ],
+    [
+     34400.0,
+     -3330.0
+    ],
+    [
+     33160.0,
+     -3070.0
+    ],
+    [
+     34320.0,
+     -3060.0
+    ],
+    [
+     33760.0,
+     -3480.0
+    ]
+   ],
+   "from": "3:night sky",
+   "size": 46,
+   "stagger": 0.1,
+   "to": "end-0.9"
+  },
+  {
+   "drawing": "line17",
+   "from": "3:where you",
+   "duration": 1.2,
+   "size": 40
+  },
+  {
+   "drawing": "line18",
+   "from": "3:where you+0.12",
+   "duration": 1.2,
+   "size": 40
+  },
+  {
+   "drawing": "line19",
+   "from": "3:where you+0.24",
+   "duration": 1.2,
+   "size": 40
+  },
+  {
+   "drawing": "line20",
+   "from": "3:where you+0.36",
+   "duration": 1.2,
+   "size": 40
+  },
+  {
+   "drawing": "line21",
+   "from": "3:where you+0.48",
+   "duration": 1.2,
+   "size": 40
+  },
+  {
+   "item": "open_hand16",
+   "at": [
+    0.53,
+    0.45
+   ],
+   "from": "3:came from",
+   "size": 110,
+   "to": "end-0.9"
+  }
+ ],
+ "magnifiers": [],
+ "labels": [
+  {
+   "text": "OLDER THAN THE EARTH",
+   "x": 32440.0,
+   "y": -1070.0,
+   "space": "world",
+   "size": 40,
+   "in": "1:older than",
+   "out": "1:hydrogen-0.3"
+  },
+  {
+   "text": "H",
+   "x": 33310.0,
+   "y": -1705.8,
+   "space": "world",
+   "size": 40,
+   "in": "1:hydrogen+0.55",
+   "spacing": 0.02,
+   "out": "end-0.9"
+  },
+  {
+   "text": "C",
+   "x": 33840.0,
+   "y": -1305.8,
+   "space": "world",
+   "size": 40,
+   "in": "1:carbon+0.55",
+   "spacing": 0.02,
+   "out": "end-0.9"
+  },
+  {
+   "text": "Ca",
+   "x": 34310.0,
+   "y": -1545.4,
+   "space": "world",
+   "size": 38,
+   "in": "2:calcium+0.55",
+   "spacing": 0.02,
+   "out": "end-0.9"
+  },
+  {
+   "text": "Fe",
+   "x": 34310.0,
+   "y": -1175.4,
+   "space": "world",
+   "size": 38,
+   "in": "2:iron+0.55",
+   "spacing": 0.02,
+   "out": "end-0.9"
+  },
+  {
+   "text": "Au",
+   "x": 35310.0,
+   "y": -1705.8,
+   "space": "world",
+   "size": 40,
+   "in": "2:gold+0.55",
+   "spacing": 0.02,
+   "out": "end-0.9"
+  },
+  {
+   "text": "WE ARE MADE OF STAR-STUFF",
+   "x": 33760.0,
+   "y": -2120.0,
+   "space": "world",
+   "size": 60,
+   "in": "3:We are",
+   "out": "3:So the-0.2"
+  },
+  {
+   "text": "CARL SAGAN",
+   "x": 33760.0,
+   "y": -2020.0,
+   "space": "world",
+   "size": 30,
+   "in": "3:star-stuff",
+   "out": "3:So the-0.2",
+   "color": "accent"
+  },
+  {
+   "text": "YOU ARE MADE OF STARS",
+   "x": 33760.0,
+   "y": -2480.0,
+   "space": "world",
+   "size": 54,
+   "in": "3:came from@end",
+   "out": "end-0.6"
+  }
+ ]
+}

@@ -5,7 +5,7 @@
 // Usage: npx tsx tools/check.ts [video-name]
 import fs from 'node:fs';
 import path from 'node:path';
-import {buildScene, FRAME} from '../src/template/scene';
+import {buildScene} from '../src/template/scene';
 import type {Settings, Words} from '../src/template/types';
 
 const video = process.argv[2] ?? 'new-earth';
@@ -26,6 +26,7 @@ const note = (key: string, t: number, detail: string) => {
 	}
 };
 const {safe} = scene;
+const FRAME = scene.frame;
 
 for (let f = 0; f < frames; f++) {
 	const t = f / fps;
@@ -41,7 +42,7 @@ for (let f = 0; f < frames; f++) {
 	}
 	settings.magnifiers.forEach((m, i) => {
 		const g = scene.magnifierAt(m, t);
-		if (g.k > 0.5) {
+		if (g.k * g.guard > 0.5) {
 			const y0 = g.center.y - g.radius;
 			const y1 = g.center.y + g.radius;
 			const x0 = g.center.x - g.radius;
@@ -53,10 +54,10 @@ for (let f = 0; f < frames; f++) {
 	});
 	settings.labels.forEach((l) => {
 		const s = scene.labelAt(l, t);
-		if (s.opacity > 0.3) {
-			const halfW = (l.text.length * s.size * 0.98) / 2;
-			const halfH = s.size * 0.7;
-			if (s.y - halfH < safe.top || s.y + halfH > safe.bottom || s.x - halfW < 0 || s.x + halfW > FRAME.width) {
+		if (s.opacity > 0.5) {
+			const halfW = (s.text.length * s.size * (0.66 + (l.spacing ?? 0.32))) / 2;
+			const halfH = s.size * 0.6;
+			if (s.y - halfH < safe.top - tol || s.y + halfH > safe.bottom + tol || s.x - halfW < -tol || s.x + halfW > FRAME.width + tol) {
 				note(`label "${l.text}": outside the safe area`, t, `centre ${s.x.toFixed(0)},${s.y.toFixed(0)} size ${s.size.toFixed(0)}`);
 			}
 		}
@@ -77,6 +78,7 @@ settings.magnifiers.forEach((m, i) => {
 	}
 });
 settings.labels.forEach((l) => events.push({t: r(l.in), what: `label "${l.text}"`}));
+(settings.drawings ?? []).forEach((d) => events.push({t: r(d.draw), what: `draw ${d.id}`}));
 settings.camera.forEach((k) => events.push({t: r(k.at), what: `camera → ${k.focus ?? `${k.x},${k.y}`}${k.hold ? ` (hold ${k.hold}s)` : ''}`}));
 events.sort((a, b) => a.t - b.t);
 
@@ -96,6 +98,14 @@ for (const e of events) {
 		nextLine++;
 	}
 	console.log(`  ${e.t.toFixed(2).padStart(6)}s     ${e.what}`);
+}
+// Something new on screen at least every few seconds.
+const maxGap = Number(process.env.MAX_GAP ?? 5);
+const starts = [0, ...events.map((e) => e.t).filter((t) => t >= 0 && t <= scene.total), scene.total].sort((a, b) => a - b);
+for (let i = 1; i < starts.length; i++) {
+	if (starts[i] - starts[i - 1] > maxGap) {
+		note(`nothing new for ${(starts[i] - starts[i - 1]).toFixed(1)}s`, starts[i - 1], `from ${starts[i - 1].toFixed(2)}s to ${starts[i].toFixed(2)}s`);
+	}
 }
 console.log(problems.size === 0 ? '\nNo problems found.' : `\n${problems.size} problem(s):`);
 for (const [k, v] of problems) {

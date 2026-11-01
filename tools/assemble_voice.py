@@ -41,7 +41,11 @@ def words_from_alignment(al, offset, line):
         cur['end'] = e + offset
     if cur:
         words.append(cur)
+    prev_end = True
     for w in words:
+        # Mark sentence starts, so review stills can be taken at every sentence.
+        w['sentence'] = prev_end
+        prev_end = w['text'].rstrip('"').endswith(('.', '?', '!'))
         w['text'] = w['text'].strip('.,!?;:"')
         w['start'] = round(w['start'], 3)
         w['end'] = round(w['end'], 3)

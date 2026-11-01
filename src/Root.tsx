@@ -6,8 +6,9 @@ import type {Settings, Words} from './template/types';
 
 const FPS = 60;
 
-// Which video to make. Each video is a folder in public/videos/ with one settings.json.
-// Pick another with: npx remotion render Video out/video.mp4 --props='{"video":"my-next-video"}'
+// Which video to make. Each video (or each part of a long video) is a folder in
+// public/videos/ with one settings.json. Pick another with:
+//   npx remotion render Video out/video.mp4 --props='{"video":"made-of-stars/p3"}'
 const DEFAULT_VIDEO = 'new-earth';
 
 export const Root: React.FC = () => (
@@ -24,8 +25,10 @@ export const Root: React.FC = () => (
 			const settings: Settings = await (await fetch(staticFile(`${dir}settings.json`))).json();
 			const words: Words = await (await fetch(staticFile(`${dir}${settings.words}`))).json();
 			return {
-				// As long as the voice, plus the tail (one second).
+				// As long as the voice, plus the tail.
 				durationInFrames: Math.ceil((words.duration + settings.tailSeconds) * FPS),
+				width: settings.size?.width ?? FRAME.width,
+				height: settings.size?.height ?? FRAME.height,
 				props: {...props, settings, words},
 			};
 		}}

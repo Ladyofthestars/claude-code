@@ -6,475 +6,554 @@
    "text": "Almost",
    "start": 0.35,
    "end": 0.756,
-   "line": 1
+   "line": 1,
+   "sentence": true
   },
   {
    "text": "every",
    "start": 0.838,
    "end": 1.128,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "atom",
    "start": 1.198,
    "end": 1.441,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "in",
    "start": 1.488,
    "end": 1.546,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "your",
    "start": 1.581,
    "end": 1.685,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "body",
    "start": 1.732,
    "end": 1.975,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "is",
    "start": 2.022,
    "end": 2.103,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "older",
    "start": 2.15,
    "end": 2.359,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "than",
    "start": 2.393,
    "end": 2.509,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "the",
    "start": 2.533,
    "end": 2.602,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "Earth",
    "start": 2.649,
    "end": 3.02,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "The",
    "start": 3.427,
    "end": 3.554,
-   "line": 1
+   "line": 1,
+   "sentence": true
   },
   {
    "text": "hydrogen",
    "start": 3.624,
    "end": 4.158,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "in",
    "start": 4.216,
    "end": 4.286,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "you",
    "start": 4.355,
    "end": 4.46,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "was",
    "start": 4.53,
    "end": 4.657,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "made",
    "start": 4.727,
    "end": 4.89,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "in",
    "start": 4.913,
    "end": 4.959,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "the",
    "start": 4.994,
    "end": 5.064,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "first",
    "start": 5.11,
    "end": 5.342,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "few",
    "start": 5.389,
    "end": 5.528,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "minutes",
    "start": 5.574,
    "end": 5.818,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "of",
    "start": 5.842,
    "end": 5.9,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "the",
    "start": 5.946,
    "end": 6.016,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "universe",
    "start": 6.074,
    "end": 6.643,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "The",
    "start": 7.107,
    "end": 7.246,
-   "line": 1
+   "line": 1,
+   "sentence": true
   },
   {
    "text": "iron",
    "start": 7.339,
    "end": 7.676,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "in",
    "start": 7.722,
    "end": 7.792,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "your",
    "start": 7.838,
    "end": 7.955,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "blood",
    "start": 8.001,
    "end": 8.245,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "came",
    "start": 8.303,
    "end": 8.489,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "from",
    "start": 8.523,
    "end": 8.651,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "stars",
    "start": 8.744,
    "end": 9.139,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "that",
    "start": 9.174,
    "end": 9.301,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "blew",
    "start": 9.348,
    "end": 9.533,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "up",
    "start": 9.58,
    "end": 9.673,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "long",
    "start": 9.754,
    "end": 9.963,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "ago",
    "start": 10.009,
    "end": 10.3,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "and",
    "start": 10.381,
    "end": 10.474,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "far",
    "start": 10.544,
    "end": 10.741,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "away",
    "start": 10.787,
    "end": 12.006,
-   "line": 1
+   "line": 1,
+   "sentence": false
   },
   {
    "text": "So",
    "start": 12.756,
    "end": 12.919,
-   "line": 2
+   "line": 2,
+   "sentence": true
   },
   {
    "text": "where",
    "start": 12.977,
    "end": 13.151,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "did",
    "start": 13.174,
    "end": 13.278,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "the",
    "start": 13.302,
    "end": 13.371,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "rest",
    "start": 13.429,
    "end": 13.627,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "of",
    "start": 13.673,
    "end": 13.731,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "you",
    "start": 13.778,
    "end": 13.847,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "come",
    "start": 13.929,
    "end": 14.138,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "from",
    "start": 14.172,
    "end": 14.602,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "By",
    "start": 15.008,
    "end": 15.148,
-   "line": 2
+   "line": 2,
+   "sentence": true
   },
   {
    "text": "the",
    "start": 15.194,
    "end": 15.264,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "end",
    "start": 15.31,
    "end": 15.391,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "of",
    "start": 15.426,
    "end": 15.473,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "this",
    "start": 15.508,
    "end": 15.612,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "video",
    "start": 15.67,
    "end": 16.297,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "you'll",
    "start": 16.46,
    "end": 16.657,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "know",
    "start": 16.703,
    "end": 16.831,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "where",
    "start": 16.866,
    "end": 17.005,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "each",
    "start": 17.063,
    "end": 17.249,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "part",
    "start": 17.307,
    "end": 17.493,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "of",
    "start": 17.528,
    "end": 17.574,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "you",
    "start": 17.632,
    "end": 17.702,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "was",
    "start": 17.772,
    "end": 17.888,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "made",
    "start": 17.946,
    "end": 18.352,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "And",
    "start": 18.689,
    "end": 18.84,
-   "line": 2
+   "line": 2,
+   "sentence": true
   },
   {
    "text": "you'll",
    "start": 18.909,
    "end": 19.141,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "see",
    "start": 19.211,
    "end": 19.443,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "why",
    "start": 19.49,
    "end": 19.699,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "it's",
    "start": 19.757,
    "end": 19.896,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "fair",
    "start": 19.943,
    "end": 20.128,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "to",
    "start": 20.175,
    "end": 20.233,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "say",
    "start": 20.302,
    "end": 20.651,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "that",
    "start": 20.778,
    "end": 20.953,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "you",
    "start": 21.034,
    "end": 21.138,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "are",
    "start": 21.196,
    "end": 21.336,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "made",
    "start": 21.371,
    "end": 21.522,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "of",
    "start": 21.545,
    "end": 21.591,
-   "line": 2
+   "line": 2,
+   "sentence": false
   },
   {
    "text": "stars",
    "start": 21.638,
    "end": 23.019,
-   "line": 2
+   "line": 2,
+   "sentence": false
   }
  ]
 }

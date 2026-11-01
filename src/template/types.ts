@@ -72,8 +72,14 @@ export interface LightDef {
 	// A light that travels along a path drawn on a picture...
 	item?: string;
 	path?: UV[];
-	// ...or along a thread...
+	// ...or along a thread, or along a drawing...
 	thread?: string;
+	drawing?: string;
+	// travel the path backwards (end to start)
+	reverse?: boolean;
+	// ...or glows in place at a point on the page (page units).
+	world?: [number, number];
+	worldPoints?: [number, number][];
 	// ...or a light that glows in place at one or more points of a picture.
 	at?: UV;
 	points?: UV[];
@@ -122,7 +128,11 @@ export interface MagnifierDef {
 }
 
 export interface LabelDef {
+	// Use {n} in the text for a number that counts up, e.g. "{n} TONS".
 	text: string;
+	count?: {from?: number; to: number; decimals?: number; duration?: number};
+	weight?: 500 | 700;
+	spacing?: number;
 	// Screen pixels (space "screen") or page units (space "world").
 	x: number;
 	y: number;
@@ -133,8 +143,41 @@ export interface LabelDef {
 	color?: 'ink' | 'accent';
 }
 
+// Diagrams that draw themselves, line by line, on the page.
+export interface DrawingDef {
+	id: string;
+	kind?: 'path' | 'circle' | 'rect';
+	// path: points in page units; curve smooths through them.
+	points?: [number, number][];
+	curve?: boolean;
+	closed?: boolean;
+	// circle
+	cx?: number;
+	cy?: number;
+	r?: number;
+	// rect (centre, size)
+	x?: number;
+	y?: number;
+	w?: number;
+	h?: number;
+	draw: TimeRef;
+	duration?: number;
+	out?: TimeRef;
+	color?: 'ink' | 'accent' | 'muted';
+	width?: number;
+	// dashed lines fade in instead of drawing on
+	dashed?: boolean;
+	arrow?: boolean;
+	fill?: 'accent' | 'paper';
+	fillOpacity?: number;
+	fillAt?: TimeRef;
+	depth?: number;
+}
+
 export interface Settings {
 	title: string;
+	size?: {width: number; height: number};
+	drawings?: DrawingDef[];
 	audio: string;
 	words: string;
 	tailSeconds: number;

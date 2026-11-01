@@ -1,10 +1,11 @@
 // The whole scene as plain maths: where every picture, line, light, label and the camera
 // are at any moment. The renderer draws from this, and tools/check.ts uses the same code
-// to test every frame for cut-off pictures and the safe area.
-import type {Anchor, ItemDef, LabelDef, MagnifierDef, PictureDef, Settings, ThreadDef, UV, Words} from './types';
+// to test every frame for cut-off pictures, the safe area and gaps with nothing new.
+import type {Anchor, DrawingDef, ItemDef, LabelDef, MagnifierDef, PictureDef, Settings, ThreadDef, UV, Words} from './types';
 import {bendControl, clamp01, easeInOut, easeOut, easeSine, lerp, monotoneSpline, outerTangents, pointAlong, quadBezier, smoothPolyline, type Pt} from './math';
 import {makeTimeResolver} from './time';
 
+// Default frame (vertical short). A video can set its own size in settings.size.
 export const FRAME = {width: 1080, height: 1920};
 export const FADE = 0.5;
 
@@ -14,7 +15,6 @@ export type Box = {x0: number; y0: number; x1: number; y1: number};
 export type ItemState = {
 	id: string;
 	src: string;
-	// Screen-space image rectangle (after the small fade scale).
 	left: number;
 	top: number;
 	width: number;
@@ -43,10 +43,18 @@ export const presence = (t: number, tIn: number | undefined, tOut: number | unde
 	return {k: Math.min(kIn, kOut), kIn, kOut};
 };
 
+export const formatNumber = (n: number, decimals: number) => {
+	const fixed = n.toFixed(decimals);
+	const [int, dec] = fixed.split('.');
+	const withCommas = int.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+	return dec ? `${withCommas}.${dec}` : withCommas;
+};
+
 export const buildScene = (settings: Settings, words: Words) => {
 	const {resolve, total} = makeTimeResolver(words, settings.tailSeconds);
-	const W = FRAME.width;
-	const H = FRAME.height;
+	const frame = settings.size ?? FRAME;
+	const W = frame.width;
+	const H = frame.height;
 	const safe = {
 		left: W * settings.safeArea.side,
 		right: W * (1 - settings.safeArea.side),
@@ -57,6 +65,14 @@ export const buildScene = (settings: Settings, words: Words) => {
 	const safeH = safe.bottom - safe.top;
 	const cx = (safe.left + safe.right) / 2;
 	const cy = (safe.top + safe.bottom) / 2;
+
+	// Nothing is ever cut off: as a box nears the edge of the safe area it fades out
+	// (fully gone 20 px past the edge, well before the frame edge), and fades back in
+	// when the camera brings it back.
+	const edgeGuard = (b: Box) => {
+		const d = Math.min(b.x0 - safe.left, b.y0 - safe.top, safe.right - b.x1, safe.bottom - b.y1);
+		return clamp01((d + 20) / 40);
+	};
 
 	const items = new Map<string, Resolved>();
 	for (const def of settings.items) {
@@ -82,7 +98,6 @@ export const buildScene = (settings: Settings, words: Words) => {
 		return it;
 	};
 
-	// Drawn content of an item on the page.
 	const pageContent = (it: Resolved): Box => {
 		const c = it.pic.content ?? [0, 0, 1, 1];
 		const x0 = it.def.x - it.def.width / 2;
@@ -92,6 +107,49 @@ export const buildScene = (settings: Settings, words: Words) => {
 			y0: y0 + c[1] * it.height,
 			x1: x0 + c[2] * it.def.width,
 			y1: y0 + c[3] * it.height,
+		};
+	};
+
+	const drawings = settings.drawings ?? [];
+	const drawingDefs = new Map<string, DrawingDef>(drawings.map((d) => [d.id, d]));
+
+	// Page-space points of a drawing.
+	const drawingPoints = (d: DrawingDef): Pt[] => {
+		if (d.kind === 'circle') {
+			const n = 96;
+			return Array.from({length: n + 1}, (_, i) => {
+				const a = -Math.PI / 2 + (i / n) * Math.PI * 2;
+				return {x: (d.cx ?? 0) + (d.r ?? 10) * Math.cos(a), y: (d.cy ?? 0) + (d.r ?? 10) * Math.sin(a)};
+			});
+		}
+		if (d.kind === 'rect') {
+			const x = d.x ?? 0;
+			const y = d.y ?? 0;
+			const w = (d.w ?? 10) / 2;
+			const h = (d.h ?? 10) / 2;
+			return [
+				{x: x - w, y: y - h},
+				{x: x + w, y: y - h},
+				{x: x + w, y: y + h},
+				{x: x - w, y: y + h},
+				{x: x - w, y: y - h},
+			];
+		}
+		const pts = (d.points ?? []).map(([x, y]) => ({x, y}));
+		if (d.closed && pts.length > 1) {
+			pts.push(pts[0]);
+		}
+		return pts;
+	};
+
+	// Box of a drawing on the page (for camera framing).
+	const drawingBox = (d: DrawingDef): Box => {
+		const pts = drawingPoints(d);
+		return {
+			x0: Math.min(...pts.map((p) => p.x)),
+			y0: Math.min(...pts.map((p) => p.y)),
+			x1: Math.max(...pts.map((p) => p.x)),
+			y1: Math.max(...pts.map((p) => p.y)),
 		};
 	};
 
@@ -105,7 +163,7 @@ export const buildScene = (settings: Settings, words: Words) => {
 		let z = k.zoom ?? 1;
 		if (k.focus) {
 			const ids = Array.isArray(k.focus) ? k.focus : [k.focus];
-			const boxes = ids.map((id) => pageContent(getItem(id)));
+			const boxes = ids.map((id) => (items.has(id) ? pageContent(getItem(id)) : drawingDefs.has(id) ? drawingBox(drawingDefs.get(id) as DrawingDef) : pageContent(getItem(id))));
 			const b = {
 				x0: Math.min(...boxes.map((v) => v.x0)),
 				y0: Math.min(...boxes.map((v) => v.y0)),
@@ -115,7 +173,7 @@ export const buildScene = (settings: Settings, words: Words) => {
 			x = (b.x0 + b.x1) / 2;
 			y = (b.y0 + b.y1) / 2;
 			const fit = k.fit ?? 0.85;
-			z = k.zoom ?? fit * Math.min(safeW / (b.x1 - b.x0), safeH / (b.y1 - b.y0));
+			z = k.zoom ?? fit * Math.min(safeW / Math.max(1, b.x1 - b.x0), safeH / Math.max(1, b.y1 - b.y0));
 		}
 		x += k.dx ?? 0;
 		y += k.dy ?? 0;
@@ -131,8 +189,6 @@ export const buildScene = (settings: Settings, words: Words) => {
 	const camZ = monotoneSpline(ts, keys.map((k) => Math.log(k.z)));
 	const camAt = (t: number): Cam => ({x: camX(t), y: camY(t), z: Math.exp(camZ(t))});
 
-	// Far layers follow the camera only partly (parallax). Each is placed as seen at the
-	// moment it appears, then drifts slower than the page.
 	const layerCam = (depth: number, refT: number, t: number) => {
 		const cam = camAt(t);
 		if (depth === 1) {
@@ -156,6 +212,7 @@ export const buildScene = (settings: Settings, words: Words) => {
 		const left = c.x - w / 2;
 		const top = c.y - h / 2;
 		const cb = it.pic.content ?? [0, 0, 1, 1];
+		const content = {x0: left + cb[0] * w, y0: top + cb[1] * h, x1: left + cb[2] * w, y1: top + cb[3] * h};
 		return {
 			id,
 			src: it.pic.src,
@@ -163,21 +220,20 @@ export const buildScene = (settings: Settings, words: Words) => {
 			top,
 			width: w,
 			height: h,
-			opacity: k,
+			opacity: k * edgeGuard(content),
 			blur: (1 - k) * 10 + (it.depth - 1) * 3,
 			depth: it.depth,
 			zoom: cam.z * scale,
-			content: {x0: left + cb[0] * w, y0: top + cb[1] * h, x1: left + cb[2] * w, y1: top + cb[3] * h},
+			content,
 		};
 	};
 
-	// Screen position of a point on a picture.
 	const anchorAt = (a: Anchor, t: number) => {
 		const s = itemAt(a.item, t);
 		return {x: s.left + a.at[0] * s.width, y: s.top + a.at[1] * s.height, zoom: s.zoom, opacity: s.opacity};
 	};
 
-	// ---- Threads (lines that draw themselves) ---------------------------------
+	// ---- Threads ------------------------------------------------------------------
 	const threadDefs = new Map<string, ThreadDef>(settings.threads.map((d) => [d.id, d]));
 	const threadAt = (d: ThreadDef, t: number) => {
 		const a = anchorAt(d.from, t);
@@ -189,6 +245,33 @@ export const buildScene = (settings: Settings, words: Words) => {
 		return {a, b, c, progress, opacity: progress > 0 ? Math.min(k, Math.min(a.opacity, b.opacity) * 1.2) : 0, zoom: (a.zoom + b.zoom) / 2};
 	};
 
+	// ---- Drawings (diagrams that draw themselves) ------------------------------------
+	const drawingAt = (d: DrawingDef, t: number) => {
+		const tDraw = resolve(d.draw);
+		const depth = d.depth ?? 1;
+		const cam = layerCam(depth, tDraw, t);
+		const raw = drawingPoints(d).map((p) => toScreen(p, cam));
+		const pts = d.curve ? smoothPolyline(raw, 16) : raw;
+		const dur = d.duration ?? 0.9;
+		const progress = d.dashed ? 1 : easeInOut((t - tDraw) / dur);
+		const tOut = d.out === undefined ? undefined : resolve(d.out);
+		const pres = presence(t, d.dashed ? tDraw : tDraw - 0.001, tOut, d.dashed ? 0.6 : FADE);
+		const visible = d.dashed ? pres.k : progress > 0 ? pres.k : 0;
+		const fillStart = d.fillAt === undefined ? tDraw + dur * 0.6 : resolve(d.fillAt);
+		const fillK = d.fill ? presence(t, fillStart, tOut, 0.6).k * (d.fillOpacity ?? 0.18) : 0;
+		let head: {x: number; y: number; angle: number} | null = null;
+		if (d.arrow && pts.length > 1) {
+			const end = pointAlong(pts, Math.max(0.0001, progress));
+			const back = pointAlong(pts, Math.max(0, progress - 0.02));
+			head = {x: end.x, y: end.y, angle: Math.atan2(end.y - back.y, end.x - back.x)};
+		}
+		let guard = 1;
+		if (d.kind === 'rect' || d.kind === 'circle') {
+			guard = edgeGuard({x0: Math.min(...pts.map((q) => q.x)), y0: Math.min(...pts.map((q) => q.y)), x1: Math.max(...pts.map((q) => q.x)), y1: Math.max(...pts.map((q) => q.y))});
+		}
+		return {pts, progress, opacity: visible * guard, zoom: cam.z, fill: fillK * guard, head, blur: (depth - 1) * 2};
+	};
+
 	// ---- Lights ------------------------------------------------------------------
 	type LightState = {x: number; y: number; size: number; alpha: number};
 	const lightsAt = (t: number): LightState[] => {
@@ -197,8 +280,7 @@ export const buildScene = (settings: Settings, words: Words) => {
 			const from = resolve(L.from);
 			const to = L.to === undefined ? undefined : resolve(L.to);
 			const intensity = L.intensity ?? 1;
-			if (L.thread || L.path) {
-				// A travelling light: eased along its path, fading in at the start and out at the end.
+			if (L.thread || L.path || L.drawing) {
 				const dur = L.duration ?? 1.4;
 				const raw = (t - from) / dur;
 				if (raw < -0.05 || raw > 1.15) {
@@ -216,16 +298,27 @@ export const buildScene = (settings: Settings, words: Words) => {
 					poly = Array.from({length: 33}, (_, i) => quadBezier(th.a, th.c, th.b, i / 32));
 					zoom = th.zoom;
 					parentAlpha = Math.max(th.opacity, 0.001);
+				} else if (L.drawing) {
+					const d = drawingDefs.get(L.drawing);
+					if (!d) {
+						throw new Error(`Light uses unknown drawing "${L.drawing}"`);
+					}
+					const st = drawingAt(d, t);
+					poly = st.pts;
+					zoom = st.zoom;
+					parentAlpha = 1;
 				} else {
 					const s = itemAt(L.item as string, t);
 					poly = smoothPolyline((L.path as UV[]).map((p) => ({x: s.left + p[0] * s.width, y: s.top + p[1] * s.height})));
 					zoom = s.zoom;
 					parentAlpha = s.opacity;
 				}
+				if (L.reverse) {
+					poly = [...poly].reverse();
+				}
 				const head = easeInOut(raw);
 				const envelope = Math.min(easeSine(raw / 0.18), 1 - easeSine((raw - 0.82) / 0.3));
 				const size = (L.size ?? 60) * zoom;
-				// A soft head with a fading trail behind it.
 				for (let i = 0; i < 7; i++) {
 					const f = head - i * 0.022;
 					if (f < 0) {
@@ -236,7 +329,21 @@ export const buildScene = (settings: Settings, words: Words) => {
 				}
 				continue;
 			}
-			// Glowing in place, at one or more points of a picture.
+			if (L.world || L.worldPoints) {
+				const pts = L.worldPoints ?? [L.world as [number, number]];
+				const cam = camAt(t);
+				pts.forEach((wp, i) => {
+					const start = from + i * (L.stagger ?? 0);
+					const {k} = presence(t, start, to, 0.7);
+					if (k <= 0) {
+						return;
+					}
+					const p = toScreen({x: wp[0], y: wp[1]}, cam);
+					const breathe = 1 + 0.06 * Math.sin(((t - start) / 3.2 + i * 0.37) * Math.PI * 2);
+					out.push({x: p.x, y: p.y, size: (L.size ?? 40) * cam.z * lerp(0.7, 1, k) * breathe, alpha: intensity * k});
+				});
+				continue;
+			}
 			const pts = L.points ?? (L.at ? [L.at] : []);
 			pts.forEach((uv, i) => {
 				const start = from + i * (L.stagger ?? 0);
@@ -287,10 +394,10 @@ export const buildScene = (settings: Settings, words: Words) => {
 		});
 		return {
 			k,
+			guard: edgeGuard({x0: center.x - radius, y0: center.y - radius, x1: center.x + radius, y1: center.y + radius}),
 			center,
 			radius,
 			source: {x: src.x, y: src.y, r: srcR},
-			// The two joining lines appear once the circle has moved clear of the detail.
 			lines: k > 0 ? outerTangents(src, srcR, center, radius) : [],
 			lineAlpha: clamp01((k - 0.15) / 0.3),
 			contents,
@@ -312,10 +419,22 @@ export const buildScene = (settings: Settings, words: Words) => {
 			y = p.y;
 			size *= cam.z;
 		}
-		return {x, y, size, opacity: k, blur: (1 - k) * 8, scale: lerp(0.96, 1, kIn)};
+		let text = l.text;
+		if (l.count) {
+			const c = l.count;
+			const kc = easeOut((t - tIn) / (c.duration ?? 1.4));
+			text = l.text.replace('{n}', formatNumber(lerp(c.from ?? 0, c.to, kc), c.decimals ?? 0));
+		}
+		let guard = 1;
+		if (l.space === 'world') {
+			const halfW = (text.length * size * (0.66 + (l.spacing ?? 0.32))) / 2;
+			const halfH = size * 0.6;
+			guard = edgeGuard({x0: x - halfW, y0: y - halfH, x1: x + halfW, y1: y + halfH});
+		}
+		return {x, y, size, text, opacity: k * guard, blur: (1 - k) * 8, scale: lerp(0.96, 1, kIn)};
 	};
 
-	return {settings, words, total, resolve, safe, camAt, itemAt, anchorAt, threadAt, lightsAt, magnifierAt, labelAt, layerCam, toScreen};
+	return {settings, words, total, resolve, safe, frame, camAt, itemAt, anchorAt, threadAt, drawingAt, lightsAt, magnifierAt, labelAt, layerCam, toScreen};
 };
 
 export type Scene = ReturnType<typeof buildScene>;

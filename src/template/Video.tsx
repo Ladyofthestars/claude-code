@@ -1,7 +1,8 @@
+import '@fontsource/montserrat/500.css';
 import '@fontsource/montserrat/700.css';
 import React, {useEffect, useMemo, useState} from 'react';
 import {AbsoluteFill, Audio, continueRender, delayRender, Img, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
-import {buildScene, FRAME} from './scene';
+import {buildScene} from './scene';
 import type {Settings, Words} from './types';
 
 export type VideoProps = {
@@ -13,8 +14,7 @@ export type VideoProps = {
 const useFont = (family: string) => {
 	const [handle] = useState(() => delayRender(`font ${family}`));
 	useEffect(() => {
-		document.fonts
-			.load(`700 64px "${family}"`)
+		Promise.all([document.fonts.load(`700 64px "${family}"`), document.fonts.load(`500 64px "${family}"`)])
 			.then(() => continueRender(handle))
 			.catch(() => continueRender(handle));
 	}, [family, handle]);
@@ -30,9 +30,15 @@ export const Video: React.FC<VideoProps> = ({video, settings, words}) => {
 	const t = frame / fps;
 	const scene = useMemo(() => buildScene(settings, words), [settings, words]);
 	const theme = settings.theme;
-	const base = (p: string) => staticFile(`videos/${video}/${p}`);
+	// Paths starting with / are from the public folder, so parts of one video can share pictures.
+	const base = (p: string) => (p.startsWith('/') ? staticFile(p.slice(1)) : staticFile(`videos/${video}/${p}`));
+	const FRAME = scene.frame;
+	const inkOf = (c?: string) => (c === 'accent' ? theme.accent : c === 'muted' ? `${theme.ink}66` : theme.ink);
 
-	const grid = scene.layerCam(1 / theme.dotParallax, 0, t);
+	// The dot grid follows the camera a little slower than the page. It depends only on the
+	// camera, so parts of a long video join seamlessly when their cameras match.
+	const cam = scene.camAt(t);
+	const grid = {x: cam.x * theme.dotParallax, y: cam.y * theme.dotParallax, z: Math.pow(cam.z, theme.dotParallax)};
 	const spacing = theme.dotSpacing * grid.z;
 	const gx = scene.toScreen({x: 0, y: 0}, grid);
 
@@ -139,12 +145,13 @@ export const Video: React.FC<VideoProps> = ({video, settings, words}) => {
 
 			{settings.magnifiers.map((m, mi) => {
 				const g = scene.magnifierAt(m, t);
-				if (g.k <= 0.001) {
+				if (g.k * g.guard <= 0.001) {
 					return null;
 				}
 				const d = g.radius * 2;
 				return (
 					<React.Fragment key={`mag-${mi}`}>
+						<div style={{opacity: g.guard}}>
 						<svg width={FRAME.width} height={FRAME.height} style={{position: 'absolute', left: 0, top: 0}}>
 							<circle cx={g.source.x} cy={g.source.y} r={g.source.r} fill="none" stroke={theme.ink} strokeWidth={1.6} opacity={0.7 * Math.min(1, g.k * 3)} />
 							{g.lines.map(([a, b], li) => (
@@ -188,9 +195,51 @@ export const Video: React.FC<VideoProps> = ({video, settings, words}) => {
 								),
 							)}
 						</div>
+						</div>
 					</React.Fragment>
 				);
 			})}
+
+			<svg width={FRAME.width} height={FRAME.height} style={{position: 'absolute', left: 0, top: 0}}>
+				{(settings.drawings ?? []).map((d) => {
+					const g = scene.drawingAt(d, t);
+					if (g.opacity <= 0.001 || g.pts.length < 2) {
+						return null;
+					}
+					const path = g.pts.map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' ');
+					const stroke = inkOf(d.color);
+					const w = Math.max(1.2, (d.width ?? 2.4) * Math.min(1.6, g.zoom));
+					const hs = w * 4.2;
+					return (
+						<g key={d.id} opacity={g.opacity} style={g.blur > 0 ? {filter: `blur(${g.blur}px)`} : undefined}>
+							{g.fill > 0 ? <path d={path + ' Z'} fill={d.fill === 'paper' ? theme.background : theme.accent} opacity={d.fill === 'paper' ? 1 : g.fill} stroke="none" /> : null}
+							<path
+								d={path}
+								pathLength={1}
+								strokeDasharray={d.dashed ? `${w * 3} ${w * 3}` : '1 1'}
+								strokeDashoffset={d.dashed ? 0 : 1 - g.progress}
+								fill="none"
+								stroke={stroke}
+								strokeWidth={w}
+								strokeLinecap="round"
+								strokeLinejoin="round"
+							/>
+							{g.head && g.progress > 0.02 ? (
+								<path
+									d={`M ${-hs} ${-hs * 0.55} L 0 0 L ${-hs} ${hs * 0.55}`}
+									transform={`translate(${g.head.x} ${g.head.y}) rotate(${(g.head.angle * 180) / Math.PI})`}
+									fill="none"
+									stroke={stroke}
+									strokeWidth={w}
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									opacity={Math.min(1, g.progress * 3)}
+								/>
+							) : null}
+						</g>
+					);
+				})}
+			</svg>
 
 			{settings.labels.map((l, li) => {
 				const s = scene.labelAt(l, t);
@@ -207,17 +256,17 @@ export const Video: React.FC<VideoProps> = ({video, settings, words}) => {
 							transform: `translate(-50%, -50%) scale(${s.scale})`,
 							whiteSpace: 'nowrap',
 							fontFamily: `"${theme.font}", sans-serif`,
-							fontWeight: 700,
+							fontWeight: l.weight ?? 700,
 							fontSize: s.size,
-							letterSpacing: '0.32em',
-							paddingLeft: '0.32em',
+							letterSpacing: `${l.spacing ?? 0.32}em`,
+							paddingLeft: `${l.spacing ?? 0.32}em`,
 							textTransform: 'uppercase',
 							color: l.color === 'accent' ? theme.accent : theme.ink,
 							opacity: s.opacity,
 							filter: s.blur > 0.05 ? `blur(${s.blur}px)` : undefined,
 						}}
 					>
-						{l.text}
+						{s.text}
 					</div>
 				);
 			})}

@@ -1,0 +1,1649 @@
+{
+ "title": "You Are Made of Stars \u2014 part 5",
+ "size": {
+  "width": 1920,
+  "height": 1080
+ },
+ "audio": "narration.mp3",
+ "words": "words.json",
+ "tailSeconds": 0,
+ "safeArea": {
+  "top": 0.06,
+  "bottom": 0.06,
+  "side": 0.05
+ },
+ "theme": {
+  "background": "#ffffff",
+  "dotColor": "rgba(36, 38, 43, 0.11)",
+  "dotSpacing": 40,
+  "dotSize": 1.7,
+  "dotParallax": 0.75,
+  "ink": "#24262b",
+  "accent": "#5b8fd8",
+  "lightBlend": "normal",
+  "font": "Montserrat"
+ },
+ "pictures": {
+  "blood_cell": {
+   "src": "/videos/made-of-stars/images/blood_cell.png",
+   "aspect": 1.0,
+   "content": [
+    0.2832,
+    0.332,
+    0.7129,
+    0.6631
+   ]
+  },
+  "earth": {
+   "src": "/videos/made-of-stars/images/earth.png",
+   "aspect": 1.0,
+   "content": [
+    0.2637,
+    0.2656,
+    0.7393,
+    0.7354
+   ]
+  },
+  "gold_ring": {
+   "src": "/videos/made-of-stars/images/gold_ring.png",
+   "aspect": 1.0,
+   "content": [
+    0.3057,
+    0.2461,
+    0.6963,
+    0.7432
+   ]
+  },
+  "neutron_star": {
+   "src": "/videos/made-of-stars/images/neutron_star.png",
+   "aspect": 1.0,
+   "content": [
+    0.2842,
+    0.2158,
+    0.7061,
+    0.751
+   ]
+  },
+  "sun": {
+   "src": "/videos/made-of-stars/images/sun.png",
+   "aspect": 1.0,
+   "content": [
+    0.1113,
+    0.1445,
+    0.9092,
+    0.8438
+   ]
+  },
+  "supernova": {
+   "src": "/videos/made-of-stars/images/supernova.png",
+   "aspect": 1.0,
+   "content": [
+    0.1572,
+    0.1826,
+    0.8174,
+    0.8174
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "sun1",
+   "picture": "sun",
+   "x": 17537.7,
+   "y": -1418.7,
+   "width": 228.8,
+   "in": "1:For iron",
+   "out": "2:Carbon-0.2"
+  },
+  {
+   "id": "earth19",
+   "picture": "earth",
+   "x": 19738.7,
+   "y": -1540.4,
+   "width": 894.0,
+   "in": "4:core about",
+   "out": "4:Then the-0.2"
+  },
+  {
+   "id": "supernova22",
+   "picture": "supernova",
+   "x": 21852.0,
+   "y": -1540.0,
+   "width": 945.2,
+   "in": "4:blown apart",
+   "out": "end-1.1"
+  },
+  {
+   "id": "sun27",
+   "picture": "sun",
+   "x": 23368.4,
+   "y": -1789.1,
+   "width": 157.3,
+   "in": "5:brightest",
+   "out": "5:The blast-0.2"
+  },
+  {
+   "id": "blood_cell40",
+   "picture": "blood_cell",
+   "x": 22991.0,
+   "y": -1478.7,
+   "width": 513.4,
+   "in": "5:NASA",
+   "out": "end-1.1"
+  },
+  {
+   "id": "neutron_star43",
+   "picture": "neutron_star",
+   "x": 21841.4,
+   "y": -1535.3,
+   "width": 280.3,
+   "in": "6:crushed core",
+   "out": "end-1.1"
+  },
+  {
+   "id": "gold_ring44",
+   "picture": "gold_ring",
+   "x": 22289.6,
+   "y": -1497.8,
+   "width": 402.3,
+   "in": "6:gold",
+   "out": "end-1.1"
+  }
+ ],
+ "camera": [
+  {
+   "at": "start",
+   "x": 18040.0,
+   "y": -1540.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "1:For-0.3",
+   "x": 18040.0,
+   "y": -1540.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "1:star@end",
+   "x": 17940.0,
+   "y": -1540.0,
+   "zoom": 0.95
+  },
+  {
+   "at": "1:going@end",
+   "x": 18190.0,
+   "y": -1540.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "2:magnesium@end",
+   "x": 18240.0,
+   "y": -1540.0,
+   "zoom": 1.05
+  },
+  {
+   "at": "2:middle@end",
+   "x": 18370.0,
+   "y": -1540.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "3:Up-0.3",
+   "x": 18370.0,
+   "y": -1540.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "3:energy@end",
+   "x": 18340.0,
+   "y": -780.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "3:doesn't@end",
+   "x": 18460.0,
+   "y": -780.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "3:fills@end",
+   "x": 18290.0,
+   "y": -1540.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "3:anymore@end",
+   "x": 18240.0,
+   "y": -1540.0,
+   "zoom": 1.08
+  },
+  {
+   "at": "4:What-0.3",
+   "x": 18240.0,
+   "y": -1540.0,
+   "zoom": 1.08
+  },
+  {
+   "at": "4:fast@end",
+   "x": 20120.0,
+   "y": -1540.0,
+   "zoom": 0.95
+  },
+  {
+   "at": "4:across@end",
+   "x": 20160.0,
+   "y": -1540.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "4:apart@end",
+   "x": 21840.0,
+   "y": -1540.0,
+   "zoom": 0.9
+  },
+  {
+   "at": "5:For-0.3",
+   "x": 21840.0,
+   "y": -1540.0,
+   "zoom": 0.9
+  },
+  {
+   "at": "5:galaxy@end",
+   "x": 22400.0,
+   "y": -1540.0,
+   "zoom": 0.72
+  },
+  {
+   "at": "5:second@end",
+   "x": 22040.0,
+   "y": -1540.0,
+   "zoom": 0.8
+  },
+  {
+   "at": "5:space@end",
+   "x": 21840.0,
+   "y": -1540.0,
+   "zoom": 0.82
+  },
+  {
+   "at": "5:far away@end",
+   "x": 22440.0,
+   "y": -1540.0,
+   "zoom": 0.82
+  },
+  {
+   "at": "6:But-0.3",
+   "x": 22440.0,
+   "y": -1540.0,
+   "zoom": 0.82
+  },
+  {
+   "at": "6:there@end",
+   "x": 21840.0,
+   "y": -1540.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "6:universe@end",
+   "x": 21840.0,
+   "y": -1540.0,
+   "zoom": 1.2
+  },
+  {
+   "at": "6:from@end",
+   "x": 22060.0,
+   "y": -1520.0,
+   "zoom": 1.15
+  },
+  {
+   "at": "end",
+   "x": 22060.0,
+   "y": -1520.0,
+   "zoom": 1.15
+  }
+ ],
+ "threads": [],
+ "drawings": [
+  {
+   "id": "bigstar",
+   "kind": "circle",
+   "cx": 18240.0,
+   "cy": -1540.0,
+   "r": 360,
+   "draw": "1:much bigger",
+   "width": 2.2,
+   "duration": 1.0,
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle2",
+   "kind": "circle",
+   "cx": 18240.0,
+   "cy": -1540.0,
+   "r": 270,
+   "draw": "2:oxygen",
+   "width": 2.0,
+   "duration": 0.8,
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle3",
+   "kind": "circle",
+   "cx": 18240.0,
+   "cy": -1540.0,
+   "r": 185,
+   "draw": "2:silicon",
+   "width": 2.0,
+   "duration": 0.8,
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle4",
+   "kind": "circle",
+   "cx": 18240.0,
+   "cy": -1540.0,
+   "r": 100,
+   "draw": "2:finally",
+   "width": 2.0,
+   "duration": 0.8,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line5",
+   "kind": "path",
+   "points": [
+    [
+     18240.0,
+     -1900.0
+    ],
+    [
+     18240.0,
+     -1720.0
+    ],
+    [
+     18240.0,
+     -1540.0
+    ]
+   ],
+   "draw": "2:layers",
+   "width": 1.2,
+   "color": "muted",
+   "duration": 0.6,
+   "out": "end-1.1"
+  },
+  {
+   "id": "rect6",
+   "kind": "rect",
+   "x": 17640.0,
+   "y": -780.0,
+   "w": 90,
+   "h": 90,
+   "draw": "3:Up to",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "3:Up to+0.1",
+   "out": "3:So when-0.2"
+  },
+  {
+   "id": "rect7",
+   "kind": "rect",
+   "x": 17870.0,
+   "y": -780.0,
+   "w": 90,
+   "h": 90,
+   "draw": "3:Up to+0.18",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "3:Up to+0.28",
+   "out": "3:So when-0.2"
+  },
+  {
+   "id": "line8",
+   "kind": "path",
+   "points": [
+    [
+     17700.0,
+     -780.0
+    ],
+    [
+     17810.0,
+     -780.0
+    ]
+   ],
+   "draw": "3:Up to+0.1",
+   "arrow": true,
+   "width": 2.0,
+   "duration": 0.4,
+   "out": "3:So when-0.2"
+  },
+  {
+   "id": "rect9",
+   "kind": "rect",
+   "x": 18100.0,
+   "y": -780.0,
+   "w": 90,
+   "h": 90,
+   "draw": "3:Up to+0.36",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "3:Up to+0.46",
+   "out": "3:So when-0.2"
+  },
+  {
+   "id": "line10",
+   "kind": "path",
+   "points": [
+    [
+     17930.0,
+     -780.0
+    ],
+    [
+     18040.0,
+     -780.0
+    ]
+   ],
+   "draw": "3:Up to+0.28",
+   "arrow": true,
+   "width": 2.0,
+   "duration": 0.4,
+   "out": "3:So when-0.2"
+  },
+  {
+   "id": "rect11",
+   "kind": "rect",
+   "x": 18330.0,
+   "y": -780.0,
+   "w": 90,
+   "h": 90,
+   "draw": "3:Up to+0.54",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "3:Up to+0.64",
+   "out": "3:So when-0.2"
+  },
+  {
+   "id": "line12",
+   "kind": "path",
+   "points": [
+    [
+     18160.0,
+     -780.0
+    ],
+    [
+     18270.0,
+     -780.0
+    ]
+   ],
+   "draw": "3:Up to+0.46",
+   "arrow": true,
+   "width": 2.0,
+   "duration": 0.4,
+   "out": "3:So when-0.2"
+  },
+  {
+   "id": "rect13",
+   "kind": "rect",
+   "x": 18560.0,
+   "y": -780.0,
+   "w": 90,
+   "h": 90,
+   "draw": "3:Up to+0.72",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "3:Up to+0.82",
+   "out": "3:So when-0.2"
+  },
+  {
+   "id": "line14",
+   "kind": "path",
+   "points": [
+    [
+     18390.0,
+     -780.0
+    ],
+    [
+     18500.0,
+     -780.0
+    ]
+   ],
+   "draw": "3:Up to+0.64",
+   "arrow": true,
+   "width": 2.0,
+   "duration": 0.4,
+   "out": "3:So when-0.2"
+  },
+  {
+   "id": "rect15",
+   "kind": "rect",
+   "x": 18790.0,
+   "y": -780.0,
+   "w": 90,
+   "h": 90,
+   "draw": "3:Up to+0.9",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "3:Up to+1.0",
+   "out": "3:So when-0.2"
+  },
+  {
+   "id": "line16",
+   "kind": "path",
+   "points": [
+    [
+     18620.0,
+     -780.0
+    ],
+    [
+     18730.0,
+     -780.0
+    ]
+   ],
+   "draw": "3:Up to+0.82",
+   "arrow": true,
+   "width": 2.0,
+   "duration": 0.4,
+   "out": "3:So when-0.2"
+  },
+  {
+   "id": "line17",
+   "kind": "path",
+   "points": [
+    [
+     18940.0,
+     -780.0
+    ],
+    [
+     19030.0,
+     -780.0
+    ]
+   ],
+   "draw": "3:doesn't",
+   "arrow": true,
+   "width": 2.0,
+   "duration": 0.4,
+   "out": "3:So when-0.2"
+  },
+  {
+   "id": "line18",
+   "kind": "path",
+   "points": [
+    [
+     19050.0,
+     -830.0
+    ],
+    [
+     19050.0,
+     -730.0
+    ]
+   ],
+   "draw": "3:doesn't+0.3",
+   "width": 4.0,
+   "duration": 0.3,
+   "out": "3:So when-0.2"
+  },
+  {
+   "id": "line20",
+   "kind": "path",
+   "points": [
+    [
+     20020.0,
+     -1540.0
+    ],
+    [
+     20380.0,
+     -1540.0
+    ]
+   ],
+   "draw": "4:collapses",
+   "arrow": true,
+   "width": 2.2,
+   "out": "4:Then the-0.2"
+  },
+  {
+   "id": "circle21",
+   "kind": "circle",
+   "cx": 20500.0,
+   "cy": -1540.0,
+   "r": 8,
+   "draw": "4:collapses+0.5",
+   "width": 2.4,
+   "fill": "accent",
+   "fillOpacity": 0.8,
+   "out": "4:Then the-0.2"
+  },
+  {
+   "id": "circle23",
+   "kind": "circle",
+   "cx": 21840.0,
+   "cy": -1540.0,
+   "r": 340,
+   "draw": "4:blown apart+0.2",
+   "width": 1.4,
+   "color": "muted",
+   "duration": 0.8,
+   "out": "5:The blast-0.2"
+  },
+  {
+   "id": "circle24",
+   "kind": "circle",
+   "cx": 21840.0,
+   "cy": -1540.0,
+   "r": 430,
+   "draw": "4:blown apart+0.45",
+   "width": 1.4,
+   "color": "muted",
+   "duration": 0.8,
+   "out": "5:The blast-0.2"
+  },
+  {
+   "id": "line25",
+   "kind": "path",
+   "points": [
+    [
+     23010.0,
+     -1540.0
+    ],
+    [
+     23018.6,
+     -1537.3
+    ],
+    [
+     23025.8,
+     -1533.0
+    ],
+    [
+     23031.0,
+     -1527.4
+    ],
+    [
+     23033.5,
+     -1520.6
+    ],
+    [
+     23032.9,
+     -1513.1
+    ],
+    [
+     23028.7,
+     -1505.3
+    ],
+    [
+     23020.8,
+     -1497.6
+    ],
+    [
+     23009.2,
+     -1490.5
+    ],
+    [
+     22994.1,
+     -1484.5
+    ],
+    [
+     22975.8,
+     -1480.0
+    ],
+    [
+     22954.9,
+     -1477.5
+    ],
+    [
+     22932.1,
+     -1477.2
+    ],
+    [
+     22908.3,
+     -1479.5
+    ],
+    [
+     22884.3,
+     -1484.6
+    ],
+    [
+     22861.3,
+     -1492.5
+    ],
+    [
+     22840.4,
+     -1503.1
+    ],
+    [
+     22822.4,
+     -1516.3
+    ],
+    [
+     22808.6,
+     -1531.8
+    ],
+    [
+     22799.7,
+     -1549.3
+    ],
+    [
+     22796.6,
+     -1568.1
+    ],
+    [
+     22799.9,
+     -1587.8
+    ],
+    [
+     22809.9,
+     -1607.5
+    ],
+    [
+     22826.8,
+     -1626.8
+    ],
+    [
+     22850.5,
+     -1644.7
+    ],
+    [
+     22880.7,
+     -1660.6
+    ],
+    [
+     22916.8,
+     -1673.8
+    ],
+    [
+     22957.9,
+     -1683.6
+    ],
+    [
+     23002.9,
+     -1689.4
+    ],
+    [
+     23050.7,
+     -1690.9
+    ],
+    [
+     23099.6,
+     -1687.7
+    ],
+    [
+     23148.2,
+     -1679.5
+    ],
+    [
+     23194.8,
+     -1666.5
+    ],
+    [
+     23237.8,
+     -1648.7
+    ]
+   ],
+   "draw": "5:galaxy",
+   "width": 1.8,
+   "curve": true,
+   "duration": 1.2,
+   "out": "5:The blast-0.2"
+  },
+  {
+   "id": "line26",
+   "kind": "path",
+   "points": [
+    [
+     22970.0,
+     -1540.0
+    ],
+    [
+     22961.4,
+     -1542.7
+    ],
+    [
+     22954.2,
+     -1547.0
+    ],
+    [
+     22949.0,
+     -1552.6
+    ],
+    [
+     22946.5,
+     -1559.4
+    ],
+    [
+     22947.1,
+     -1566.9
+    ],
+    [
+     22951.3,
+     -1574.7
+    ],
+    [
+     22959.2,
+     -1582.4
+    ],
+    [
+     22970.8,
+     -1589.5
+    ],
+    [
+     22985.9,
+     -1595.5
+    ],
+    [
+     23004.2,
+     -1600.0
+    ],
+    [
+     23025.1,
+     -1602.5
+    ],
+    [
+     23047.9,
+     -1602.8
+    ],
+    [
+     23071.7,
+     -1600.5
+    ],
+    [
+     23095.7,
+     -1595.4
+    ],
+    [
+     23118.7,
+     -1587.5
+    ],
+    [
+     23139.6,
+     -1576.9
+    ],
+    [
+     23157.6,
+     -1563.7
+    ],
+    [
+     23171.4,
+     -1548.2
+    ],
+    [
+     23180.3,
+     -1530.7
+    ],
+    [
+     23183.4,
+     -1511.9
+    ],
+    [
+     23180.1,
+     -1492.2
+    ],
+    [
+     23170.1,
+     -1472.5
+    ],
+    [
+     23153.2,
+     -1453.2
+    ],
+    [
+     23129.5,
+     -1435.3
+    ],
+    [
+     23099.3,
+     -1419.4
+    ],
+    [
+     23063.2,
+     -1406.2
+    ],
+    [
+     23022.1,
+     -1396.4
+    ],
+    [
+     22977.1,
+     -1390.6
+    ],
+    [
+     22929.3,
+     -1389.1
+    ],
+    [
+     22880.4,
+     -1392.3
+    ],
+    [
+     22831.8,
+     -1400.5
+    ],
+    [
+     22785.2,
+     -1413.5
+    ],
+    [
+     22742.2,
+     -1431.3
+    ]
+   ],
+   "draw": "5:galaxy+0.2",
+   "width": 1.8,
+   "curve": true,
+   "duration": 1.2,
+   "out": "5:The blast-0.2"
+  },
+  {
+   "id": "line28",
+   "kind": "path",
+   "points": [
+    [
+     21684.1,
+     -1630.0
+    ],
+    [
+     21441.6,
+     -1770.0
+    ]
+   ],
+   "draw": "5:flies out",
+   "width": 1.2,
+   "color": "accent",
+   "duration": 0.5,
+   "out": "5:NASA-0.2"
+  },
+  {
+   "id": "line29",
+   "kind": "path",
+   "points": [
+    [
+     21793.4,
+     -1713.9
+    ],
+    [
+     21720.9,
+     -1984.3
+    ]
+   ],
+   "draw": "5:flies out+0.03",
+   "width": 1.2,
+   "color": "accent",
+   "duration": 0.5,
+   "out": "5:NASA-0.2"
+  },
+  {
+   "id": "line30",
+   "kind": "path",
+   "points": [
+    [
+     21930.0,
+     -1695.9
+    ],
+    [
+     22070.0,
+     -1938.4
+    ]
+   ],
+   "draw": "5:flies out+0.06",
+   "width": 1.2,
+   "color": "accent",
+   "duration": 0.5,
+   "out": "5:NASA-0.2"
+  },
+  {
+   "id": "line31",
+   "kind": "path",
+   "points": [
+    [
+     22013.9,
+     -1586.6
+    ],
+    [
+     22284.3,
+     -1659.1
+    ]
+   ],
+   "draw": "5:flies out+0.09",
+   "width": 1.2,
+   "color": "accent",
+   "duration": 0.5,
+   "out": "5:NASA-0.2"
+  },
+  {
+   "id": "line32",
+   "kind": "path",
+   "points": [
+    [
+     21995.9,
+     -1450.0
+    ],
+    [
+     22238.4,
+     -1310.0
+    ]
+   ],
+   "draw": "5:flies out+0.12",
+   "width": 1.2,
+   "color": "accent",
+   "duration": 0.5,
+   "out": "5:NASA-0.2"
+  },
+  {
+   "id": "line33",
+   "kind": "path",
+   "points": [
+    [
+     21886.6,
+     -1366.1
+    ],
+    [
+     21959.1,
+     -1095.7
+    ]
+   ],
+   "draw": "5:flies out+0.15",
+   "width": 1.2,
+   "color": "accent",
+   "duration": 0.5,
+   "out": "5:NASA-0.2"
+  },
+  {
+   "id": "line34",
+   "kind": "path",
+   "points": [
+    [
+     21750.0,
+     -1384.1
+    ],
+    [
+     21610.0,
+     -1141.6
+    ]
+   ],
+   "draw": "5:flies out+0.18",
+   "width": 1.2,
+   "color": "accent",
+   "duration": 0.5,
+   "out": "5:NASA-0.2"
+  },
+  {
+   "id": "line35",
+   "kind": "path",
+   "points": [
+    [
+     21666.1,
+     -1493.4
+    ],
+    [
+     21395.7,
+     -1420.9
+    ]
+   ],
+   "draw": "5:flies out+0.21",
+   "width": 1.2,
+   "color": "accent",
+   "duration": 0.5,
+   "out": "5:NASA-0.2"
+  },
+  {
+   "id": "rect36",
+   "kind": "rect",
+   "x": 21389.7,
+   "y": -1800.0,
+   "w": 86,
+   "h": 86,
+   "draw": "5:carbon",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "5:carbon+0.1",
+   "out": "5:NASA-0.2"
+  },
+  {
+   "id": "rect37",
+   "kind": "rect",
+   "x": 22100.0,
+   "y": -1990.3,
+   "w": 86,
+   "h": 86,
+   "draw": "5:oxygen",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "5:oxygen+0.1",
+   "out": "5:NASA-0.2"
+  },
+  {
+   "id": "rect38",
+   "kind": "rect",
+   "x": 22290.3,
+   "y": -1280.0,
+   "w": 86,
+   "h": 86,
+   "draw": "5:calcium",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "5:calcium+0.1",
+   "out": "5:NASA-0.2"
+  },
+  {
+   "id": "rect39",
+   "kind": "rect",
+   "x": 21580.0,
+   "y": -1089.7,
+   "w": 86,
+   "h": 86,
+   "draw": "5:iron out",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "5:iron out+0.1",
+   "out": "5:NASA-0.2"
+  },
+  {
+   "id": "rect41",
+   "kind": "rect",
+   "x": 22990.0,
+   "y": -1710.0,
+   "w": 100,
+   "h": 100,
+   "draw": "5:iron in",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "5:iron in+0.1",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line42",
+   "kind": "path",
+   "points": [
+    [
+     22040.0,
+     -1580.0
+    ],
+    [
+     22440.0,
+     -1690.0
+    ],
+    [
+     22840.0,
+     -1500.0
+    ]
+   ],
+   "draw": "5:NASA",
+   "width": 1.6,
+   "color": "muted",
+   "curve": true,
+   "dashed": true,
+   "out": "end-1.1"
+  }
+ ],
+ "lights": [
+  {
+   "drawing": "bigstar",
+   "from": "1:burn hotter",
+   "duration": 1.6,
+   "size": 56
+  },
+  {
+   "worldPoints": [
+    [
+     18240.0,
+     -1540.0
+    ]
+   ],
+   "from": "1:centers",
+   "size": 150,
+   "stagger": 0.0,
+   "to": "end-1.1"
+  },
+  {
+   "drawing": "line5",
+   "from": "2:heaviest",
+   "duration": 1.4,
+   "size": 50
+  },
+  {
+   "drawing": "line8",
+   "from": "3:gives off+0.12",
+   "duration": 0.6,
+   "size": 36
+  },
+  {
+   "drawing": "line10",
+   "from": "3:gives off+0.24",
+   "duration": 0.6,
+   "size": 36
+  },
+  {
+   "drawing": "line12",
+   "from": "3:gives off+0.36",
+   "duration": 0.6,
+   "size": 36
+  },
+  {
+   "drawing": "line14",
+   "from": "3:gives off+0.48",
+   "duration": 0.6,
+   "size": 36
+  },
+  {
+   "drawing": "line16",
+   "from": "3:gives off+0.6",
+   "duration": 0.6,
+   "size": 36
+  },
+  {
+   "worldPoints": [
+    [
+     18240.0,
+     -1540.0
+    ]
+   ],
+   "from": "3:fills up",
+   "size": 160,
+   "stagger": 0.0,
+   "to": "3:goes out"
+  },
+  {
+   "worldPoints": [
+    [
+     21840.0,
+     -1540.0
+    ]
+   ],
+   "from": "5:outshine",
+   "size": 320,
+   "stagger": 0.0,
+   "to": "5:The blast"
+  },
+  {
+   "drawing": "line28",
+   "from": "5:flies out",
+   "duration": 0.7,
+   "size": 40
+  },
+  {
+   "drawing": "line29",
+   "from": "5:flies out+0.05",
+   "duration": 0.7,
+   "size": 40
+  },
+  {
+   "drawing": "line30",
+   "from": "5:flies out+0.1",
+   "duration": 0.7,
+   "size": 40
+  },
+  {
+   "drawing": "line31",
+   "from": "5:flies out+0.15",
+   "duration": 0.7,
+   "size": 40
+  },
+  {
+   "drawing": "line32",
+   "from": "5:flies out+0.2",
+   "duration": 0.7,
+   "size": 40
+  },
+  {
+   "drawing": "line33",
+   "from": "5:flies out+0.25",
+   "duration": 0.7,
+   "size": 40
+  },
+  {
+   "drawing": "line34",
+   "from": "5:flies out+0.3",
+   "duration": 0.7,
+   "size": 40
+  },
+  {
+   "drawing": "line35",
+   "from": "5:flies out+0.35",
+   "duration": 0.7,
+   "size": 40
+  },
+  {
+   "drawing": "line42",
+   "from": "5:made in",
+   "duration": 1.5,
+   "size": 56
+  },
+  {
+   "worldPoints": [
+    [
+     21840.0,
+     -1540.0
+    ]
+   ],
+   "from": "6:strangest",
+   "size": 110,
+   "stagger": 0.0,
+   "to": "end-1.1"
+  }
+ ],
+ "magnifiers": [],
+ "labels": [
+  {
+   "text": "CHAPTER 5",
+   "x": 960,
+   "y": 470,
+   "space": "screen",
+   "size": 28,
+   "in": 0.25,
+   "out": "1:For-0.55",
+   "color": "accent",
+   "spacing": 0.5
+  },
+  {
+   "text": "WHERE DOES IRON COME FROM?",
+   "x": 960,
+   "y": 548,
+   "space": "screen",
+   "size": 58,
+   "in": 0.45,
+   "out": "1:For-0.55"
+  },
+  {
+   "text": "SUN",
+   "x": 17540.0,
+   "y": -1290.0,
+   "space": "world",
+   "size": 28,
+   "in": "1:For iron+0.3",
+   "out": "2:Carbon-0.2"
+  },
+  {
+   "text": "MANY TIMES HEAVIER",
+   "x": 18240.0,
+   "y": -1970.0,
+   "space": "world",
+   "size": 34,
+   "in": "1:many times",
+   "out": "2:Carbon-0.2"
+  },
+  {
+   "text": "O \u00b7 Ne \u00b7 Mg",
+   "x": 18240.0,
+   "y": -1770.0,
+   "space": "world",
+   "size": 30,
+   "in": "2:oxygen+0.3",
+   "out": "end-1.1"
+  },
+  {
+   "text": "Si \u00b7 S \u00b7 Ca",
+   "x": 18240.0,
+   "y": -1685.0,
+   "space": "world",
+   "size": 30,
+   "in": "2:silicon+0.3",
+   "out": "end-1.1"
+  },
+  {
+   "text": "Fe",
+   "x": 18240.0,
+   "y": -1540.0,
+   "space": "world",
+   "size": 44,
+   "in": "2:finally+0.3",
+   "out": "end-1.1"
+  },
+  {
+   "text": "H \u00b7 He \u00b7 C",
+   "x": 18240.0,
+   "y": -1855.0,
+   "space": "world",
+   "size": 26,
+   "in": "2:Carbon fuses",
+   "out": "end-1.1"
+  },
+  {
+   "text": "MONTHS",
+   "x": 18800.0,
+   "y": -1600.0,
+   "space": "world",
+   "size": 40,
+   "in": "2:months",
+   "out": "3:But-0.2"
+  },
+  {
+   "text": "DAYS",
+   "x": 18800.0,
+   "y": -1500.0,
+   "space": "world",
+   "size": 40,
+   "in": "2:days",
+   "out": "3:But-0.2"
+  },
+  {
+   "text": "DEAD END",
+   "x": 18240.0,
+   "y": -1390.0,
+   "space": "world",
+   "size": 34,
+   "in": "3:dead end",
+   "out": "3:Up to-0.2",
+   "color": "accent"
+  },
+  {
+   "text": "H",
+   "x": 17640.0,
+   "y": -785.4,
+   "space": "world",
+   "size": 38,
+   "in": "3:Up to+0.25",
+   "out": "3:So when-0.2",
+   "spacing": 0.02
+  },
+  {
+   "text": "He",
+   "x": 17870.0,
+   "y": -785.4,
+   "space": "world",
+   "size": 38,
+   "in": "3:Up to+0.43",
+   "out": "3:So when-0.2",
+   "spacing": 0.02
+  },
+  {
+   "text": "C",
+   "x": 18100.0,
+   "y": -785.4,
+   "space": "world",
+   "size": 38,
+   "in": "3:Up to+0.61",
+   "out": "3:So when-0.2",
+   "spacing": 0.02
+  },
+  {
+   "text": "O",
+   "x": 18330.0,
+   "y": -785.4,
+   "space": "world",
+   "size": 38,
+   "in": "3:Up to+0.79",
+   "out": "3:So when-0.2",
+   "spacing": 0.02
+  },
+  {
+   "text": "Si",
+   "x": 18560.0,
+   "y": -785.4,
+   "space": "world",
+   "size": 38,
+   "in": "3:Up to+0.97",
+   "out": "3:So when-0.2",
+   "spacing": 0.02
+  },
+  {
+   "text": "Fe",
+   "x": 18790.0,
+   "y": -785.4,
+   "space": "world",
+   "size": 38,
+   "in": "3:Up to+1.15",
+   "out": "3:So when-0.2",
+   "spacing": 0.02
+  },
+  {
+   "text": "GIVES OFF ENERGY",
+   "x": 18215.0,
+   "y": -670.0,
+   "space": "world",
+   "size": 28,
+   "in": "3:gives off",
+   "out": "3:So when-0.2"
+  },
+  {
+   "text": "SIZE OF THE EARTH",
+   "x": 19740.0,
+   "y": -1250.0,
+   "space": "world",
+   "size": 30,
+   "in": "4:size of",
+   "out": "4:Then the-0.2"
+  },
+  {
+   "text": "LESS THAN 20 KM",
+   "x": 20500.0,
+   "y": -1430.0,
+   "space": "world",
+   "size": 30,
+   "in": "4:20 kilometers",
+   "out": "4:Then the-0.2"
+  },
+  {
+   "text": "LESS THAN A SECOND",
+   "x": 20120.0,
+   "y": -1840.0,
+   "space": "world",
+   "size": 40,
+   "in": "4:less than",
+   "out": "4:Then the-0.2",
+   "color": "accent"
+  },
+  {
+   "text": "SUPERNOVA",
+   "x": 21840.0,
+   "y": -1140.0,
+   "space": "world",
+   "size": 44,
+   "in": "4:supernova",
+   "out": "5:For a-0.2"
+  },
+  {
+   "text": "ITS WHOLE GALAXY",
+   "x": 22990.0,
+   "y": -1280.0,
+   "space": "world",
+   "size": 30,
+   "in": "5:galaxy",
+   "out": "5:The blast-0.2"
+  },
+  {
+   "text": "{n} \u00d7 THE SUN",
+   "x": 22990.0,
+   "y": -1870.0,
+   "space": "world",
+   "size": 44,
+   "in": "5:10 billion",
+   "out": "5:The blast-0.2",
+   "count": {
+    "to": 10000000000,
+    "duration": 1.5
+   }
+  },
+  {
+   "text": "{n} KM EVERY SECOND",
+   "x": 21840.0,
+   "y": -1940.0,
+   "space": "world",
+   "size": 40,
+   "in": "5:10,000",
+   "out": "5:The blast-0.2",
+   "count": {
+    "to": 10000,
+    "duration": 1.2
+   }
+  },
+  {
+   "text": "C",
+   "x": 21389.7,
+   "y": -1805.2,
+   "space": "world",
+   "size": 36,
+   "in": "5:carbon+0.25",
+   "out": "5:NASA-0.2",
+   "spacing": 0.02
+  },
+  {
+   "text": "O",
+   "x": 22100.0,
+   "y": -1995.5,
+   "space": "world",
+   "size": 36,
+   "in": "5:oxygen+0.25",
+   "out": "5:NASA-0.2",
+   "spacing": 0.02
+  },
+  {
+   "text": "Ca",
+   "x": 22290.3,
+   "y": -1285.2,
+   "space": "world",
+   "size": 36,
+   "in": "5:calcium+0.25",
+   "out": "5:NASA-0.2",
+   "spacing": 0.02
+  },
+  {
+   "text": "Fe",
+   "x": 21580.0,
+   "y": -1094.8,
+   "space": "world",
+   "size": 36,
+   "in": "5:iron out+0.25",
+   "out": "5:NASA-0.2",
+   "spacing": 0.02
+  },
+  {
+   "text": "Fe",
+   "x": 22990.0,
+   "y": -1716.0,
+   "space": "world",
+   "size": 42,
+   "in": "5:iron in+0.25",
+   "spacing": 0.02,
+   "out": "end-1.1"
+  },
+  {
+   "text": "IRON",
+   "x": 22990.0,
+   "y": -1680.0,
+   "space": "world",
+   "size": 10,
+   "in": "5:iron in+0.35",
+   "weight": 500,
+   "spacing": 0.18,
+   "out": "end-1.1"
+  }
+ ]
+}
