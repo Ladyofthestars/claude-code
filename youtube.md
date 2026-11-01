@@ -7,14 +7,14 @@ Files: `out/made-of-stars/made-of-stars.mp4` (1920x1080, 60 fps, 9:27) and `pack
 
 The title and the thumbnail say different things on purpose, so together they say more:
 - The title is the surprising fact. It is also the first line of the video, so people get what they clicked for in the first three seconds, which helps them stay.
-- The thumbnail is the feeling: "The iron in your blood was FORGED IN STARS". It ties the video to the channel's "warriors are forged, not born".
+- The thumbnail is the feeling: "YOU ARE STARDUST", with the person from the video filled with stars.
 
 Backup titles, if you want to test one later:
 1. The Iron in Your Blood Came From a Dying Star
 2. Where Every Atom in You Came From
 
 ## Thumbnail
-`packaging/thumbnail.png`. A dark night sky with a supernova glowing gold and blue. On the left, the person from the video is drawn in light, with a gold glow at the heart and a beam of light running between them. The words are big and bold, with "IN STARS" in gold, and stay readable at phone size. To change the words, run `tools/make_thumbnail.py`.
+`packaging/thumbnail.png`. The person from the video stands against a black sky, filled with stars and a glowing violet and gold nebula, brightest at the heart, with stardust drifting off one shoulder. Beside the figure, "YOU ARE" in white and "STARDUST" in big glowing gold, readable at phone size. To change it, run `tools/make_thumbnail.py`.
 
 ## Description (paste as is)
 
