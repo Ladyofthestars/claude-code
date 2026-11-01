@@ -12,11 +12,11 @@ Tick each box as it is done. If work stops, continue from the first unticked box
 - [x] Word count (1,413 words, 139 sentences, 38 paragraphs), and no hype words
 
 ## Step 2: pictures
-- [ ] Generate 16 new pictures (Nano Banana 2 Lite via the Gemini connector, because Higgsfield has no credits)
-- [ ] Cut out backgrounds (tools/cutout.py), save to `images/`
-- [ ] Check each picture: text, colour, cut-off edges, style. Remake failures (twice at most)
-- [ ] Re-ink the 4 reused pictures (earth, person, open_hand, fist) in the same ink as the new ones
-- [ ] `images/prompts.md` with every prompt used
+- [x] Generate 17 new pictures (Nano Banana 2 Lite via the Gemini connector, because Higgsfield has no credits)
+- [x] Cut out backgrounds (tools/cutout.py), save to `images/`
+- [x] Check each picture: text, colour, cut-off edges, style. Remake failures (twice at most): bone x1, telescope x2, hourglass x2, nebula x1
+- [x] Re-ink the 4 reused pictures (earth, person, open_hand, fist) in the same ink as the new ones
+- [x] `images/prompts.md` with every prompt used
 
 ## Step 3: voice
 - [ ] ElevenLabs, voice Brian (calm, deep), one paragraph at a time, same settings, stitched with previous/next text
