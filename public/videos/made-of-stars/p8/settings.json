@@ -626,6 +626,15 @@
  "magnifiers": [],
  "labels": [
   {
+   "text": "WHAT DOES IT MEAN TO BE MADE OF STARS?",
+   "x": 960,
+   "y": 530,
+   "space": "screen",
+   "size": 40,
+   "in": 0.25,
+   "out": "1:Let's-0.55"
+  },
+  {
    "text": "OLDER THAN THE EARTH",
    "x": 35290.0,
    "y": -1070.0,

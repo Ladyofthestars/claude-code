@@ -752,6 +752,8 @@ def part7(p):
 
 
 def part8(p):
+    # The chapter 7 question on the empty page while the voice is silent, like a chapter title.
+    p.label('WHAT DOES IT MEAN TO BE MADE OF STARS?', 960, 530, 0.25, "1:Let's-0.55", size=40, space='screen')
     p.cam('start', x=0, y=0, zoom=1.0)
     me = p.pic('person', -500, 0, h=700, at="1:Let's", id='me8')
     p.pic('earth', 60, -40, h=330, at='1:where we')

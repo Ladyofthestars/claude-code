@@ -77,12 +77,29 @@ def main():
         '[v]volume=1.0[vv];[m]volume=0.55[mm];'
         '[vv][mm]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11[a]',
         '-map', '[a]', '-ar', str(SR), f'{out}/mix.wav'], check=True)
-    # Join the part videos (same codec settings) and add the final soundtrack.
-    with open(f'{out}/parts.txt', 'w') as f:
-        for n in parts:
-            f.write(f"file '{os.path.abspath(f'{out}/p{n}.mp4')}'\n")
-    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', f'{out}/parts.txt', '-i', f'{out}/mix.wav',
-                    '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', f'{out}/{video}.mp4'], check=True)
+    # Join the part videos without re-encoding and add the final soundtrack. Each part goes through
+    # MPEG-TS first: joining the MP4s directly drops a frame at some joins, which slowly pulls the
+    # picture ahead of the voice. Then check that no frame went missing.
+    ts = []
+    for n in parts:
+        ts.append(f'{out}/p{n}.ts')
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', f'{out}/p{n}.mp4', '-map', '0:v', '-c', 'copy',
+                        '-bsf:v', 'h264_mp4toannexb', '-f', 'mpegts', ts[-1]], check=True)
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', 'concat:' + '|'.join(ts), '-i', f'{out}/mix.wav',
+                    '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart',
+                    f'{out}/{video}.mp4'], check=True)
+    for t in ts:
+        os.remove(t)
+
+    def frames(path):
+        r = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v', '-count_packets', '-show_entries',
+                            'stream=nb_read_packets', '-of', 'csv=p=0', path], capture_output=True, text=True, check=True)
+        return int(r.stdout.strip().strip(','))
+    want = sum(frames(f'{out}/p{n}.mp4') for n in parts)
+    got = frames(f'{out}/{video}.mp4')
+    print(f'frames: {got} in the video, {want} in the parts')
+    if got != want:
+        sys.exit('frame count mismatch: the picture would drift from the voice')
     print(f'total {total:.2f}s; part starts: ' + ', '.join(f'p{n} {offsets[n]:.2f}s' for n in parts))
     print('swells at ' + ', '.join(f'{t:.2f}s' for t in times))
     print(f'wrote {out}/{video}.mp4')
