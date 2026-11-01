@@ -1,5 +1,5 @@
 {
- "duration": 90.399,
+ "duration": 89.377,
  "source": "ElevenLabs, voice Brian (nPczCjzI2devNBz1zQrb), eleven_multilingual_v2, one paragraph at a time with previous/next text, character timestamps",
  "words": [
   {
@@ -1300,378 +1300,364 @@
   {
    "text": "calcium",
    "start": 71.557,
-   "end": 72.056,
+   "end": 72.067,
    "line": 5,
    "sentence": false
   },
   {
    "text": "and",
-   "start": 72.091,
-   "end": 72.16,
+   "start": 72.102,
+   "end": 72.172,
    "line": 5,
    "sentence": false
   },
   {
    "text": "iron",
-   "start": 72.218,
-   "end": 72.485,
+   "start": 72.23,
+   "end": 72.497,
    "line": 5,
    "sentence": false
   },
   {
    "text": "out",
-   "start": 72.578,
-   "end": 72.787,
+   "start": 72.59,
+   "end": 72.764,
    "line": 5,
    "sentence": false
   },
   {
    "text": "into",
-   "start": 72.822,
-   "end": 72.973,
+   "start": 72.799,
+   "end": 72.938,
    "line": 5,
    "sentence": false
   },
   {
    "text": "space",
-   "start": 73.031,
-   "end": 73.554,
+   "start": 72.996,
+   "end": 73.53,
    "line": 5,
    "sentence": false
   },
   {
-   "text": "NASA",
-   "start": 74.088,
-   "end": 74.517,
+   "text": "Much",
+   "start": 74.169,
+   "end": 74.389,
    "line": 5,
    "sentence": true
   },
   {
-   "text": "says",
-   "start": 74.564,
-   "end": 74.761,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "much",
-   "start": 74.889,
-   "end": 75.109,
-   "line": 5,
-   "sentence": false
-  },
-  {
    "text": "of",
-   "start": 75.144,
-   "end": 75.202,
+   "start": 74.424,
+   "end": 74.471,
    "line": 5,
    "sentence": false
   },
   {
    "text": "the",
-   "start": 75.237,
-   "end": 75.307,
+   "start": 74.506,
+   "end": 74.575,
    "line": 5,
    "sentence": false
   },
   {
    "text": "iron",
-   "start": 75.365,
-   "end": 75.585,
+   "start": 74.633,
+   "end": 74.831,
    "line": 5,
    "sentence": false
   },
   {
    "text": "in",
-   "start": 75.62,
-   "end": 75.678,
+   "start": 74.865,
+   "end": 74.924,
    "line": 5,
    "sentence": false
   },
   {
    "text": "your",
-   "start": 75.725,
-   "end": 75.841,
+   "start": 74.97,
+   "end": 75.074,
    "line": 5,
    "sentence": false
   },
   {
    "text": "blood",
-   "start": 75.876,
-   "end": 76.085,
+   "start": 75.121,
+   "end": 75.353,
    "line": 5,
    "sentence": false
   },
   {
    "text": "was",
-   "start": 76.131,
-   "end": 76.247,
+   "start": 75.388,
+   "end": 75.504,
    "line": 5,
    "sentence": false
   },
   {
    "text": "made",
-   "start": 76.305,
-   "end": 76.468,
+   "start": 75.562,
+   "end": 75.713,
    "line": 5,
    "sentence": false
   },
   {
    "text": "in",
-   "start": 76.502,
-   "end": 76.549,
+   "start": 75.736,
+   "end": 75.783,
    "line": 5,
    "sentence": false
   },
   {
    "text": "explosions",
-   "start": 76.607,
-   "end": 77.141,
+   "start": 75.829,
+   "end": 76.34,
    "line": 5,
    "sentence": false
   },
   {
    "text": "like",
-   "start": 77.187,
-   "end": 77.338,
+   "start": 76.386,
+   "end": 76.537,
    "line": 5,
    "sentence": false
   },
   {
    "text": "this",
-   "start": 77.373,
-   "end": 77.756,
+   "start": 76.572,
+   "end": 77.002,
    "line": 5,
    "sentence": false
   },
   {
    "text": "long",
-   "start": 78.221,
-   "end": 78.465,
+   "start": 77.338,
+   "end": 77.582,
    "line": 5,
    "sentence": false
   },
   {
    "text": "ago",
-   "start": 78.511,
-   "end": 78.801,
+   "start": 77.629,
+   "end": 77.814,
    "line": 5,
    "sentence": false
   },
   {
    "text": "and",
-   "start": 78.883,
-   "end": 78.964,
+   "start": 77.884,
+   "end": 77.954,
    "line": 5,
    "sentence": false
   },
   {
    "text": "far",
-   "start": 79.022,
-   "end": 79.196,
+   "start": 78.0,
+   "end": 78.163,
    "line": 5,
    "sentence": false
   },
   {
    "text": "away",
-   "start": 79.242,
-   "end": 80.136,
+   "start": 78.209,
+   "end": 79.115,
    "line": 5,
    "sentence": false
   },
   {
    "text": "But",
-   "start": 80.886,
-   "end": 81.06,
+   "start": 79.864,
+   "end": 80.038,
    "line": 6,
    "sentence": true
   },
   {
    "text": "the",
-   "start": 81.095,
-   "end": 81.165,
+   "start": 80.073,
+   "end": 80.143,
    "line": 6,
    "sentence": false
   },
   {
    "text": "story",
-   "start": 81.211,
-   "end": 81.478,
+   "start": 80.189,
+   "end": 80.456,
    "line": 6,
    "sentence": false
   },
   {
    "text": "doesn't",
-   "start": 81.536,
-   "end": 81.803,
+   "start": 80.514,
+   "end": 80.781,
    "line": 6,
    "sentence": false
   },
   {
    "text": "end",
-   "start": 81.85,
-   "end": 81.966,
+   "start": 80.828,
+   "end": 80.944,
    "line": 6,
    "sentence": false
   },
   {
    "text": "there",
-   "start": 82.012,
-   "end": 82.43,
+   "start": 80.99,
+   "end": 81.408,
    "line": 6,
    "sentence": false
   },
   {
    "text": "The",
-   "start": 82.895,
-   "end": 83.011,
+   "start": 81.873,
+   "end": 81.989,
    "line": 6,
    "sentence": true
   },
   {
    "text": "crushed",
-   "start": 83.069,
-   "end": 83.359,
+   "start": 82.047,
+   "end": 82.337,
    "line": 6,
    "sentence": false
   },
   {
    "text": "core",
-   "start": 83.405,
-   "end": 83.661,
+   "start": 82.383,
+   "end": 82.639,
    "line": 6,
    "sentence": false
   },
   {
    "text": "left",
-   "start": 83.696,
-   "end": 83.858,
+   "start": 82.674,
+   "end": 82.836,
    "line": 6,
    "sentence": false
   },
   {
    "text": "behind",
-   "start": 83.905,
-   "end": 84.288,
+   "start": 82.883,
+   "end": 83.266,
    "line": 6,
    "sentence": false
   },
   {
    "text": "is",
-   "start": 84.357,
-   "end": 84.439,
+   "start": 83.335,
+   "end": 83.417,
    "line": 6,
    "sentence": false
   },
   {
    "text": "one",
-   "start": 84.485,
-   "end": 84.578,
+   "start": 83.463,
+   "end": 83.556,
    "line": 6,
    "sentence": false
   },
   {
    "text": "of",
-   "start": 84.613,
-   "end": 84.659,
+   "start": 83.591,
+   "end": 83.637,
    "line": 6,
    "sentence": false
   },
   {
    "text": "the",
-   "start": 84.682,
-   "end": 84.752,
+   "start": 83.66,
+   "end": 83.73,
    "line": 6,
    "sentence": false
   },
   {
    "text": "strangest",
-   "start": 84.799,
-   "end": 85.263,
+   "start": 83.777,
+   "end": 84.241,
    "line": 6,
    "sentence": false
   },
   {
    "text": "things",
-   "start": 85.298,
-   "end": 85.542,
+   "start": 84.276,
+   "end": 84.52,
    "line": 6,
    "sentence": false
   },
   {
    "text": "in",
-   "start": 85.576,
-   "end": 85.634,
+   "start": 84.554,
+   "end": 84.612,
    "line": 6,
    "sentence": false
   },
   {
    "text": "the",
-   "start": 85.658,
-   "end": 85.727,
+   "start": 84.636,
+   "end": 84.705,
    "line": 6,
    "sentence": false
   },
   {
    "text": "universe",
-   "start": 85.785,
-   "end": 86.389,
+   "start": 84.763,
+   "end": 85.367,
    "line": 6,
    "sentence": false
   },
   {
    "text": "And",
-   "start": 86.795,
-   "end": 86.958,
+   "start": 85.773,
+   "end": 85.936,
    "line": 6,
    "sentence": true
   },
   {
    "text": "it",
-   "start": 87.016,
-   "end": 87.086,
+   "start": 85.994,
+   "end": 86.064,
    "line": 6,
    "sentence": false
   },
   {
    "text": "may",
-   "start": 87.167,
-   "end": 87.341,
+   "start": 86.145,
+   "end": 86.319,
    "line": 6,
    "sentence": false
   },
   {
    "text": "be",
-   "start": 87.422,
-   "end": 87.515,
+   "start": 86.4,
+   "end": 86.493,
    "line": 6,
    "sentence": false
   },
   {
    "text": "where",
-   "start": 87.55,
-   "end": 87.736,
+   "start": 86.528,
+   "end": 86.714,
    "line": 6,
    "sentence": false
   },
   {
    "text": "gold",
-   "start": 87.771,
-   "end": 88.003,
+   "start": 86.749,
+   "end": 86.981,
    "line": 6,
    "sentence": false
   },
   {
    "text": "comes",
-   "start": 88.049,
-   "end": 88.293,
+   "start": 87.027,
+   "end": 87.271,
    "line": 6,
    "sentence": false
   },
   {
    "text": "from",
-   "start": 88.34,
-   "end": 89.199,
+   "start": 87.318,
+   "end": 88.177,
    "line": 6,
    "sentence": false
   }

@@ -447,35 +447,35 @@
   },
   {
    "drawing": "line9",
-   "from": "2:fair",
+   "from": "2:not separate",
    "duration": 1.0,
    "size": 46,
    "reverse": true
   },
   {
    "drawing": "line11",
-   "from": "2:fair+0.22",
+   "from": "2:not separate+0.22",
    "duration": 1.0,
    "size": 46,
    "reverse": true
   },
   {
    "drawing": "line13",
-   "from": "2:fair+0.44",
+   "from": "2:not separate+0.44",
    "duration": 1.0,
    "size": 46,
    "reverse": true
   },
   {
    "drawing": "line15",
-   "from": "2:fair+0.66",
+   "from": "2:not separate+0.66",
    "duration": 1.0,
    "size": 46,
    "reverse": true
   },
   {
    "drawing": "line17",
-   "from": "2:fair+0.88",
+   "from": "2:not separate+0.88",
    "duration": 1.0,
    "size": 46,
    "reverse": true

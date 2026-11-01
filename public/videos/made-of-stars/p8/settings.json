@@ -709,6 +709,16 @@
    "color": "accent"
   },
   {
+   "text": "AS ABOVE, SO BELOW",
+   "x": 36610.0,
+   "y": -3440.0,
+   "space": "world",
+   "size": 50,
+   "in": "3:night sky",
+   "out": "end-0.6",
+   "color": "accent"
+  },
+  {
    "text": "YOU ARE MADE OF STARS",
    "x": 36610.0,
    "y": -2480.0,

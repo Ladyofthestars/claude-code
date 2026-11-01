@@ -3,6 +3,8 @@
 YouTube video, 16:9 (1920×1080, 60 fps), about 10 minutes, one calm narrator.
 Topic chosen because no topic was given: where every atom in your body came from. Every fact is in `facts.md` with its source.
 
+Tone: calm and reflective, leaning spiritual (connection, belonging; the old saying "as above, so below" appears on screen at the end), while every factual statement stays true and sourced. Institutions aren't quoted in the narration; the sources are in `facts.md`.
+
 Structure: an opening hook (about 30 seconds), 7 chapters that each answer one question and end on the next question, and an ending that comes back to the opening line. Each chapter is one part of the animation (9 parts in all).
 
 ---
@@ -14,7 +16,7 @@ Each `>` line is one paragraph. The voice is recorded one paragraph at a time an
 ### Part 0: Opening
 > Almost every atom in your body is older than the Earth. The hydrogen in you was made in the first few minutes of the universe. The iron in your blood came from stars that blew up long ago and far away.
 
-> So where did the rest of you come from? By the end of this video, you'll know where each part of you was made. And you'll see why it's fair to say that you are made of stars.
+> So where did the rest of you come from? By the end of this video, you'll know where each part of you was made. And you'll see that you're not separate from the sky above you. You are made of stars.
 
 ### Part 1: What are you made of?
 > Let's start with you. Your body is built from tiny pieces called atoms. There are many kinds of atoms, called elements. But only a few of them do most of the work.
@@ -30,7 +32,7 @@ Each `>` line is one paragraph. The voice is recorded one paragraph at a time an
 
 > In the first few minutes, the universe made just three elements: hydrogen, helium, and a tiny bit of lithium. That was it. No carbon. No oxygen. No iron. Every heavier element had to wait for the stars.
 
-> Now here's the strange part. Think about a glass of water. Every water molecule has two hydrogen atoms. And NASA says the hydrogen in your body came from the Big Bang. There's no other real source of it in the universe. So the hydrogen in you is about as old as the universe itself.
+> Now here's the strange part. Think about a glass of water. Every water molecule has two hydrogen atoms. And the hydrogen in your body comes from those first few minutes. There's no other real source of it in the universe. So the hydrogen in you is about as old as the universe itself.
 
 > But you can't build a person out of hydrogen and helium. You can't make bones or blood from them. So who made the rest? The answer is up in the sky every day.
 
@@ -50,7 +52,7 @@ Each `>` line is one paragraph. The voice is recorded one paragraph at a time an
 
 > Why three, and not two? When two helium atoms join, what they make falls apart almost at once. It takes three at the same time to make something that lasts. Then a carbon atom can grab one more helium. That makes oxygen.
 
-> In the end, the old star gently pushes its outer layers out into space. Some of the carbon it made drifts away into the gas between the stars. NASA puts it simply: the carbon in your body was made by fusion inside stars.
+> In the end, the old star gently pushes its outer layers out into space. Some of the carbon it made drifts away into the gas between the stars. Put simply, the carbon in your body was made inside a star.
 
 > But a star like the Sun can't get hot enough to go any further. So where does the iron in your blood come from?
 
@@ -63,7 +65,7 @@ Each `>` line is one paragraph. The voice is recorded one paragraph at a time an
 
 > What happens next is fast. In less than a second, a core about the size of the Earth collapses to less than 20 kilometers across. Then the rest of the star is blown apart. This is a supernova.
 
-> For a short time, one exploding star can outshine its whole galaxy. The brightest ones shine about 10 billion times brighter than the Sun. Their gas flies out at around 10,000 kilometers every second. The blast throws carbon, oxygen, calcium and iron out into space. NASA says much of the iron in your blood was made in explosions like this, long ago and far away.
+> For a short time, one exploding star can outshine its whole galaxy. The brightest ones shine about 10 billion times brighter than the Sun. Their gas flies out at around 10,000 kilometers every second. The blast throws carbon, oxygen, calcium and iron out into space. Much of the iron in your blood was made in explosions like this, long ago and far away.
 
 > But the story doesn't end there. The crushed core left behind is one of the strangest things in the universe. And it may be where gold comes from.
 
@@ -74,7 +76,7 @@ Each `>` line is one paragraph. The voice is recorded one paragraph at a time an
 
 > On August 17th, 2017, scientists caught this happening for the first time. Detectors in the United States and Italy picked up ripples in space itself, called gravitational waves. About two seconds later, space telescopes caught a short burst of gamma rays from the same part of the sky. Then telescopes around the world saw the light from the crash, about 130 million light-years away.
 
-> In that light, they found signs of heavy elements being made, including gold and platinum. NASA says the gold in your jewelry was likely made in crashes like this. Scientists are still working out how much comes from these crashes, and how much from other kinds of exploding stars.
+> In that light, they found signs of heavy elements being made, including gold and platinum. The gold in your jewelry was likely made in crashes like this. Scientists are still working out how much comes from these crashes, and how much from other kinds of exploding stars.
 
 > So now we have hydrogen, carbon, oxygen, iron and gold, all scattered across space. How did they end up here, in you?
 
@@ -112,7 +114,7 @@ Picture names refer to the picture list in section 3. "Tile" means an element ti
 | 0.3 | The iron in your blood came from stars that blew up long ago and far away. | `blood_cell` fades in; tile Fe draws; `supernova` appears far behind; a light travels from the supernova to the blood cell | Slow pull back |
 | 0.4 | So where did the rest of you come from? | Everything fades except the person; thin lines start to draw outward from the person | Ease back to the person |
 | 0.5 | By the end of this video, you'll know where each part of you was made. | Five tiles (H, C, O, Fe, Au) draw in around the person, each at the end of a line | Gentle pull back to show all five |
-| 0.6 | And you'll see why it's fair to say that you are made of stars. | Lights travel along the lines from the tiles to the person; title "YOU ARE MADE OF STARS" fades in | Slow push in, then settle |
+| 0.6 | And you'll see that you're not separate from the sky above you. You are made of stars. | Lights travel along the lines from the tiles to the person; title "YOU ARE MADE OF STARS" fades in | Slow push in, then settle |
 
 ### Part 1: What are you made of?
 | # | Sentence | On screen | Camera |
@@ -153,7 +155,7 @@ Picture names refer to the picture list in section 3. "Tile" means an element ti
 | 2.9 | Now here's the strange part. | Timeline fades | Drift down |
 | 2.10 | Think about a glass of water. | `water_glass` fades in, centered | Push in |
 | 2.11 | Every water molecule has two hydrogen atoms. | Magnifying circle grows from the water, joined by two lines; a water molecule draws inside; two H labels | Hold on circle |
-| 2.12 | And NASA says the hydrogen in your body came from the Big Bang. | A light travels from the H atoms off to the left, along a line that draws back to the Big Bang burst | Pan left following the light |
+| 2.12 | And the hydrogen in your body comes from those first few minutes. | A light travels from the H atoms off to the left, along a line that draws back to the Big Bang burst | Pan left following the light |
 | 2.13 | There's no other real source of it in the universe. | Tile H glows alone; label "NO OTHER REAL SOURCE" | Hold |
 | 2.14 | So the hydrogen in you is about as old as the universe itself. | `person` fades in beside the glass; light passes from glass to person; label "13.8 BILLION YEARS OLD" | Pull back to show both |
 | 2.15 | But you can't build a person out of hydrogen and helium. | Tiles H and He beside the person; label "NOT ENOUGH" | Hold |
@@ -201,7 +203,7 @@ Picture names refer to the picture list in section 3. "Tile" means an element ti
 | 4.11 | That makes oxygen. | Tile O draws | Hold |
 | 4.12 | In the end, the old star gently pushes its outer layers out into space. | `nebula` fades in; rings draw outward | Pull back |
 | 4.13 | Some of the carbon it made drifts away into the gas between the stars. | Lights drift outward from the center along curved paths; small C tiles at their ends | Hold |
-| 4.14 | NASA puts it simply: the carbon in your body was made by fusion inside stars. | `person` fades in; a light travels from the nebula to the person; label "MADE INSIDE STARS" | Pan to the person |
+| 4.14 | Put simply, the carbon in your body was made inside a star. | `person` fades in; a light travels from the nebula to the person; label "MADE INSIDE STARS" | Pan to the person |
 | 4.15 | But a star like the Sun can't get hot enough to go any further. | `sun` appears small; label "STOPS HERE" | Drift |
 | 4.16 | So where does the iron in your blood come from? | `blood_cell` with a dashed Fe tile; light pulses | Slow push in |
 
@@ -229,7 +231,7 @@ Picture names refer to the picture list in section 3. "Tile" means an element ti
 | 5.17b | The brightest ones shine about 10 billion times brighter than the Sun. | Small `sun` beside the supernova; number counts up "10,000,000,000 × THE SUN" | Hold |
 | 5.17c | Their gas flies out at around 10,000 kilometers every second. | Lights fly outward from the supernova along straight paths; number "10,000 KM EVERY SECOND" | Slight pull back |
 | 5.18 | The blast throws carbon, oxygen, calcium and iron out into space. | Lights fly outward; tiles C, O, Ca, Fe appear at their ends, one per word | Hold |
-| 5.19 | NASA says much of the iron in your blood was made in explosions like this, long ago and far away. | `blood_cell` fades in; a light travels from the supernova to it | Pan to the blood cell |
+| 5.19 | Much of the iron in your blood was made in explosions like this, long ago and far away. | `blood_cell` fades in; a light travels from the supernova to it | Pan to the blood cell |
 | 5.20 | But the story doesn't end there. | Pictures fade except the supernova | Pan back |
 | 5.21 | The crushed core left behind is one of the strangest things in the universe. | `neutron_star` fades in at the supernova's center | Push in |
 | 5.22 | And it may be where gold comes from. | `gold_ring` fades in beside it | Hold |
@@ -249,7 +251,7 @@ Picture names refer to the picture list in section 3. "Tile" means an element ti
 | 6.8b | About two seconds later, space telescopes caught a short burst of gamma rays from the same part of the sky. | Label "2 SECONDS LATER"; a sharp burst of light at the crash, with a short ray drawing outward | Hold |
 | 6.9 | Then telescopes around the world saw the light from the crash, about 130 million light-years away. | `telescope` fades in; a light travels from the crash to the telescope; number counts up "130 MILLION LIGHT-YEARS" | Pull back to show both |
 | 6.10 | In that light, they found signs of heavy elements being made, including gold and platinum. | Tiles Au and Pt draw | Hold |
-| 6.11 | NASA says the gold in your jewelry was likely made in crashes like this. | `gold_ring` fades in; a light travels around the ring | Push in |
+| 6.11 | The gold in your jewelry was likely made in crashes like this. | `gold_ring` fades in; a light travels around the ring | Push in |
 | 6.12 | Scientists are still working out how much comes from these crashes, and how much from other kinds of exploding stars. | Side by side: the crash glow and a small `supernova`; label "STILL BEING STUDIED" | Pull back |
 | 6.13 | So now we have hydrogen, carbon, oxygen, iron and gold, all scattered across space. | Tiles H, C, O, Fe, Au appear scattered at different depths, one per word | Pull back wide |
 | 6.14 | How did they end up here, in you? | `person` fades in in the middle; lines draw from each tile toward the person | Push in to the person |
@@ -287,7 +289,7 @@ Picture names refer to the picture list in section 3. "Tile" means an element ti
 | 8.6 | And the gold in a ring may have come from two dead stars crashing together. | `gold_ring` + tile Au; two `neutron_star`s far behind | Pan |
 | 8.7 | Carl Sagan said it best. | All pictures settle in a ring around the person | Pull back wide |
 | 8.8 | We are made of star-stuff. | Label "WE ARE MADE OF STAR-STUFF" and "CARL SAGAN" | Hold |
-| 8.9 | So the next time you look up at the night sky, remember: you're not just looking at the stars. | Pictures fade; star lights appear across the top of the page; `open_hand` reaches up | Rise up |
+| 8.9 | So the next time you look up at the night sky, remember: you're not just looking at the stars. | Pictures fade; star lights appear across the top of the page; `open_hand` reaches up; the old saying "AS ABOVE, SO BELOW" fades in (on-screen text only) | Rise up |
 | 8.10 | You're looking at where you came from. | Lights travel down from the stars to the open hand; title "YOU ARE MADE OF STARS" | Slow pull back and settle |
 
 ---

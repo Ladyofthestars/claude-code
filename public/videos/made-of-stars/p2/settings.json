@@ -236,7 +236,7 @@
    "zoom": 1.0
   },
   {
-   "at": "3:Bang@end",
+   "at": "3:few minutes@end",
    "x": 13570.0,
    "y": -830.0,
    "zoom": 0.9
@@ -588,7 +588,7 @@
      -1100.0
     ]
    ],
-   "draw": "3:NASA",
+   "draw": "3:And the hydrogen",
    "width": 1.8,
    "color": "muted",
    "curve": true,
@@ -819,7 +819,7 @@
   },
   {
    "drawing": "line24",
-   "from": "3:came from",
+   "from": "3:comes from",
    "duration": 1.6,
    "size": 56
   },
@@ -830,7 +830,7 @@
      -1100.0
     ]
    ],
-   "from": "3:Big Bang",
+   "from": "3:first few minutes",
    "size": 130,
    "stagger": 0.0,
    "to": "3:So the"
@@ -1073,12 +1073,12 @@
    "upper": false
   },
   {
-   "text": "BIG BANG",
+   "text": "FIRST FEW MINUTES",
    "x": 13270.0,
    "y": -1190.0,
    "space": "world",
-   "size": 40,
-   "in": "3:Big Bang",
+   "size": 38,
+   "in": "3:first few minutes",
    "out": "3:So the"
   },
   {

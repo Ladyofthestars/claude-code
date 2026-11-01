@@ -109,7 +109,7 @@
    "x": 20091.4,
    "y": -1566.1,
    "width": 796.3,
-   "in": "4:NASA",
+   "in": "4:Put simply",
    "out": "end-1.1"
   },
   {
@@ -611,7 +611,7 @@
    "width": 1.4,
    "color": "muted",
    "duration": 0.9,
-   "out": "4:NASA-0.2"
+   "out": "4:Put simply-0.2"
   },
   {
    "id": "circle29",
@@ -623,7 +623,7 @@
    "width": 1.4,
    "color": "muted",
    "duration": 0.9,
-   "out": "4:NASA-0.2"
+   "out": "4:Put simply-0.2"
   },
   {
    "id": "circle30",
@@ -635,7 +635,7 @@
    "width": 1.4,
    "color": "muted",
    "duration": 0.9,
-   "out": "4:NASA-0.2"
+   "out": "4:Put simply-0.2"
   },
   {
    "id": "line31",
@@ -659,7 +659,7 @@
    "color": "muted",
    "curve": true,
    "dashed": true,
-   "out": "4:NASA-0.2"
+   "out": "4:Put simply-0.2"
   },
   {
    "id": "line32",
@@ -683,7 +683,7 @@
    "color": "muted",
    "curve": true,
    "dashed": true,
-   "out": "4:NASA-0.2"
+   "out": "4:Put simply-0.2"
   },
   {
    "id": "line33",
@@ -707,7 +707,7 @@
    "color": "muted",
    "curve": true,
    "dashed": true,
-   "out": "4:NASA-0.2"
+   "out": "4:Put simply-0.2"
   },
   {
    "id": "line34",
@@ -731,7 +731,7 @@
    "color": "muted",
    "curve": true,
    "dashed": true,
-   "out": "4:NASA-0.2"
+   "out": "4:Put simply-0.2"
   },
   {
    "id": "line35",
@@ -755,7 +755,7 @@
    "color": "muted",
    "curve": true,
    "dashed": true,
-   "out": "4:NASA-0.2"
+   "out": "4:Put simply-0.2"
   },
   {
    "id": "rect36",
@@ -770,7 +770,7 @@
    "fill": "paper",
    "fillOpacity": 1,
    "fillAt": "4:between+0.1",
-   "out": "4:NASA-0.2"
+   "out": "4:Put simply-0.2"
   },
   {
    "id": "rect37",
@@ -785,7 +785,7 @@
    "fill": "paper",
    "fillOpacity": 1,
    "fillAt": "4:between+0.25",
-   "out": "4:NASA-0.2"
+   "out": "4:Put simply-0.2"
   },
   {
    "id": "rect38",
@@ -800,7 +800,7 @@
    "fill": "paper",
    "fillOpacity": 1,
    "fillAt": "4:between+0.4",
-   "out": "4:NASA-0.2"
+   "out": "4:Put simply-0.2"
   },
   {
    "id": "line40",
@@ -973,7 +973,7 @@
     0.49,
     0.4
    ],
-   "from": "4:made by fusion",
+   "from": "4:made inside",
    "size": 80,
    "to": "end-1.1"
   },
@@ -1197,7 +1197,7 @@
    "space": "world",
    "size": 28,
    "in": "4:between+0.25",
-   "out": "4:NASA-0.2",
+   "out": "4:Put simply-0.2",
    "spacing": 0.02,
    "upper": false
   },
@@ -1208,7 +1208,7 @@
    "space": "world",
    "size": 28,
    "in": "4:between+0.4",
-   "out": "4:NASA-0.2",
+   "out": "4:Put simply-0.2",
    "spacing": 0.02,
    "upper": false
   },
@@ -1219,17 +1219,17 @@
    "space": "world",
    "size": 28,
    "in": "4:between+0.55",
-   "out": "4:NASA-0.2",
+   "out": "4:Put simply-0.2",
    "spacing": 0.02,
    "upper": false
   },
   {
-   "text": "MADE INSIDE STARS",
+   "text": "MADE INSIDE A STAR",
    "x": 20090.0,
    "y": -1160.0,
    "space": "world",
    "size": 42,
-   "in": "4:inside stars",
+   "in": "4:inside a star",
    "out": "end-1.1"
   },
   {
