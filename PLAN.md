@@ -28,8 +28,12 @@ Tick each box as it is done. If work stops, continue from the first unticked box
 - [x] Check tool: also reports gaps of more than 5 s with nothing new on screen
 - [x] Settings for each part (9 parts), following the shot list
 - [x] Frame check passes for every part (template now fades anything out before it could be cut off)
-- [ ] Stills every half second and at every sentence start; review and fix
-- [ ] Background music (original, generated here) and a few soft sound effects
+- [x] Stills every half second and at every sentence start; review and fix
+- [x] Background music (original, generated here) and a few soft sound effects
 - [ ] Render all parts, join them, mix voice and music, normalise loudness for YouTube
 - [ ] Final checks: length, audio, a few frames
 - [ ] Commit and push
+
+## Step 5: packaging
+- [x] Thumbnail (`packaging/thumbnail.png`, made from the video's own drawings with `tools/make_thumbnail.py`)
+- [x] Title, description, chapters, tags and upload notes (`youtube.md`)
