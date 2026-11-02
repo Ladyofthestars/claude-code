@@ -8,6 +8,7 @@ Run: python tools/build_atoms_when_you_die.py
 import json
 import math
 import os
+import re
 import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
@@ -302,7 +303,7 @@ def part2(p):
 def part3(p):
     chapter(p, 3, "Let's")
     p.cam('start', x=0, y=0, zoom=1.0)
-    atom(p, 0, 200, 'C', '1:one carbon', r=34, accent=True)
+    atom(p, 0, 200, 'C', "1:Let's follow", r=34, accent=True)
     p.glows([(0, 200)], '1:one carbon', '1:It drifts', size=90)
     up = p.line([(0, 160), (120, 40), (260, -90), (420, -170)], '1:It drifts', width=1.6, curve=True, dashed=True, color='muted')
     p.travel(up, '1:It drifts', dur=1.6, size=40)
@@ -401,7 +402,7 @@ def part4(p):
     sx, sy = 1500, -760
     for k in range(3):
         p.line([(sx - 260 + 120 * k, sy - 420), (sx - 20 + 20 * k, sy - 60)], T('2:rays from space', 0.12 * k), width=1.6, color='accent', dashed=True)
-    atom(p, sx, sy, 'N', '2:strike nitrogen', r=40)
+    atom(p, sx, sy, 'N', '2:high in the sky', r=40)
     p.arrow((sx + 60, sy), (sx + 230, sy), '2:nitrogen in the air', width=2.0)
     p.circle(sx + 300, sy, 40, '2:in the air+0.2', width=2.2, fill='accent', fillOpacity=0.75)
     p.label('C', sx + 300, sy, '2:in the air+0.35', size=30, upper=False, spacing=0.02)
@@ -460,8 +461,9 @@ def part4(p):
     p.glows([q for i, q in enumerate(field) if i % 6 == 0], '5:slowly change', '5:Almost everything+0.6', size=70, stagger=0.1)
     p.stream([(fx - 200, 0), (fx + 400, -60), (fx + 1000, 20)], '5:Almost everything', count=14, period=2.4, size=14, spread=60)
     p.stream([(fx + 200, 200), (fx + 600, 220), (fx + 1000, 210)], '5:very, very', count=5, period=14, size=14, spread=10, color='accent')
+    p.label('JUST MOVES ON', fx + 400, -330, '5:moves on', '5:So where', size=34)
     p.label('VERY, VERY SLOWLY', fx + 600, 320, '5:very, very', size=30)
-    bone = p.pic('bone', fx + 1500, -40, w=440, at='5:your bones go')
+    bone = p.pic('bone', fx + 1500, -40, w=440, at='5:So where')
     question(p, fx + 1500, -300, '5:So where', size=110)
     p.cam('5:A few', x=fx, y=0, zoom=1.0)
     p.cam('5:Almost everything', x=fx + 400, y=0, zoom=0.92)
@@ -590,7 +592,7 @@ def part6(p):
     p.glows(scatter(gx - 950, 160, 220, 180, 7, seed=5), '4:its atoms', size=40, stagger=0.15)
     p.stream(rise(gx - 950, 160, -200, -300, 0.2), '4:still be there', count=8, period=4.0, size=12, spread=30)
     p.cam('4:It can feel', x=gx - 400, y=-40, zoom=0.68)
-    p.cam('4:Even when', x=gx - 700, y=40, zoom=0.8)
+    p.cam('4:Even when', x=gx - 500, y=40, zoom=0.7)
     question(p, gx - 300, 520, '5:So what', size=100)
     p.cam('5:then@end', x=gx - 300, y=40, zoom=0.62)
     p.end_all()
@@ -609,7 +611,7 @@ def part7(p):
     p.label('ALMOST HALF ITS MASS', 0, -680, '2:almost half', '2:Its outer-0.2', size=40, color='accent')
     p.cam('2:A star', x=0, y=-120, zoom=0.72)
     nx = 1700
-    p.pic('planetary_nebula', nx, 0, h=660, at='2:glowing cloud')
+    p.pic('planetary_nebula', nx, 0, h=660, at='2:Its outer')
     p.glows([(nx, 0)], '2:white dwarf', size=60)
     p.label('WHITE DWARF', nx, 400, '2:white dwarf', size=34)
     p.cam('2:Its outer', x=nx, y=0, zoom=0.92)
@@ -619,7 +621,7 @@ def part7(p):
     p.cam('2:There are', x=nx, y=-60, zoom=0.62)
     # Gas joins the clouds between stars; raw material; a new star and planets
     cx = nx + 2000
-    p.pic('nebula', cx, 0, h=620, at='3:thin clouds')
+    p.pic('nebula', cx, 0, h=620, at='3:joins')
     p.stream([(nx + 300, 0), (nx + 900, -60), (cx - 200, 0)], '3:The gas', count=12, period=3.4, size=13, spread=30)
     p.label('RAW MATERIAL', cx, 400, '3:raw material', size=40, color='accent')
     p.cam('3:The gas', x=cx - 500, y=0, zoom=0.8)
@@ -680,7 +682,8 @@ def part8(p):
     p.cam('2:And one day', x=2400, y=0, zoom=0.4)
     # Marcus Aurelius
     mx = 5800
-    p.pic('marcus_bust', mx, 0, h=600, at='3:Marcus Aurelius')
+    p.pic('marcus_bust', mx, 0, h=600, at='3:Almost two')
+    p.label('ALMOST 2,000 YEARS AGO', mx, -380, '3:Almost two', '3:Its elements', size=30, color='accent')
     p.label('MARCUS AURELIUS', mx, 380, '3:Marcus Aurelius', size=36)
     p.label('MEDITATIONS, BOOK VIII', mx, 440, '3:Marcus Aurelius+0.3', size=22, weight=500, color='accent')
     qx = mx + 1050
@@ -708,6 +711,58 @@ def part8(p):
 BUILDERS = [part0, part1, part2, part3, part4, part5, part6, part7, part8]
 
 
+def resolve(words, ref):
+    """Seconds for a time reference, exactly as src/template/time.ts reads it."""
+    if isinstance(ref, (int, float)):
+        return float(ref)
+    norm = lambda x: re.sub(r"[^a-z0-9']", '', x.lower())
+    body, off = ref.strip(), 0.0
+    m = re.match(r'^(.*?)\s*([+-]\s*\d+(?:\.\d+)?)$', body)
+    if m and m.group(1):
+        body, off = m.group(1).strip(), float(m.group(2).replace(' ', ''))
+    if body == 'start':
+        return off
+    if body in ('end', 'voiceEnd'):
+        return words['duration'] + off
+    m = re.match(r'^(\d+):(.+?)(@end)?$', body)
+    line = int(m.group(1))
+    toks = [norm(t) for t in m.group(2).split() if norm(t)]
+    ws = [w for w in words['words'] if w['line'] == line]
+    for i in range(len(ws) - len(toks) + 1):
+        if all(norm(ws[i + j]['text']) == tk for j, tk in enumerate(toks)):
+            return (ws[i + len(toks) - 1]['end'] if m.group(3) else ws[i]['start']) + off
+    raise SystemExit(f'cannot resolve {ref}')
+
+
+MOVE = 1.3
+
+
+def settle_camera(camera, words):
+    """The camera holds still, and moves only when a key asks for a new framing: it starts moving
+    at the key's time and arrives MOVE seconds later (slower for small zooms), never overlapping
+    the next move. Without this, the spline drifts toward each next key the whole time."""
+    keys = sorted(((resolve(words, c['at']), i, c) for i, c in enumerate(camera)), key=lambda k: (k[0], k[1]))
+    out = []
+    for n, (t, _, c) in enumerate(keys):
+        if not out:
+            out.append({**c, 'at': round(t, 3)})
+            continue
+        prev = out[-1]
+        same = abs(prev['x'] - c['x']) < 1 and abs(prev['y'] - c['y']) < 1 and abs(prev['zoom'] - c['zoom']) < 1e-3
+        if same:
+            if t > prev['at'] + 0.01:
+                out.append({**c, 'at': round(t, 3)})
+            continue
+        t = max(t, prev['at'] + 0.05)
+        t_next = keys[n + 1][0] if n + 1 < len(keys) else t + 4
+        dist = math.hypot(c['x'] - prev['x'], c['y'] - prev['y']) * c['zoom']
+        move = MOVE if dist > 140 else 2.6
+        move = max(0.5, min(move, t_next - t - 0.15))
+        out.append({'at': round(t, 3), 'x': prev['x'], 'y': prev['y'], 'zoom': prev['zoom']})
+        out.append({**c, 'at': round(t + move, 3)})
+    return out
+
+
 def part_seconds(n):
     w = json.load(open(f'{ROOT}/p{n}/words.json'))
     return math.ceil(w['duration'] * 60) / 60
@@ -733,6 +788,7 @@ def main():
         if end_cam['at'] != 'end':
             p.camera.append({'at': 'end', 'x': end_cam['x'], 'y': end_cam['y'], 'zoom': end_cam['zoom']})
         ox, oy, oz = p.camera[-1]['x'], p.camera[-1]['y'], p.camera[-1]['zoom']
+        p.camera = settle_camera(p.camera, words)
         title = 'What Happens to Your Atoms When You Die?' + ('' if n == 0 else f' — part {n}')
         s = p.settings(THEME, title)
         s['clock'] = round(clock, 4)
