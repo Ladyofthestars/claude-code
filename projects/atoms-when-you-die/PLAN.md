@@ -13,15 +13,15 @@ Tick each box as it is done. If work stops, continue from the first unticked box
 - [x] `script.md`: narration (1,469 words: opening + 7 chapters + ending), shot list for every sentence, picture list, style line
 
 ## Step 2: pictures
-- [ ] Generate the 21 new pictures (Gemini, free), same style line as video 1
-- [ ] Cut out backgrounds; check each (text, colour, cut-off edges, style); remake failures (twice at most)
-- [ ] White-line versions of all pictures for the blue page (new + 11 reused)
-- [ ] `images/prompts.md` with every prompt used
+- [x] Generate the 21 new pictures (Gemini, free), same style line as video 1
+- [x] Cut out backgrounds; check each (text, colour, cut-off edges, style); remake failures (twice at most): lungs, roman_bust, marcus_bust, statue, planetary_nebula remade once
+- [x] White-line versions of all pictures for the blue page (new + 11 reused)
+- [x] `images/prompts.md` with every prompt used
 
 ## Step 3: voice
-- [ ] Kokoro setup script in the repo (so later sessions can recreate it)
-- [ ] One paragraph at a time, word timings, joined with natural pauses per part
-- [ ] Check word for word against `script.md`
+- [x] Kokoro setup script in the repo (so later sessions can recreate it)
+- [x] One paragraph at a time, word timings, joined with natural pauses per part
+- [x] Check word for word against `script.md` (timings), and proof-listened with speech recognition (`tools/proof_listen.py`): no real errors. Total 8:48.8
 
 ## Step 4: animation
 - [ ] Template: blue theme (gradient page, glowing white ink, text glow, drifting light dust) and atom streams

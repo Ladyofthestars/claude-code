@@ -1,0 +1,1154 @@
+{
+ "duration": 54.809,
+ "source": "Kokoro-82M (open source, Apache 2.0), voice am_michael 0.7 + am_onyx 0.3, speed 1.02, one paragraph at a time, word timestamps",
+ "words": [
+  {
+   "text": "Let's",
+   "start": 2.619,
+   "end": 2.844,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "start",
+   "start": 2.844,
+   "end": 3.169,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "with",
+   "start": 3.169,
+   "end": 3.344,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 3.344,
+   "end": 3.544,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "right",
+   "start": 3.544,
+   "end": 3.844,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "now",
+   "start": 3.844,
+   "end": 4.606,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "You",
+   "start": 4.606,
+   "end": 4.744,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "might",
+   "start": 4.744,
+   "end": 4.981,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "think",
+   "start": 4.981,
+   "end": 5.181,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 5.181,
+   "end": 5.269,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 5.269,
+   "end": 5.431,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "body",
+   "start": 5.431,
+   "end": 5.819,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "as",
+   "start": 5.819,
+   "end": 5.944,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "a",
+   "start": 5.944,
+   "end": 6.069,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "thing",
+   "start": 6.069,
+   "end": 6.344,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "that",
+   "start": 6.344,
+   "end": 6.556,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "stays",
+   "start": 6.556,
+   "end": 6.994,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 6.994,
+   "end": 7.144,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "same",
+   "start": 7.144,
+   "end": 7.606,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "like",
+   "start": 7.606,
+   "end": 7.756,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "a",
+   "start": 7.756,
+   "end": 7.831,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "statue",
+   "start": 7.831,
+   "end": 8.844,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "But",
+   "start": 8.844,
+   "end": 8.981,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "it's",
+   "start": 8.981,
+   "end": 9.181,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "more",
+   "start": 9.181,
+   "end": 9.419,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "like",
+   "start": 9.419,
+   "end": 9.606,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "a",
+   "start": 9.606,
+   "end": 9.706,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "river",
+   "start": 9.706,
+   "end": 10.456,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "The",
+   "start": 10.456,
+   "end": 10.606,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "water",
+   "start": 10.606,
+   "end": 10.994,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "in",
+   "start": 10.994,
+   "end": 11.094,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "a",
+   "start": 11.094,
+   "end": 11.206,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "river",
+   "start": 11.206,
+   "end": 11.556,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "is",
+   "start": 11.556,
+   "end": 11.731,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "never",
+   "start": 11.731,
+   "end": 11.994,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 11.994,
+   "end": 12.131,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "same",
+   "start": 12.131,
+   "end": 12.494,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "from",
+   "start": 12.494,
+   "end": 12.694,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "one",
+   "start": 12.694,
+   "end": 12.919,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "moment",
+   "start": 12.919,
+   "end": 13.244,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "to",
+   "start": 13.244,
+   "end": 13.331,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 13.331,
+   "end": 13.419,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "next",
+   "start": 13.419,
+   "end": 14.119,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "and",
+   "start": 14.119,
+   "end": 14.244,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "yet",
+   "start": 14.244,
+   "end": 14.469,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 14.469,
+   "end": 14.606,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "river",
+   "start": 14.606,
+   "end": 14.944,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "is",
+   "start": 14.944,
+   "end": 15.069,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "still",
+   "start": 15.069,
+   "end": 15.406,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "there",
+   "start": 15.406,
+   "end": 15.864,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "The",
+   "start": 16.621,
+   "end": 16.721,
+   "line": 2,
+   "sentence": true
+  },
+  {
+   "text": "red",
+   "start": 16.721,
+   "end": 16.983,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "cells",
+   "start": 16.983,
+   "end": 17.358,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "in",
+   "start": 17.358,
+   "end": 17.433,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 17.433,
+   "end": 17.571,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "blood",
+   "start": 17.571,
+   "end": 17.908,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "live",
+   "start": 17.908,
+   "end": 18.196,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "for",
+   "start": 18.196,
+   "end": 18.308,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "up",
+   "start": 18.308,
+   "end": 18.471,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "to",
+   "start": 18.471,
+   "end": 18.596,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "120",
+   "start": 18.596,
+   "end": 19.371,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "days",
+   "start": 19.371,
+   "end": 20.283,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "Then",
+   "start": 20.283,
+   "end": 20.433,
+   "line": 2,
+   "sentence": true
+  },
+  {
+   "text": "they're",
+   "start": 20.433,
+   "end": 20.571,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "broken",
+   "start": 20.571,
+   "end": 20.996,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "down",
+   "start": 20.996,
+   "end": 21.546,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "and",
+   "start": 21.546,
+   "end": 21.683,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "new",
+   "start": 21.683,
+   "end": 21.871,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "ones",
+   "start": 21.871,
+   "end": 22.171,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "take",
+   "start": 22.171,
+   "end": 22.421,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "their",
+   "start": 22.421,
+   "end": 22.608,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "place",
+   "start": 22.608,
+   "end": 23.508,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "Even",
+   "start": 23.508,
+   "end": 23.796,
+   "line": 2,
+   "sentence": true
+  },
+  {
+   "text": "your",
+   "start": 23.796,
+   "end": 23.983,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "bones",
+   "start": 23.983,
+   "end": 24.471,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "are",
+   "start": 24.471,
+   "end": 24.596,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "rebuilt",
+   "start": 24.596,
+   "end": 25.583,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "Every",
+   "start": 25.583,
+   "end": 25.933,
+   "line": 2,
+   "sentence": true
+  },
+  {
+   "text": "year",
+   "start": 25.933,
+   "end": 26.271,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "about",
+   "start": 26.271,
+   "end": 26.583,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "five",
+   "start": 26.583,
+   "end": 26.946,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "to",
+   "start": 26.946,
+   "end": 27.071,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "ten",
+   "start": 27.071,
+   "end": 27.321,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "percent",
+   "start": 27.321,
+   "end": 27.658,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 27.658,
+   "end": 27.733,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 27.733,
+   "end": 27.846,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "skeleton",
+   "start": 27.846,
+   "end": 28.371,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "is",
+   "start": 28.371,
+   "end": 28.521,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "taken",
+   "start": 28.521,
+   "end": 28.821,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "apart",
+   "start": 28.821,
+   "end": 29.271,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "and",
+   "start": 29.271,
+   "end": 29.396,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "replaced",
+   "start": 29.396,
+   "end": 29.971,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "with",
+   "start": 29.971,
+   "end": 30.158,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "fresh",
+   "start": 30.158,
+   "end": 30.508,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "bone",
+   "start": 30.508,
+   "end": 30.962,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "And",
+   "start": 31.713,
+   "end": 31.838,
+   "line": 3,
+   "sentence": true
+  },
+  {
+   "text": "every",
+   "start": 31.838,
+   "end": 32.138,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "time",
+   "start": 32.138,
+   "end": 32.413,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 32.413,
+   "end": 32.538,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "breathe",
+   "start": 32.538,
+   "end": 32.838,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "out",
+   "start": 32.838,
+   "end": 33.363,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 33.363,
+   "end": 33.513,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "let",
+   "start": 33.513,
+   "end": 33.713,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "go",
+   "start": 33.713,
+   "end": 33.901,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 33.901,
+   "end": 34.026,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "carbon",
+   "start": 34.026,
+   "end": 34.476,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "atoms",
+   "start": 34.476,
+   "end": 34.938,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "that",
+   "start": 34.938,
+   "end": 35.076,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "were",
+   "start": 35.076,
+   "end": 35.226,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "part",
+   "start": 35.226,
+   "end": 35.501,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 35.501,
+   "end": 35.576,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 35.576,
+   "end": 35.738,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "food",
+   "start": 35.738,
+   "end": 36.751,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "Your",
+   "start": 36.751,
+   "end": 36.938,
+   "line": 3,
+   "sentence": true
+  },
+  {
+   "text": "body",
+   "start": 36.938,
+   "end": 37.326,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "burns",
+   "start": 37.326,
+   "end": 37.763,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "that",
+   "start": 37.763,
+   "end": 38.013,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "food",
+   "start": 38.013,
+   "end": 38.363,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "for",
+   "start": 38.363,
+   "end": 38.513,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "energy",
+   "start": 38.513,
+   "end": 39.313,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "and",
+   "start": 39.313,
+   "end": 39.426,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 39.426,
+   "end": 39.513,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "carbon",
+   "start": 39.513,
+   "end": 39.938,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "leaves",
+   "start": 39.938,
+   "end": 40.263,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 40.263,
+   "end": 40.438,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "as",
+   "start": 40.438,
+   "end": 40.601,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "carbon",
+   "start": 40.601,
+   "end": 41.013,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "dioxide",
+   "start": 41.013,
+   "end": 41.979,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "So",
+   "start": 42.775,
+   "end": 42.862,
+   "line": 4,
+   "sentence": true
+  },
+  {
+   "text": "the",
+   "start": 42.862,
+   "end": 43.0,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "atoms",
+   "start": 43.0,
+   "end": 43.425,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "in",
+   "start": 43.425,
+   "end": 43.55,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 43.55,
+   "end": 43.7,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "are",
+   "start": 43.7,
+   "end": 43.862,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "always",
+   "start": 43.862,
+   "end": 44.25,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "passing",
+   "start": 44.25,
+   "end": 44.712,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "through",
+   "start": 44.712,
+   "end": 45.537,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "What",
+   "start": 45.537,
+   "end": 45.787,
+   "line": 4,
+   "sentence": true
+  },
+  {
+   "text": "stays",
+   "start": 45.787,
+   "end": 46.275,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "is",
+   "start": 46.275,
+   "end": 46.425,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 46.425,
+   "end": 46.537,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "pattern",
+   "start": 46.537,
+   "end": 47.05,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "The",
+   "start": 47.05,
+   "end": 47.187,
+   "line": 4,
+   "sentence": true
+  },
+  {
+   "text": "shape",
+   "start": 47.187,
+   "end": 47.487,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 47.487,
+   "end": 47.637,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 47.637,
+   "end": 48.125,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "The",
+   "start": 48.125,
+   "end": 48.25,
+   "line": 4,
+   "sentence": true
+  },
+  {
+   "text": "way",
+   "start": 48.25,
+   "end": 48.475,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 48.475,
+   "end": 48.65,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "think",
+   "start": 48.65,
+   "end": 49.075,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "The",
+   "start": 49.075,
+   "end": 49.2,
+   "line": 4,
+   "sentence": true
+  },
+  {
+   "text": "way",
+   "start": 49.2,
+   "end": 49.462,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 49.462,
+   "end": 49.637,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "love",
+   "start": 49.637,
+   "end": 50.075,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "So",
+   "start": 50.865,
+   "end": 51.04,
+   "line": 5,
+   "sentence": true
+  },
+  {
+   "text": "what",
+   "start": 51.04,
+   "end": 51.19,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "happens",
+   "start": 51.19,
+   "end": 51.59,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "to",
+   "start": 51.59,
+   "end": 51.69,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 51.69,
+   "end": 51.878,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "atoms",
+   "start": 51.878,
+   "end": 52.328,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "when",
+   "start": 52.328,
+   "end": 52.453,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 52.453,
+   "end": 52.54,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "pattern",
+   "start": 52.54,
+   "end": 52.99,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "stops",
+   "start": 52.99,
+   "end": 53.609,
+   "line": 5,
+   "sentence": false
+  }
+ ]
+}

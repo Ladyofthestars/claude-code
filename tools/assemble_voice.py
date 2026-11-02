@@ -3,7 +3,7 @@ and writes each part's word timings for the video template.
 
 Input:
   --paras  JSON {"paras": [{"part": 0, "i": 0, "text": "..."}...]}
-  --clips  folder with pNN.mp3 + pNN.json (ElevenLabs character alignment) per paragraph
+  --clips  folder with pNN.mp3 or pNN.wav + pNN.json (character alignment, ElevenLabs format) per paragraph
   --out    public/videos/<video>   (writes p<part>/narration.wav and p<part>/words.json)
 
 Pauses: a lead-in before each part (room for the chapter title), a gap between
@@ -63,6 +63,7 @@ def main():
     ap.add_argument('--question-gap', type=float, default=0.8, help='pause after a paragraph ending in a question')
     ap.add_argument('--tail', type=float, default=1.0)
     ap.add_argument('--last-tail', type=float, default=3.0)
+    ap.add_argument('--source', default='ElevenLabs, voice Brian (nPczCjzI2devNBz1zQrb), eleven_multilingual_v2, one paragraph at a time with previous/next text, character timestamps')
     a = ap.parse_args()
 
     paras = json.load(open(a.paras))['paras']
@@ -77,7 +78,8 @@ def main():
         words = []
         for k, p in enumerate(mine):
             n = paras.index(p)
-            audio = decode(os.path.join(a.clips, f'p{n:02d}.mp3'))
+            clip = os.path.join(a.clips, f'p{n:02d}.wav')
+            audio = decode(clip if os.path.exists(clip) else os.path.join(a.clips, f'p{n:02d}.mp3'))
             al = json.load(open(os.path.join(a.clips, f'p{n:02d}.json')))
             got = words_from_alignment(al, t, k + 1)
             if norm(' '.join(w['text'] for w in got)) != norm(p['text']):
@@ -98,7 +100,7 @@ def main():
             wf.setframerate(SR)
             wf.writeframes((np.clip(audio, -1, 1) * 32767).astype(np.int16).tobytes())
         dur = round(len(audio) / SR, 3)
-        json.dump({'duration': dur, 'source': 'ElevenLabs, voice Brian (nPczCjzI2devNBz1zQrb), eleven_multilingual_v2, one paragraph at a time with previous/next text, character timestamps', 'words': words}, open(os.path.join(d, 'words.json'), 'w'), indent=1)
+        json.dump({'duration': dur, 'source': a.source, 'words': words}, open(os.path.join(d, 'words.json'), 'w'), indent=1)
         report.append((part, len(mine), len(words), dur))
     total = sum(r[3] for r in report)
     for part, n, nw, dur in report:
