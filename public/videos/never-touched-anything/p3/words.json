@@ -1,0 +1,972 @@
+{
+ "duration": 53.56,
+ "source": "Kokoro-82M (open source, Apache 2.0), voice am_michael 0.7 + am_onyx 0.3, speed 1.02, one paragraph at a time, word timestamps",
+ "words": [
+  {
+   "text": "The",
+   "start": 2.601,
+   "end": 2.738,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "answer",
+   "start": 2.738,
+   "end": 3.201,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "is",
+   "start": 3.201,
+   "end": 3.351,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "in",
+   "start": 3.351,
+   "end": 3.463,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 3.463,
+   "end": 3.601,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "electrons",
+   "start": 3.601,
+   "end": 4.863,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "Every",
+   "start": 4.863,
+   "end": 5.188,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "atom",
+   "start": 5.188,
+   "end": 5.526,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "is",
+   "start": 5.526,
+   "end": 5.688,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "wrapped",
+   "start": 5.688,
+   "end": 6.001,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "in",
+   "start": 6.001,
+   "end": 6.126,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "them",
+   "start": 6.126,
+   "end": 6.476,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "and",
+   "start": 6.476,
+   "end": 6.613,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "every",
+   "start": 6.613,
+   "end": 6.926,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "electron",
+   "start": 6.926,
+   "end": 7.576,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "has",
+   "start": 7.576,
+   "end": 7.776,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "a",
+   "start": 7.776,
+   "end": 7.888,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "negative",
+   "start": 7.888,
+   "end": 8.338,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "charge",
+   "start": 8.338,
+   "end": 9.351,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "Atoms",
+   "start": 9.351,
+   "end": 9.826,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "aren't",
+   "start": 9.826,
+   "end": 10.063,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "hard",
+   "start": 10.063,
+   "end": 10.376,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "little",
+   "start": 10.376,
+   "end": 10.626,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "balls",
+   "start": 10.626,
+   "end": 11.551,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "They're",
+   "start": 11.551,
+   "end": 11.701,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "more",
+   "start": 11.701,
+   "end": 11.926,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "like",
+   "start": 11.926,
+   "end": 12.163,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "tiny",
+   "start": 12.163,
+   "end": 12.638,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "clouds",
+   "start": 12.638,
+   "end": 13.088,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 13.088,
+   "end": 13.176,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "electric",
+   "start": 13.176,
+   "end": 13.688,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "charge",
+   "start": 13.688,
+   "end": 14.351,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "and",
+   "start": 14.351,
+   "end": 14.476,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "those",
+   "start": 14.476,
+   "end": 14.738,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "clouds",
+   "start": 14.738,
+   "end": 15.201,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "keep",
+   "start": 15.201,
+   "end": 15.451,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "their",
+   "start": 15.451,
+   "end": 15.663,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "distance",
+   "start": 15.663,
+   "end": 16.416,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "Charges",
+   "start": 17.214,
+   "end": 17.676,
+   "line": 2,
+   "sentence": true
+  },
+  {
+   "text": "of",
+   "start": 17.676,
+   "end": 17.751,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 17.751,
+   "end": 17.876,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "same",
+   "start": 17.876,
+   "end": 18.226,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "kind",
+   "start": 18.226,
+   "end": 18.676,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "push",
+   "start": 18.676,
+   "end": 18.951,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "each",
+   "start": 18.951,
+   "end": 19.151,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "other",
+   "start": 19.151,
+   "end": 19.414,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "away",
+   "start": 19.414,
+   "end": 20.351,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "So",
+   "start": 20.351,
+   "end": 20.476,
+   "line": 2,
+   "sentence": true
+  },
+  {
+   "text": "when",
+   "start": 20.476,
+   "end": 20.601,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 20.601,
+   "end": 20.739,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "atoms",
+   "start": 20.739,
+   "end": 21.176,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 21.176,
+   "end": 21.264,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 21.264,
+   "end": 21.439,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "feet",
+   "start": 21.439,
+   "end": 21.764,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "come",
+   "start": 21.764,
+   "end": 22.001,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "close",
+   "start": 22.001,
+   "end": 22.339,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "to",
+   "start": 22.339,
+   "end": 22.426,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 22.426,
+   "end": 22.589,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "atoms",
+   "start": 22.589,
+   "end": 23.001,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 23.001,
+   "end": 23.076,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 23.076,
+   "end": 23.189,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "floor",
+   "start": 23.189,
+   "end": 23.939,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "their",
+   "start": 23.939,
+   "end": 24.114,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "electrons",
+   "start": 24.114,
+   "end": 24.876,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "push",
+   "start": 24.876,
+   "end": 25.164,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "back",
+   "start": 25.164,
+   "end": 25.464,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "against",
+   "start": 25.464,
+   "end": 25.801,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "each",
+   "start": 25.801,
+   "end": 26.001,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "other",
+   "start": 26.001,
+   "end": 26.826,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "The",
+   "start": 26.826,
+   "end": 26.964,
+   "line": 2,
+   "sentence": true
+  },
+  {
+   "text": "closer",
+   "start": 26.964,
+   "end": 27.414,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "they",
+   "start": 27.414,
+   "end": 27.601,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "get",
+   "start": 27.601,
+   "end": 28.039,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 28.039,
+   "end": 28.176,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "harder",
+   "start": 28.176,
+   "end": 28.589,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "they",
+   "start": 28.589,
+   "end": 28.751,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "push",
+   "start": 28.751,
+   "end": 29.346,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "There's",
+   "start": 30.097,
+   "end": 30.259,
+   "line": 3,
+   "sentence": true
+  },
+  {
+   "text": "a",
+   "start": 30.259,
+   "end": 30.359,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "second",
+   "start": 30.359,
+   "end": 30.722,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "rule",
+   "start": 30.722,
+   "end": 31.022,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "too",
+   "start": 31.022,
+   "end": 31.809,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "Electrons",
+   "start": 31.809,
+   "end": 32.497,
+   "line": 3,
+   "sentence": true
+  },
+  {
+   "text": "can't",
+   "start": 32.497,
+   "end": 32.797,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "all",
+   "start": 32.797,
+   "end": 33.059,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "crowd",
+   "start": 33.059,
+   "end": 33.434,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "into",
+   "start": 33.434,
+   "end": 33.609,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 33.609,
+   "end": 33.734,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "same",
+   "start": 33.734,
+   "end": 34.084,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "state",
+   "start": 34.084,
+   "end": 34.997,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "Scientists",
+   "start": 34.997,
+   "end": 35.659,
+   "line": 3,
+   "sentence": true
+  },
+  {
+   "text": "call",
+   "start": 35.659,
+   "end": 35.934,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "it",
+   "start": 35.934,
+   "end": 36.047,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 36.047,
+   "end": 36.197,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "exclusion",
+   "start": 36.197,
+   "end": 36.822,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "principle",
+   "start": 36.822,
+   "end": 37.672,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "and",
+   "start": 37.672,
+   "end": 37.784,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "it's",
+   "start": 37.784,
+   "end": 37.959,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "part",
+   "start": 37.959,
+   "end": 38.209,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 38.209,
+   "end": 38.297,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "what",
+   "start": 38.297,
+   "end": 38.497,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "gives",
+   "start": 38.497,
+   "end": 38.784,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "every",
+   "start": 38.784,
+   "end": 39.134,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "atom",
+   "start": 39.134,
+   "end": 39.497,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "its",
+   "start": 39.497,
+   "end": 39.647,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "structure",
+   "start": 39.647,
+   "end": 40.294,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "Together",
+   "start": 41.063,
+   "end": 41.538,
+   "line": 4,
+   "sentence": true
+  },
+  {
+   "text": "these",
+   "start": 41.538,
+   "end": 41.826,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "rules",
+   "start": 41.826,
+   "end": 42.238,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "make",
+   "start": 42.238,
+   "end": 42.463,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "matter",
+   "start": 42.463,
+   "end": 42.851,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "feel",
+   "start": 42.851,
+   "end": 43.138,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "solid",
+   "start": 43.138,
+   "end": 44.101,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "You",
+   "start": 44.101,
+   "end": 44.226,
+   "line": 4,
+   "sentence": true
+  },
+  {
+   "text": "don't",
+   "start": 44.226,
+   "end": 44.426,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "fall",
+   "start": 44.426,
+   "end": 44.688,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "through",
+   "start": 44.688,
+   "end": 44.888,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 44.888,
+   "end": 45.001,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "floor",
+   "start": 45.001,
+   "end": 45.388,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "because",
+   "start": 45.388,
+   "end": 46.138,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "at",
+   "start": 46.138,
+   "end": 46.226,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 46.226,
+   "end": 46.326,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "tiniest",
+   "start": 46.326,
+   "end": 46.863,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "scale",
+   "start": 46.863,
+   "end": 47.488,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 47.488,
+   "end": 47.638,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "floor",
+   "start": 47.638,
+   "end": 48.013,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "is",
+   "start": 48.013,
+   "end": 48.176,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "pushing",
+   "start": 48.176,
+   "end": 48.588,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 48.588,
+   "end": 48.738,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "away",
+   "start": 48.738,
+   "end": 49.266,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "So",
+   "start": 50.063,
+   "end": 50.238,
+   "line": 5,
+   "sentence": true
+  },
+  {
+   "text": "what",
+   "start": 50.238,
+   "end": 50.45,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "really",
+   "start": 50.45,
+   "end": 50.738,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "happens",
+   "start": 50.738,
+   "end": 51.2,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "when",
+   "start": 51.2,
+   "end": 51.338,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 51.338,
+   "end": 51.475,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "touch",
+   "start": 51.475,
+   "end": 51.75,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "something",
+   "start": 51.75,
+   "end": 52.36,
+   "line": 5,
+   "sentence": false
+  }
+ ]
+}

@@ -163,7 +163,7 @@ def part1(p):
     # The stadium and the blueberry
     sx = 3800
     m2 = mark(p)
-    stad = p.pic('stadium', sx, 0, w=880, at='3:football stadium')
+    stad = p.pic('stadium', sx, 0, w=880, at='3:So picture+0.5')
     p.glows([(sx, 0)], '3:very center', size=40)
     p.mag(stad, (0.5, 0.5), 12, sx + 700, -230, 160, '3:blueberry', '4:The rest of', [{'picture': 'blueberry', 'scale': 1.6}])
     p.label('A BLUEBERRY', sx + 700, -30, '3:blueberry+0.4', '4:The rest of', size=30, color='accent')
@@ -190,7 +190,7 @@ def part1(p):
     p.label('ALMOST ALL THE SPACE', sx, 330, '5:size', size=36)
     close(p, m2, '6:So how')
     question(p, sx, -330, '6:So how', size=110)
-    p.cam('5:Almost all', x=sx, y=20, zoom=0.92)
+    p.cam('5:Almost all of an', x=sx, y=20, zoom=0.92)
     p.end_all()
 
 
@@ -198,12 +198,12 @@ def part2(p):
     chapter(p, 2, 'A little')
     p.cam('start', x=0, y=0, zoom=0.95)
     m = mark(p)
-    p.pic('microscope', -150, -30, h=520, at='1:A little')
-    p.label('ERNEST RUTHERFORD', 520, -60, '1:Ernest Rutherford', size=36, align='left')
-    p.label('FROM NEW ZEALAND', 520, 0, '1:New Zealand', size=26, color='accent', align='left')
-    p.label('WITH HANS GEIGER', 520, 90, '1:Hans Geiger', size=26, align='left')
-    p.label('AND ERNEST MARSDEN', 520, 140, '1:Ernest Marsden', size=26, align='left')
-    p.cam('1:A little', x=300, y=0, zoom=0.95)
+    p.pic('microscope', -330, -30, h=520, at='1:A little')
+    p.label('ERNEST RUTHERFORD', 230, -60, '1:Ernest Rutherford', size=32, align='left', spacing=0.14)
+    p.label('FROM NEW ZEALAND', 230, 0, '1:New Zealand', size=24, color='accent', align='left', spacing=0.14)
+    p.label('WITH HANS GEIGER', 230, 90, '1:Hans Geiger', size=24, align='left', spacing=0.14)
+    p.label('AND ERNEST MARSDEN', 230, 140, '1:Ernest Marsden', size=24, align='left', spacing=0.14)
+    p.cam('1:A little', x=200, y=0, zoom=0.95)
     close(p, m, '2:They fired')
     # The gold foil experiment
     gx = 2000
@@ -221,11 +221,11 @@ def part2(p):
     p.cam('2:glowing screen', x=gx, y=0, zoom=0.92)
     # What it meant: mostly empty atoms with tiny heavy centres
     ax = gx + 1500
-    p.line([(gx + 20, -60), (ax - 380, -260)], '4:mostly empty', width=1.2, color='muted', dashed=True)
-    p.line([(gx + 20, 60), (ax - 380, 260)], '4:mostly empty', width=1.2, color='muted', dashed=True)
+    p.line([(gx + 20, -60), (ax - 380, -260)], '4:mostly empty space', width=1.2, color='muted', dashed=True)
+    p.line([(gx + 20, 60), (ax - 380, 260)], '4:mostly empty space', width=1.2, color='muted', dashed=True)
     for k in range(3):
         y = -220 + 220 * k
-        p.circle(ax, y, 95, T('4:mostly empty', 0.15 * k), width=1.4, color='muted', dashed=True)
+        p.circle(ax, y, 95, T('4:mostly empty space', 0.15 * k), width=1.4, color='muted', dashed=True)
         p.glows([(ax, y)], T('4:tiny, heavy', 0.15 * k), size=26)
         p.label('+', ax + 28, y - 26, T('4:positive charge', 0.15 * k), size=22, color='accent', spacing=0.02)
     bend = p.line([(ax - 300, -30), (ax - 40, -10), (ax + 10, 10), (ax + 300, 140)], '4:knocked off', width=1.6, curve=True, color='accent')
@@ -233,7 +233,7 @@ def part2(p):
     p.label('WHAT IT MEANT', ax, -420, '4:Rutherford realized', size=36, color='accent')
     p.label('THE SOLID WORLD WAS MOSTLY EMPTY', ax - 600, 470, '4:The solid world', size=36)
     p.cam('4:Rutherford realized', x=ax - 300, y=0, zoom=0.82)
-    p.cam('4:mostly empty', x=ax - 150, y=0, zoom=0.9)
+    p.cam('4:mostly empty space', x=ax - 150, y=0, zoom=0.9)
     p.cam('4:The solid world', x=ax - 600, y=40, zoom=0.82)
     fx = ax + 1300
     floor(p, fx - 300, fx + 300, 160, '5:So if')
@@ -248,6 +248,8 @@ def part3(p):
     p.cam('start', x=0, y=0, zoom=1.0)
     m = mark(p)
     cloud(p, 0, 0, 180, '1:The answer', count=26, size=12)
+    p.label('ELECTRONS', 0, -280, '1:in the electrons', size=36, color='accent')
+    p.cam('1:wrapped', x=0, y=0, zoom=1.12)
     for k, (dx, dy) in enumerate(((-200, -60), (190, -90), (-120, 170), (150, 150))):
         p.label('−', dx, dy, T('1:negative charge', 0.12 * k), size=34, color='accent', spacing=0.02)
     p.circle(650, 0, 110, "1:hard little", width=2.4, fill='paper')
@@ -258,6 +260,7 @@ def part3(p):
     cx = 1700
     cloud(p, cx - 190, 0, 150, '1:clouds of electric', count=22, size=11)
     cloud(p, cx + 190, 0, 150, '1:clouds of electric+0.2', count=22, size=11)
+    p.label('CLOUDS OF CHARGE', cx, -270, '1:clouds of electric', size=32, color='accent')
     p.label('THEY KEEP THEIR DISTANCE', cx, 280, '1:keep their distance', size=32)
     p.cam('1:clouds of electric', x=cx, y=20, zoom=1.0)
     # Same charges push apart
@@ -299,9 +302,12 @@ def part3(p):
     for k in range(4):
         x = gx - 240 + 160 * k
         p.arrow((x, 330), (x, 190), T('4:pushing you away', 0.12 * k), width=2.4, color='accent')
+    p.label('MATTER FEELS SOLID', gx, -230, '4:feel solid', size=36)
     p.label('THE FLOOR PUSHES BACK', gx, 420, '4:pushing you away', size=32, color='accent')
     question(p, gx + 420, -160, '5:So what', size=110)
     p.cam('4:Together', x=gx, y=80, zoom=1.0)
+    p.cam('4:at the tiniest', x=gx, y=180, zoom=1.15)
+    p.cam('5:So what', x=gx + 100, y=60, zoom=1.0)
     p.end_all()
 
 
@@ -417,6 +423,7 @@ def part5(p):
         x = hx - 180 + 120 * k
         p.arrow((x, -180), (x, -40), T('5:pattern of forces', 0.1 * k), width=2.0, color='accent')
     p.label('A PATTERN OF FORCES', hx, 300, '5:pattern of forces', size=32)
+    p.label('TRANSLATED BY YOUR BRAIN', hx, 360, '5:translated', size=26, color='accent')
     question(p, hx + 420, -200, '5:how much of you', size=110)
     p.cam('5:So the world', x=hx + 100, y=20, zoom=1.0)
     p.end_all()
@@ -430,14 +437,15 @@ def part6(p):
     inside = [p.pt(me, (0.45 + 0.1 * math.sin(i * 1.7), 0.15 + 0.75 * i / 13)) for i in range(14)]
     p.glows(inside, '1:nuclei', size=20, stagger=0.05)
     p.stream(ring(0, 0, 230, 40, 380), '1:Everything else', count=16, period=6, size=9, spread=80)
-    p.label('ALMOST ALL OF YOUR MASS', 420, -60, '1:nuclei', size=28, align='left', color='accent')
-    p.label('AND A LOT OF SPACE', 420, 10, '1:Everything else', size=28, align='left')
+    p.label('ALMOST ALL OF YOUR MASS', 330, -60, '1:nuclei', size=26, align='left', color='accent', spacing=0.14)
+    p.label('AND A LOT OF SPACE', 330, 10, '1:Everything else', size=26, align='left', spacing=0.14)
     p.cam('1:Almost all', x=200, y=0, zoom=0.95)
     close(p, m, '2:There is a place')
     # A dying star's core collapses into a neutron star
     sx = 1500
     p.glows(scatter(sx + 300, -100, 1500, 700, 14, seed=12), '2:There is a place', size=30, stagger=0.08)
-    p.pic('earth', sx, 0, h=380, at='2:size of the Earth')
+    p.label('WHERE THE SPACE IS GONE', sx + 250, -330, '2:that space is gone', '2:collapse', size=32, color='accent')
+    p.pic('earth', sx, 0, h=380, at='2:When a giant')
     p.label('A CORE THE SIZE OF THE EARTH', sx, 280, '2:size of the Earth', size=26)
     p.arrow((sx + 230, 0), (sx + 480, 0), '2:collapse', width=2.4, color='accent')
     p.circle(sx + 560, 0, 10, '2:less than 20', width=2.2, fill='accent', fillOpacity=0.8)
@@ -449,6 +457,9 @@ def part6(p):
     p.label('THE DENSEST OBJECTS IN THE UNIVERSE', nx, -320, '2:densest', size=30)
     p.label('ONE GIANT NUCLEUS', nx, 280, '2:giant atomic nucleus', size=34, color='accent')
     p.label('{n}% NEUTRONS', nx, 350, '2:95 percent', size=28, count={'to': 95, 'duration': 1.2})
+    for i in range(12):
+        r, c = divmod(i, 4)
+        p.circle(nx + 330 + c * 34 + (17 if r % 2 else 0), -40 + r * 30, 16, T('2:packed together', 0.04 * i), width=1.6, fill='paper')
     p.cam("2:What's left", x=nx, y=0, zoom=0.95)
     # A sugar cube of neutron star; all of humanity in less than a sugar cube
     cx = nx + 1300
@@ -458,6 +469,7 @@ def part6(p):
     hx = cx + 1600
     crowd = scatter(hx, -40, 1500, 700, 46, seed=21)
     p.glows(crowd, '4:every person', size=24, stagger=0.03)
+    p.label('EVERY PERSON ALIVE TODAY', hx, -500, '4:every person', '4:8 billion', size=30)
     p.label('ABOUT {n} PEOPLE', hx, -420, '4:8 billion', size=36, count={'to': 8000000000, 'duration': 1.6})
     p.pic('sugar_cube', hx, 260, h=120, at='4:squeezed')
     for k in range(6):
@@ -494,6 +506,9 @@ def part7(p):
         y = -90 + 90 * k
         p.line([(cx - 30, y), (cx + 30, y)], T('3:through forces', 0.1 * k), width=1.6, color='accent')
     p.glows([(cx, 0)], '3:across a space', size=110)
+    p.label('THE DEEPER LESSON', cx, -330, '3:deeper lesson', size=32, color='accent')
+    p.label('NEVER FULLY SEPARATE', cx, -260, '3:never fully separate', size=26)
+    p.label('NEVER FULLY MERGED', cx, 230, '3:never fully merged', size=26)
     p.label('WE MEET THROUGH FORCES', cx, 300, '3:through forces', size=32)
     p.cam('3:Maybe', x=cx, y=20, zoom=1.0)
     # Epictetus
@@ -504,7 +519,7 @@ def part7(p):
     qx = ex + 330
     p.label('“NOT BY THINGS,', qx, -150, '4:not by things', size=26, align='left', spacing=0.14)
     p.label('BUT BY THE VIEWS WHICH THEY TAKE OF THINGS”', qx, -80, '4:but by the views', size=26, align='left', spacing=0.14)
-    p.label('WITHIN OUR POWER', qx, 60, '4:within our power', size=28, align='left', spacing=0.14, color='accent')
+    p.label('WITHIN OUR POWER', qx, 60, '4:things are within', size=28, align='left', spacing=0.14, color='accent')
     p.label('NOT WITHIN OUR POWER', qx, 120, '4:some things are not', size=28, align='left', spacing=0.14)
     p.cam('4:Almost two', x=ex + 300, y=0, zoom=0.86)
     p.cam('4:not by things', x=ex + 600, y=0, zoom=0.86)
@@ -525,8 +540,10 @@ def part8(p):
     p.pic('holding_hands', 0, 80, w=560, at="1:Let's")
     p.label('YOU HAVE NEVER', 0, -300, '1:You have never', size=40)
     p.label('TOUCHED ANYTHING', 0, -230, '1:You have never+0.3', size=40, color='accent')
+    two_rows(p, 0, 420, '1:The atoms of your', n=4, r=24, gap=40)
     p.glows([(-40, 60), (60, 80)], '2:felt everything', size=90, stagger=0.3)
     p.cam("1:Let's", x=0, y=0, zoom=1.0)
+    p.cam('1:The atoms of your', x=0, y=200, zoom=0.9)
     close(p, m, '2:The ground')
     gx = 1200
     floor(p, gx - 300, gx + 300, 160, '2:The ground')
@@ -553,12 +570,16 @@ def part8(p):
     for k in range(4):
         x = hx - 210 + 140 * k
         cloud(p, x, 230, 46, T('4:Two worlds', 0.1 * k), count=7, size=8)
+    p.glows([(hx - 40, -60), (hx + 60, -40)], "4:someone's hand", size=80, stagger=0.3)
+    p.label('WHAT IS REALLY HAPPENING', hx, -330, '4:really happening', size=32)
+    p.label('ALMOST ENTIRELY EMPTY', hx, 320, '4:almost entirely', size=26)
     p.label('HOLDING EACH OTHER UP', hx, 380, '4:holding each other', size=32, color='accent')
     p.cam('4:So the next time', x=hx, y=40, zoom=0.95)
     p.label('YOU HAVE BEEN TOUCHED', hx, -330, '5:And yet', size=40)
+    p.labels[-2]['out'] = '5:And yet'
     p.label('BY EVERYTHING', hx, -260, '5:touched by everything', size=40, color='accent')
     p.cam("5:You've never", x=hx, y=0, zoom=0.88)
-    p.cam('end', x=hx, y=0, zoom=0.8)
+    p.cam('5:touched by everything@end', x=hx, y=0, zoom=0.8)
     p.end_all('end-0.2')
 
 

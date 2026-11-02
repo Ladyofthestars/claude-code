@@ -1,0 +1,1206 @@
+{
+ "title": "You've Never Actually Touched Anything \u2014 part 6",
+ "size": {
+  "width": 1920,
+  "height": 1080
+ },
+ "audio": "narration.mp3",
+ "words": "words.json",
+ "tailSeconds": 0,
+ "safeArea": {
+  "top": 0.06,
+  "bottom": 0.06,
+  "side": 0.05
+ },
+ "theme": {
+  "background": "#0c1d3a",
+  "backgroundImage": "radial-gradient(ellipse 70% 65% at 50% 42%, rgba(46, 92, 168, 0.55) 0%, rgba(24, 52, 104, 0.28) 45%, rgba(6, 14, 32, 0) 75%), radial-gradient(ellipse 130% 110% at 50% 50%, rgba(0, 0, 0, 0) 55%, rgba(2, 6, 16, 0.7) 100%)",
+  "dotColor": "rgba(190, 215, 255, 0.10)",
+  "dotSpacing": 40,
+  "dotSize": 1.5,
+  "dotParallax": 0.75,
+  "ink": "#eef4ff",
+  "accent": "#ffc865",
+  "lightBlend": "screen",
+  "font": "Montserrat",
+  "labelGlow": "rgba(130, 175, 255, 0.55)",
+  "drawingGlow": "rgba(130, 175, 255, 0.55)",
+  "dust": {
+   "count": 60,
+   "color": "#cfe0ff",
+   "size": 1.8,
+   "parallax": 0.45,
+   "drift": 5
+  }
+ },
+ "pictures": {
+  "earth": {
+   "src": "/videos/never-touched-anything/images/earth.png",
+   "aspect": 1.0,
+   "content": [
+    0.2637,
+    0.2656,
+    0.7393,
+    0.7354
+   ]
+  },
+  "neutron_star": {
+   "src": "/videos/never-touched-anything/images/neutron_star.png",
+   "aspect": 1.0,
+   "content": [
+    0.2842,
+    0.2158,
+    0.7061,
+    0.751
+   ]
+  },
+  "person": {
+   "src": "/videos/never-touched-anything/images/person.png",
+   "aspect": 0.67089,
+   "content": [
+    0.3856,
+    0.2524,
+    0.6108,
+    0.7579
+   ]
+  },
+  "sugar_cube": {
+   "src": "/videos/never-touched-anything/images/sugar_cube.png",
+   "aspect": 1.0,
+   "content": [
+    0.332,
+    0.3447,
+    0.666,
+    0.665
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "person1",
+   "picture": "person",
+   "x": 33791.7,
+   "y": 132.9,
+   "width": 929.0,
+   "in": "1:Almost all",
+   "out": "2:There is a place"
+  },
+  {
+   "id": "earth3",
+   "picture": "earth",
+   "x": 35288.8,
+   "y": 139.6,
+   "width": 808.9,
+   "in": "2:When a giant",
+   "out": "end-1.1"
+  },
+  {
+   "id": "neutron_star6",
+   "picture": "neutron_star",
+   "x": 36793.4,
+   "y": 151.8,
+   "width": 710.0,
+   "in": "2:What's left",
+   "out": "end-1.1"
+  },
+  {
+   "id": "sugar_cube19",
+   "picture": "sugar_cube",
+   "x": 38090.7,
+   "y": 116.4,
+   "width": 749.3,
+   "in": "3:sugar cube",
+   "out": "end-1.1"
+  },
+  {
+   "id": "sugar_cube20",
+   "picture": "sugar_cube",
+   "x": 39690.4,
+   "y": 398.2,
+   "width": 374.6,
+   "in": "4:squeezed",
+   "out": "end-1.1"
+  }
+ ],
+ "camera": [
+  {
+   "at": 0.0,
+   "x": 33790.0,
+   "y": 140.0,
+   "zoom": 1.0
+  },
+  {
+   "at": 2.605,
+   "x": 33790.0,
+   "y": 140.0,
+   "zoom": 1.0
+  },
+  {
+   "at": 3.905,
+   "x": 33990.0,
+   "y": 140.0,
+   "zoom": 0.95
+  },
+  {
+   "at": 10.294,
+   "x": 33990.0,
+   "y": 140.0,
+   "zoom": 0.95
+  },
+  {
+   "at": 11.594,
+   "x": 35540.0,
+   "y": 140.0,
+   "zoom": 0.92
+  },
+  {
+   "at": 20.623,
+   "x": 35540.0,
+   "y": 140.0,
+   "zoom": 0.92
+  },
+  {
+   "at": 21.923,
+   "x": 36790.0,
+   "y": 140.0,
+   "zoom": 0.95
+  },
+  {
+   "at": 36.642,
+   "x": 36790.0,
+   "y": 140.0,
+   "zoom": 0.95
+  },
+  {
+   "at": 37.942,
+   "x": 38090.0,
+   "y": 180.0,
+   "zoom": 1.0
+  },
+  {
+   "at": 42.349,
+   "x": 38090.0,
+   "y": 180.0,
+   "zoom": 1.0
+  },
+  {
+   "at": 43.649,
+   "x": 39690.0,
+   "y": 140.0,
+   "zoom": 0.72
+  },
+  {
+   "at": 47.562,
+   "x": 39690.0,
+   "y": 140.0,
+   "zoom": 0.72
+  },
+  {
+   "at": 50.162,
+   "x": 39690.0,
+   "y": 240.0,
+   "zoom": 0.8
+  },
+  {
+   "at": 54.866,
+   "x": 39690.0,
+   "y": 240.0,
+   "zoom": 0.8
+  },
+  {
+   "at": 57.466,
+   "x": 39690.0,
+   "y": 200.0,
+   "zoom": 0.62
+  },
+  {
+   "at": 61.917,
+   "x": 39690.0,
+   "y": 200.0,
+   "zoom": 0.62
+  }
+ ],
+ "threads": [],
+ "drawings": [
+  {
+   "id": "line4",
+   "kind": "path",
+   "points": [
+    [
+     35520.0,
+     140.0
+    ],
+    [
+     35770.0,
+     140.0
+    ]
+   ],
+   "draw": "2:collapse",
+   "arrow": true,
+   "width": 2.4,
+   "color": "accent",
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle5",
+   "kind": "circle",
+   "cx": 35850.0,
+   "cy": 140.0,
+   "r": 10,
+   "draw": "2:less than 20",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.8,
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle7",
+   "kind": "circle",
+   "cx": 37120.0,
+   "cy": 100.0,
+   "r": 16,
+   "draw": "2:packed together",
+   "width": 1.6,
+   "fill": "paper",
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle8",
+   "kind": "circle",
+   "cx": 37154.0,
+   "cy": 100.0,
+   "r": 16,
+   "draw": "2:packed together+0.04",
+   "width": 1.6,
+   "fill": "paper",
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle9",
+   "kind": "circle",
+   "cx": 37188.0,
+   "cy": 100.0,
+   "r": 16,
+   "draw": "2:packed together+0.08",
+   "width": 1.6,
+   "fill": "paper",
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle10",
+   "kind": "circle",
+   "cx": 37222.0,
+   "cy": 100.0,
+   "r": 16,
+   "draw": "2:packed together+0.12",
+   "width": 1.6,
+   "fill": "paper",
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle11",
+   "kind": "circle",
+   "cx": 37137.0,
+   "cy": 130.0,
+   "r": 16,
+   "draw": "2:packed together+0.16",
+   "width": 1.6,
+   "fill": "paper",
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle12",
+   "kind": "circle",
+   "cx": 37171.0,
+   "cy": 130.0,
+   "r": 16,
+   "draw": "2:packed together+0.2",
+   "width": 1.6,
+   "fill": "paper",
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle13",
+   "kind": "circle",
+   "cx": 37205.0,
+   "cy": 130.0,
+   "r": 16,
+   "draw": "2:packed together+0.24",
+   "width": 1.6,
+   "fill": "paper",
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle14",
+   "kind": "circle",
+   "cx": 37239.0,
+   "cy": 130.0,
+   "r": 16,
+   "draw": "2:packed together+0.28",
+   "width": 1.6,
+   "fill": "paper",
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle15",
+   "kind": "circle",
+   "cx": 37120.0,
+   "cy": 160.0,
+   "r": 16,
+   "draw": "2:packed together+0.32",
+   "width": 1.6,
+   "fill": "paper",
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle16",
+   "kind": "circle",
+   "cx": 37154.0,
+   "cy": 160.0,
+   "r": 16,
+   "draw": "2:packed together+0.36",
+   "width": 1.6,
+   "fill": "paper",
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle17",
+   "kind": "circle",
+   "cx": 37188.0,
+   "cy": 160.0,
+   "r": 16,
+   "draw": "2:packed together+0.4",
+   "width": 1.6,
+   "fill": "paper",
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle18",
+   "kind": "circle",
+   "cx": 37222.0,
+   "cy": 160.0,
+   "r": 16,
+   "draw": "2:packed together+0.44",
+   "width": 1.6,
+   "fill": "paper",
+   "out": "end-1.1"
+  }
+ ],
+ "lights": [
+  {
+   "worldPoints": [
+    [
+     33745.2,
+     -351.8
+    ],
+    [
+     33837.3,
+     -271.9
+    ],
+    [
+     33721.5,
+     -192.0
+    ],
+    [
+     33659.2,
+     -112.1
+    ],
+    [
+     33791.1,
+     -32.2
+    ],
+    [
+     33819.4,
+     47.7
+    ],
+    [
+     33680.2,
+     127.5
+    ],
+    [
+     33687.8,
+     207.4
+    ],
+    [
+     33825.0,
+     287.3
+    ],
+    [
+     33782.1,
+     367.2
+    ],
+    [
+     33655.9,
+     447.1
+    ],
+    [
+     33731.4,
+     527.0
+    ],
+    [
+     33838.1,
+     606.9
+    ],
+    [
+     33735.1,
+     686.8
+    ]
+   ],
+   "from": "1:nuclei",
+   "size": 20,
+   "stagger": 0.05,
+   "to": "2:There is a place"
+  },
+  {
+   "worldPoints": [
+    [
+     35556.3,
+     258.3
+    ],
+    [
+     35225.2,
+     365.1
+    ],
+    [
+     35639.5,
+     244.7
+    ],
+    [
+     36328.0,
+     -117.0
+    ],
+    [
+     35155.4,
+     -226.7
+    ],
+    [
+     35262.2,
+     68.6
+    ],
+    [
+     35230.7,
+     -131.4
+    ],
+    [
+     34912.5,
+     149.4
+    ],
+    [
+     35445.8,
+     299.9
+    ],
+    [
+     35106.0,
+     140.3
+    ],
+    [
+     35052.4,
+     -229.4
+    ],
+    [
+     36013.6,
+     -133.2
+    ],
+    [
+     34918.1,
+     48.9
+    ],
+    [
+     35701.9,
+     -188.1
+    ]
+   ],
+   "from": "2:There is a place",
+   "size": 30,
+   "stagger": 0.08,
+   "to": "end-1.1"
+  },
+  {
+   "worldPoints": [
+    [
+     40006.7,
+     110.9
+    ],
+    [
+     40128.7,
+     143.0
+    ],
+    [
+     40111.9,
+     100.9
+    ],
+    [
+     39094.7,
+     -18.9
+    ],
+    [
+     39634.9,
+     -196.7
+    ],
+    [
+     39805.3,
+     222.9
+    ],
+    [
+     40313.5,
+     -87.9
+    ],
+    [
+     39570.6,
+     90.1
+    ],
+    [
+     39790.3,
+     281.6
+    ],
+    [
+     40023.6,
+     301.6
+    ],
+    [
+     39477.1,
+     73.3
+    ],
+    [
+     39805.6,
+     -56.2
+    ],
+    [
+     39049.1,
+     -92.0
+    ],
+    [
+     39534.3,
+     -90.5
+    ],
+    [
+     39877.8,
+     26.0
+    ],
+    [
+     39149.6,
+     379.2
+    ],
+    [
+     40252.2,
+     364.2
+    ],
+    [
+     40110.4,
+     52.8
+    ],
+    [
+     39238.7,
+     334.7
+    ],
+    [
+     40105.3,
+     288.2
+    ],
+    [
+     39903.5,
+     319.6
+    ],
+    [
+     39554.9,
+     -28.9
+    ],
+    [
+     39233.4,
+     86.3
+    ],
+    [
+     39342.6,
+     104.3
+    ],
+    [
+     39984.3,
+     -20.5
+    ],
+    [
+     39155.3,
+     -218.2
+    ],
+    [
+     39912.6,
+     60.5
+    ],
+    [
+     40055.7,
+     79.9
+    ],
+    [
+     39757.7,
+     230.6
+    ],
+    [
+     39365.8,
+     386.1
+    ],
+    [
+     40300.5,
+     256.9
+    ],
+    [
+     39426.9,
+     446.0
+    ],
+    [
+     39619.6,
+     406.3
+    ],
+    [
+     39847.1,
+     -71.4
+    ],
+    [
+     40102.2,
+     143.0
+    ],
+    [
+     40125.3,
+     -81.8
+    ],
+    [
+     39010.4,
+     420.6
+    ],
+    [
+     39220.1,
+     175.8
+    ],
+    [
+     39964.4,
+     65.5
+    ],
+    [
+     39549.5,
+     147.6
+    ],
+    [
+     39451.7,
+     337.9
+    ],
+    [
+     39112.5,
+     -138.7
+    ],
+    [
+     39544.2,
+     448.3
+    ],
+    [
+     40284.2,
+     -200.2
+    ],
+    [
+     40256.1,
+     -237.2
+    ],
+    [
+     40285.1,
+     -167.3
+    ]
+   ],
+   "from": "4:every person",
+   "size": 24,
+   "stagger": 0.03,
+   "to": "end-1.1"
+  }
+ ],
+ "magnifiers": [],
+ "labels": [
+  {
+   "text": "CHAPTER 6",
+   "x": 960,
+   "y": 470,
+   "space": "screen",
+   "size": 28,
+   "in": 0.25,
+   "out": "1:Almost all-0.55",
+   "color": "accent",
+   "spacing": 0.5
+  },
+  {
+   "text": "HOW MUCH OF YOU IS EMPTY?",
+   "x": 960,
+   "y": 548,
+   "space": "screen",
+   "size": 58,
+   "in": 0.45,
+   "out": "1:Almost all-0.55"
+  },
+  {
+   "text": "ALMOST ALL OF YOUR MASS",
+   "x": 34120.0,
+   "y": 80.0,
+   "space": "world",
+   "size": 32,
+   "in": "1:nuclei",
+   "color": "accent",
+   "spacing": 0.14,
+   "align": "left",
+   "out": "2:There is a place"
+  },
+  {
+   "text": "AND A LOT OF SPACE",
+   "x": 34120.0,
+   "y": 150.0,
+   "space": "world",
+   "size": 32,
+   "in": "1:Everything else",
+   "spacing": 0.14,
+   "align": "left",
+   "out": "2:There is a place"
+  },
+  {
+   "text": "WHERE THE SPACE IS GONE",
+   "x": 35540.0,
+   "y": -190.0,
+   "space": "world",
+   "size": 40,
+   "in": "2:that space is gone",
+   "out": "2:collapse",
+   "color": "accent"
+  },
+  {
+   "text": "A CORE THE SIZE OF THE EARTH",
+   "x": 35290.0,
+   "y": 420.0,
+   "space": "world",
+   "size": 32,
+   "in": "2:size of the Earth",
+   "out": "end-1.1"
+  },
+  {
+   "text": "LESS THAN 20 KM",
+   "x": 35850.0,
+   "y": 70.0,
+   "space": "world",
+   "size": 32,
+   "in": "2:less than 20",
+   "color": "accent",
+   "out": "end-1.1"
+  },
+  {
+   "text": "IN LESS THAN A SECOND",
+   "x": 35850.0,
+   "y": 210.0,
+   "space": "world",
+   "size": 28,
+   "in": "2:less than a second",
+   "out": "end-1.1"
+  },
+  {
+   "text": "THE DENSEST OBJECTS IN THE UNIVERSE",
+   "x": 36790.0,
+   "y": -180.0,
+   "space": "world",
+   "size": 38,
+   "in": "2:densest",
+   "out": "end-1.1"
+  },
+  {
+   "text": "ONE GIANT NUCLEUS",
+   "x": 36790.0,
+   "y": 420.0,
+   "space": "world",
+   "size": 42,
+   "in": "2:giant atomic nucleus",
+   "color": "accent",
+   "out": "end-1.1"
+  },
+  {
+   "text": "{n}% NEUTRONS",
+   "x": 36790.0,
+   "y": 490.0,
+   "space": "world",
+   "size": 35,
+   "in": "2:95 percent",
+   "count": {
+    "to": 95,
+    "duration": 1.2
+   },
+   "out": "end-1.1"
+  },
+  {
+   "text": "ABOUT {n} TONS",
+   "x": 38090.0,
+   "y": 370.0,
+   "space": "world",
+   "size": 42,
+   "in": "3:a billion tons",
+   "color": "accent",
+   "count": {
+    "to": 1000000000,
+    "duration": 1.6
+   },
+   "out": "end-1.1"
+  },
+  {
+   "text": "EVERY PERSON ALIVE TODAY",
+   "x": 39690.0,
+   "y": -360.0,
+   "space": "world",
+   "size": 38,
+   "in": "4:every person",
+   "out": "4:8 billion"
+  },
+  {
+   "text": "ABOUT {n} PEOPLE",
+   "x": 39690.0,
+   "y": -280.0,
+   "space": "world",
+   "size": 45,
+   "in": "4:8 billion",
+   "count": {
+    "to": 8000000000,
+    "duration": 1.6
+   },
+   "out": "end-1.1"
+  },
+  {
+   "text": "LESS THAN A SUGAR CUBE",
+   "x": 39690.0,
+   "y": 540.0,
+   "space": "world",
+   "size": 42,
+   "in": "4:less than a sugar",
+   "color": "accent",
+   "out": "end-1.1"
+  },
+  {
+   "text": "?",
+   "x": 40210.0,
+   "y": 140.0,
+   "space": "world",
+   "size": 138,
+   "in": "5:So what does",
+   "color": "accent",
+   "spacing": 0.02,
+   "out": "end-1.1"
+  }
+ ],
+ "streams": [
+  {
+   "points": [
+    [
+     34020.0,
+     140.0
+    ],
+    [
+     34017.2,
+     199.4
+    ],
+    [
+     34008.7,
+     257.4
+    ],
+    [
+     33994.9,
+     312.5
+    ],
+    [
+     33976.1,
+     363.4
+    ],
+    [
+     33952.6,
+     408.7
+    ],
+    [
+     33925.2,
+     447.4
+    ],
+    [
+     33894.4,
+     478.6
+    ],
+    [
+     33861.1,
+     501.4
+    ],
+    [
+     33826.0,
+     515.3
+    ],
+    [
+     33790.0,
+     520.0
+    ],
+    [
+     33754.0,
+     515.3
+    ],
+    [
+     33718.9,
+     501.4
+    ],
+    [
+     33685.6,
+     478.6
+    ],
+    [
+     33654.8,
+     447.4
+    ],
+    [
+     33627.4,
+     408.7
+    ],
+    [
+     33603.9,
+     363.4
+    ],
+    [
+     33585.1,
+     312.5
+    ],
+    [
+     33571.3,
+     257.4
+    ],
+    [
+     33562.8,
+     199.4
+    ],
+    [
+     33560.0,
+     140.0
+    ],
+    [
+     33562.8,
+     80.6
+    ],
+    [
+     33571.3,
+     22.6
+    ],
+    [
+     33585.1,
+     -32.5
+    ],
+    [
+     33603.9,
+     -83.4
+    ],
+    [
+     33627.4,
+     -128.7
+    ],
+    [
+     33654.8,
+     -167.4
+    ],
+    [
+     33685.6,
+     -198.6
+    ],
+    [
+     33718.9,
+     -221.4
+    ],
+    [
+     33754.0,
+     -235.3
+    ],
+    [
+     33790.0,
+     -240.0
+    ],
+    [
+     33826.0,
+     -235.3
+    ],
+    [
+     33861.1,
+     -221.4
+    ],
+    [
+     33894.4,
+     -198.6
+    ],
+    [
+     33925.2,
+     -167.4
+    ],
+    [
+     33952.6,
+     -128.7
+    ],
+    [
+     33976.1,
+     -83.4
+    ],
+    [
+     33994.9,
+     -32.5
+    ],
+    [
+     34008.7,
+     22.6
+    ],
+    [
+     34017.2,
+     80.6
+    ],
+    [
+     34020.0,
+     140.0
+    ]
+   ],
+   "from": "1:Everything else",
+   "count": 16,
+   "period": 6,
+   "size": 9,
+   "spread": 80,
+   "curve": true,
+   "to": "2:There is a place"
+  },
+  {
+   "points": [
+    [
+     40006.7,
+     110.9
+    ],
+    [
+     39848.3,
+     175.5
+    ],
+    [
+     39690.0,
+     390.0
+    ]
+   ],
+   "from": "4:squeezed",
+   "count": 4,
+   "period": 1.8,
+   "size": 10,
+   "spread": 4,
+   "curve": true,
+   "color": "accent",
+   "to": "end-1.1"
+  },
+  {
+   "points": [
+    [
+     39570.6,
+     90.1
+    ],
+    [
+     39630.3,
+     165.1
+    ],
+    [
+     39690.0,
+     390.0
+    ]
+   ],
+   "from": "4:squeezed+0.1",
+   "count": 4,
+   "period": 1.8,
+   "size": 10,
+   "spread": 4,
+   "curve": true,
+   "color": "accent",
+   "to": "end-1.1"
+  },
+  {
+   "points": [
+    [
+     39877.8,
+     26.0
+    ],
+    [
+     39783.9,
+     133.0
+    ],
+    [
+     39690.0,
+     390.0
+    ]
+   ],
+   "from": "4:squeezed+0.2",
+   "count": 4,
+   "period": 1.8,
+   "size": 10,
+   "spread": 4,
+   "curve": true,
+   "color": "accent",
+   "to": "end-1.1"
+  },
+  {
+   "points": [
+    [
+     39554.9,
+     -28.9
+    ],
+    [
+     39622.5,
+     105.6
+    ],
+    [
+     39690.0,
+     390.0
+    ]
+   ],
+   "from": "4:squeezed+0.3",
+   "count": 4,
+   "period": 1.8,
+   "size": 10,
+   "spread": 4,
+   "curve": true,
+   "color": "accent",
+   "to": "end-1.1"
+  },
+  {
+   "points": [
+    [
+     39757.7,
+     230.6
+    ],
+    [
+     39723.8,
+     235.3
+    ],
+    [
+     39690.0,
+     390.0
+    ]
+   ],
+   "from": "4:squeezed+0.4",
+   "count": 4,
+   "period": 1.8,
+   "size": 10,
+   "spread": 4,
+   "curve": true,
+   "color": "accent",
+   "to": "end-1.1"
+  },
+  {
+   "points": [
+    [
+     40125.3,
+     -81.8
+    ],
+    [
+     39907.6,
+     79.1
+    ],
+    [
+     39690.0,
+     390.0
+    ]
+   ],
+   "from": "4:squeezed+0.5",
+   "count": 4,
+   "period": 1.8,
+   "size": 10,
+   "spread": 4,
+   "curve": true,
+   "color": "accent",
+   "to": "end-1.1"
+  }
+ ],
+ "clock": 332.0667
+}

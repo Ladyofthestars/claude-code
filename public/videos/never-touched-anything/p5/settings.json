@@ -1,0 +1,665 @@
+{
+ "title": "You've Never Actually Touched Anything \u2014 part 5",
+ "size": {
+  "width": 1920,
+  "height": 1080
+ },
+ "audio": "narration.mp3",
+ "words": "words.json",
+ "tailSeconds": 0,
+ "safeArea": {
+  "top": 0.06,
+  "bottom": 0.06,
+  "side": 0.05
+ },
+ "theme": {
+  "background": "#0c1d3a",
+  "backgroundImage": "radial-gradient(ellipse 70% 65% at 50% 42%, rgba(46, 92, 168, 0.55) 0%, rgba(24, 52, 104, 0.28) 45%, rgba(6, 14, 32, 0) 75%), radial-gradient(ellipse 130% 110% at 50% 50%, rgba(0, 0, 0, 0) 55%, rgba(2, 6, 16, 0.7) 100%)",
+  "dotColor": "rgba(190, 215, 255, 0.10)",
+  "dotSpacing": 40,
+  "dotSize": 1.5,
+  "dotParallax": 0.75,
+  "ink": "#eef4ff",
+  "accent": "#ffc865",
+  "lightBlend": "screen",
+  "font": "Montserrat",
+  "labelGlow": "rgba(130, 175, 255, 0.55)",
+  "drawingGlow": "rgba(130, 175, 255, 0.55)",
+  "dust": {
+   "count": 60,
+   "color": "#cfe0ff",
+   "size": 1.8,
+   "parallax": 0.45,
+   "drift": 5
+  }
+ },
+ "pictures": {
+  "brain": {
+   "src": "/videos/never-touched-anything/images/brain.png",
+   "aspect": 1.0,
+   "content": [
+    0.1953,
+    0.2295,
+    0.8057,
+    0.7705
+   ]
+  },
+  "finger_press": {
+   "src": "/videos/never-touched-anything/images/finger_press.png",
+   "aspect": 1.0,
+   "content": [
+    0.2178,
+    0.3721,
+    0.7705,
+    0.6299
+   ]
+  },
+  "open_hand": {
+   "src": "/videos/never-touched-anything/images/open_hand.png",
+   "aspect": 1.0,
+   "content": [
+    0.1689,
+    0.3086,
+    0.8271,
+    0.7266
+   ]
+  },
+  "person": {
+   "src": "/videos/never-touched-anything/images/person.png",
+   "aspect": 0.67089,
+   "content": [
+    0.3856,
+    0.2524,
+    0.6108,
+    0.7579
+   ]
+  },
+  "skin": {
+   "src": "/videos/never-touched-anything/images/skin.png",
+   "aspect": 1.0,
+   "content": [
+    0.2588,
+    0.2461,
+    0.7461,
+    0.7734
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "skin1",
+   "picture": "skin",
+   "x": 28287.4,
+   "y": 109.6,
+   "width": 1062.0,
+   "in": "1:Your skin",
+   "out": "2:When the electrons"
+  },
+  {
+   "id": "finger_press2",
+   "picture": "finger_press",
+   "x": 29897.5,
+   "y": 118.7,
+   "width": 1280.1,
+   "in": "2:When the electrons",
+   "out": "end-1.1"
+  },
+  {
+   "id": "person4",
+   "picture": "person",
+   "x": 31191.7,
+   "y": 112.7,
+   "width": 955.6,
+   "in": "3:The signal",
+   "out": "end-1.1"
+  },
+  {
+   "id": "brain6",
+   "picture": "brain",
+   "x": 32389.6,
+   "y": 80.0,
+   "width": 739.4,
+   "in": "3:somatosensory",
+   "out": "end-1.1"
+  },
+  {
+   "id": "open_hand9",
+   "picture": "open_hand",
+   "x": 33691.4,
+   "y": 147.4,
+   "width": 717.7,
+   "in": "5:So the world",
+   "out": "end-1.1"
+  }
+ ],
+ "camera": [
+  {
+   "at": 0.0,
+   "x": 28490.0,
+   "y": 120.0,
+   "zoom": 0.95
+  },
+  {
+   "at": 2.615,
+   "x": 28490.0,
+   "y": 120.0,
+   "zoom": 0.95
+  },
+  {
+   "at": 5.215,
+   "x": 28590.0,
+   "y": 140.0,
+   "zoom": 1.0
+  },
+  {
+   "at": 15.42,
+   "x": 28590.0,
+   "y": 140.0,
+   "zoom": 1.0
+  },
+  {
+   "at": 16.72,
+   "x": 29890.0,
+   "y": 120.0,
+   "zoom": 1.0
+  },
+  {
+   "at": 25.563,
+   "x": 29890.0,
+   "y": 120.0,
+   "zoom": 1.0
+  },
+  {
+   "at": 26.863,
+   "x": 31340.0,
+   "y": 120.0,
+   "zoom": 0.95
+  },
+  {
+   "at": 32.475,
+   "x": 31340.0,
+   "y": 120.0,
+   "zoom": 0.95
+  },
+  {
+   "at": 33.775,
+   "x": 32390.0,
+   "y": 120.0,
+   "zoom": 0.95
+  },
+  {
+   "at": 41.551,
+   "x": 32390.0,
+   "y": 120.0,
+   "zoom": 0.95
+  },
+  {
+   "at": 44.151,
+   "x": 32390.0,
+   "y": 100.0,
+   "zoom": 0.9
+  },
+  {
+   "at": 52.509,
+   "x": 32390.0,
+   "y": 100.0,
+   "zoom": 0.9
+  },
+  {
+   "at": 53.809,
+   "x": 33790.0,
+   "y": 140.0,
+   "zoom": 1.0
+  },
+  {
+   "at": 62.603,
+   "x": 33790.0,
+   "y": 140.0,
+   "zoom": 1.0
+  }
+ ],
+ "threads": [],
+ "drawings": [
+  {
+   "id": "line5",
+   "kind": "path",
+   "points": [
+    [
+     31096.2,
+     183.9
+    ],
+    [
+     31115.3,
+     -1.3
+    ],
+    [
+     31163.1,
+     -143.7
+    ],
+    [
+     31191.7,
+     41.4
+    ],
+    [
+     31191.7,
+     -129.5
+    ],
+    [
+     31191.7,
+     -286.1
+    ]
+   ],
+   "draw": "3:races up",
+   "width": 1.8,
+   "curve": true,
+   "color": "accent",
+   "duration": 2.2,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line7",
+   "kind": "path",
+   "points": [
+    [
+     32370.0,
+     -110.0
+    ],
+    [
+     32410.0,
+     0.0
+    ],
+    [
+     32400.0,
+     120.0
+    ]
+   ],
+   "draw": "3:somatosensory",
+   "width": 5,
+   "curve": true,
+   "color": "accent",
+   "duration": 1.0,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line8",
+   "kind": "path",
+   "points": [
+    [
+     32130.0,
+     240.0
+    ],
+    [
+     32270.0,
+     160.0
+    ],
+    [
+     32370.0,
+     60.0
+    ]
+   ],
+   "draw": "3:Touch from your face",
+   "width": 1.6,
+   "curve": true,
+   "dashed": true,
+   "color": "accent",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line10",
+   "kind": "path",
+   "points": [
+    [
+     33510.0,
+     -60.0
+    ],
+    [
+     33510.0,
+     80.0
+    ]
+   ],
+   "draw": "5:pattern of forces",
+   "arrow": true,
+   "width": 2.0,
+   "color": "accent",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line11",
+   "kind": "path",
+   "points": [
+    [
+     33630.0,
+     -60.0
+    ],
+    [
+     33630.0,
+     80.0
+    ]
+   ],
+   "draw": "5:pattern of forces+0.1",
+   "arrow": true,
+   "width": 2.0,
+   "color": "accent",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line12",
+   "kind": "path",
+   "points": [
+    [
+     33750.0,
+     -60.0
+    ],
+    [
+     33750.0,
+     80.0
+    ]
+   ],
+   "draw": "5:pattern of forces+0.2",
+   "arrow": true,
+   "width": 2.0,
+   "color": "accent",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line13",
+   "kind": "path",
+   "points": [
+    [
+     33870.0,
+     -60.0
+    ],
+    [
+     33870.0,
+     80.0
+    ]
+   ],
+   "draw": "5:pattern of forces+0.3",
+   "arrow": true,
+   "width": 2.0,
+   "color": "accent",
+   "out": "end-1.1"
+  }
+ ],
+ "lights": [
+  {
+   "item": "skin1",
+   "at": [
+    0.45,
+    0.72
+   ],
+   "from": "1:pressure",
+   "size": 60,
+   "to": "2:When the electrons"
+  },
+  {
+   "item": "skin1",
+   "at": [
+    0.62,
+    0.62
+   ],
+   "from": "1:vibration",
+   "size": 60,
+   "to": "2:When the electrons"
+  },
+  {
+   "item": "skin1",
+   "at": [
+    0.33,
+    0.5
+   ],
+   "from": "1:stretch",
+   "size": 60,
+   "to": "2:When the electrons"
+  },
+  {
+   "item": "skin1",
+   "at": [
+    0.56,
+    0.2
+   ],
+   "from": "1:single hair",
+   "size": 60,
+   "to": "2:When the electrons"
+  },
+  {
+   "worldPoints": [
+    [
+     29800.0,
+     160.0
+    ]
+   ],
+   "from": "2:pressed in",
+   "size": 70,
+   "stagger": 0.0,
+   "to": "end-1.1"
+  },
+  {
+   "drawing": "line5",
+   "from": "3:races up",
+   "duration": 2.4,
+   "size": 40
+  },
+  {
+   "worldPoints": [
+    [
+     31191.7,
+     -314.6
+    ]
+   ],
+   "from": "3:thalamus",
+   "size": 60,
+   "stagger": 0.0,
+   "to": "end-1.1"
+  },
+  {
+   "drawing": "line8",
+   "from": "3:Touch from your face",
+   "duration": 1.4,
+   "size": 40
+  },
+  {
+   "drawing": "line7",
+   "from": "4:Only there",
+   "duration": 2.0,
+   "size": 70
+  }
+ ],
+ "magnifiers": [],
+ "labels": [
+  {
+   "text": "CHAPTER 5",
+   "x": 960,
+   "y": 470,
+   "space": "screen",
+   "size": 28,
+   "in": 0.25,
+   "out": "1:Your skin-0.55",
+   "color": "accent",
+   "spacing": 0.5
+  },
+  {
+   "text": "HOW DO YOU FEEL IT?",
+   "x": 960,
+   "y": 548,
+   "space": "screen",
+   "size": 58,
+   "in": 0.45,
+   "out": "1:Your skin-0.55"
+  },
+  {
+   "text": "PRESSURE",
+   "x": 28820.0,
+   "y": -30.0,
+   "space": "world",
+   "size": 38,
+   "in": "1:pressure",
+   "align": "left",
+   "out": "2:When the electrons"
+  },
+  {
+   "text": "VIBRATION",
+   "x": 28820.0,
+   "y": 60.0,
+   "space": "world",
+   "size": 38,
+   "in": "1:vibration",
+   "align": "left",
+   "out": "2:When the electrons"
+  },
+  {
+   "text": "STRETCH",
+   "x": 28820.0,
+   "y": 150.0,
+   "space": "world",
+   "size": 38,
+   "in": "1:stretch",
+   "align": "left",
+   "out": "2:When the electrons"
+  },
+  {
+   "text": "A SINGLE HAIR",
+   "x": 28820.0,
+   "y": 240.0,
+   "space": "world",
+   "size": 38,
+   "in": "1:single hair",
+   "align": "left",
+   "out": "2:When the electrons"
+  },
+  {
+   "text": "MECHANORECEPTORS",
+   "x": 28630.0,
+   "y": 480.0,
+   "space": "world",
+   "size": 48,
+   "in": "1:mechanoreceptors",
+   "color": "accent",
+   "out": "2:When the electrons"
+  },
+  {
+   "text": "SPINAL CORD",
+   "x": 31490.0,
+   "y": 120.0,
+   "space": "world",
+   "size": 32,
+   "in": "3:spinal cord",
+   "align": "left",
+   "out": "end-1.1"
+  },
+  {
+   "text": "THALAMUS",
+   "x": 31490.0,
+   "y": -120.0,
+   "space": "world",
+   "size": 32,
+   "in": "3:thalamus",
+   "color": "accent",
+   "align": "left",
+   "out": "end-1.1"
+  },
+  {
+   "text": "SOMATOSENSORY CORTEX",
+   "x": 32390.0,
+   "y": 380.0,
+   "space": "world",
+   "size": 38,
+   "in": "3:somatosensory",
+   "out": "end-1.1"
+  },
+  {
+   "text": "THE HARD EDGE",
+   "x": 31910.0,
+   "y": -140.0,
+   "space": "world",
+   "size": 32,
+   "in": "4:hard edge",
+   "out": "end-1.1"
+  },
+  {
+   "text": "THE SMOOTH SURFACE",
+   "x": 32870.0,
+   "y": -140.0,
+   "space": "world",
+   "size": 32,
+   "in": "4:smooth surface",
+   "out": "end-1.1"
+  },
+  {
+   "text": "THE WARMTH OF ANOTHER HAND",
+   "x": 32390.0,
+   "y": -260.0,
+   "space": "world",
+   "size": 32,
+   "in": "4:warmth",
+   "color": "accent",
+   "out": "end-1.1"
+  },
+  {
+   "text": "BUILT INSIDE YOUR BRAIN",
+   "x": 32390.0,
+   "y": 480.0,
+   "space": "world",
+   "size": 45,
+   "in": "4:built inside",
+   "out": "end-1.1"
+  },
+  {
+   "text": "A PATTERN OF FORCES",
+   "x": 33690.0,
+   "y": 420.0,
+   "space": "world",
+   "size": 40,
+   "in": "5:pattern of forces",
+   "out": "end-1.1"
+  },
+  {
+   "text": "TRANSLATED BY YOUR BRAIN",
+   "x": 33690.0,
+   "y": 480.0,
+   "space": "world",
+   "size": 32,
+   "in": "5:translated",
+   "color": "accent",
+   "out": "end-1.1"
+  },
+  {
+   "text": "?",
+   "x": 34110.0,
+   "y": -80.0,
+   "space": "world",
+   "size": 138,
+   "in": "5:how much of you",
+   "color": "accent",
+   "spacing": 0.02,
+   "out": "end-1.1"
+  }
+ ],
+ "streams": [
+  {
+   "points": [
+    [
+     29800.0,
+     160.0
+    ],
+    [
+     29990.0,
+     60.0
+    ],
+    [
+     30390.0,
+     0.0
+    ]
+   ],
+   "from": "2:send a signal",
+   "count": 6,
+   "period": 1.6,
+   "size": 14,
+   "spread": 4,
+   "curve": true,
+   "color": "accent",
+   "to": "end-1.1"
+  }
+ ],
+ "clock": 269.45
+}

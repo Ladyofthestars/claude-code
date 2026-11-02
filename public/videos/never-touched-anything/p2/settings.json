@@ -1,0 +1,803 @@
+{
+ "title": "You've Never Actually Touched Anything \u2014 part 2",
+ "size": {
+  "width": 1920,
+  "height": 1080
+ },
+ "audio": "narration.mp3",
+ "words": "words.json",
+ "tailSeconds": 0,
+ "safeArea": {
+  "top": 0.06,
+  "bottom": 0.06,
+  "side": 0.05
+ },
+ "theme": {
+  "background": "#0c1d3a",
+  "backgroundImage": "radial-gradient(ellipse 70% 65% at 50% 42%, rgba(46, 92, 168, 0.55) 0%, rgba(24, 52, 104, 0.28) 45%, rgba(6, 14, 32, 0) 75%), radial-gradient(ellipse 130% 110% at 50% 50%, rgba(0, 0, 0, 0) 55%, rgba(2, 6, 16, 0.7) 100%)",
+  "dotColor": "rgba(190, 215, 255, 0.10)",
+  "dotSpacing": 40,
+  "dotSize": 1.5,
+  "dotParallax": 0.75,
+  "ink": "#eef4ff",
+  "accent": "#ffc865",
+  "lightBlend": "screen",
+  "font": "Montserrat",
+  "labelGlow": "rgba(130, 175, 255, 0.55)",
+  "drawingGlow": "rgba(130, 175, 255, 0.55)",
+  "dust": {
+   "count": 60,
+   "color": "#cfe0ff",
+   "size": 1.8,
+   "parallax": 0.45,
+   "drift": 5
+  }
+ },
+ "pictures": {
+  "feet": {
+   "src": "/videos/never-touched-anything/images/feet.png",
+   "aspect": 1.0,
+   "content": [
+    0.2676,
+    0.3408,
+    0.709,
+    0.667
+   ]
+  },
+  "microscope": {
+   "src": "/videos/never-touched-anything/images/microscope.png",
+   "aspect": 1.0,
+   "content": [
+    0.3125,
+    0.1426,
+    0.6875,
+    0.8564
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "microscope1",
+   "picture": "microscope",
+   "x": 8320.0,
+   "y": -9.6,
+   "width": 728.5,
+   "in": "1:A little",
+   "out": "2:They fired"
+  },
+  {
+   "id": "feet24",
+   "picture": "feet",
+   "x": 13458.6,
+   "y": 47.1,
+   "width": 735.7,
+   "in": "5:So if",
+   "out": "end-1.1"
+  }
+ ],
+ "camera": [
+  {
+   "at": 0.0,
+   "x": 8650.0,
+   "y": 20.0,
+   "zoom": 0.92
+  },
+  {
+   "at": 2.617,
+   "x": 8650.0,
+   "y": 20.0,
+   "zoom": 0.92
+  },
+  {
+   "at": 3.917,
+   "x": 8850.0,
+   "y": 20.0,
+   "zoom": 0.95
+  },
+  {
+   "at": 12.889,
+   "x": 8850.0,
+   "y": 20.0,
+   "zoom": 0.95
+  },
+  {
+   "at": 14.189,
+   "x": 10400.0,
+   "y": 20.0,
+   "zoom": 0.95
+  },
+  {
+   "at": 18.924,
+   "x": 10400.0,
+   "y": 20.0,
+   "zoom": 0.95
+  },
+  {
+   "at": 20.224,
+   "x": 10650.0,
+   "y": 20.0,
+   "zoom": 0.92
+  },
+  {
+   "at": 31.412,
+   "x": 10650.0,
+   "y": 20.0,
+   "zoom": 0.92
+  },
+  {
+   "at": 32.712,
+   "x": 11850.0,
+   "y": 20.0,
+   "zoom": 0.82
+  },
+  {
+   "at": 34.7,
+   "x": 11850.0,
+   "y": 20.0,
+   "zoom": 0.82
+  },
+  {
+   "at": 37.3,
+   "x": 12000.0,
+   "y": 20.0,
+   "zoom": 0.9
+  },
+  {
+   "at": 47.662,
+   "x": 12000.0,
+   "y": 20.0,
+   "zoom": 0.9
+  },
+  {
+   "at": 48.962,
+   "x": 11550.0,
+   "y": 60.0,
+   "zoom": 0.82
+  },
+  {
+   "at": 50.653,
+   "x": 11550.0,
+   "y": 60.0,
+   "zoom": 0.82
+  },
+  {
+   "at": 51.953,
+   "x": 13530.0,
+   "y": 20.0,
+   "zoom": 1.0
+  },
+  {
+   "at": 55.896,
+   "x": 13530.0,
+   "y": 20.0,
+   "zoom": 1.0
+  }
+ ],
+ "threads": [],
+ "drawings": [
+  {
+   "id": "rect2",
+   "kind": "rect",
+   "x": 10030.0,
+   "y": 20.0,
+   "w": 150,
+   "h": 110,
+   "draw": "2:They fired",
+   "width": 2.2,
+   "fill": "paper",
+   "out": "end-1.1"
+  },
+  {
+   "id": "rect3",
+   "kind": "rect",
+   "x": 10650.0,
+   "y": 20.0,
+   "w": 16,
+   "h": 440,
+   "draw": "2:gold foil",
+   "width": 2.0,
+   "fill": "accent",
+   "fillOpacity": 0.6,
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle4",
+   "kind": "circle",
+   "cx": 10650.0,
+   "cy": 20.0,
+   "r": 440,
+   "draw": "2:glowing screen",
+   "width": 1.6,
+   "color": "muted",
+   "dashed": true,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line7",
+   "kind": "path",
+   "points": [
+    [
+     10670.0,
+     -40.0
+    ],
+    [
+     11770.0,
+     -240.0
+    ]
+   ],
+   "draw": "4:mostly empty space",
+   "width": 1.2,
+   "color": "muted",
+   "dashed": true,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line8",
+   "kind": "path",
+   "points": [
+    [
+     10670.0,
+     80.0
+    ],
+    [
+     11770.0,
+     280.0
+    ]
+   ],
+   "draw": "4:mostly empty space",
+   "width": 1.2,
+   "color": "muted",
+   "dashed": true,
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle9",
+   "kind": "circle",
+   "cx": 12150.0,
+   "cy": -200.0,
+   "r": 95,
+   "draw": "4:mostly empty space",
+   "width": 1.4,
+   "color": "muted",
+   "dashed": true,
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle10",
+   "kind": "circle",
+   "cx": 12150.0,
+   "cy": 20.0,
+   "r": 95,
+   "draw": "4:mostly empty space+0.15",
+   "width": 1.4,
+   "color": "muted",
+   "dashed": true,
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle11",
+   "kind": "circle",
+   "cx": 12150.0,
+   "cy": 240.0,
+   "r": 95,
+   "draw": "4:mostly empty space+0.3",
+   "width": 1.4,
+   "color": "muted",
+   "dashed": true,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line12",
+   "kind": "path",
+   "points": [
+    [
+     11850.0,
+     -10.0
+    ],
+    [
+     12110.0,
+     10.0
+    ],
+    [
+     12160.0,
+     30.0
+    ],
+    [
+     12450.0,
+     160.0
+    ]
+   ],
+   "draw": "4:knocked off",
+   "width": 1.6,
+   "curve": true,
+   "color": "accent",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line13",
+   "kind": "path",
+   "points": [
+    [
+     13150.0,
+     180.0
+    ],
+    [
+     13750.0,
+     180.0
+    ]
+   ],
+   "draw": "5:So if",
+   "width": 2.2,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line14",
+   "kind": "path",
+   "points": [
+    [
+     13170.0,
+     180.0
+    ],
+    [
+     13144.0,
+     206.0
+    ]
+   ],
+   "draw": "5:So if+0.2",
+   "width": 1.2,
+   "color": "muted",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line15",
+   "kind": "path",
+   "points": [
+    [
+     13230.0,
+     180.0
+    ],
+    [
+     13204.0,
+     206.0
+    ]
+   ],
+   "draw": "5:So if+0.2",
+   "width": 1.2,
+   "color": "muted",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line16",
+   "kind": "path",
+   "points": [
+    [
+     13290.0,
+     180.0
+    ],
+    [
+     13264.0,
+     206.0
+    ]
+   ],
+   "draw": "5:So if+0.2",
+   "width": 1.2,
+   "color": "muted",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line17",
+   "kind": "path",
+   "points": [
+    [
+     13350.0,
+     180.0
+    ],
+    [
+     13324.0,
+     206.0
+    ]
+   ],
+   "draw": "5:So if+0.2",
+   "width": 1.2,
+   "color": "muted",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line18",
+   "kind": "path",
+   "points": [
+    [
+     13410.0,
+     180.0
+    ],
+    [
+     13384.0,
+     206.0
+    ]
+   ],
+   "draw": "5:So if+0.2",
+   "width": 1.2,
+   "color": "muted",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line19",
+   "kind": "path",
+   "points": [
+    [
+     13470.0,
+     180.0
+    ],
+    [
+     13444.0,
+     206.0
+    ]
+   ],
+   "draw": "5:So if+0.2",
+   "width": 1.2,
+   "color": "muted",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line20",
+   "kind": "path",
+   "points": [
+    [
+     13530.0,
+     180.0
+    ],
+    [
+     13504.0,
+     206.0
+    ]
+   ],
+   "draw": "5:So if+0.2",
+   "width": 1.2,
+   "color": "muted",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line21",
+   "kind": "path",
+   "points": [
+    [
+     13590.0,
+     180.0
+    ],
+    [
+     13564.0,
+     206.0
+    ]
+   ],
+   "draw": "5:So if+0.2",
+   "width": 1.2,
+   "color": "muted",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line22",
+   "kind": "path",
+   "points": [
+    [
+     13650.0,
+     180.0
+    ],
+    [
+     13624.0,
+     206.0
+    ]
+   ],
+   "draw": "5:So if+0.2",
+   "width": 1.2,
+   "color": "muted",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line23",
+   "kind": "path",
+   "points": [
+    [
+     13710.0,
+     180.0
+    ],
+    [
+     13684.0,
+     206.0
+    ]
+   ],
+   "draw": "5:So if+0.2",
+   "width": 1.2,
+   "color": "muted",
+   "out": "end-1.1"
+  }
+ ],
+ "lights": [
+  {
+   "worldPoints": [
+    [
+     11085.0,
+     -20.0
+    ],
+    [
+     11087.0,
+     45.0
+    ],
+    [
+     11083.0,
+     80.0
+    ],
+    [
+     11086.0,
+     10.0
+    ]
+   ],
+   "from": "3:straight through",
+   "size": 40,
+   "stagger": 0.25,
+   "to": "end-1.1"
+  },
+  {
+   "worldPoints": [
+    [
+     10220.0,
+     -130.0
+    ]
+   ],
+   "from": "3:almost straight back",
+   "size": 50,
+   "stagger": 0.0,
+   "to": "end-1.1"
+  },
+  {
+   "worldPoints": [
+    [
+     12150.0,
+     -200.0
+    ]
+   ],
+   "from": "4:tiny, heavy",
+   "size": 26,
+   "stagger": 0.0,
+   "to": "end-1.1"
+  },
+  {
+   "worldPoints": [
+    [
+     12150.0,
+     20.0
+    ]
+   ],
+   "from": "4:tiny, heavy+0.15",
+   "size": 26,
+   "stagger": 0.0,
+   "to": "end-1.1"
+  },
+  {
+   "worldPoints": [
+    [
+     12150.0,
+     240.0
+    ]
+   ],
+   "from": "4:tiny, heavy+0.3",
+   "size": 26,
+   "stagger": 0.0,
+   "to": "end-1.1"
+  },
+  {
+   "drawing": "line12",
+   "from": "4:knocked off",
+   "duration": 1.4,
+   "size": 40
+  }
+ ],
+ "magnifiers": [],
+ "labels": [
+  {
+   "text": "CHAPTER 2",
+   "x": 960,
+   "y": 470,
+   "space": "screen",
+   "size": 28,
+   "in": 0.25,
+   "out": "1:A little-0.55",
+   "color": "accent",
+   "spacing": 0.5
+  },
+  {
+   "text": "HOW DO WE KNOW?",
+   "x": 960,
+   "y": 548,
+   "space": "screen",
+   "size": 58,
+   "in": 0.45,
+   "out": "1:A little-0.55"
+  },
+  {
+   "text": "ERNEST RUTHERFORD",
+   "x": 8880.0,
+   "y": -40.0,
+   "space": "world",
+   "size": 40,
+   "in": "1:Ernest Rutherford",
+   "spacing": 0.14,
+   "align": "left",
+   "out": "2:They fired"
+  },
+  {
+   "text": "FROM NEW ZEALAND",
+   "x": 8880.0,
+   "y": 20.0,
+   "space": "world",
+   "size": 30,
+   "in": "1:New Zealand",
+   "color": "accent",
+   "spacing": 0.14,
+   "align": "left",
+   "out": "2:They fired"
+  },
+  {
+   "text": "WITH HANS GEIGER",
+   "x": 8880.0,
+   "y": 110.0,
+   "space": "world",
+   "size": 30,
+   "in": "1:Hans Geiger",
+   "spacing": 0.14,
+   "align": "left",
+   "out": "2:They fired"
+  },
+  {
+   "text": "AND ERNEST MARSDEN",
+   "x": 8880.0,
+   "y": 160.0,
+   "space": "world",
+   "size": 30,
+   "in": "1:Ernest Marsden",
+   "spacing": 0.14,
+   "align": "left",
+   "out": "2:They fired"
+  },
+  {
+   "text": "ALPHA PARTICLES",
+   "x": 10030.0,
+   "y": -100.0,
+   "space": "world",
+   "size": 32,
+   "in": "2:alpha particles",
+   "color": "accent",
+   "out": "end-1.1"
+  },
+  {
+   "text": "GOLD FOIL",
+   "x": 10650.0,
+   "y": -250.0,
+   "space": "world",
+   "size": 35,
+   "in": "2:gold foil",
+   "out": "end-1.1"
+  },
+  {
+   "text": "GLOWING SCREEN",
+   "x": 10650.0,
+   "y": 500.0,
+   "space": "world",
+   "size": 30,
+   "in": "2:glowing screen",
+   "out": "end-1.1"
+  },
+  {
+   "text": "+",
+   "x": 12178.0,
+   "y": -226.0,
+   "space": "world",
+   "size": 28,
+   "in": "4:positive charge",
+   "color": "accent",
+   "spacing": 0.02,
+   "out": "end-1.1"
+  },
+  {
+   "text": "+",
+   "x": 12178.0,
+   "y": -6.0,
+   "space": "world",
+   "size": 28,
+   "in": "4:positive charge+0.15",
+   "color": "accent",
+   "spacing": 0.02,
+   "out": "end-1.1"
+  },
+  {
+   "text": "+",
+   "x": 12178.0,
+   "y": 214.0,
+   "space": "world",
+   "size": 28,
+   "in": "4:positive charge+0.3",
+   "color": "accent",
+   "spacing": 0.02,
+   "out": "end-1.1"
+  },
+  {
+   "text": "WHAT IT MEANT",
+   "x": 12150.0,
+   "y": -400.0,
+   "space": "world",
+   "size": 45,
+   "in": "4:Rutherford realized",
+   "color": "accent",
+   "out": "end-1.1"
+  },
+  {
+   "text": "THE SOLID WORLD WAS MOSTLY EMPTY",
+   "x": 11550.0,
+   "y": 490.0,
+   "space": "world",
+   "size": 45,
+   "in": "4:The solid world",
+   "out": "end-1.1"
+  },
+  {
+   "text": "?",
+   "x": 13770.0,
+   "y": -140.0,
+   "space": "world",
+   "size": 138,
+   "in": "5:fall right",
+   "color": "accent",
+   "spacing": 0.02,
+   "out": "end-1.1"
+  }
+ ],
+ "streams": [
+  {
+   "points": [
+    [
+     10110.0,
+     20.0
+    ],
+    [
+     10650.0,
+     20.0
+    ],
+    [
+     11080.0,
+     20.0
+    ]
+   ],
+   "from": "3:Most of",
+   "count": 16,
+   "period": 2.0,
+   "size": 12,
+   "spread": 60,
+   "curve": false,
+   "to": "end-1.1"
+  },
+  {
+   "points": [
+    [
+     10110.0,
+     50.0
+    ],
+    [
+     10642.0,
+     50.0
+    ],
+    [
+     10150.0,
+     -100.0
+    ]
+   ],
+   "from": "3:bounced",
+   "count": 2,
+   "period": 2.4,
+   "size": 18,
+   "spread": 0,
+   "curve": false,
+   "color": "accent",
+   "to": "end-1.1"
+  }
+ ],
+ "clock": 86.2
+}
