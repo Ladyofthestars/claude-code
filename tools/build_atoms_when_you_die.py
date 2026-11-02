@@ -610,27 +610,31 @@ def part6(p):
     p.cam('1:And volcanoes', x=sx + 450, y=-120, zoom=0.88)
     # The Sun brightens; in a billion years water splits and hydrogen escapes; Earth like Venus
     ex = sx + 2100
+    m_sun = mark(p)
     p.pic('earth', ex, 80, h=380, at='2:But the Earth')
     p.pic('sun', ex + 820, -120, h=380, at='2:The Sun is')
     p.glows([(ex + 820, -120)], '2:getting brighter', size=420)
-    h2o(p, ex + 120, -330, '2:break water', r=30)
+    h2o(p, ex + 120, -330, '2:break water', r=38)
     p.label('IN ABOUT 1 BILLION YEARS', ex + 120, -470, '2:one billion', size=30, color='accent')
     for k, dx in enumerate((-90, 90)):
         p.stream(rise(ex + 120 + dx, -280, dx * 1.5, -700, 0.2), T('2:its hydrogen', 0.2 * k), count=5, period=3.0, size=14, spread=10)
-    p.label('HYDROGEN ESCAPES INTO SPACE', ex + 120, 380, '2:escape into', size=28, weight=500)
+    p.label('HYDROGEN ESCAPES INTO SPACE', ex + 120, -190, '2:escape into', size=28, weight=500)
     p.cam('2:But the Earth', x=ex + 300, y=0, zoom=0.88)
-    p.cam('2:In about', x=ex + 150, y=-260, zoom=0.95)
+    p.cam('2:In about', x=ex + 300, y=-150, zoom=0.85)
+    close(p, m_sun, '2:Our planet')
     vx = ex + 1700
     p.pic('venus', vx, 0, h=460, at='2:like Venus')
     p.label('DRY, AND MUCH TOO HOT FOR LIFE', vx, 330, '2:dry', size=28)
     p.cam('2:Our planet', x=vx, y=0, zoom=0.95)
     # The red giant swallows Mercury and Venus, maybe the Earth
     gx = vx + 1700
+    p.pic('sun', gx, 0, h=320, at='3:Billions', out='3:red giant')
     p.pic('red_giant', gx, 0, h=900, at='3:red giant')
-    for k, (dx, dy, r) in enumerate(((-600, -140, 22), (-760, 120, 30))):
-        p.circle(gx + dx, dy, r, T('3:Billions', 0.2 * k), width=2.0, fill='paper', out='3:swallow Mercury+0.6')
-    p.label('MERCURY', gx - 600, -190, '3:Billions+0.3', '3:swallow Mercury+0.6', size=20, weight=500)
-    p.label('VENUS', gx - 760, 70, '3:Billions+0.5', '3:swallow Mercury+0.6', size=20, weight=500)
+    p.lights.append({'worldPoints': [[gx, 0]], 'from': '3:red giant', 'size': 950, 'intensity': 0.5})
+    for k, (dx, dy, r) in enumerate(((-600, -140, 30), (-760, 120, 40))):
+        p.circle(gx + dx, dy, r, T('3:Billions', 0.2 * k), width=2.6, fill='accent', fillOpacity=0.35, out='3:swallow Mercury+0.6')
+    p.label('MERCURY', gx - 600, -205, '3:Billions+0.3', '3:swallow Mercury+0.6', size=24, weight=500)
+    p.label('VENUS', gx - 760, 40, '3:Billions+0.5', '3:swallow Mercury+0.6', size=24, weight=500)
     p.pic('earth', gx - 950, 160, h=110, at='3:Whether the Earth', out='3:swallowed too+0.4')
     question(p, gx - 950, 30, '3:not certain', '3:swallowed too+0.4', size=70)
     p.cam('3:Billions', x=gx - 200, y=0, zoom=0.62)

@@ -111,7 +111,7 @@
    "y": 206.1,
    "width": 808.9,
    "in": "2:But the Earth",
-   "out": "end-1.1"
+   "out": "2:Our planet"
   },
   {
    "id": "sun11",
@@ -120,7 +120,7 @@
    "y": 9.7,
    "width": 543.4,
    "in": "2:The Sun is",
-   "out": "end-1.1"
+   "out": "2:Our planet"
   },
   {
    "id": "venus19",
@@ -132,7 +132,16 @@
    "out": "end-1.1"
   },
   {
-   "id": "red_giant20",
+   "id": "sun20",
+   "picture": "sun",
+   "x": 52762.3,
+   "y": 129.2,
+   "width": 457.6,
+   "in": "3:Billions",
+   "out": "3:red giant"
+  },
+  {
+   "id": "red_giant21",
    "picture": "red_giant",
    "x": 52764.3,
    "y": 124.7,
@@ -141,7 +150,7 @@
    "out": "end-1.1"
   },
   {
-   "id": "earth23",
+   "id": "earth24",
    "picture": "earth",
    "x": 51816.6,
    "y": 286.4,
@@ -206,16 +215,16 @@
    "zoom": 0.88
   },
   {
-   "at": 23.246,
-   "x": 49517.0,
-   "y": -133.5,
-   "zoom": 0.95
+   "at": 24.546,
+   "x": 49667.0,
+   "y": -23.5,
+   "zoom": 0.85
   },
   {
    "at": 31.434,
-   "x": 49517.0,
-   "y": -133.5,
-   "zoom": 0.95
+   "x": 49667.0,
+   "y": -23.5,
+   "zoom": 0.85
   },
   {
    "at": 32.734,
@@ -433,91 +442,93 @@
    "kind": "circle",
    "cx": 49487.0,
    "cy": -203.5,
-   "r": 30,
+   "r": 38,
    "draw": "2:break water",
    "width": 2.2,
    "fill": "paper",
    "fillOpacity": 1,
-   "out": "end-1.1"
+   "out": "2:Our planet"
   },
   {
    "id": "line13",
    "kind": "path",
    "points": [
     [
-     49469.0,
-     -179.5
+     49464.2,
+     -173.1
     ],
     [
-     49443.5,
-     -175.0
+     49431.9,
+     -167.4
     ]
    ],
    "draw": "2:break water+0.15",
    "width": 2.0,
-   "out": "end-1.1"
+   "out": "2:Our planet"
   },
   {
    "id": "circle14",
    "kind": "circle",
-   "cx": 49430.0,
-   "cy": -158.5,
-   "r": 21.0,
+   "cx": 49414.8,
+   "cy": -146.5,
+   "r": 26.6,
    "draw": "2:break water+0.2",
    "width": 2.2,
    "fill": "paper",
    "fillOpacity": 1,
-   "out": "end-1.1"
+   "out": "2:Our planet"
   },
   {
    "id": "line15",
    "kind": "path",
    "points": [
     [
-     49505.0,
-     -179.5
+     49509.8,
+     -173.1
     ],
     [
-     49530.5,
-     -175.0
+     49542.1,
+     -167.4
     ]
    ],
    "draw": "2:break water+0.15",
    "width": 2.0,
-   "out": "end-1.1"
+   "out": "2:Our planet"
   },
   {
    "id": "circle16",
    "kind": "circle",
-   "cx": 49544.0,
-   "cy": -158.5,
-   "r": 21.0,
+   "cx": 49559.2,
+   "cy": -146.5,
+   "r": 26.6,
    "draw": "2:break water+0.2",
    "width": 2.2,
    "fill": "paper",
    "fillOpacity": 1,
-   "out": "end-1.1"
-  },
-  {
-   "id": "circle21",
-   "kind": "circle",
-   "cx": 52167.0,
-   "cy": -13.5,
-   "r": 22,
-   "draw": "3:Billions",
-   "width": 2.0,
-   "fill": "paper",
-   "out": "3:swallow Mercury+0.6"
+   "out": "2:Our planet"
   },
   {
    "id": "circle22",
    "kind": "circle",
+   "cx": 52167.0,
+   "cy": -13.5,
+   "r": 30,
+   "draw": "3:Billions",
+   "width": 2.6,
+   "fill": "accent",
+   "fillOpacity": 0.35,
+   "out": "3:swallow Mercury+0.6"
+  },
+  {
+   "id": "circle23",
+   "kind": "circle",
    "cx": 52007.0,
    "cy": 246.5,
-   "r": 30,
+   "r": 40,
    "draw": "3:Billions+0.2",
-   "width": 2.0,
-   "fill": "paper",
+   "width": 2.6,
+   "fill": "accent",
+   "fillOpacity": 0.35,
    "out": "3:swallow Mercury+0.6"
   }
  ],
@@ -538,6 +549,18 @@
    "from": "2:getting brighter",
    "size": 420,
    "stagger": 0.0,
+   "to": "2:Our planet"
+  },
+  {
+   "worldPoints": [
+    [
+     52767.0,
+     126.5
+    ]
+   ],
+   "from": "3:red giant",
+   "size": 950,
+   "intensity": 0.5,
    "to": "end-1.1"
   },
   {
@@ -614,33 +637,33 @@
    "x": 49487.0,
    "y": -203.5,
    "space": "world",
-   "size": 24,
+   "size": 30,
    "in": "2:break water+0.15",
    "spacing": 0.02,
    "upper": false,
-   "out": "end-1.1"
+   "out": "2:Our planet"
   },
   {
    "text": "H",
-   "x": 49430.0,
-   "y": -158.5,
+   "x": 49414.8,
+   "y": -146.5,
    "space": "world",
-   "size": 16,
+   "size": 20,
    "in": "2:break water+0.35",
    "spacing": 0.02,
    "upper": false,
-   "out": "end-1.1"
+   "out": "2:Our planet"
   },
   {
    "text": "H",
-   "x": 49544.0,
-   "y": -158.5,
+   "x": 49559.2,
+   "y": -146.5,
    "space": "world",
-   "size": 16,
+   "size": 20,
    "in": "2:break water+0.35",
    "spacing": 0.02,
    "upper": false,
-   "out": "end-1.1"
+   "out": "2:Our planet"
   },
   {
    "text": "IN ABOUT 1 BILLION YEARS",
@@ -650,17 +673,17 @@
    "size": 38,
    "in": "2:one billion",
    "color": "accent",
-   "out": "end-1.1"
+   "out": "2:Our planet"
   },
   {
    "text": "HYDROGEN ESCAPES INTO SPACE",
    "x": 49487.0,
-   "y": 506.5,
+   "y": -63.5,
    "space": "world",
    "size": 35,
    "in": "2:escape into",
    "weight": 500,
-   "out": "end-1.1"
+   "out": "2:Our planet"
   },
   {
    "text": "DRY, AND MUCH TOO HOT FOR LIFE",
@@ -674,9 +697,9 @@
   {
    "text": "MERCURY",
    "x": 52167.0,
-   "y": -63.5,
+   "y": -78.5,
    "space": "world",
-   "size": 25,
+   "size": 30,
    "in": "3:Billions+0.3",
    "out": "3:swallow Mercury+0.6",
    "weight": 500
@@ -684,9 +707,9 @@
   {
    "text": "VENUS",
    "x": 52007.0,
-   "y": 196.5,
+   "y": 166.5,
    "space": "world",
-   "size": 25,
+   "size": 30,
    "in": "3:Billions+0.5",
    "out": "3:swallow Mercury+0.6",
    "weight": 500
@@ -805,7 +828,7 @@
    "size": 14,
    "spread": 10,
    "curve": true,
-   "to": "end-1.1"
+   "to": "2:Our planet"
   },
   {
    "points": [
@@ -832,7 +855,7 @@
    "size": 14,
    "spread": 10,
    "curve": true,
-   "to": "end-1.1"
+   "to": "2:Our planet"
   },
   {
    "points": [
