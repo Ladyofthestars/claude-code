@@ -434,6 +434,8 @@ def part4(p):
     p.cam('2:But a very', x=420, y=0, zoom=1.0)
     # Made in the sky: rays from space strike nitrogen
     sx, sy = 1500, -760
+    m_sky = mark(p)
+    p.glows([(sx - 380, sy - 330), (sx + 120, sy - 380), (sx + 420, sy - 260)], '2:high in the sky', size=36, stagger=0.15)
     for k in range(3):
         p.line([(sx - 260 + 120 * k, sy - 420), (sx - 20 + 20 * k, sy - 60)], T('2:rays from space', 0.12 * k), width=1.6, color='accent', dashed=True)
     atom(p, sx, sy, 'N', '2:high in the sky', r=40)
@@ -444,6 +446,8 @@ def part4(p):
     p.cam("2:It's made", x=sx + 120, y=sy - 60, zoom=1.0)
     # Taken in with food while alive; the level stays the same
     wx = 2500
+    close(p, m_sky, "2:While you're")
+    m_level = mark(p)
     p.pic('wheat', wx, 0, h=420, at='2:your food')
     me = p.pic('person', wx + 650, 0, h=700, at="2:While you're", id='me', out='3:that stops+0.2')
     p.arrow((wx + 180, 0), (wx + 450, 0), '2:taking it in', width=2.0)
@@ -458,24 +462,27 @@ def part4(p):
     p.labels[-1]['out'] = '3:nitrogen'
     atom(p, wx + 650, -420, 'N', '3:nitrogen', r=34)
     gx, gy = wx + 1000, 260
+    close(p, m_level, '3:After 5,730')
+    m_graph = mark(p)
     p.arrow((gx, gy), (gx + 1150, gy), '3:After 5,730', width=2.0)
     p.arrow((gx, gy), (gx, gy - 520), '3:After 5,730', width=2.0)
-    half = 330
+    half = 420
 
     def decay(a, b):
         return [(gx + t * half, gy - 480 * 0.5 ** t) for t in [a + (b - a) * i / 24 for i in range(25)]]
     c1 = p.line(decay(0, 1), '3:After 5,730+0.3', width=2.6, color='accent', duration=1.4)
     p.line([(gx + half, gy), (gx + half, gy - 240)], '3:half of it', width=1.4, dashed=True, color='muted')
-    p.label('5,730 YEARS', gx + half, gy + 50, '3:half of it', size=26, upper=False)
+    p.label('5,730 YEARS', gx + half, gy + 50, '3:half of it', size=22, upper=False)
     p.label('½', gx + half + 50, gy - 270, '3:half of it', size=34, upper=False, spacing=0.02)
     p.line(decay(1, 2), '3:After another', width=2.6, color='accent', duration=1.4)
     p.line([(gx + 2 * half, gy), (gx + 2 * half, gy - 120)], "3:half of what's", width=1.4, dashed=True, color='muted')
-    p.label('11,460 YEARS', gx + 2 * half, gy + 50, "3:half of what's", size=26, upper=False)
+    p.label('11,460 YEARS', gx + 2 * half, gy + 50, "3:half of what's", size=22, upper=False)
     p.label('¼', gx + 2 * half + 50, gy - 150, "3:half of what's", size=34, upper=False, spacing=0.02)
     p.cam('3:When you die', x=wx + 650, y=-150, zoom=0.95)
     p.cam('3:After 5,730', x=gx + 500, y=0, zoom=1.0)
     # A clock that starts when a life ends: radiocarbon dating
     hx = gx + 1800
+    close(p, m_graph, '4:like a clock')
     p.pic('hourglass', hx, -30, h=480, at='4:like a clock')
     p.label('HOW LONG AGO?', hx, 320, '4:how long ago', size=40, color='accent')
     rx = hx + 900
