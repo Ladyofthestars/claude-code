@@ -1,6 +1,6 @@
 # YouTube upload: "You Are Made of Stars" (Unbreakable Path)
 
-Files: `out/made-of-stars/made-of-stars.mp4` (1920x1080, 60 fps, 9:27) and `packaging/thumbnail.png` (1280x720).
+Files: `out/made-of-stars/made-of-stars.mp4` (1920x1080, 60 fps, 9:27, full quality, 270 MB), `out/made-of-stars/made-of-stars-small.mp4` (the same video in under 100 MB, easier to save and upload from a phone) and `packaging/thumbnail.png` (1280x720).
 
 ## Title (use this)
 **Almost Every Atom in You Is Older Than the Earth**
@@ -66,5 +66,5 @@ made of stars, stardust, we are made of stars, where do atoms come from, iron in
 - **Every chapter is a question,** and each chapter ends by asking the next one. There is always an open question waiting for its answer.
 - **Something new on screen at least every 5 seconds,** checked by a tool for every frame: drawings appear, labels and numbers count up, the camera moves, and lines draw themselves.
 - **One continuous camera.** The whole video is a single journey across one page, with no hard cuts, so there is never a "natural" moment to leave.
-- **Sound design.** Calm original music sits under the voice and ducks when he speaks. Three soft swells land on the big moments: the Big Bang, the supernova, and the neutron-star crash.
+- **Sound design.** Subtle original music (slow, soft piano-like notes with a faint shimmer) sits well under the voice and dips further when he speaks. Three soft, airy swells land on the big moments: the Big Bang, the supernova, and the neutron-star crash.
 - **The story comes full circle.** It starts with you, travels out to the first moments of the universe, and comes back to you: the iron in your blood and the calcium in your bones. The last line returns to the opening, followed by "As above, so below".

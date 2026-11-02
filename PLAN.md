@@ -29,8 +29,8 @@ Tick each box as it is done. If work stops, continue from the first unticked box
 - [x] Settings for each part (9 parts), following the shot list
 - [x] Frame check passes for every part (template now fades anything out before it could be cut off)
 - [x] Stills every half second and at every sentence start; review and fix
-- [x] Background music (original, generated here) and a few soft sound effects
-- [x] Render all parts, join them (frame-exact, 33,993 frames), mix voice and music, normalise loudness for YouTube (-14.5 LUFS, true peak -1.2 dB)
+- [x] Background music (original, generated here: soft piano-like notes, kept subtle after review) and a few soft sound effects
+- [x] Render all parts, join them (frame-exact, 33,993 frames), mix voice and music, normalise loudness for YouTube (-14.7 LUFS, true peak -1.0 dB)
 - [x] Final checks: length 9:26.5, audio, frames from every part (part 8 got a title card instead of a blank page)
 - [x] Commit and push
 
