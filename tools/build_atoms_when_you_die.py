@@ -330,16 +330,20 @@ def part2(p):
 def part3(p):
     chapter(p, 3, "Let's")
     p.cam('start', x=0, y=0, zoom=1.0)
-    atom(p, 0, 200, 'C', "1:Let's follow", r=34, accent=True)
-    p.glows([(0, 200)], '1:one carbon', '1:It drifts', size=90)
+    m0 = mark(p)
+    atom(p, 0, 200, 'C', "1:Let's follow", r=40, accent=True)
+    p.glows([(0, 200)], '1:one carbon', '1:It drifts', size=120)
+    p.cam("1:Let's follow", x=60, y=150, zoom=1.3)
     up = p.line([(0, 160), (120, 40), (260, -90), (420, -170)], '1:It drifts', width=1.6, curve=True, dashed=True, color='muted')
     p.travel(up, '1:It drifts', dur=1.6, size=40)
     co2(p, 560, -190, '1:molecule', r=26)
     p.label('CARBON DIOXIDE', 560, -95, '1:carbon dioxide', '2:Plants-0.2', size=28)
     p.hold_cam('1:It drifts-0.2')
     p.cam('1:carbon dioxide@end', x=300, y=-30, zoom=1.0)
+    close(p, m0, '2:Plants')
     # A leaf, sunlight, sugar
     lx = 1200
+    m1 = mark(p)
     p.pic('leaf', lx, -200, h=320, at='2:reaches a leaf')
     p.glows([(lx + 520, -560)], '2:sunlight', size=180)
     for k in range(3):
@@ -347,6 +351,8 @@ def part3(p):
     p.label('CO₂ + SUNLIGHT → SUGAR', lx, 90, '2:into sugar', '3:An animal', size=34, color='accent', upper=False)
     p.cam('2:One day', x=lx, y=-150, zoom=1.0)
     p.cam('2:Plants', x=lx + 150, y=-200, zoom=0.88)
+    close(p, m1, '2:Now your')
+    m2 = mark(p)
     tree = p.pic('tree', lx + 1050, -80, h=560, at='2:part of a tree')
     wheat = p.pic('wheat', lx + 1600, 0, h=440, at='2:field of wheat')
     p.cam('2:Now your', x=lx + 1300, y=-40, zoom=0.9)
@@ -357,6 +363,7 @@ def part3(p):
     p.cam('2:Almost every', x=lx + 1850, y=0, zoom=0.88)
     # An animal eats the plant; a person eats the bread; the atom becomes part of someone else
     p.cam('3:An animal', x=lx + 2250, y=-120, zoom=1.15)
+    close(p, m2, '3:A person')
     px = lx + 3300
     p.pic('bread', px - 520, 230, h=160, at='3:the bread')
     me = p.pic('person', px, 0, h=700, at='3:A person', id='me')
@@ -403,7 +410,7 @@ def part3(p):
     gold = field[11]
     p.circle(gold[0], gold[1], 15, '6:something different', width=1.8, fill='accent', fillOpacity=0.9)
     p.glows([gold], '6:They change', size=110)
-    question(p, fx, -400, '6:So which', size=110)
+    question(p, gold[0] + 130, gold[1] - 120, '6:So which', size=90)
     p.cam('6:But a few', x=fx, y=0, zoom=1.0)
     p.cam('6:So which', x=gold[0], y=gold[1], zoom=1.25)
     p.end_all()
