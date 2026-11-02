@@ -1,1012 +1,1012 @@
 {
- "duration": 55.896,
+ "duration": 56.009,
  "source": "Kokoro-82M (open source, Apache 2.0), voice am_michael 0.7 + am_onyx 0.3, speed 1.02, one paragraph at a time, word timestamps",
  "words": [
   {
    "text": "A",
-   "start": 2.617,
-   "end": 2.692,
+   "start": 2.68,
+   "end": 2.755,
    "line": 1,
    "sentence": true
   },
   {
    "text": "little",
-   "start": 2.692,
-   "end": 2.942,
+   "start": 2.755,
+   "end": 3.005,
    "line": 1,
    "sentence": false
   },
   {
    "text": "over",
-   "start": 2.942,
-   "end": 3.167,
+   "start": 3.005,
+   "end": 3.23,
    "line": 1,
    "sentence": false
   },
   {
    "text": "a",
-   "start": 3.167,
-   "end": 3.28,
+   "start": 3.23,
+   "end": 3.343,
    "line": 1,
    "sentence": false
   },
   {
    "text": "hundred",
-   "start": 3.28,
-   "end": 3.692,
+   "start": 3.343,
+   "end": 3.755,
    "line": 1,
    "sentence": false
   },
   {
    "text": "years",
-   "start": 3.692,
-   "end": 3.992,
+   "start": 3.755,
+   "end": 4.055,
    "line": 1,
    "sentence": false
   },
   {
    "text": "ago",
-   "start": 3.992,
-   "end": 4.705,
+   "start": 4.055,
+   "end": 4.768,
    "line": 1,
    "sentence": false
   },
   {
    "text": "a",
-   "start": 4.705,
-   "end": 4.842,
+   "start": 4.768,
+   "end": 4.905,
    "line": 1,
    "sentence": false
   },
   {
    "text": "physicist",
-   "start": 4.842,
-   "end": 5.367,
+   "start": 4.905,
+   "end": 5.43,
    "line": 1,
    "sentence": false
   },
   {
    "text": "from",
-   "start": 5.367,
-   "end": 5.542,
+   "start": 5.43,
+   "end": 5.605,
    "line": 1,
    "sentence": false
   },
   {
    "text": "New",
-   "start": 5.542,
-   "end": 5.73,
+   "start": 5.605,
+   "end": 5.793,
    "line": 1,
    "sentence": false
   },
   {
    "text": "Zealand",
-   "start": 5.73,
-   "end": 6.192,
+   "start": 5.793,
+   "end": 6.255,
    "line": 1,
    "sentence": false
   },
   {
    "text": "named",
-   "start": 6.192,
-   "end": 6.53,
+   "start": 6.255,
+   "end": 6.592,
    "line": 1,
    "sentence": false
   },
   {
    "text": "Ernest",
-   "start": 6.53,
-   "end": 6.942,
+   "start": 6.592,
+   "end": 7.005,
    "line": 1,
    "sentence": false
   },
   {
    "text": "Rutherford",
-   "start": 6.942,
-   "end": 7.567,
+   "start": 7.005,
+   "end": 7.63,
    "line": 1,
    "sentence": false
   },
   {
    "text": "set",
-   "start": 7.567,
-   "end": 7.78,
+   "start": 7.63,
+   "end": 7.842,
    "line": 1,
    "sentence": false
   },
   {
    "text": "up",
-   "start": 7.78,
-   "end": 7.93,
+   "start": 7.842,
+   "end": 7.992,
    "line": 1,
    "sentence": false
   },
   {
    "text": "an",
-   "start": 7.93,
-   "end": 8.017,
+   "start": 7.992,
+   "end": 8.08,
    "line": 1,
    "sentence": false
   },
   {
    "text": "experiment",
-   "start": 8.017,
-   "end": 8.655,
+   "start": 8.08,
+   "end": 8.717,
    "line": 1,
    "sentence": false
   },
   {
    "text": "with",
-   "start": 8.655,
-   "end": 8.83,
+   "start": 8.717,
+   "end": 8.893,
    "line": 1,
    "sentence": false
   },
   {
    "text": "two",
-   "start": 8.83,
-   "end": 9.055,
+   "start": 8.893,
+   "end": 9.117,
    "line": 1,
    "sentence": false
   },
   {
    "text": "colleagues",
-   "start": 9.055,
-   "end": 10.08,
+   "start": 9.117,
+   "end": 10.143,
    "line": 1,
    "sentence": false
   },
   {
    "text": "Hans",
-   "start": 10.08,
-   "end": 10.505,
+   "start": 10.143,
+   "end": 10.568,
    "line": 1,
    "sentence": false
   },
   {
    "text": "Geiger",
-   "start": 10.505,
-   "end": 11.017,
+   "start": 10.568,
+   "end": 11.105,
    "line": 1,
    "sentence": false
   },
   {
    "text": "and",
-   "start": 11.017,
-   "end": 11.142,
+   "start": 11.105,
+   "end": 11.23,
    "line": 1,
    "sentence": false
   },
   {
    "text": "Ernest",
-   "start": 11.142,
-   "end": 11.517,
+   "start": 11.23,
+   "end": 11.605,
    "line": 1,
    "sentence": false
   },
   {
    "text": "Marsden",
-   "start": 11.517,
-   "end": 12.139,
+   "start": 11.605,
+   "end": 12.252,
    "line": 1,
    "sentence": false
   },
   {
    "text": "They",
-   "start": 12.889,
-   "end": 13.049,
+   "start": 13.002,
+   "end": 13.162,
    "line": 2,
    "sentence": true
   },
   {
    "text": "fired",
-   "start": 13.049,
-   "end": 13.474,
+   "start": 13.162,
+   "end": 13.587,
    "line": 2,
    "sentence": false
   },
   {
    "text": "tiny",
-   "start": 13.474,
-   "end": 13.811,
+   "start": 13.587,
+   "end": 13.925,
    "line": 2,
    "sentence": false
   },
   {
    "text": "particles",
-   "start": 13.811,
-   "end": 14.461,
+   "start": 13.925,
+   "end": 14.575,
    "line": 2,
    "sentence": false
   },
   {
    "text": "called",
-   "start": 14.461,
-   "end": 14.774,
+   "start": 14.575,
+   "end": 14.887,
    "line": 2,
    "sentence": false
   },
   {
    "text": "alpha",
-   "start": 14.774,
-   "end": 15.136,
+   "start": 14.887,
+   "end": 15.25,
    "line": 2,
    "sentence": false
   },
   {
    "text": "particles",
-   "start": 15.136,
-   "end": 16.061,
+   "start": 15.25,
+   "end": 16.175,
    "line": 2,
    "sentence": false
   },
   {
    "text": "at",
-   "start": 16.061,
-   "end": 16.149,
+   "start": 16.175,
+   "end": 16.262,
    "line": 2,
    "sentence": false
   },
   {
    "text": "a",
-   "start": 16.149,
-   "end": 16.224,
+   "start": 16.262,
+   "end": 16.337,
    "line": 2,
    "sentence": false
   },
   {
    "text": "very",
-   "start": 16.224,
-   "end": 16.586,
+   "start": 16.337,
+   "end": 16.7,
    "line": 2,
    "sentence": false
   },
   {
    "text": "thin",
-   "start": 16.586,
-   "end": 16.924,
+   "start": 16.7,
+   "end": 17.037,
    "line": 2,
    "sentence": false
   },
   {
    "text": "sheet",
-   "start": 16.924,
-   "end": 17.261,
+   "start": 17.037,
+   "end": 17.375,
    "line": 2,
    "sentence": false
   },
   {
    "text": "of",
-   "start": 17.261,
-   "end": 17.399,
+   "start": 17.375,
+   "end": 17.512,
    "line": 2,
    "sentence": false
   },
   {
    "text": "gold",
-   "start": 17.399,
-   "end": 17.774,
+   "start": 17.512,
+   "end": 17.887,
    "line": 2,
    "sentence": false
   },
   {
    "text": "foil",
-   "start": 17.774,
-   "end": 18.799,
+   "start": 17.887,
+   "end": 18.912,
    "line": 2,
    "sentence": false
   },
   {
    "text": "A",
-   "start": 18.799,
-   "end": 18.924,
+   "start": 18.912,
+   "end": 19.037,
    "line": 2,
    "sentence": true
   },
   {
    "text": "glowing",
-   "start": 18.924,
-   "end": 19.424,
+   "start": 19.037,
+   "end": 19.537,
    "line": 2,
    "sentence": false
   },
   {
    "text": "screen",
-   "start": 19.424,
-   "end": 19.836,
+   "start": 19.537,
+   "end": 19.95,
    "line": 2,
    "sentence": false
   },
   {
    "text": "around",
-   "start": 19.836,
-   "end": 20.236,
+   "start": 19.95,
+   "end": 20.35,
    "line": 2,
    "sentence": false
   },
   {
    "text": "it",
-   "start": 20.236,
-   "end": 20.411,
+   "start": 20.35,
+   "end": 20.525,
    "line": 2,
    "sentence": false
   },
   {
    "text": "showed",
-   "start": 20.411,
-   "end": 20.836,
+   "start": 20.525,
+   "end": 20.95,
    "line": 2,
    "sentence": false
   },
   {
    "text": "where",
-   "start": 20.836,
-   "end": 21.049,
+   "start": 20.95,
+   "end": 21.162,
    "line": 2,
    "sentence": false
   },
   {
    "text": "each",
-   "start": 21.049,
-   "end": 21.311,
+   "start": 21.162,
+   "end": 21.425,
    "line": 2,
    "sentence": false
   },
   {
    "text": "particle",
-   "start": 21.311,
-   "end": 21.786,
+   "start": 21.425,
+   "end": 21.9,
    "line": 2,
    "sentence": false
   },
   {
    "text": "landed",
-   "start": 21.786,
-   "end": 22.401,
+   "start": 21.9,
+   "end": 22.514,
    "line": 2,
    "sentence": false
   },
   {
    "text": "Most",
-   "start": 23.162,
-   "end": 23.399,
+   "start": 23.275,
+   "end": 23.513,
    "line": 3,
    "sentence": true
   },
   {
    "text": "of",
-   "start": 23.399,
-   "end": 23.474,
+   "start": 23.513,
+   "end": 23.588,
    "line": 3,
    "sentence": false
   },
   {
    "text": "the",
-   "start": 23.474,
-   "end": 23.562,
+   "start": 23.588,
+   "end": 23.675,
    "line": 3,
    "sentence": false
   },
   {
    "text": "particles",
-   "start": 23.562,
-   "end": 24.112,
+   "start": 23.675,
+   "end": 24.225,
    "line": 3,
    "sentence": false
   },
   {
    "text": "went",
-   "start": 24.112,
-   "end": 24.287,
+   "start": 24.225,
+   "end": 24.4,
    "line": 3,
    "sentence": false
   },
   {
    "text": "straight",
-   "start": 24.287,
-   "end": 24.649,
+   "start": 24.4,
+   "end": 24.763,
    "line": 3,
    "sentence": false
   },
   {
    "text": "through",
-   "start": 24.649,
-   "end": 25.349,
+   "start": 24.763,
+   "end": 25.463,
    "line": 3,
    "sentence": false
   },
   {
    "text": "as",
-   "start": 25.349,
-   "end": 25.487,
+   "start": 25.463,
+   "end": 25.6,
    "line": 3,
    "sentence": false
   },
   {
    "text": "if",
-   "start": 25.487,
-   "end": 25.637,
+   "start": 25.6,
+   "end": 25.75,
    "line": 3,
    "sentence": false
   },
   {
    "text": "the",
-   "start": 25.637,
-   "end": 25.774,
+   "start": 25.75,
+   "end": 25.888,
    "line": 3,
    "sentence": false
   },
   {
    "text": "gold",
-   "start": 25.774,
-   "end": 26.162,
+   "start": 25.888,
+   "end": 26.275,
    "line": 3,
    "sentence": false
   },
   {
    "text": "wasn't",
-   "start": 26.162,
-   "end": 26.487,
+   "start": 26.275,
+   "end": 26.6,
    "line": 3,
    "sentence": false
   },
   {
    "text": "there",
-   "start": 26.487,
-   "end": 26.712,
+   "start": 26.6,
+   "end": 26.825,
    "line": 3,
    "sentence": false
   },
   {
    "text": "at",
-   "start": 26.712,
-   "end": 26.837,
+   "start": 26.825,
+   "end": 26.95,
    "line": 3,
    "sentence": false
   },
   {
    "text": "all",
-   "start": 26.837,
-   "end": 27.712,
+   "start": 26.95,
+   "end": 27.825,
    "line": 3,
    "sentence": false
   },
   {
    "text": "But",
-   "start": 27.712,
-   "end": 27.849,
+   "start": 27.825,
+   "end": 27.963,
    "line": 3,
    "sentence": true
   },
   {
    "text": "a",
-   "start": 27.849,
-   "end": 27.912,
+   "start": 27.963,
+   "end": 28.025,
    "line": 3,
    "sentence": false
   },
   {
    "text": "very",
-   "start": 27.912,
-   "end": 28.212,
+   "start": 28.025,
+   "end": 28.325,
    "line": 3,
    "sentence": false
   },
   {
    "text": "small",
-   "start": 28.212,
-   "end": 28.612,
+   "start": 28.325,
+   "end": 28.725,
    "line": 3,
    "sentence": false
   },
   {
    "text": "number",
-   "start": 28.612,
-   "end": 28.987,
+   "start": 28.725,
+   "end": 29.1,
    "line": 3,
    "sentence": false
   },
   {
    "text": "bounced",
-   "start": 28.987,
-   "end": 29.399,
+   "start": 29.1,
+   "end": 29.513,
    "line": 3,
    "sentence": false
   },
   {
    "text": "almost",
-   "start": 29.399,
-   "end": 29.812,
+   "start": 29.513,
+   "end": 29.925,
    "line": 3,
    "sentence": false
   },
   {
    "text": "straight",
-   "start": 29.812,
-   "end": 30.137,
+   "start": 29.925,
+   "end": 30.25,
    "line": 3,
    "sentence": false
   },
   {
    "text": "back",
-   "start": 30.137,
-   "end": 30.636,
+   "start": 30.25,
+   "end": 30.75,
    "line": 3,
    "sentence": false
   },
   {
    "text": "Rutherford",
-   "start": 31.412,
-   "end": 31.912,
+   "start": 31.526,
+   "end": 32.026,
    "line": 4,
    "sentence": true
   },
   {
    "text": "realized",
-   "start": 31.912,
-   "end": 32.5,
+   "start": 32.026,
+   "end": 32.613,
    "line": 4,
    "sentence": false
   },
   {
    "text": "what",
-   "start": 32.5,
-   "end": 32.625,
+   "start": 32.613,
+   "end": 32.738,
    "line": 4,
    "sentence": false
   },
   {
    "text": "it",
-   "start": 32.625,
-   "end": 32.762,
+   "start": 32.738,
+   "end": 32.876,
    "line": 4,
    "sentence": false
   },
   {
    "text": "meant",
-   "start": 32.762,
-   "end": 33.437,
+   "start": 32.876,
+   "end": 33.551,
    "line": 4,
    "sentence": false
   },
   {
    "text": "The",
-   "start": 33.437,
-   "end": 33.537,
+   "start": 33.551,
+   "end": 33.651,
    "line": 4,
    "sentence": true
   },
   {
    "text": "gold",
-   "start": 33.537,
-   "end": 33.875,
+   "start": 33.651,
+   "end": 33.988,
    "line": 4,
    "sentence": false
   },
   {
    "text": "atoms",
-   "start": 33.875,
-   "end": 34.262,
+   "start": 33.988,
+   "end": 34.376,
    "line": 4,
    "sentence": false
   },
   {
    "text": "had",
-   "start": 34.262,
-   "end": 34.462,
+   "start": 34.376,
+   "end": 34.576,
    "line": 4,
    "sentence": false
   },
   {
    "text": "to",
-   "start": 34.462,
-   "end": 34.55,
+   "start": 34.576,
+   "end": 34.663,
    "line": 4,
    "sentence": false
   },
   {
    "text": "be",
-   "start": 34.55,
-   "end": 34.7,
+   "start": 34.663,
+   "end": 34.813,
    "line": 4,
    "sentence": false
   },
   {
    "text": "mostly",
-   "start": 34.7,
-   "end": 35.175,
+   "start": 34.813,
+   "end": 35.288,
    "line": 4,
    "sentence": false
   },
   {
    "text": "empty",
-   "start": 35.175,
-   "end": 35.525,
+   "start": 35.288,
+   "end": 35.638,
    "line": 4,
    "sentence": false
   },
   {
    "text": "space",
-   "start": 35.525,
-   "end": 36.45,
+   "start": 35.638,
+   "end": 36.563,
    "line": 4,
    "sentence": false
   },
   {
    "text": "Almost",
-   "start": 36.45,
-   "end": 36.9,
+   "start": 36.563,
+   "end": 37.013,
    "line": 4,
    "sentence": true
   },
   {
    "text": "all",
-   "start": 36.9,
-   "end": 37.1,
+   "start": 37.013,
+   "end": 37.213,
    "line": 4,
    "sentence": false
   },
   {
    "text": "of",
-   "start": 37.1,
-   "end": 37.187,
+   "start": 37.213,
+   "end": 37.301,
    "line": 4,
    "sentence": false
   },
   {
    "text": "their",
-   "start": 37.187,
-   "end": 37.362,
+   "start": 37.301,
+   "end": 37.476,
    "line": 4,
    "sentence": false
   },
   {
    "text": "mass",
-   "start": 37.362,
-   "end": 37.737,
+   "start": 37.476,
+   "end": 37.851,
    "line": 4,
    "sentence": false
   },
   {
    "text": "was",
-   "start": 37.737,
-   "end": 37.875,
+   "start": 37.851,
+   "end": 37.988,
    "line": 4,
    "sentence": false
   },
   {
    "text": "squeezed",
-   "start": 37.875,
-   "end": 38.4,
+   "start": 37.988,
+   "end": 38.513,
    "line": 4,
    "sentence": false
   },
   {
    "text": "into",
-   "start": 38.4,
-   "end": 38.637,
+   "start": 38.513,
+   "end": 38.751,
    "line": 4,
    "sentence": false
   },
   {
    "text": "a",
-   "start": 38.637,
-   "end": 38.75,
+   "start": 38.751,
+   "end": 38.863,
    "line": 4,
    "sentence": false
   },
   {
    "text": "tiny",
-   "start": 38.75,
-   "end": 39.312,
+   "start": 38.863,
+   "end": 39.426,
    "line": 4,
    "sentence": false
   },
   {
    "text": "heavy",
-   "start": 39.312,
-   "end": 39.65,
+   "start": 39.426,
+   "end": 39.763,
    "line": 4,
    "sentence": false
   },
   {
    "text": "center",
-   "start": 39.65,
-   "end": 40.087,
+   "start": 39.763,
+   "end": 40.201,
    "line": 4,
    "sentence": false
   },
   {
    "text": "with",
-   "start": 40.087,
-   "end": 40.225,
+   "start": 40.201,
+   "end": 40.338,
    "line": 4,
    "sentence": false
   },
   {
    "text": "a",
-   "start": 40.225,
-   "end": 40.325,
+   "start": 40.338,
+   "end": 40.438,
    "line": 4,
    "sentence": false
   },
   {
    "text": "positive",
-   "start": 40.325,
-   "end": 40.9,
+   "start": 40.438,
+   "end": 41.013,
    "line": 4,
    "sentence": false
   },
   {
    "text": "charge",
-   "start": 40.9,
-   "end": 41.9,
+   "start": 41.013,
+   "end": 42.013,
    "line": 4,
    "sentence": false
   },
   {
    "text": "Only",
-   "start": 41.9,
-   "end": 42.212,
+   "start": 42.013,
+   "end": 42.326,
    "line": 4,
    "sentence": true
   },
   {
    "text": "the",
-   "start": 42.212,
-   "end": 42.325,
+   "start": 42.326,
+   "end": 42.438,
    "line": 4,
    "sentence": false
   },
   {
    "text": "particles",
-   "start": 42.325,
-   "end": 42.937,
+   "start": 42.438,
+   "end": 43.051,
    "line": 4,
    "sentence": false
   },
   {
    "text": "that",
-   "start": 42.937,
-   "end": 43.087,
+   "start": 43.051,
+   "end": 43.201,
    "line": 4,
    "sentence": false
   },
   {
    "text": "came",
-   "start": 43.087,
-   "end": 43.362,
+   "start": 43.201,
+   "end": 43.476,
    "line": 4,
    "sentence": false
   },
   {
    "text": "very",
-   "start": 43.362,
-   "end": 43.65,
+   "start": 43.476,
+   "end": 43.763,
    "line": 4,
    "sentence": false
   },
   {
    "text": "close",
-   "start": 43.65,
-   "end": 43.987,
+   "start": 43.763,
+   "end": 44.101,
    "line": 4,
    "sentence": false
   },
   {
    "text": "to",
-   "start": 43.987,
-   "end": 44.137,
+   "start": 44.101,
+   "end": 44.251,
    "line": 4,
    "sentence": false
   },
   {
    "text": "it",
-   "start": 44.137,
-   "end": 44.287,
+   "start": 44.251,
+   "end": 44.401,
    "line": 4,
    "sentence": false
   },
   {
    "text": "were",
-   "start": 44.287,
-   "end": 44.437,
+   "start": 44.401,
+   "end": 44.551,
    "line": 4,
    "sentence": false
   },
   {
    "text": "knocked",
-   "start": 44.437,
-   "end": 44.737,
+   "start": 44.551,
+   "end": 44.851,
    "line": 4,
    "sentence": false
   },
   {
    "text": "off",
-   "start": 44.737,
-   "end": 44.962,
+   "start": 44.851,
+   "end": 45.076,
    "line": 4,
    "sentence": false
   },
   {
    "text": "course",
-   "start": 44.962,
-   "end": 45.737,
+   "start": 45.076,
+   "end": 45.851,
    "line": 4,
    "sentence": false
   },
   {
    "text": "It",
-   "start": 45.737,
-   "end": 45.875,
+   "start": 45.851,
+   "end": 45.988,
    "line": 4,
    "sentence": true
   },
   {
    "text": "was",
-   "start": 45.875,
-   "end": 46.012,
+   "start": 45.988,
+   "end": 46.126,
    "line": 4,
    "sentence": false
   },
   {
    "text": "a",
-   "start": 46.012,
-   "end": 46.137,
+   "start": 46.126,
+   "end": 46.251,
    "line": 4,
    "sentence": false
   },
   {
    "text": "huge",
-   "start": 46.137,
-   "end": 46.562,
+   "start": 46.251,
+   "end": 46.676,
    "line": 4,
    "sentence": false
   },
   {
    "text": "surprise",
-   "start": 46.562,
-   "end": 47.662,
+   "start": 46.676,
+   "end": 47.776,
    "line": 4,
    "sentence": false
   },
   {
    "text": "The",
-   "start": 47.662,
-   "end": 47.812,
+   "start": 47.776,
+   "end": 47.926,
    "line": 4,
    "sentence": true
   },
   {
    "text": "solid",
-   "start": 47.812,
-   "end": 48.25,
+   "start": 47.926,
+   "end": 48.363,
    "line": 4,
    "sentence": false
   },
   {
    "text": "world",
-   "start": 48.25,
-   "end": 48.637,
+   "start": 48.363,
+   "end": 48.751,
    "line": 4,
    "sentence": false
   },
   {
    "text": "was",
-   "start": 48.637,
-   "end": 48.825,
+   "start": 48.751,
+   "end": 48.938,
    "line": 4,
    "sentence": false
   },
   {
    "text": "mostly",
-   "start": 48.825,
-   "end": 49.3,
+   "start": 48.938,
+   "end": 49.413,
    "line": 4,
    "sentence": false
   },
   {
    "text": "empty",
-   "start": 49.3,
-   "end": 49.859,
+   "start": 49.413,
+   "end": 49.972,
    "line": 4,
    "sentence": false
   },
   {
    "text": "So",
-   "start": 50.653,
-   "end": 50.803,
+   "start": 50.766,
+   "end": 50.916,
    "line": 5,
    "sentence": true
   },
   {
    "text": "if",
-   "start": 50.803,
-   "end": 50.978,
+   "start": 50.916,
+   "end": 51.091,
    "line": 5,
    "sentence": false
   },
   {
    "text": "atoms",
-   "start": 50.978,
-   "end": 51.403,
+   "start": 51.091,
+   "end": 51.516,
    "line": 5,
    "sentence": false
   },
   {
    "text": "are",
-   "start": 51.403,
-   "end": 51.54,
+   "start": 51.516,
+   "end": 51.654,
    "line": 5,
    "sentence": false
   },
   {
    "text": "mostly",
-   "start": 51.54,
-   "end": 52.015,
+   "start": 51.654,
+   "end": 52.129,
    "line": 5,
    "sentence": false
   },
   {
    "text": "empty",
-   "start": 52.015,
-   "end": 52.803,
+   "start": 52.129,
+   "end": 52.916,
    "line": 5,
    "sentence": false
   },
   {
    "text": "why",
-   "start": 52.803,
-   "end": 52.965,
+   "start": 52.916,
+   "end": 53.079,
    "line": 5,
    "sentence": false
   },
   {
    "text": "don't",
-   "start": 52.965,
-   "end": 53.115,
+   "start": 53.079,
+   "end": 53.229,
    "line": 5,
    "sentence": false
   },
   {
    "text": "we",
-   "start": 53.115,
-   "end": 53.253,
+   "start": 53.229,
+   "end": 53.366,
    "line": 5,
    "sentence": false
   },
   {
    "text": "fall",
-   "start": 53.253,
-   "end": 53.553,
+   "start": 53.366,
+   "end": 53.666,
    "line": 5,
    "sentence": false
   },
   {
    "text": "right",
-   "start": 53.553,
-   "end": 53.828,
+   "start": 53.666,
+   "end": 53.941,
    "line": 5,
    "sentence": false
   },
   {
    "text": "through",
-   "start": 53.828,
-   "end": 54.028,
+   "start": 53.941,
+   "end": 54.141,
    "line": 5,
    "sentence": false
   },
   {
    "text": "the",
-   "start": 54.028,
-   "end": 54.165,
+   "start": 54.141,
+   "end": 54.279,
    "line": 5,
    "sentence": false
   },
   {
    "text": "floor",
-   "start": 54.165,
-   "end": 54.696,
+   "start": 54.279,
+   "end": 54.809,
    "line": 5,
    "sentence": false
   }

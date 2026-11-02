@@ -21,6 +21,8 @@ import soundfile as sf
 SR = 24000
 VOICE = {'am_michael': 0.7, 'am_onyx': 0.3}
 SPEED = 1.02
+# Pronunciation fixes, as Kokoro/misaki phonemes (checked by ear and with tools/proof_listen.py).
+PRONOUNCE = {'Geiger': 'ɡˈIɡəɹ'}
 
 
 def read_paras(script):
@@ -77,7 +79,14 @@ def main():
         if only and n not in only:
             continue
         audio, chars, starts, ends, t = [], [], [], [], 0.0
-        for r in pipe(p['text'], voice=voice, speed=SPEED):
+        text = p['text']
+        for word, ph in PRONOUNCE.items():
+            text = re.sub(rf'\b{word}\b', f'[{word}](/{ph}/)', text)
+        first_ts = None
+        for r in pipe(text, voice=voice, speed=SPEED):
+            if first_ts is None:
+                timed = [tk.start_ts for tk in r.tokens if tk.start_ts is not None]
+                first_ts = t + (timed[0] if timed else 0.0)
             x = r.audio.numpy()
             c, s, e = alignment(r.tokens, t, t + len(x) / SR)
             if chars and c and not chars[-1].isspace():
@@ -92,7 +101,9 @@ def main():
         x = np.concatenate(audio)
         # Trim the silence Kokoro leaves at both ends; keep a short natural edge.
         loud = np.where(np.abs(x) > 0.01)[0]
-        a0 = max(0, loud[0] - int(0.06 * SR))
+        # Start just before the first word as Kokoro timed it (a soft first word can be quieter
+        # than the loudness threshold), or before the first loud sample, whichever is earlier.
+        a0 = max(0, min(loud[0] - int(0.06 * SR), int(((first_ts or 0.0) - 0.08) * SR)))
         a1 = min(len(x), loud[-1] + int(0.12 * SR))
         x = x[a0:a1]
         shift = a0 / SR

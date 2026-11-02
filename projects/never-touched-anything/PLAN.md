@@ -16,12 +16,12 @@ Tick each box as it is done. If work stops, continue from the first unticked box
 - [x] `images/prompts.md`
 
 ## Step 3: voice
-- [ ] Record every paragraph with the channel voice (`tools/voice_kokoro.py`)
-- [ ] Join into parts with pauses; check word for word; proof-listen (`tools/proof_listen.py`)
+- [x] Record every paragraph with the channel voice (`tools/voice_kokoro.py`)
+- [x] Join into parts with pauses; check word for word; proof-listen (`tools/proof_listen.py`): fixed "Geiger" (said with a J) and a clipped first word; total 8:21.8
 
 ## Step 4: animation
-- [ ] Builder for the 9 parts (`tools/build_never_touched.py`), following the shot list
-- [ ] Frame check, empty-moment check and label check pass for every part
+- [x] Builder for the 9 parts (`tools/build_never_touched.py`), following the shot list
+- [x] Frame check, empty-moment check and label check pass for every part
 - [ ] Stills review and fixes
 - [ ] Render, join, music, mix, loudness; final checks
 
