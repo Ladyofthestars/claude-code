@@ -10,10 +10,10 @@ Tick each box as it is done. If work stops, continue from the first unticked box
 - [x] `script.md`: narration (1,355 words: opening + 7 chapters + ending), shot list, picture list, style line
 
 ## Step 2: pictures
-- [ ] Generate the 18 new pictures (Gemini, free), same style line
-- [ ] Cut out, check each, remake failures (twice at most)
-- [ ] Glowing white-line versions for the blue page (new + reused)
-- [ ] `images/prompts.md`
+- [x] Generate the 18 new pictures (Gemini, free), same style line
+- [x] Cut out, check each, remake failures (twice at most): finger_press, hands_rubbing, holding_hands, hug remade once
+- [x] Glowing white-line versions for the blue page (new + reused)
+- [x] `images/prompts.md`
 
 ## Step 3: voice
 - [ ] Record every paragraph with the channel voice (`tools/voice_kokoro.py`)
