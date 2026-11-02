@@ -353,7 +353,7 @@ def part3(p):
     p.cam('2:Plants', x=lx + 150, y=-200, zoom=0.88)
     close(p, m1, '2:Now your')
     m2 = mark(p)
-    tree = p.pic('tree', lx + 1050, -80, h=560, at='2:part of a tree')
+    tree = p.pic('tree', lx + 1050, -80, h=560, at='2:Now your')
     wheat = p.pic('wheat', lx + 1600, 0, h=440, at='2:field of wheat')
     p.cam('2:Now your', x=lx + 1300, y=-40, zoom=0.9)
     deer = p.pic('deer', lx + 2250, -170, h=250, at='2:Almost every')
@@ -623,7 +623,7 @@ def part6(p):
     p.cam('2:In about', x=ex + 300, y=-150, zoom=0.85)
     close(p, m_sun, '2:Our planet')
     vx = ex + 1700
-    p.pic('venus', vx, 0, h=460, at='2:like Venus')
+    p.pic('venus', vx, 0, h=460, at='2:Our planet')
     p.label('DRY, AND MUCH TOO HOT FOR LIFE', vx, 330, '2:dry', size=28)
     p.cam('2:Our planet', x=vx, y=0, zoom=0.95)
     # The red giant swallows Mercury and Venus, maybe the Earth
@@ -681,7 +681,7 @@ def part7(p):
     p.cam('3:raw material', x=cx, y=60, zoom=0.92)
     dx = cx + 1300
     close(p, m_neb, '3:One day')
-    p.pic('young_sun_disk', dx, 0, w=760, at='3:gather and collapse')
+    p.pic('young_sun_disk', dx, 0, w=760, at='3:One day+0.3')
     p.cam('3:One day', x=dx, y=0, zoom=0.95)
     sx = dx + 1250
     p.pic('sun', sx, -40, h=320, at='3:our own solar')
@@ -740,13 +740,13 @@ def part8(p):
     p.label('ALMOST 2,000 YEARS AGO', mx, -380, '3:Almost two', '3:Its elements', size=30, color='accent')
     p.label('MARCUS AURELIUS', mx, 380, '3:Marcus Aurelius', size=36)
     p.label('MEDITATIONS, BOOK VIII', mx, 440, '3:Marcus Aurelius+0.3', size=22, weight=500, color='accent')
-    qx = mx + 1050
-    p.label('“IT CANNOT FALL OUT OF THE WORLD”', qx, -200, '3:cannot fall', size=30)
-    p.label('“THE SAME ARE THE WORLD’S ELEMENTS”', qx, -80, "3:Its elements", size=30)
-    p.label('“THEY MURMUR NOT”', qx, 40, '3:do not complain', size=30)
-    p.label('WHY SHOULDEST THOU?', qx, 200, '3:So why', size=48, color='accent')
+    qx = mx + 340
+    p.label('“IT CANNOT FALL OUT OF THE WORLD”', qx, -190, '3:cannot fall', size=26, align='left', spacing=0.14)
+    p.label('“THE SAME ARE THE WORLD’S ELEMENTS”', qx, -100, '3:Its elements', size=26, align='left', spacing=0.14)
+    p.label('“THEY MURMUR NOT”', qx, -10, '3:do not complain', size=26, align='left', spacing=0.14)
+    p.label('WHY SHOULDEST THOU?', qx, 120, '3:So why', size=44, color='accent', align='left', spacing=0.14)
     p.cam('3:Almost two', x=mx + 300, y=40, zoom=0.86)
-    p.cam('3:Its elements', x=mx + 500, y=20, zoom=0.86)
+    p.cam('3:cannot fall', x=mx + 620, y=20, zoom=0.86)
     # You came from the stars, and one day you'll go back
     yx = qx + 1500
     me3 = p.pic('person', yx, 40, h=660, at='4:You came')
@@ -755,7 +755,7 @@ def part8(p):
     for k, (u, v) in enumerate([CHEST, FACE, ARM]):
         s = p.pt(me3, (u, v))
         p.stream(rise(s[0], s[1], [-300, 60, 380][k], -560, 0.3), T("4:you'll go back", 0.25 * k), count=8, period=3.6, size=13, spread=12, color='accent' if k == 1 else None)
-    p.label('NOTHING IS LOST', yx, 470, "4:go back@end", size=50)
+    p.label('NOTHING IS LOST', yx, 420, "4:go back@end", size=50)
     p.cam('4:You came', x=yx, y=0, zoom=0.92)
     p.cam("4:you'll go back", x=yx, y=-60, zoom=0.82)
     p.cam('end', x=yx, y=-60, zoom=0.74)
