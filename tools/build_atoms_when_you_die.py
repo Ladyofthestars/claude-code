@@ -93,6 +93,29 @@ def layers(p, x0, x1, y, at, out=None, n=4, gap=34, amp=6, step=0.15):
     return ids
 
 
+def mark(p):
+    """Remember where a scene starts, so close() can end everything added after this."""
+    return (len(p.items), len(p.drawings), len(p.labels), len(p.lights), len(p.streams), len(p.mags))
+
+
+def close(p, m, at):
+    """Everything added since mark() leaves at `at` (unless it already has its own exit)."""
+    p.check_ref(at)
+    for it in p.items[m[0]:]:
+        it.setdefault('out', at)
+    for d in p.drawings[m[1]:]:
+        d.setdefault('out', at)
+    for l in p.labels[m[2]:]:
+        l.setdefault('out', at)
+    for L in p.lights[m[3]:]:
+        if 'duration' not in L:
+            L.setdefault('to', at)
+    for S in p.streams[m[4]:]:
+        S.setdefault('to', at)
+    for g in p.mags[m[5]:]:
+        g.setdefault('close', at)
+
+
 def question(p, x, y, at, out=None, size=96):
     p.label('?', x, y, at, out, size=size, color='accent', spacing=0.02)
 
@@ -236,6 +259,7 @@ def part1(p):
 def part2(p):
     chapter(p, 2, 'First')
     p.cam('start', x=0, y=0, zoom=0.95)
+    m0 = mark(p)
     p.label('THE RULE', 0, -360, '1:a rule', '1:Nothing is-0.2', size=44, color='accent')
     # A balance: the same atoms on both sides, only rearranged
     p.line([(0, 300), (0, -80)], '1:When matter', width=2.4)
@@ -255,15 +279,17 @@ def part2(p):
     p.label('BEFORE', -430, 190, '1:form', size=26, weight=500)
     p.label('AFTER', 430, 190, '1:into another', size=26, weight=500)
     p.label('CONSERVATION OF MATTER', 0, 420, '1:law of', size=36)
-    p.label('NOTHING IS LOST', 0, -360, '1:Nothing is', size=56)
+    p.label('NOTHING IS LOST', 0, -360, '1:Nothing is+0.4', size=56)
+    close(p, m0, '2:After death')
     p.cam('1:When matter', x=0, y=20, zoom=1.0)
     p.cam('1:Scientists', x=0, y=40, zoom=0.95)
     # Bacteria and fungi break down what is left
     gx, gy = 1900, 260
+    m1 = mark(p)
     p.line([(gx - 650, gy), (gx + 1250, gy)], '2:After death', width=2.0)
-    leaf = p.pic('leaf', gx - 150, gy - 40, w=300, at='2:After death')
-    p.mag(leaf, (0.5, 0.55), 22, gx - 150, -240, 190, '2:bacteria', '2:Every ecosystem',
-          [{'picture': 'bacteria', 'scale': 0.8}])
+    leaf = p.pic('leaf', gx - 150, gy - 165, h=300, at='2:After death')
+    p.mag(leaf, (0.5, 0.55), 22, gx - 150, -330, 170, '2:bacteria', '2:Every ecosystem',
+          [{'picture': 'bacteria', 'scale': 1.7}])
     p.pic('mushroom', gx + 300, gy - 120, h=250, at='2:fungi')
     p.stream(rise(gx - 150, gy - 20, -140, 200, 0.2), '2:They break', '3:Your water', count=8, period=3.6, size=12, spread=14)
     p.stream(rise(gx - 150, gy - 40, 230, -380, 0.3), '2:recycle', '3:Your carbon', count=8, period=3.2, size=13, spread=14)
@@ -288,6 +314,7 @@ def part2(p):
     p.cam('3:Some of it', x=gx + 200, y=150, zoom=0.9)
     p.cam('3:The nitrogen', x=gx + 800, y=150, zoom=0.88)
     p.cam('3:Your water', x=gx + 700, y=-150, zoom=0.72)
+    close(p, m1, '4:Nothing is')
     # Handed on
     hx = gx + 2900
     p.label('NOTHING IS DESTROYED', hx, -330, '4:Nothing is', size=48)

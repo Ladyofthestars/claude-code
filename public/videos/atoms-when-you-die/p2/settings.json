@@ -99,11 +99,11 @@
   {
    "id": "leaf23",
    "picture": "leaf",
-   "x": 15154.7,
-   "y": -106.5,
-   "width": 965.9,
+   "x": 15152.6,
+   "y": -224.0,
+   "width": 528.7,
    "in": "2:After death",
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "id": "mushroom25",
@@ -112,7 +112,7 @@
    "y": -169.5,
    "width": 481.2,
    "in": "2:fungi",
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "id": "tree28",
@@ -121,7 +121,7 @@
    "y": -346.1,
    "width": 1131.4,
    "in": "2:Every ecosystem",
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "id": "mushroom29",
@@ -130,7 +130,7 @@
    "y": -119.7,
    "width": 288.7,
    "in": "2:depends",
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "id": "cloud36",
@@ -139,7 +139,7 @@
    "y": -931.7,
    "width": 643.7,
    "in": "3:rises into",
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "id": "open_hand48",
@@ -302,7 +302,7 @@
    ],
    "draw": "1:When matter",
    "width": 2.4,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "line2",
@@ -319,7 +319,7 @@
    ],
    "draw": "1:When matter",
    "width": 2.4,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "line3",
@@ -336,7 +336,7 @@
    ],
    "draw": "1:When matter+0.2",
    "width": 2.4,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "line4",
@@ -354,7 +354,7 @@
    "draw": "1:When matter+0.35",
    "width": 1.6,
    "color": "muted",
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "line5",
@@ -372,7 +372,7 @@
    "draw": "1:When matter+0.35",
    "width": 1.6,
    "color": "muted",
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "line6",
@@ -397,7 +397,7 @@
    ],
    "draw": "1:When matter+0.45",
    "width": 2.2,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "line7",
@@ -415,7 +415,7 @@
    "draw": "1:When matter+0.35",
    "width": 1.6,
    "color": "muted",
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "line8",
@@ -433,7 +433,7 @@
    "draw": "1:When matter+0.35",
    "width": 1.6,
    "color": "muted",
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "line9",
@@ -458,7 +458,7 @@
    ],
    "draw": "1:When matter+0.45",
    "width": 2.2,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "circle10",
@@ -470,7 +470,7 @@
    "width": 2.0,
    "fill": "accent",
    "fillOpacity": 0.5,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "circle11",
@@ -482,7 +482,7 @@
    "width": 2.0,
    "fill": "accent",
    "fillOpacity": 0.5,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "circle12",
@@ -494,7 +494,7 @@
    "width": 2.0,
    "fill": "accent",
    "fillOpacity": 0.5,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "circle13",
@@ -506,7 +506,7 @@
    "width": 2.0,
    "fill": "accent",
    "fillOpacity": 0.5,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "circle14",
@@ -518,7 +518,7 @@
    "width": 2.0,
    "fill": "accent",
    "fillOpacity": 0.5,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "circle15",
@@ -530,7 +530,7 @@
    "width": 2.0,
    "fill": "accent",
    "fillOpacity": 0.5,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "circle16",
@@ -542,7 +542,7 @@
    "width": 2.0,
    "fill": "accent",
    "fillOpacity": 0.5,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "circle17",
@@ -554,7 +554,7 @@
    "width": 2.0,
    "fill": "accent",
    "fillOpacity": 0.5,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "circle18",
@@ -566,7 +566,7 @@
    "width": 2.0,
    "fill": "accent",
    "fillOpacity": 0.5,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "circle19",
@@ -578,7 +578,7 @@
    "width": 2.0,
    "fill": "accent",
    "fillOpacity": 0.5,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "circle20",
@@ -590,7 +590,7 @@
    "width": 2.0,
    "fill": "accent",
    "fillOpacity": 0.5,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "circle21",
@@ -602,7 +602,7 @@
    "width": 2.0,
    "fill": "accent",
    "fillOpacity": 0.5,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "id": "line22",
@@ -619,7 +619,7 @@
    ],
    "draw": "2:After death",
    "width": 2.0,
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "id": "line30",
@@ -652,7 +652,7 @@
    "arrow": true,
    "duration": 1.4,
    "color": "muted",
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "id": "circle31",
@@ -664,7 +664,7 @@
    "width": 2.2,
    "fill": "accent",
    "fillOpacity": 0.55,
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "id": "line32",
@@ -681,7 +681,7 @@
    ],
    "draw": "3:carbon dioxide+0.15",
    "width": 2.0,
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "id": "circle33",
@@ -693,7 +693,7 @@
    "width": 2.2,
    "fill": "paper",
    "fillOpacity": 1,
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "id": "line34",
@@ -710,7 +710,7 @@
    ],
    "draw": "3:carbon dioxide+0.15",
    "width": 2.0,
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "id": "circle35",
@@ -722,7 +722,7 @@
    "width": 2.2,
    "fill": "paper",
    "fillOpacity": 1,
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "id": "line38",
@@ -1097,7 +1097,7 @@
    "width": 1.6,
    "duration": 0.9,
    "color": "muted",
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "id": "line39",
@@ -1472,7 +1472,7 @@
    "width": 1.6,
    "duration": 0.9,
    "color": "muted",
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "id": "line40",
@@ -1847,7 +1847,7 @@
    "width": 1.6,
    "duration": 0.9,
    "color": "muted",
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "id": "circle42",
@@ -1859,7 +1859,7 @@
    "width": 2.2,
    "fill": "accent",
    "fillOpacity": 0.55,
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "id": "line44",
@@ -2033,7 +2033,7 @@
    "draw": "3:the sea",
    "width": 1.8,
    "duration": 1.0,
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "id": "line45",
@@ -2208,7 +2208,7 @@
    "width": 1.8,
    "duration": 1.0,
    "color": "muted",
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "id": "line46",
@@ -2383,7 +2383,7 @@
    "width": 1.8,
    "duration": 1.0,
    "color": "muted",
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   }
  ],
  "lights": [
@@ -2405,13 +2405,13 @@
     "radius": 22
    },
    "x": 15150.0,
-   "y": -550.0,
-   "radius": 190,
+   "y": -640.0,
+   "radius": 170,
    "open": "2:bacteria",
    "contents": [
     {
      "picture": "bacteria",
-     "scale": 0.8
+     "scale": 1.7
     }
    ],
    "close": "2:Every ecosystem"
@@ -2456,7 +2456,7 @@
    "size": 32,
    "in": "1:form",
    "weight": 500,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "text": "AFTER",
@@ -2466,7 +2466,7 @@
    "size": 32,
    "in": "1:into another",
    "weight": 500,
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "text": "CONSERVATION OF MATTER",
@@ -2475,7 +2475,7 @@
    "space": "world",
    "size": 45,
    "in": "1:law of",
-   "out": "end-1.1"
+   "out": "2:After death"
   },
   {
    "text": "NOTHING IS LOST",
@@ -2483,8 +2483,8 @@
    "y": -670.0,
    "space": "world",
    "size": 70,
-   "in": "1:Nothing is",
-   "out": "end-1.1"
+   "in": "1:Nothing is+0.4",
+   "out": "2:After death"
   },
   {
    "text": "C",
@@ -2495,7 +2495,7 @@
    "in": "3:carbon dioxide+0.15",
    "spacing": 0.02,
    "upper": false,
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "text": "O",
@@ -2506,7 +2506,7 @@
    "in": "3:carbon dioxide+0.35",
    "spacing": 0.02,
    "upper": false,
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "text": "O",
@@ -2517,7 +2517,7 @@
    "in": "3:carbon dioxide+0.35",
    "spacing": 0.02,
    "upper": false,
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "text": "N",
@@ -2528,7 +2528,7 @@
    "in": "3:nitrogen+0.15",
    "spacing": 0.02,
    "upper": false,
-   "out": "end-1.1"
+   "out": "4:Nothing is"
   },
   {
    "text": "AMMONIUM",
