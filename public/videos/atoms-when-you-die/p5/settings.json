@@ -163,34 +163,34 @@
    "out": "end-1.1"
   },
   {
-   "id": "shell19",
+   "id": "shell20",
    "picture": "shell",
    "x": 42366.6,
    "y": 425.8,
    "width": 772.9,
    "in": "4:built into shells",
-   "out": "end-1.1"
+   "out": "5:lifted up"
   },
   {
-   "id": "mountain28",
+   "id": "mountain29",
    "picture": "mountain",
    "x": 42357.7,
    "y": 155.6,
    "width": 903.8,
    "in": "5:lifted up",
-   "out": "end-1.1"
+   "out": "6:Some carbon"
   },
   {
-   "id": "leaf31",
+   "id": "leaf32",
    "picture": "leaf",
-   "x": 43871.1,
-   "y": 372.2,
-   "width": 837.1,
+   "x": 43869.2,
+   "y": 428.7,
+   "width": 458.2,
    "in": "6:living things",
    "out": "end-1.1"
   },
   {
-   "id": "coal36",
+   "id": "coal37",
    "picture": "coal",
    "x": 44517.0,
    "y": 326.5,
@@ -199,7 +199,7 @@
    "out": "end-1.1"
   },
   {
-   "id": "earth38",
+   "id": "earth39",
    "picture": "earth",
    "x": 45765.5,
    "y": 126.0,
@@ -282,16 +282,16 @@
    "zoom": 0.92
   },
   {
-   "at": 24.316,
-   "x": 41067.0,
+   "at": 23.016,
+   "x": 41367.0,
    "y": 386.5,
-   "zoom": 1.0
+   "zoom": 0.95
   },
   {
    "at": 29.862,
-   "x": 41067.0,
+   "x": 41367.0,
    "y": 386.5,
-   "zoom": 1.0
+   "zoom": 0.95
   },
   {
    "at": 31.162,
@@ -1887,10 +1887,34 @@
    "fill": "paper",
    "fillOpacity": 1,
    "fillAt": "4:Calcium has+0.1",
-   "out": "end-1.1"
+   "out": "5:lifted up"
   },
   {
-   "id": "line20",
+   "id": "line19",
+   "kind": "path",
+   "points": [
+    [
+     42037.0,
+     426.5
+    ],
+    [
+     42137.0,
+     366.5
+    ],
+    [
+     42237.0,
+     426.5
+    ]
+   ],
+   "draw": "4:long road",
+   "width": 1.6,
+   "curve": true,
+   "dashed": true,
+   "color": "muted",
+   "out": "5:lifted up"
+  },
+  {
+   "id": "line21",
    "kind": "path",
    "points": [
     [
@@ -2162,10 +2186,10 @@
    "width": 1.6,
    "duration": 0.9,
    "color": "muted",
-   "out": "end-1.1"
+   "out": "5:lifted up"
   },
   {
-   "id": "line21",
+   "id": "line22",
    "kind": "path",
    "points": [
     [
@@ -2437,10 +2461,10 @@
    "width": 1.6,
    "duration": 0.9,
    "color": "muted",
-   "out": "end-1.1"
+   "out": "5:lifted up"
   },
   {
-   "id": "line22",
+   "id": "line23",
    "kind": "path",
    "points": [
     [
@@ -2712,10 +2736,10 @@
    "width": 1.6,
    "duration": 0.9,
    "color": "muted",
-   "out": "end-1.1"
+   "out": "5:lifted up"
   },
   {
-   "id": "line23",
+   "id": "line24",
    "kind": "path",
    "points": [
     [
@@ -2987,10 +3011,10 @@
    "width": 1.6,
    "duration": 0.9,
    "color": "muted",
-   "out": "end-1.1"
+   "out": "5:lifted up"
   },
   {
-   "id": "line24",
+   "id": "line25",
    "kind": "path",
    "points": [
     [
@@ -3262,10 +3286,10 @@
    "width": 1.6,
    "duration": 0.9,
    "color": "muted",
-   "out": "end-1.1"
+   "out": "5:lifted up"
   },
   {
-   "id": "line25",
+   "id": "line26",
    "kind": "path",
    "points": [
     [
@@ -3280,10 +3304,10 @@
    "draw": "5:the ground itself",
    "arrow": true,
    "width": 2.4,
-   "out": "end-1.1"
+   "out": "5:lifted up"
   },
   {
-   "id": "line26",
+   "id": "line27",
    "kind": "path",
    "points": [
     [
@@ -3298,10 +3322,10 @@
    "draw": "5:the ground itself+0.15",
    "arrow": true,
    "width": 2.4,
-   "out": "end-1.1"
+   "out": "5:lifted up"
   },
   {
-   "id": "line27",
+   "id": "line28",
    "kind": "path",
    "points": [
     [
@@ -3316,10 +3340,10 @@
    "draw": "5:the ground itself+0.3",
    "arrow": true,
    "width": 2.4,
-   "out": "end-1.1"
+   "out": "5:lifted up"
   },
   {
-   "id": "line29",
+   "id": "line30",
    "kind": "path",
    "points": [
     [
@@ -3340,10 +3364,10 @@
    "curve": true,
    "dashed": true,
    "color": "muted",
-   "out": "end-1.1"
+   "out": "6:Some carbon"
   },
   {
-   "id": "circle30",
+   "id": "circle31",
    "kind": "circle",
    "cx": 43467.0,
    "cy": 126.5,
@@ -3355,7 +3379,7 @@
    "out": "end-1.1"
   },
   {
-   "id": "line32",
+   "id": "line33",
    "kind": "path",
    "points": [
     [
@@ -3550,7 +3574,7 @@
    "out": "end-1.1"
   },
   {
-   "id": "line33",
+   "id": "line34",
    "kind": "path",
    "points": [
     [
@@ -3745,7 +3769,7 @@
    "out": "end-1.1"
   },
   {
-   "id": "line34",
+   "id": "line35",
    "kind": "path",
    "points": [
     [
@@ -3940,7 +3964,7 @@
    "out": "end-1.1"
   },
   {
-   "id": "line35",
+   "id": "line36",
    "kind": "path",
    "points": [
     [
@@ -4135,7 +4159,7 @@
    "out": "end-1.1"
   },
   {
-   "id": "line37",
+   "id": "line38",
    "kind": "path",
    "points": [
     [
@@ -4167,7 +4191,13 @@
    "size": 40
   },
   {
-   "drawing": "line29",
+   "drawing": "line19",
+   "from": "4:long road",
+   "duration": 1.4,
+   "size": 46
+  },
+  {
+   "drawing": "line30",
    "from": "5:stone of a mountain",
    "duration": 1.6,
    "size": 46
@@ -4185,7 +4215,7 @@
    "to": "end-1.1"
   },
   {
-   "drawing": "line37",
+   "drawing": "line38",
    "from": "6:plants caught",
    "duration": 1.6,
    "size": 50
@@ -4279,24 +4309,24 @@
   },
   {
    "text": "ONE PHOSPHORUS ATOM STAYS IN THE OCEAN",
-   "x": 41067.0,
-   "y": 386.5,
+   "x": 41627.0,
+   "y": 296.5,
    "space": "world",
-   "size": 35,
+   "size": 32,
    "in": "3:a phosphorus atom",
    "out": "4:Calcium-0.2",
    "weight": 500
   },
   {
    "text": "20,000 \u2013 100,000 YEARS",
-   "x": 41067.0,
-   "y": 476.5,
+   "x": 41627.0,
+   "y": 386.5,
    "space": "world",
-   "size": 75,
+   "size": 65,
    "in": "3:twenty thousand",
    "out": "4:Calcium-0.2",
    "color": "accent",
-   "spacing": 0.12
+   "spacing": 0.1
   },
   {
    "text": "Ca",
@@ -4307,7 +4337,7 @@
    "in": "4:Calcium has+0.25",
    "spacing": 0.02,
    "upper": false,
-   "out": "end-1.1"
+   "out": "5:lifted up"
   },
   {
    "text": "LIMESTONE",
@@ -4316,7 +4346,7 @@
    "space": "world",
    "size": 45,
    "in": "4:become limestone",
-   "out": "end-1.1"
+   "out": "5:lifted up"
   },
   {
    "text": "THE LARGEST STORE OF CARBON ON EARTH",

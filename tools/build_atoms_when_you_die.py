@@ -540,12 +540,15 @@ def part5(p):
     p.cam('2:There', x=sea, y=200, zoom=0.95)
     p.cam('2:When those', x=sea, y=500, zoom=0.92)
     # 20,000 to 100,000 years in the ocean
-    p.label('ONE PHOSPHORUS ATOM STAYS IN THE OCEAN', sea, 400 + 160, '3:a phosphorus atom', '4:Calcium-0.2', size=28, weight=500)
-    p.label('20,000 – 100,000 YEARS', sea, 400 + 250, '3:twenty thousand', '4:Calcium-0.2', size=60, color='accent', spacing=0.12)
-    p.cam('3:Once', x=sea, y=560, zoom=1.0)
+    p.label('ONE PHOSPHORUS ATOM STAYS IN THE OCEAN', sea + 560, 470, '3:a phosphorus atom', '4:Calcium-0.2', size=26, weight=500)
+    p.label('20,000 – 100,000 YEARS', sea + 560, 560, '3:twenty thousand', '4:Calcium-0.2', size=52, color='accent', spacing=0.1)
+    p.cam('3:Once', x=sea + 300, y=560, zoom=0.95)
     # Calcium into shells; shells into limestone, the largest store of carbon
     lx = sea + 1300
+    m_shell = mark(p)
     p.tile('Ca', None, lx - 380, 600, '4:Calcium has', s=90)
+    road = p.line([(lx - 330, 600), (lx - 230, 540), (lx - 130, 600)], '4:long road', width=1.6, curve=True, dashed=True, color='muted')
+    p.travel(road, '4:long road', dur=1.4, size=46)
     p.pic('shell', lx, 600, h=240, at='4:built into shells')
     lim = layers(p, lx - 650, lx + 650, 820, '4:Over time', n=5, gap=32, step=0.25)
     p.label('LIMESTONE', lx, 1010, '4:become limestone', size=36)
@@ -556,6 +559,8 @@ def part5(p):
     for k in range(3):
         x = lx - 400 + 400 * k
         p.arrow((x, 900), (x, 640), T('5:the ground itself', 0.15 * k), width=2.4)
+    close(p, m_shell, '5:lifted up')
+    m_mtn = mark(p)
     mtn = p.pic('mountain', lx, 330, w=760, at='5:lifted up')
     into = p.line([(lx - 520, 960), (lx - 300, 700), (lx - 60, 420)], '5:stone of a mountain', width=1.6, curve=True, dashed=True, color='muted')
     p.travel(into, '5:stone of a mountain', dur=1.6, size=46)
@@ -563,8 +568,9 @@ def part5(p):
     p.cam('5:Atoms that', x=lx, y=420, zoom=0.92)
     # Coal: carbon locked away; sunlight caught 200–350 million years ago
     kx = lx + 1500
+    close(p, m_mtn, '6:Some carbon')
     atom(p, kx - 400, 300, 'C', '6:Some carbon', r=32, accent=True)
-    p.pic('leaf', kx, 560, w=260, at='6:living things')
+    p.pic('leaf', kx, 610, h=260, at='6:living things')
     layers(p, kx - 450, kx + 450, 440, '6:buried deep', n=4, gap=-30, step=0.2)
     coal = p.pic('coal', kx + 650, 500, h=230, at='6:how coal formed')
     p.glows([(kx + 650, -100)], '6:sunlight', size=170)
