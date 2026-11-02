@@ -73,8 +73,8 @@ def main():
     subprocess.run([
         'ffmpeg', '-v', 'error', '-y', '-i', f'{out}/voice.wav', '-i', f'{out}/music.wav', '-filter_complex',
         '[0:a]aformat=channel_layouts=stereo,asplit=2[v][sc];'
-        '[1:a][sc]sidechaincompress=threshold=0.02:ratio=4:attack=60:release=900:makeup=1[m];'
-        '[v]volume=1.0[vv];[m]volume=0.45[mm];'
+        '[1:a][sc]sidechaincompress=threshold=0.015:ratio=6:attack=40:release=1000:makeup=1[m];'
+        '[v]volume=1.0[vv];[m]volume=0.22[mm];'
         '[vv][mm]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11[a]',
         '-map', '[a]', '-ar', str(SR), f'{out}/mix.wav'], check=True)
     # Join the part videos without re-encoding and add the final soundtrack. Each part goes through

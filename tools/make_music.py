@@ -35,12 +35,12 @@ PROGRESSION = [
     ('E3', ['B3', 'E4', 'G4', 'B4', 'E5', 'G5']),
     ('A3', ['A3', 'D4', 'E4', 'A4', 'D5', 'E5']),
 ]
-# Broken-chord patterns: (beat, index into the chord, loudness).
+# Broken-chord patterns, kept sparse so the music stays in the background: (beat, index into the chord, loudness).
 PATTERNS = [
-    [(0, 2, 1.0), (1, 3, 0.75), (2, 4, 0.8), (3, 3, 0.65)],
-    [(0, 2, 1.0), (1, 4, 0.7), (2, 5, 0.8), (3, 4, 0.6)],
-    [(0, 3, 1.0), (1.5, 4, 0.7), (2, 5, 0.75), (3, 2, 0.6)],
-    [(0, 2, 1.0), (2, 4, 0.85), (2.5, 5, 0.6)],
+    [(0, 2, 1.0), (2, 4, 0.75)],
+    [(0, 3, 1.0), (2, 5, 0.7)],
+    [(0, 2, 1.0), (1.5, 4, 0.65), (3, 3, 0.55)],
+    [(0, 3, 1.0), (2, 4, 0.7)],
 ]
 
 _cache = {}
@@ -63,7 +63,7 @@ def piano(f):
         tau = t1 / (1 + 0.55 * (k - 1))
         for det in (-0.0006, 0.0006):  # two slightly detuned strings
             out += (0.5 * amp * np.sin(2 * np.pi * fk * (1 + det) * t) * np.exp(-t / tau)).astype(np.float32)
-    att = int(0.008 * SR)
+    att = int(0.018 * SR)
     out[:att] *= 0.5 - 0.5 * np.cos(np.linspace(0, np.pi, att))
     rel = int(0.6 * SR)
     out[-rel:] *= np.linspace(1, 0, rel)
@@ -111,7 +111,7 @@ def main():
             at = t0 + beat * (BAR / 4) + rng.normal(0, 0.012)
             place(dry, piano(hz(chord[idx])), at, 0.55 * vel * rng.uniform(0.88, 1.05))
         # A high melody note now and then.
-        if b >= 8 and b % 2 == 0:
+        if b >= 8 and b % 4 == 0:
             top = chord[-1] if rng.random() < 0.6 else chord[-2]
             f = hz(top) * 2 if hz(top) < 600 else hz(top)
             place(dry, piano(f), t0 + 2 * (BAR / 4) + rng.normal(0, 0.01), 0.32)
