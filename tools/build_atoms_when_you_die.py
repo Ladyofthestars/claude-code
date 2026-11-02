@@ -212,8 +212,8 @@ def part1(p):
     p.arrow((lx - 400, 200), (lx - 180, 90), '3:burns', width=2.0, color='muted')
     top = p.pt(lungs, LUNGS_TOP)
     p.stream(rise(top[0], top[1], 420, -200, 0.4), '3:let go', '4:So the atoms', count=10, period=3.0, size=14, spread=12)
-    co2(p, lx + 560, -330, '3:carbon dioxide', r=26)
-    p.label('CARBON DIOXIDE', lx + 560, -230, '3:carbon dioxide+0.3', size=30)
+    co2(p, lx + 560, -330, '3:carbon dioxide', '4:So the atoms', r=26)
+    p.label('CARBON DIOXIDE', lx + 560, -230, '3:carbon dioxide+0.3', '4:So the atoms', size=30)
     p.cam('3:And every', x=lx, y=-20, zoom=0.95)
     p.cam('3:carbon dioxide', x=lx + 180, y=-80, zoom=0.92)
     # Passing through; what stays is the pattern
