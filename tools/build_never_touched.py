@@ -47,8 +47,9 @@ def ring(cx, cy, r, n=40, ry=None, rot=0.0):
     return pts
 
 
-def cloud(p, x, y, r, at, to=None, count=10, nucleus=True, size=10, spread=None, period=None):
+def cloud(p, x, y, r, at, to=None, count=10, nucleus=True, size=None, spread=None, period=None):
     """An atom as a soft cloud: electrons swarming on a circle, a tiny gold nucleus in the middle."""
+    size = size or max(10, r * 0.24)
     p.stream(ring(x, y, r, 36), at, to, count=count, period=period or (2.4 + r / 60), size=size, spread=spread if spread is not None else r * 0.35)
     if nucleus:
         p.glows([(x, y)], at, to, size=max(16, r * 0.35))
@@ -70,14 +71,14 @@ def atom_model(p, x, y, at, out=None, s=1.0, labels=False):
         p.label('ELECTRONS  −', x, y + 140 * s, labels[1], out, size=28)
 
 
-def two_rows(p, cx, cy, at, out=None, n=5, r=26, gap=40, arrows_at=None):
+def two_rows(p, cx, cy, at, out=None, n=4, r=44, gap=56, arrows_at=None):
     """Two rows of atom clouds facing each other across a thin gap (the place where two things 'touch')."""
     pitch = r * 2.4
     x0 = cx - pitch * (n - 1) / 2
     for i in range(n):
         x = x0 + i * pitch
-        cloud(p, x, cy - gap / 2 - r, r, T(at, 0.04 * i), out, count=6, size=7)
-        cloud(p, x, cy + gap / 2 + r, r, T(at, 0.04 * i + 0.1), out, count=6, size=7)
+        cloud(p, x, cy - gap / 2 - r, r, T(at, 0.04 * i), out, count=7)
+        cloud(p, x, cy + gap / 2 + r, r, T(at, 0.04 * i + 0.1), out, count=7)
     if arrows_at:
         for i in range(0, n, 2):
             x = x0 + i * pitch
@@ -123,21 +124,24 @@ def part0(p):
     p.cam('1:Not this screen', x=fx + 800, y=0, zoom=1.0)
     p.cam('1:Not even', x=hx, y=0, zoom=1.0)
     # Inside the place where the hands meet: two rows of atoms that never meet
-    two_rows(p, hx, 230 + 330, '1:The atoms of your', n=5, r=30, gap=46, arrows_at='1:anything else')
-    p.label('YOUR ATOMS', hx - 330, 560 - 120, '1:The atoms of your', size=24)
-    p.label('THEIR ATOMS', hx - 330, 560 + 120, '1:the atoms of anything', size=24)
-    p.cam('1:The atoms of your', x=hx, y=420, zoom=1.05)
+    m_rows = mark(p)
+    two_rows(p, hx, 560, '1:The atoms of your', n=4, r=50, gap=60, arrows_at='1:anything else')
+    p.label('YOUR ATOMS', hx - 420, 560 - 80, '1:The atoms of your', size=26)
+    p.label('THEIR ATOMS', hx - 420, 560 + 80, '1:the atoms of anything', size=26)
+    close(p, m_rows, '2:And yet')
+    p.cam('1:The atoms of your', x=hx, y=520, zoom=1.0)
     p.glows([(hx - 60, 10), (hx + 40, -20), (hx + 120, 20)], '2:you feel', size=70, stagger=0.15)
     p.cam('2:And yet', x=hx, y=60, zoom=1.0)
     p.label('WHAT IS TOUCH?', hx, -330, "2:So what's", size=48, color='accent')
     # The three stops of the journey
     jx = hx + 1300
-    atom_model(p, jx, -40, '2:inside the atom', s=0.8)
-    floor(p, jx + 650, jx + 1050, 150, '2:fall through')
-    p.pic('feet', jx + 850, 25, h=220, at='2:fall through')
-    p.pic('brain', jx + 1650, -20, h=300, at='2:what touch')
-    p.cam('2:In this video', x=jx + 400, y=0, zoom=0.82)
-    p.cam('2:what touch', x=jx + 800, y=0, zoom=0.7)
+    atom_model(p, jx, -20, '2:inside the atom', s=1.1)
+    floor(p, jx + 650, jx + 1050, 170, '2:fall through')
+    p.pic('feet', jx + 850, 30, h=280, at='2:fall through')
+    p.pic('brain', jx + 1550, -10, h=360, at='2:what touch')
+    p.cam('2:In this video', x=jx + 300, y=0, zoom=0.86)
+    p.cam('2:fall through', x=jx + 650, y=0, zoom=0.82)
+    p.cam('2:what touch', x=jx + 780, y=0, zoom=0.8)
     p.end_all()
 
 
