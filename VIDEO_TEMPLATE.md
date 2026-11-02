@@ -51,3 +51,19 @@ Settings can also use, beyond the short-video features:
 - **Magnifiers** grow out of a detail and stay joined to it by two lines.
 - **Labels** are bold, uppercase and widely spaced.
 - **Nothing is ever cut off**: anything that nears the edge of the safe area fades out smoothly, and fades back in when the camera returns.
+
+## Dark pages, atom streams and the open-source voice (from video 2)
+
+Theme extras (all optional; leave them out and nothing changes):
+- `backgroundImage`: a CSS gradient over the background colour, fixed to the screen (a soft centre light and a vignette).
+- `labelGlow`, `drawingGlow`: a soft glow around labels and drawn lines (CSS colours).
+- `dust`: `{count, color, size, parallax, drift}`: drifting, twinkling specks of light behind everything. They follow the camera at `parallax` and the whole video's clock, so set `clock` in each part's settings (seconds since the video started) and parts join without a jump.
+- Use `lightBlend: "screen"` on dark pages so glows add light.
+
+`streams`: flows of small glowing dots ("atoms") along a path on the page, looping while they are on: `{points, curve, from, to, count, period, size, spread, color, reverse}`. In the builder: `p.stream(points, at, to, ...)`.
+
+Pictures for a dark page: `tools/blueprint.py IN.png OUT.png` turns an ink cut-out into glowing light lines over a see-through dark fill (glow baked in).
+
+Voice (open source, from video 2 on): `tools/setup_voice.sh DIR` installs Kokoro (Apache 2.0) in a Python 3.12 environment; `DIR/bin/python tools/voice_kokoro.py projects/<video>/script.md CLIPS` records every paragraph with word timings; `tools/assemble_voice.py --clips CLIPS --source "..."` joins them per part; `tools/proof_listen.py CLIPS` proof-listens with speech recognition and lists anything that differs from the script.
+
+Time references: avoid phrases that end in a hyphen and a number, such as "carbon-14": "-14" reads as "14 seconds earlier". Use a neighbouring phrase instead.

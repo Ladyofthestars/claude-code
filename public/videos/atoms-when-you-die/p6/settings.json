@@ -1,0 +1,806 @@
+{
+ "title": "What Happens to Your Atoms When You Die? \u2014 part 6",
+ "size": {
+  "width": 1920,
+  "height": 1080
+ },
+ "audio": "narration.mp3",
+ "words": "words.json",
+ "tailSeconds": 0,
+ "safeArea": {
+  "top": 0.06,
+  "bottom": 0.06,
+  "side": 0.05
+ },
+ "theme": {
+  "background": "#0c1d3a",
+  "backgroundImage": "radial-gradient(ellipse 70% 65% at 50% 42%, rgba(46, 92, 168, 0.55) 0%, rgba(24, 52, 104, 0.28) 45%, rgba(6, 14, 32, 0) 75%), radial-gradient(ellipse 130% 110% at 50% 50%, rgba(0, 0, 0, 0) 55%, rgba(2, 6, 16, 0.7) 100%)",
+  "dotColor": "rgba(190, 215, 255, 0.10)",
+  "dotSpacing": 40,
+  "dotSize": 1.5,
+  "dotParallax": 0.75,
+  "ink": "#eef4ff",
+  "accent": "#ffc865",
+  "lightBlend": "screen",
+  "font": "Montserrat",
+  "labelGlow": "rgba(130, 175, 255, 0.55)",
+  "drawingGlow": "rgba(130, 175, 255, 0.55)",
+  "dust": {
+   "count": 60,
+   "color": "#cfe0ff",
+   "size": 1.8,
+   "parallax": 0.45,
+   "drift": 5
+  }
+ },
+ "pictures": {
+  "earth": {
+   "src": "/videos/atoms-when-you-die/images/earth.png",
+   "aspect": 1.0,
+   "content": [
+    0.2637,
+    0.2656,
+    0.7393,
+    0.7354
+   ]
+  },
+  "red_giant": {
+   "src": "/videos/atoms-when-you-die/images/red_giant.png",
+   "aspect": 1.0,
+   "content": [
+    0.2607,
+    0.2607,
+    0.7422,
+    0.7412
+   ]
+  },
+  "sun": {
+   "src": "/videos/atoms-when-you-die/images/sun.png",
+   "aspect": 1.0,
+   "content": [
+    0.1113,
+    0.1445,
+    0.9092,
+    0.8438
+   ]
+  },
+  "venus": {
+   "src": "/videos/atoms-when-you-die/images/venus.png",
+   "aspect": 1.0,
+   "content": [
+    0.1328,
+    0.1328,
+    0.8682,
+    0.8672
+   ]
+  },
+  "volcano": {
+   "src": "/videos/atoms-when-you-die/images/volcano.png",
+   "aspect": 1.0,
+   "content": [
+    0.2705,
+    0.2217,
+    0.7422,
+    0.6553
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "earth1",
+   "picture": "earth",
+   "x": 45765.3,
+   "y": 125.9,
+   "width": 1106.9,
+   "in": "1:For a very",
+   "out": "end-1.1"
+  },
+  {
+   "id": "volcano8",
+   "picture": "volcano",
+   "x": 48012.3,
+   "y": -108.1,
+   "width": 738.0,
+   "in": "1:volcanoes",
+   "out": "end-1.1"
+  },
+  {
+   "id": "earth10",
+   "picture": "earth",
+   "x": 49365.8,
+   "y": 206.1,
+   "width": 808.9,
+   "in": "2:But the Earth",
+   "out": "end-1.1"
+  },
+  {
+   "id": "sun11",
+   "picture": "sun",
+   "x": 50181.4,
+   "y": 9.7,
+   "width": 543.4,
+   "in": "2:The Sun is",
+   "out": "end-1.1"
+  },
+  {
+   "id": "venus19",
+   "picture": "venus",
+   "x": 51066.7,
+   "y": 126.5,
+   "width": 626.4,
+   "in": "2:like Venus",
+   "out": "end-1.1"
+  },
+  {
+   "id": "red_giant20",
+   "picture": "red_giant",
+   "x": 52764.3,
+   "y": 124.7,
+   "width": 1873.0,
+   "in": "3:red giant",
+   "out": "end-1.1"
+  },
+  {
+   "id": "earth23",
+   "picture": "earth",
+   "x": 51816.6,
+   "y": 286.4,
+   "width": 234.1,
+   "in": "3:Whether the Earth",
+   "out": "3:swallowed too+0.4"
+  }
+ ],
+ "camera": [
+  {
+   "at": "start",
+   "x": 45767.0,
+   "y": 126.5,
+   "zoom": 0.92
+  },
+  {
+   "at": "1:recycles",
+   "x": 45767.0,
+   "y": 126.5,
+   "zoom": 0.92
+  },
+  {
+   "at": "1:Sea floor carrying",
+   "x": 47467.0,
+   "y": 186.5,
+   "zoom": 0.92
+  },
+  {
+   "at": "1:And volcanoes",
+   "x": 47717.0,
+   "y": 6.5,
+   "zoom": 0.88
+  },
+  {
+   "at": "2:But the Earth",
+   "x": 49667.0,
+   "y": 126.5,
+   "zoom": 0.88
+  },
+  {
+   "at": "2:In about",
+   "x": 49517.0,
+   "y": -133.5,
+   "zoom": 0.95
+  },
+  {
+   "at": "2:Our planet",
+   "x": 51067.0,
+   "y": 126.5,
+   "zoom": 0.95
+  },
+  {
+   "at": "3:Billions",
+   "x": 52567.0,
+   "y": 126.5,
+   "zoom": 0.62
+  },
+  {
+   "at": "3:Whether the Earth",
+   "x": 52267.0,
+   "y": 186.5,
+   "zoom": 0.72
+  },
+  {
+   "at": "4:It can feel",
+   "x": 52367.0,
+   "y": 86.5,
+   "zoom": 0.68
+  },
+  {
+   "at": "4:Even when",
+   "x": 52067.0,
+   "y": 166.5,
+   "zoom": 0.8
+  },
+  {
+   "at": "5:then@end",
+   "x": 52467.0,
+   "y": 166.5,
+   "zoom": 0.62
+  },
+  {
+   "at": "end",
+   "x": 52467.0,
+   "y": 166.5,
+   "zoom": 0.62
+  }
+ ],
+ "threads": [],
+ "drawings": [
+  {
+   "id": "line2",
+   "kind": "path",
+   "points": [
+    [
+     46067.0,
+     -113.5
+    ],
+    [
+     46157.0,
+     126.5
+    ],
+    [
+     46067.0,
+     366.5
+    ],
+    [
+     45767.0,
+     476.5
+    ],
+    [
+     45467.0,
+     366.5
+    ],
+    [
+     45377.0,
+     126.5
+    ],
+    [
+     45467.0,
+     -113.5
+    ]
+   ],
+   "draw": "1:recycles",
+   "width": 1.8,
+   "curve": true,
+   "arrow": true,
+   "duration": 1.4,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line3",
+   "kind": "path",
+   "points": [
+    [
+     46767.0,
+     86.5
+    ],
+    [
+     47467.0,
+     86.5
+    ],
+    [
+     47687.0,
+     246.5
+    ],
+    [
+     47827.0,
+     546.5
+    ]
+   ],
+   "draw": "1:Sea floor carrying",
+   "width": 2.6,
+   "curve": true,
+   "duration": 1.4,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line4",
+   "kind": "path",
+   "points": [
+    [
+     46767.0,
+     156.5
+    ],
+    [
+     47407.0,
+     156.5
+    ],
+    [
+     47607.0,
+     306.5
+    ],
+    [
+     47737.0,
+     576.5
+    ]
+   ],
+   "draw": "1:Sea floor carrying+0.2",
+   "width": 2.0,
+   "curve": true,
+   "duration": 1.4,
+   "color": "muted",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line5",
+   "kind": "path",
+   "points": [
+    [
+     48367.0,
+     56.5
+    ],
+    [
+     47597.0,
+     56.5
+    ],
+    [
+     47497.0,
+     86.5
+    ]
+   ],
+   "draw": "1:one great plate",
+   "width": 2.6,
+   "duration": 1.0,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line6",
+   "kind": "path",
+   "points": [
+    [
+     48367.0,
+     126.5
+    ],
+    [
+     47737.0,
+     126.5
+    ]
+   ],
+   "draw": "1:one great plate+0.2",
+   "width": 2.0,
+   "duration": 1.0,
+   "color": "muted",
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle12",
+   "kind": "circle",
+   "cx": 49487.0,
+   "cy": -203.5,
+   "r": 30,
+   "draw": "2:break water",
+   "width": 2.2,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line13",
+   "kind": "path",
+   "points": [
+    [
+     49469.0,
+     -179.5
+    ],
+    [
+     49443.5,
+     -175.0
+    ]
+   ],
+   "draw": "2:break water+0.15",
+   "width": 2.0,
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle14",
+   "kind": "circle",
+   "cx": 49430.0,
+   "cy": -158.5,
+   "r": 21.0,
+   "draw": "2:break water+0.2",
+   "width": 2.2,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line15",
+   "kind": "path",
+   "points": [
+    [
+     49505.0,
+     -179.5
+    ],
+    [
+     49530.5,
+     -175.0
+    ]
+   ],
+   "draw": "2:break water+0.15",
+   "width": 2.0,
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle16",
+   "kind": "circle",
+   "cx": 49544.0,
+   "cy": -158.5,
+   "r": 21.0,
+   "draw": "2:break water+0.2",
+   "width": 2.2,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle21",
+   "kind": "circle",
+   "cx": 52167.0,
+   "cy": -13.5,
+   "r": 22,
+   "draw": "3:Billions",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "3:swallow Mercury+0.6"
+  },
+  {
+   "id": "circle22",
+   "kind": "circle",
+   "cx": 52007.0,
+   "cy": 246.5,
+   "r": 30,
+   "draw": "3:Billions+0.2",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "3:swallow Mercury+0.6"
+  }
+ ],
+ "lights": [
+  {
+   "drawing": "line2",
+   "from": "1:recycles",
+   "duration": 1.8,
+   "size": 44
+  },
+  {
+   "worldPoints": [
+    [
+     50187.0,
+     6.5
+    ]
+   ],
+   "from": "2:getting brighter",
+   "size": 420,
+   "stagger": 0.0,
+   "to": "end-1.1"
+  },
+  {
+   "worldPoints": [
+    [
+     51719.4,
+     358.5
+    ],
+    [
+     51741.3,
+     196.7
+    ],
+    [
+     51731.5,
+     296.2
+    ],
+    [
+     51885.3,
+     335.8
+    ],
+    [
+     51750.8,
+     257.5
+    ],
+    [
+     51748.3,
+     217.3
+    ],
+    [
+     51856.7,
+     360.6
+    ]
+   ],
+   "from": "4:its atoms",
+   "size": 40,
+   "stagger": 0.15,
+   "to": "end-1.1"
+  }
+ ],
+ "magnifiers": [],
+ "labels": [
+  {
+   "text": "CHAPTER 6",
+   "x": 960,
+   "y": 470,
+   "space": "screen",
+   "size": 28,
+   "in": 0.25,
+   "out": "1:For a very-0.55",
+   "color": "accent",
+   "spacing": 0.5
+  },
+  {
+   "text": "DOES THE EARTH KEEP THEM FOREVER?",
+   "x": 960,
+   "y": 548,
+   "space": "screen",
+   "size": 46,
+   "in": 0.45,
+   "out": "1:For a very-0.55"
+  },
+  {
+   "text": "ONE PLATE SLIDES BENEATH ANOTHER",
+   "x": 47567.0,
+   "y": 456.5,
+   "space": "world",
+   "size": 32,
+   "in": "1:slides beneath",
+   "weight": 500,
+   "out": "end-1.1"
+  },
+  {
+   "text": "O",
+   "x": 49487.0,
+   "y": -203.5,
+   "space": "world",
+   "size": 24,
+   "in": "2:break water+0.15",
+   "spacing": 0.02,
+   "upper": false,
+   "out": "end-1.1"
+  },
+  {
+   "text": "H",
+   "x": 49430.0,
+   "y": -158.5,
+   "space": "world",
+   "size": 16,
+   "in": "2:break water+0.35",
+   "spacing": 0.02,
+   "upper": false,
+   "out": "end-1.1"
+  },
+  {
+   "text": "H",
+   "x": 49544.0,
+   "y": -158.5,
+   "space": "world",
+   "size": 16,
+   "in": "2:break water+0.35",
+   "spacing": 0.02,
+   "upper": false,
+   "out": "end-1.1"
+  },
+  {
+   "text": "IN ABOUT 1 BILLION YEARS",
+   "x": 49487.0,
+   "y": -343.5,
+   "space": "world",
+   "size": 38,
+   "in": "2:one billion",
+   "color": "accent",
+   "out": "end-1.1"
+  },
+  {
+   "text": "HYDROGEN ESCAPES INTO SPACE",
+   "x": 49487.0,
+   "y": 506.5,
+   "space": "world",
+   "size": 35,
+   "in": "2:escape into",
+   "weight": 500,
+   "out": "end-1.1"
+  },
+  {
+   "text": "DRY, AND MUCH TOO HOT FOR LIFE",
+   "x": 51067.0,
+   "y": 456.5,
+   "space": "world",
+   "size": 35,
+   "in": "2:dry",
+   "out": "end-1.1"
+  },
+  {
+   "text": "MERCURY",
+   "x": 52167.0,
+   "y": -63.5,
+   "space": "world",
+   "size": 25,
+   "in": "3:Billions+0.3",
+   "out": "3:swallow Mercury+0.6",
+   "weight": 500
+  },
+  {
+   "text": "VENUS",
+   "x": 52007.0,
+   "y": 196.5,
+   "space": "world",
+   "size": 25,
+   "in": "3:Billions+0.5",
+   "out": "3:swallow Mercury+0.6",
+   "weight": 500
+  },
+  {
+   "text": "?",
+   "x": 51817.0,
+   "y": 156.5,
+   "space": "world",
+   "size": 88,
+   "in": "3:not certain",
+   "out": "3:swallowed too+0.4",
+   "color": "accent",
+   "spacing": 0.02
+  },
+  {
+   "text": "NOTHING IS DESTROYED",
+   "x": 52467.0,
+   "y": -413.5,
+   "space": "world",
+   "size": 55,
+   "in": "4:nothing is destroyed",
+   "out": "end-1.1"
+  },
+  {
+   "text": "?",
+   "x": 52467.0,
+   "y": 646.5,
+   "space": "world",
+   "size": 125,
+   "in": "5:So what",
+   "color": "accent",
+   "spacing": 0.02,
+   "out": "end-1.1"
+  }
+ ],
+ "streams": [
+  {
+   "points": [
+    [
+     46867.0,
+     116.5
+    ],
+    [
+     47427.0,
+     116.5
+    ],
+    [
+     47647.0,
+     276.5
+    ],
+    [
+     47777.0,
+     556.5
+    ]
+   ],
+   "from": "1:dragged",
+   "count": 10,
+   "period": 3.4,
+   "size": 13,
+   "spread": 6,
+   "curve": true,
+   "color": "accent",
+   "to": "end-1.1"
+  },
+  {
+   "points": [
+    [
+     47787.0,
+     526.5
+    ],
+    [
+     47977.0,
+     246.5
+    ],
+    [
+     48017.0,
+     -153.5
+    ],
+    [
+     48077.0,
+     -493.5
+    ]
+   ],
+   "from": "1:breathe that",
+   "count": 12,
+   "period": 3.2,
+   "size": 13,
+   "spread": 14,
+   "curve": true,
+   "color": "accent",
+   "to": "end-1.1"
+  },
+  {
+   "points": [
+    [
+     49397.0,
+     -153.5
+    ],
+    [
+     49307.8,
+     -398.5
+    ],
+    [
+     49330.5,
+     -643.5
+    ],
+    [
+     49262.0,
+     -853.5
+    ]
+   ],
+   "from": "2:its hydrogen",
+   "count": 5,
+   "period": 3.0,
+   "size": 14,
+   "spread": 10,
+   "curve": true,
+   "to": "end-1.1"
+  },
+  {
+   "points": [
+    [
+     49577.0,
+     -153.5
+    ],
+    [
+     49582.2,
+     -398.5
+    ],
+    [
+     49699.5,
+     -643.5
+    ],
+    [
+     49712.0,
+     -853.5
+    ]
+   ],
+   "from": "2:its hydrogen+0.2",
+   "count": 5,
+   "period": 3.0,
+   "size": 14,
+   "spread": 10,
+   "curve": true,
+   "to": "end-1.1"
+  },
+  {
+   "points": [
+    [
+     51817.0,
+     286.5
+    ],
+    [
+     51729.0,
+     181.5
+    ],
+    [
+     51689.0,
+     76.5
+    ],
+    [
+     51617.0,
+     -13.5
+    ]
+   ],
+   "from": "4:still be there",
+   "count": 8,
+   "period": 4.0,
+   "size": 12,
+   "spread": 30,
+   "curve": true,
+   "to": "end-1.1"
+  }
+ ],
+ "clock": 350.4
+}

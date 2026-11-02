@@ -23,6 +23,32 @@ export interface Theme {
 	// 'screen' makes lights add light (for dark pages), 'normal' paints them (for light pages).
 	lightBlend: 'screen' | 'normal';
 	font: string;
+	// Optional extras for dark pages (all off when left out):
+	// a CSS gradient painted over the background colour (fixed to the screen, e.g. a vignette)
+	backgroundImage?: string;
+	// a soft glow around labels and around drawn lines (CSS colours)
+	labelGlow?: string;
+	drawingGlow?: string;
+	// drifting, twinkling specks of light behind everything, following the camera at `parallax`
+	dust?: {count: number; color: string; size: number; parallax: number; drift?: number};
+}
+
+// A flow of small glowing dots ("atoms") along a path on the page, looping while it is on.
+export interface StreamDef {
+	id?: string;
+	points: [number, number][];
+	curve?: boolean;
+	from: TimeRef;
+	to?: TimeRef;
+	// dots on the path at once, seconds for one dot to travel the whole path
+	count?: number;
+	period?: number;
+	// dot diameter and sideways wander, in page units
+	size?: number;
+	spread?: number;
+	color?: 'ink' | 'accent';
+	// travel the path backwards
+	reverse?: boolean;
 }
 
 export interface PictureDef {
@@ -195,6 +221,10 @@ export interface Settings {
 	lights: LightDef[];
 	magnifiers: MagnifierDef[];
 	labels: LabelDef[];
+	streams?: StreamDef[];
+	// Seconds since the start of the whole video when this part starts, so drifting dust
+	// continues smoothly across parts.
+	clock?: number;
 }
 
 export interface Word {

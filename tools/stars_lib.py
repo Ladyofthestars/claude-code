@@ -69,7 +69,7 @@ class Part:
         self.pics = pics
         self.n = n
         self.words = words
-        self.items, self.camera, self.drawings, self.lights, self.labels, self.mags = [], [], [], [], [], []
+        self.items, self.camera, self.drawings, self.lights, self.labels, self.mags, self.streams = [], [], [], [], [], [], []
         self.geo = {}
         self.boxes = {}
         self._k = 0
@@ -225,6 +225,22 @@ class Part:
         self.check_ref(at)
         self.lights.append({'item': item, 'path': path, 'from': at, 'duration': dur, 'size': size})
 
+    def stream(self, pts, at, to=None, count=9, period=3.2, size=14, spread=10, color=None, curve=True, reverse=None, id=None):
+        """A flow of small glowing dots ("atoms") along a path, looping from `at` until `to`."""
+        self.check_ref(at)
+        d = {'points': [[round(x, 1), round(y, 1)] for x, y in pts], 'from': at, 'count': count, 'period': period, 'size': size, 'spread': spread, 'curve': curve}
+        if to is not None:
+            self.check_ref(to)
+            d['to'] = to
+        for k, v in (('color', color), ('reverse', reverse), ('id', id)):
+            if v:
+                d[k] = v
+        self.streams.append(d)
+        xs = [q[0] for q in pts]
+        ys = [q[1] for q in pts]
+        self.boxes[id or self.uid('stream')] = (min(xs), min(ys), max(xs), max(ys))
+        return d
+
     # ---- magnifier --------------------------------------------------------------------------------
     def mag(self, item, uv, src_r, x, y, r, open, close=None, contents=None):
         self.check_ref(open)
@@ -273,6 +289,8 @@ class Part:
         for L in self.lights:
             if 'to' not in L and 'duration' not in L:
                 L['to'] = at
+        for S in self.streams:
+            S.setdefault('to', at)
 
     def shift(self, ox, oy):
         for it in self.items:
@@ -295,6 +313,8 @@ class Part:
         for L in self.lights:
             if 'worldPoints' in L:
                 L['worldPoints'] = [[round(p[0] + ox, 1), round(p[1] + oy, 1)] for p in L['worldPoints']]
+        for S in self.streams:
+            S['points'] = [[round(q[0] + ox, 1), round(q[1] + oy, 1)] for q in S['points']]
         for c in self.camera:
             c['x'] = round(c['x'] + ox, 1)
             c['y'] = round(c['y'] + oy, 1)
@@ -317,4 +337,5 @@ class Part:
             'lights': self.lights,
             'magnifiers': self.mags,
             'labels': self.labels,
+            'streams': self.streams,
         }

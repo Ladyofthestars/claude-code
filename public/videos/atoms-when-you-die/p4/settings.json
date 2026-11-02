@@ -1,0 +1,1569 @@
+{
+ "title": "What Happens to Your Atoms When You Die? \u2014 part 4",
+ "size": {
+  "width": 1920,
+  "height": 1080
+ },
+ "audio": "narration.mp3",
+ "words": "words.json",
+ "tailSeconds": 0,
+ "safeArea": {
+  "top": 0.06,
+  "bottom": 0.06,
+  "side": 0.05
+ },
+ "theme": {
+  "background": "#0c1d3a",
+  "backgroundImage": "radial-gradient(ellipse 70% 65% at 50% 42%, rgba(46, 92, 168, 0.55) 0%, rgba(24, 52, 104, 0.28) 45%, rgba(6, 14, 32, 0) 75%), radial-gradient(ellipse 130% 110% at 50% 50%, rgba(0, 0, 0, 0) 55%, rgba(2, 6, 16, 0.7) 100%)",
+  "dotColor": "rgba(190, 215, 255, 0.10)",
+  "dotSpacing": 40,
+  "dotSize": 1.5,
+  "dotParallax": 0.75,
+  "ink": "#eef4ff",
+  "accent": "#ffc865",
+  "lightBlend": "screen",
+  "font": "Montserrat",
+  "labelGlow": "rgba(130, 175, 255, 0.55)",
+  "drawingGlow": "rgba(130, 175, 255, 0.55)",
+  "dust": {
+   "count": 60,
+   "color": "#cfe0ff",
+   "size": 1.8,
+   "parallax": 0.45,
+   "drift": 5
+  }
+ },
+ "pictures": {
+  "bone": {
+   "src": "/videos/atoms-when-you-die/images/bone.png",
+   "aspect": 1.0,
+   "content": [
+    0.0898,
+    0.2783,
+    0.9102,
+    0.7158
+   ]
+  },
+  "cloth": {
+   "src": "/videos/atoms-when-you-die/images/cloth.png",
+   "aspect": 1.0,
+   "content": [
+    0.0684,
+    0.207,
+    0.9307,
+    0.79
+   ]
+  },
+  "hourglass": {
+   "src": "/videos/atoms-when-you-die/images/hourglass.png",
+   "aspect": 1.0,
+   "content": [
+    0.3311,
+    0.1699,
+    0.6699,
+    0.8301
+   ]
+  },
+  "log": {
+   "src": "/videos/atoms-when-you-die/images/log.png",
+   "aspect": 1.0,
+   "content": [
+    0.3193,
+    0.3555,
+    0.709,
+    0.6436
+   ]
+  },
+  "person": {
+   "src": "/videos/atoms-when-you-die/images/person.png",
+   "aspect": 0.67089,
+   "content": [
+    0.3856,
+    0.2524,
+    0.6108,
+    0.7579
+   ]
+  },
+  "wheat": {
+   "src": "/videos/atoms-when-you-die/images/wheat.png",
+   "aspect": 1.0,
+   "content": [
+    0.2695,
+    0.0889,
+    0.7227,
+    0.9199
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "wheat32",
+   "picture": "wheat",
+   "x": 31319.0,
+   "y": -115.7,
+   "width": 505.4,
+   "in": "2:your food",
+   "out": "end-1.1"
+  },
+  {
+   "id": "me",
+   "picture": "person",
+   "x": 31968.7,
+   "y": -120.6,
+   "width": 929.0,
+   "in": "2:While you're",
+   "out": "3:that stops+0.2"
+  },
+  {
+   "id": "hourglass44",
+   "picture": "hourglass",
+   "x": 34116.6,
+   "y": -143.5,
+   "width": 727.1,
+   "in": "4:like a clock",
+   "out": "end-1.1"
+  },
+  {
+   "id": "bone45",
+   "picture": "bone",
+   "x": 34637.0,
+   "y": 7.6,
+   "width": 365.7,
+   "in": "4:ancient bones",
+   "out": "end-1.1"
+  },
+  {
+   "id": "log46",
+   "picture": "log",
+   "x": 35007.2,
+   "y": 16.8,
+   "width": 694.2,
+   "in": "4:wood",
+   "out": "end-1.1"
+  },
+  {
+   "id": "cloth47",
+   "picture": "cloth",
+   "x": 35397.2,
+   "y": 17.0,
+   "width": 347.9,
+   "in": "4:cloth",
+   "out": "end-1.1"
+  },
+  {
+   "id": "bone70",
+   "picture": "bone",
+   "x": 38117.0,
+   "y": -151.9,
+   "width": 536.3,
+   "in": "5:your bones go",
+   "out": "end-1.1"
+  }
+ ],
+ "camera": [
+  {
+   "at": "start",
+   "x": 28817.0,
+   "y": -113.5,
+   "zoom": 1.25
+  },
+  {
+   "at": "2:But a very",
+   "x": 29237.0,
+   "y": -113.5,
+   "zoom": 1.0
+  },
+  {
+   "at": "2:It's made",
+   "x": 30437.0,
+   "y": -933.5,
+   "zoom": 1.0
+  },
+  {
+   "at": "2:While you're",
+   "x": 31817.0,
+   "y": -113.5,
+   "zoom": 0.9
+  },
+  {
+   "at": "2:stays the same",
+   "x": 32017.0,
+   "y": -133.5,
+   "zoom": 0.9
+  },
+  {
+   "at": "3:When you die",
+   "x": 31967.0,
+   "y": -263.5,
+   "zoom": 0.95
+  },
+  {
+   "at": "3:After 5,730",
+   "x": 32817.0,
+   "y": -113.5,
+   "zoom": 1.0
+  },
+  {
+   "at": "4:It's like",
+   "x": 34117.0,
+   "y": -113.5,
+   "zoom": 1.0
+  },
+  {
+   "at": "4:They call",
+   "x": 34817.0,
+   "y": -153.5,
+   "zoom": 0.9
+  },
+  {
+   "at": "4:It's how",
+   "x": 35017.0,
+   "y": -113.5,
+   "zoom": 0.92
+  },
+  {
+   "at": "5:A few",
+   "x": 36617.0,
+   "y": -113.5,
+   "zoom": 1.0
+  },
+  {
+   "at": "5:Almost everything",
+   "x": 37017.0,
+   "y": -113.5,
+   "zoom": 0.92
+  },
+  {
+   "at": "5:So where",
+   "x": 37917.0,
+   "y": -173.5,
+   "zoom": 0.95
+  },
+  {
+   "at": "end",
+   "x": 37917.0,
+   "y": -173.5,
+   "zoom": 0.95
+  }
+ ],
+ "threads": [],
+ "drawings": [
+  {
+   "id": "circle1",
+   "kind": "circle",
+   "cx": 28477.0,
+   "cy": -272.9,
+   "r": 15,
+   "draw": "1:Most of the",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle2",
+   "kind": "circle",
+   "cx": 28463.9,
+   "cy": -247.1,
+   "r": 15,
+   "draw": "1:Most of the+0.04",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle3",
+   "kind": "circle",
+   "cx": 29180.8,
+   "cy": -300.5,
+   "r": 15,
+   "draw": "1:Most of the+0.08",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle4",
+   "kind": "circle",
+   "cx": 28854.3,
+   "cy": -191.6,
+   "r": 15,
+   "draw": "1:Most of the+0.12",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle5",
+   "kind": "circle",
+   "cx": 29078.8,
+   "cy": -182.3,
+   "r": 15,
+   "draw": "1:Most of the+0.16",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle6",
+   "kind": "circle",
+   "cx": 28708.0,
+   "cy": -162.6,
+   "r": 15,
+   "draw": "1:Most of the+0.2",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle7",
+   "kind": "circle",
+   "cx": 29038.5,
+   "cy": 77.6,
+   "r": 15,
+   "draw": "1:Most of the+0.24",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle8",
+   "kind": "circle",
+   "cx": 28418.4,
+   "cy": -252.2,
+   "r": 15,
+   "draw": "1:Most of the+0.28",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle9",
+   "kind": "circle",
+   "cx": 29122.2,
+   "cy": -113.2,
+   "r": 15,
+   "draw": "1:Most of the+0.32",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle10",
+   "kind": "circle",
+   "cx": 29208.7,
+   "cy": -28.4,
+   "r": 15,
+   "draw": "1:Most of the+0.36",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle11",
+   "kind": "circle",
+   "cx": 28499.4,
+   "cy": -211.7,
+   "r": 15,
+   "draw": "1:Most of the+0.4",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle12",
+   "kind": "circle",
+   "cx": 29190.5,
+   "cy": 3.9,
+   "r": 15,
+   "draw": "1:Most of the+0.44",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle13",
+   "kind": "circle",
+   "cx": 28456.9,
+   "cy": -57.2,
+   "r": 15,
+   "draw": "1:Most of the+0.48",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle14",
+   "kind": "circle",
+   "cx": 28842.7,
+   "cy": -319.1,
+   "r": 15,
+   "draw": "1:Most of the+0.52",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle15",
+   "kind": "circle",
+   "cx": 29183.3,
+   "cy": -253.3,
+   "r": 15,
+   "draw": "1:Most of the+0.56",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle16",
+   "kind": "circle",
+   "cx": 28876.3,
+   "cy": -50.0,
+   "r": 15,
+   "draw": "1:Most of the+0.6",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle17",
+   "kind": "circle",
+   "cx": 28992.7,
+   "cy": -209.9,
+   "r": 15,
+   "draw": "1:Most of the+0.64",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle18",
+   "kind": "circle",
+   "cx": 29112.5,
+   "cy": 4.2,
+   "r": 15,
+   "draw": "1:Most of the+0.68",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle19",
+   "kind": "circle",
+   "cx": 29017.1,
+   "cy": -337.7,
+   "r": 15,
+   "draw": "1:Most of the+0.72",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle20",
+   "kind": "circle",
+   "cx": 29251.7,
+   "cy": 58.8,
+   "r": 15,
+   "draw": "1:Most of the+0.76",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle21",
+   "kind": "circle",
+   "cx": 28562.4,
+   "cy": -208.4,
+   "r": 15,
+   "draw": "1:Most of the+0.8",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle22",
+   "kind": "circle",
+   "cx": 28974.6,
+   "cy": -250.6,
+   "r": 15,
+   "draw": "1:Most of the+0.84",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle23",
+   "kind": "circle",
+   "cx": 28518.6,
+   "cy": 7.5,
+   "r": 15,
+   "draw": "1:Most of the+0.88",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle24",
+   "kind": "circle",
+   "cx": 28433.2,
+   "cy": -188.3,
+   "r": 15,
+   "draw": "1:Most of the+0.92",
+   "width": 1.8,
+   "fill": "paper",
+   "out": "2:It's made"
+  },
+  {
+   "id": "circle25",
+   "kind": "circle",
+   "cx": 29577.0,
+   "cy": -113.5,
+   "r": 54,
+   "draw": "2:part of it is@end",
+   "width": 2.4,
+   "fill": "accent",
+   "fillOpacity": 0.75,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line26",
+   "kind": "path",
+   "points": [
+    [
+     30057.0,
+     -1293.5
+    ],
+    [
+     30297.0,
+     -933.5
+    ]
+   ],
+   "draw": "2:rays from space",
+   "width": 1.6,
+   "color": "accent",
+   "dashed": true,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line27",
+   "kind": "path",
+   "points": [
+    [
+     30177.0,
+     -1293.5
+    ],
+    [
+     30317.0,
+     -933.5
+    ]
+   ],
+   "draw": "2:rays from space+0.12",
+   "width": 1.6,
+   "color": "accent",
+   "dashed": true,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line28",
+   "kind": "path",
+   "points": [
+    [
+     30297.0,
+     -1293.5
+    ],
+    [
+     30337.0,
+     -933.5
+    ]
+   ],
+   "draw": "2:rays from space+0.24",
+   "width": 1.6,
+   "color": "accent",
+   "dashed": true,
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle29",
+   "kind": "circle",
+   "cx": 30317.0,
+   "cy": -873.5,
+   "r": 40,
+   "draw": "2:strike nitrogen",
+   "width": 2.2,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line30",
+   "kind": "path",
+   "points": [
+    [
+     30377.0,
+     -873.5
+    ],
+    [
+     30547.0,
+     -873.5
+    ]
+   ],
+   "draw": "2:nitrogen in the air",
+   "arrow": true,
+   "width": 2.0,
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle31",
+   "kind": "circle",
+   "cx": 30617.0,
+   "cy": -873.5,
+   "r": 40,
+   "draw": "2:in the air+0.2",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.75,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line33",
+   "kind": "path",
+   "points": [
+    [
+     31497.0,
+     -113.5
+    ],
+    [
+     31767.0,
+     -113.5
+    ]
+   ],
+   "draw": "2:taking it in",
+   "arrow": true,
+   "width": 2.0,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line35",
+   "kind": "path",
+   "points": [
+    [
+     32317.0,
+     -233.5
+    ],
+    [
+     32717.0,
+     -233.5
+    ]
+   ],
+   "draw": "2:stays the same",
+   "width": 2.4,
+   "color": "accent",
+   "duration": 1.2,
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle36",
+   "kind": "circle",
+   "cx": 31967.0,
+   "cy": -533.5,
+   "r": 34,
+   "draw": "3:And the@end",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.55,
+   "out": "3:nitrogen"
+  },
+  {
+   "id": "circle37",
+   "kind": "circle",
+   "cx": 31967.0,
+   "cy": -533.5,
+   "r": 34,
+   "draw": "3:nitrogen",
+   "width": 2.2,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line38",
+   "kind": "path",
+   "points": [
+    [
+     32317.0,
+     146.5
+    ],
+    [
+     33467.0,
+     146.5
+    ]
+   ],
+   "draw": "3:After 5,730",
+   "arrow": true,
+   "width": 2.0,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line39",
+   "kind": "path",
+   "points": [
+    [
+     32317.0,
+     146.5
+    ],
+    [
+     32317.0,
+     -373.5
+    ]
+   ],
+   "draw": "3:After 5,730",
+   "arrow": true,
+   "width": 2.0,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line40",
+   "kind": "path",
+   "points": [
+    [
+     32317.0,
+     -333.5
+    ],
+    [
+     32330.8,
+     -319.8
+    ],
+    [
+     32344.5,
+     -306.6
+    ],
+    [
+     32358.2,
+     -293.7
+    ],
+    [
+     32372.0,
+     -281.1
+    ],
+    [
+     32385.8,
+     -269.0
+    ],
+    [
+     32399.5,
+     -257.1
+    ],
+    [
+     32413.2,
+     -245.6
+    ],
+    [
+     32427.0,
+     -234.5
+    ],
+    [
+     32440.8,
+     -223.6
+    ],
+    [
+     32454.5,
+     -213.1
+    ],
+    [
+     32468.2,
+     -202.9
+    ],
+    [
+     32482.0,
+     -192.9
+    ],
+    [
+     32495.8,
+     -183.2
+    ],
+    [
+     32509.5,
+     -173.9
+    ],
+    [
+     32523.2,
+     -164.7
+    ],
+    [
+     32537.0,
+     -155.9
+    ],
+    [
+     32550.8,
+     -147.3
+    ],
+    [
+     32564.5,
+     -138.9
+    ],
+    [
+     32578.2,
+     -130.8
+    ],
+    [
+     32592.0,
+     -122.9
+    ],
+    [
+     32605.8,
+     -115.2
+    ],
+    [
+     32619.5,
+     -107.8
+    ],
+    [
+     32633.2,
+     -100.5
+    ],
+    [
+     32647.0,
+     -93.5
+    ]
+   ],
+   "draw": "3:After 5,730+0.3",
+   "width": 2.6,
+   "color": "accent",
+   "duration": 1.4,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line41",
+   "kind": "path",
+   "points": [
+    [
+     32647.0,
+     146.5
+    ],
+    [
+     32647.0,
+     -93.5
+    ]
+   ],
+   "draw": "3:half of it",
+   "width": 1.4,
+   "dashed": true,
+   "color": "muted",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line42",
+   "kind": "path",
+   "points": [
+    [
+     32647.0,
+     -93.5
+    ],
+    [
+     32660.8,
+     -86.7
+    ],
+    [
+     32674.5,
+     -80.0
+    ],
+    [
+     32688.2,
+     -73.6
+    ],
+    [
+     32702.0,
+     -67.3
+    ],
+    [
+     32715.8,
+     -61.2
+    ],
+    [
+     32729.5,
+     -55.3
+    ],
+    [
+     32743.2,
+     -49.6
+    ],
+    [
+     32757.0,
+     -44.0
+    ],
+    [
+     32770.8,
+     -38.6
+    ],
+    [
+     32784.5,
+     -33.3
+    ],
+    [
+     32798.2,
+     -28.2
+    ],
+    [
+     32812.0,
+     -23.2
+    ],
+    [
+     32825.8,
+     -18.4
+    ],
+    [
+     32839.5,
+     -13.7
+    ],
+    [
+     32853.2,
+     -9.1
+    ],
+    [
+     32867.0,
+     -4.7
+    ],
+    [
+     32880.8,
+     -0.4
+    ],
+    [
+     32894.5,
+     3.8
+    ],
+    [
+     32908.2,
+     7.9
+    ],
+    [
+     32922.0,
+     11.8
+    ],
+    [
+     32935.8,
+     15.6
+    ],
+    [
+     32949.5,
+     19.4
+    ],
+    [
+     32963.2,
+     23.0
+    ],
+    [
+     32977.0,
+     26.5
+    ]
+   ],
+   "draw": "3:After another",
+   "width": 2.6,
+   "color": "accent",
+   "duration": 1.4,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line43",
+   "kind": "path",
+   "points": [
+    [
+     32977.0,
+     146.5
+    ],
+    [
+     32977.0,
+     26.5
+    ]
+   ],
+   "draw": "3:half of what's",
+   "width": 1.4,
+   "dashed": true,
+   "color": "muted",
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle48",
+   "kind": "circle",
+   "cx": 36831.2,
+   "cy": -312.5,
+   "r": 14,
+   "draw": "5:A few",
+   "width": 1.8,
+   "fill": "accent",
+   "fillOpacity": 0.85,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle49",
+   "kind": "circle",
+   "cx": 36243.3,
+   "cy": 48.8,
+   "r": 14,
+   "draw": "5:A few+0.03",
+   "width": 1.8,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle50",
+   "kind": "circle",
+   "cx": 36398.9,
+   "cy": -62.4,
+   "r": 14,
+   "draw": "5:A few+0.06",
+   "width": 1.8,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle51",
+   "kind": "circle",
+   "cx": 36790.0,
+   "cy": -72.2,
+   "r": 14,
+   "draw": "5:A few+0.09",
+   "width": 1.8,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle52",
+   "kind": "circle",
+   "cx": 36868.0,
+   "cy": -162.1,
+   "r": 14,
+   "draw": "5:A few+0.12",
+   "width": 1.8,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle53",
+   "kind": "circle",
+   "cx": 36988.6,
+   "cy": -87.5,
+   "r": 14,
+   "draw": "5:A few+0.15",
+   "width": 1.8,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle54",
+   "kind": "circle",
+   "cx": 36639.7,
+   "cy": -225.9,
+   "r": 14,
+   "draw": "5:A few+0.18",
+   "width": 1.8,
+   "fill": "accent",
+   "fillOpacity": 0.85,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle55",
+   "kind": "circle",
+   "cx": 36728.0,
+   "cy": -79.4,
+   "r": 14,
+   "draw": "5:A few+0.21",
+   "width": 1.8,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle56",
+   "kind": "circle",
+   "cx": 36986.5,
+   "cy": -144.3,
+   "r": 14,
+   "draw": "5:A few+0.24",
+   "width": 1.8,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle57",
+   "kind": "circle",
+   "cx": 36686.9,
+   "cy": -229.2,
+   "r": 14,
+   "draw": "5:A few+0.27",
+   "width": 1.8,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle58",
+   "kind": "circle",
+   "cx": 36618.0,
+   "cy": -254.2,
+   "r": 14,
+   "draw": "5:A few+0.3",
+   "width": 1.8,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle59",
+   "kind": "circle",
+   "cx": 36508.1,
+   "cy": 16.5,
+   "r": 14,
+   "draw": "5:A few+0.33",
+   "width": 1.8,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle60",
+   "kind": "circle",
+   "cx": 36860.2,
+   "cy": -17.0,
+   "r": 14,
+   "draw": "5:A few+0.36",
+   "width": 1.8,
+   "fill": "accent",
+   "fillOpacity": 0.85,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle61",
+   "kind": "circle",
+   "cx": 36708.8,
+   "cy": -48.2,
+   "r": 14,
+   "draw": "5:A few+0.39",
+   "width": 1.8,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle62",
+   "kind": "circle",
+   "cx": 36844.7,
+   "cy": -261.2,
+   "r": 14,
+   "draw": "5:A few+0.42",
+   "width": 1.8,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle63",
+   "kind": "circle",
+   "cx": 36903.0,
+   "cy": -47.1,
+   "r": 14,
+   "draw": "5:A few+0.45",
+   "width": 1.8,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle64",
+   "kind": "circle",
+   "cx": 36595.4,
+   "cy": -256.0,
+   "r": 14,
+   "draw": "5:A few+0.48",
+   "width": 1.8,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle65",
+   "kind": "circle",
+   "cx": 36840.8,
+   "cy": -182.7,
+   "r": 14,
+   "draw": "5:A few+0.51",
+   "width": 1.8,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle66",
+   "kind": "circle",
+   "cx": 36821.9,
+   "cy": 99.8,
+   "r": 14,
+   "draw": "5:A few+0.54",
+   "width": 1.8,
+   "fill": "accent",
+   "fillOpacity": 0.85,
+   "out": "5:Almost everything+0.6"
+  },
+  {
+   "id": "circle67",
+   "kind": "circle",
+   "cx": 36669.0,
+   "cy": -154.2,
+   "r": 14,
+   "draw": "5:A few+0.57",
+   "width": 1.8,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "5:Almost everything+0.6"
+  }
+ ],
+ "lights": [
+  {
+   "worldPoints": [
+    [
+     29577.0,
+     -113.5
+    ]
+   ],
+   "from": "2:radioactive",
+   "size": 150,
+   "stagger": 0.0,
+   "to": "end-1.1"
+  },
+  {
+   "worldPoints": [
+    [
+     36831.2,
+     -312.5
+    ],
+    [
+     36639.7,
+     -225.9
+    ],
+    [
+     36860.2,
+     -17.0
+    ],
+    [
+     36821.9,
+     99.8
+    ]
+   ],
+   "from": "5:slowly change",
+   "size": 70,
+   "stagger": 0.1,
+   "to": "5:Almost everything+0.6"
+  }
+ ],
+ "magnifiers": [],
+ "labels": [
+  {
+   "text": "CHAPTER 4",
+   "x": 960,
+   "y": 470,
+   "space": "screen",
+   "size": 28,
+   "in": 0.25,
+   "out": "1:Most-0.55",
+   "color": "accent",
+   "spacing": 0.5
+  },
+  {
+   "text": "WHICH ATOMS CHANGE?",
+   "x": 960,
+   "y": 548,
+   "space": "screen",
+   "size": 58,
+   "in": 0.45,
+   "out": "1:Most-0.55"
+  },
+  {
+   "text": "CARBON-12",
+   "x": 28817.0,
+   "y": 226.5,
+   "space": "world",
+   "size": 55,
+   "in": "1:body is@end",
+   "out": "2:It's made",
+   "upper": false
+  },
+  {
+   "text": "STABLE",
+   "x": 28817.0,
+   "y": -453.5,
+   "space": "world",
+   "size": 50,
+   "in": "1:stable",
+   "out": "2:It's made",
+   "color": "accent"
+  },
+  {
+   "text": "C",
+   "x": 29577.0,
+   "y": -113.5,
+   "space": "world",
+   "size": 42,
+   "in": "2:part of it is@end+0.15",
+   "spacing": 0.02,
+   "upper": false,
+   "out": "end-1.1"
+  },
+  {
+   "text": "CARBON-14",
+   "x": 29577.0,
+   "y": 16.5,
+   "space": "world",
+   "size": 50,
+   "in": "2:part of it is@end+0.2",
+   "color": "accent",
+   "upper": false,
+   "out": "end-1.1"
+  },
+  {
+   "text": "RADIOACTIVE",
+   "x": 29577.0,
+   "y": 76.5,
+   "space": "world",
+   "size": 32,
+   "in": "2:radioactive",
+   "weight": 500,
+   "out": "end-1.1"
+  },
+  {
+   "text": "N",
+   "x": 30317.0,
+   "y": -873.5,
+   "space": "world",
+   "size": 31,
+   "in": "2:strike nitrogen+0.15",
+   "spacing": 0.02,
+   "upper": false,
+   "out": "end-1.1"
+  },
+  {
+   "text": "C",
+   "x": 30617.0,
+   "y": -873.5,
+   "space": "world",
+   "size": 38,
+   "in": "2:in the air+0.35",
+   "spacing": 0.02,
+   "upper": false,
+   "out": "end-1.1"
+  },
+  {
+   "text": "MADE IN THE SKY",
+   "x": 30467.0,
+   "y": -723.5,
+   "space": "world",
+   "size": 50,
+   "in": "2:made in the sky",
+   "out": "end-1.1"
+  },
+  {
+   "text": "CARBON-14 LEVEL",
+   "x": 32517.0,
+   "y": -303.5,
+   "space": "world",
+   "size": 32,
+   "in": "2:stays the same",
+   "out": "3:After 5,730-0.2",
+   "upper": false
+  },
+  {
+   "text": "C",
+   "x": 31967.0,
+   "y": -533.5,
+   "space": "world",
+   "size": 26,
+   "in": "3:And the@end+0.15",
+   "spacing": 0.02,
+   "upper": false,
+   "out": "3:nitrogen"
+  },
+  {
+   "text": "N",
+   "x": 31967.0,
+   "y": -533.5,
+   "space": "world",
+   "size": 26,
+   "in": "3:nitrogen+0.15",
+   "spacing": 0.02,
+   "upper": false,
+   "out": "end-1.1"
+  },
+  {
+   "text": "5,730 YEARS",
+   "x": 32647.0,
+   "y": 196.5,
+   "space": "world",
+   "size": 32,
+   "in": "3:half of it",
+   "upper": false,
+   "out": "end-1.1"
+  },
+  {
+   "text": "\u00bd",
+   "x": 32697.0,
+   "y": -123.5,
+   "space": "world",
+   "size": 42,
+   "in": "3:half of it",
+   "spacing": 0.02,
+   "upper": false,
+   "out": "end-1.1"
+  },
+  {
+   "text": "11,460 YEARS",
+   "x": 32977.0,
+   "y": 196.5,
+   "space": "world",
+   "size": 32,
+   "in": "3:half of what's",
+   "upper": false,
+   "out": "end-1.1"
+  },
+  {
+   "text": "\u00bc",
+   "x": 33027.0,
+   "y": -3.5,
+   "space": "world",
+   "size": 42,
+   "in": "3:half of what's",
+   "spacing": 0.02,
+   "upper": false,
+   "out": "end-1.1"
+  },
+  {
+   "text": "HOW LONG AGO?",
+   "x": 34117.0,
+   "y": 206.5,
+   "space": "world",
+   "size": 50,
+   "in": "4:how long ago",
+   "color": "accent",
+   "out": "end-1.1"
+  },
+  {
+   "text": "RADIOCARBON DATING",
+   "x": 35017.0,
+   "y": -373.5,
+   "space": "world",
+   "size": 50,
+   "in": "4:radiocarbon dating",
+   "out": "end-1.1"
+  },
+  {
+   "text": "UP TO {n} YEARS",
+   "x": 35017.0,
+   "y": -293.5,
+   "space": "world",
+   "size": 42,
+   "in": "4:50,000",
+   "color": "accent",
+   "count": {
+    "to": 50000,
+    "duration": 1.4
+   },
+   "out": "end-1.1"
+  },
+  {
+   "text": "VERY, VERY SLOWLY",
+   "x": 37217.0,
+   "y": 206.5,
+   "space": "world",
+   "size": 38,
+   "in": "5:very, very",
+   "out": "end-1.1"
+  },
+  {
+   "text": "?",
+   "x": 38117.0,
+   "y": -413.5,
+   "space": "world",
+   "size": 138,
+   "in": "5:So where",
+   "color": "accent",
+   "spacing": 0.02,
+   "out": "end-1.1"
+  }
+ ],
+ "streams": [
+  {
+   "points": [
+    [
+     31437.0,
+     -153.5
+    ],
+    [
+     31767.0,
+     -133.5
+    ],
+    [
+     31959.4,
+     -259.1
+    ]
+   ],
+   "from": "2:taking it in",
+   "count": 6,
+   "period": 2.6,
+   "size": 14,
+   "spread": 6,
+   "curve": true,
+   "to": "3:that stops",
+   "color": "accent"
+  },
+  {
+   "points": [
+    [
+     36417.0,
+     -113.5
+    ],
+    [
+     37017.0,
+     -173.5
+    ],
+    [
+     37617.0,
+     -93.5
+    ]
+   ],
+   "from": "5:Almost everything",
+   "count": 14,
+   "period": 2.4,
+   "size": 14,
+   "spread": 60,
+   "curve": true,
+   "to": "end-1.1"
+  },
+  {
+   "points": [
+    [
+     36817.0,
+     86.5
+    ],
+    [
+     37217.0,
+     106.5
+    ],
+    [
+     37617.0,
+     96.5
+    ]
+   ],
+   "from": "5:very, very",
+   "count": 5,
+   "period": 14,
+   "size": 14,
+   "spread": 10,
+   "curve": true,
+   "color": "accent",
+   "to": "end-1.1"
+  }
+ ],
+ "clock": 206.3667
+}

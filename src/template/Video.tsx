@@ -87,6 +87,7 @@ export const Video: React.FC<VideoProps> = ({video, settings, words}) => {
 
 	return (
 		<AbsoluteFill style={{backgroundColor: theme.background, overflow: 'hidden'}}>
+			{theme.backgroundImage ? <AbsoluteFill style={{backgroundImage: theme.backgroundImage}} /> : null}
 			{/* Faint dot grid on the page, so the camera move can be felt. */}
 			<AbsoluteFill
 				style={{
@@ -95,6 +96,21 @@ export const Video: React.FC<VideoProps> = ({video, settings, words}) => {
 					backgroundPosition: `${gx.x - spacing / 2}px ${gx.y - spacing / 2}px`,
 				}}
 			/>
+
+			{theme.dust ? (
+				<svg width={FRAME.width} height={FRAME.height} style={{position: 'absolute', left: 0, top: 0}}>
+					<defs>
+						<radialGradient id="dust">
+							<stop offset="0%" stopColor={theme.dust.color} stopOpacity={1} />
+							<stop offset="45%" stopColor={theme.dust.color} stopOpacity={0.45} />
+							<stop offset="100%" stopColor={theme.dust.color} stopOpacity={0} />
+						</radialGradient>
+					</defs>
+					{scene.dustAt(t).map((d, i) => (
+						<circle key={i} cx={d.x} cy={d.y} r={d.r * 2.2} fill="url(#dust)" opacity={d.alpha} />
+					))}
+				</svg>
+			) : null}
 
 			{items.map((def) => {
 				const s = scene.itemAt(def.id, t);
@@ -210,8 +226,9 @@ export const Video: React.FC<VideoProps> = ({video, settings, words}) => {
 					const stroke = inkOf(d.color);
 					const w = Math.max(1.2, (d.width ?? 2.4) * Math.min(1.6, g.zoom));
 					const hs = w * 4.2;
+					const filters = [g.blur > 0 ? `blur(${g.blur}px)` : '', theme.drawingGlow ? `drop-shadow(0 0 ${Math.max(3, w * 2.2).toFixed(1)}px ${theme.drawingGlow})` : ''].filter(Boolean).join(' ');
 					return (
-						<g key={d.id} opacity={g.opacity} style={g.blur > 0 ? {filter: `blur(${g.blur}px)`} : undefined}>
+						<g key={d.id} opacity={g.opacity} style={filters ? {filter: filters} : undefined}>
 							{g.fill > 0 ? <path d={path + ' Z'} fill={d.fill === 'paper' ? theme.background : theme.accent} opacity={d.fill === 'paper' ? 1 : g.fill} stroke="none" /> : null}
 							<path
 								d={path}
@@ -241,6 +258,26 @@ export const Video: React.FC<VideoProps> = ({video, settings, words}) => {
 				})}
 			</svg>
 
+			{settings.streams && settings.streams.length ? (
+				<svg width={FRAME.width} height={FRAME.height} style={{position: 'absolute', left: 0, top: 0, mixBlendMode: blend}}>
+					<defs>
+						<radialGradient id="atom-ink">
+							<stop offset="0%" stopColor="#ffffff" stopOpacity={1} />
+							<stop offset="35%" stopColor={theme.ink} stopOpacity={0.9} />
+							<stop offset="100%" stopColor={theme.ink} stopOpacity={0} />
+						</radialGradient>
+						<radialGradient id="atom-accent">
+							<stop offset="0%" stopColor="#fffaf0" stopOpacity={1} />
+							<stop offset="35%" stopColor={theme.accent} stopOpacity={0.9} />
+							<stop offset="100%" stopColor={theme.accent} stopOpacity={0} />
+						</radialGradient>
+					</defs>
+					{scene.streamsAt(t).map((d, i) => (
+						<circle key={i} cx={d.x} cy={d.y} r={d.r * 1.8} fill={`url(#atom-${d.color})`} opacity={d.alpha} />
+					))}
+				</svg>
+			) : null}
+
 			{settings.labels.map((l, li) => {
 				const s = scene.labelAt(l, t);
 				if (s.opacity <= 0.001) {
@@ -263,6 +300,7 @@ export const Video: React.FC<VideoProps> = ({video, settings, words}) => {
 							paddingLeft: l.align === 'left' ? 0 : `${l.spacing ?? 0.32}em`,
 							textTransform: l.upper === false ? 'none' : 'uppercase',
 							color: l.color === 'accent' ? theme.accent : theme.ink,
+							textShadow: theme.labelGlow ? `0 0 ${(s.size * 0.45).toFixed(1)}px ${theme.labelGlow}, 0 0 ${(s.size * 0.12).toFixed(1)}px ${theme.labelGlow}` : undefined,
 							opacity: s.opacity,
 							filter: s.blur > 0.05 ? `blur(${s.blur}px)` : undefined,
 						}}

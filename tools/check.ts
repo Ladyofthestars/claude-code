@@ -80,6 +80,7 @@ settings.magnifiers.forEach((m, i) => {
 });
 settings.labels.forEach((l) => events.push({t: r(l.in), what: `label "${l.text}"`}));
 (settings.drawings ?? []).forEach((d) => events.push({t: r(d.draw), what: `draw ${d.id}`}));
+(settings.streams ?? []).forEach((d, i) => events.push({t: r(d.from), what: `stream ${d.id ?? i + 1}`}));
 settings.camera.forEach((k) => events.push({t: r(k.at), what: `camera → ${k.focus ?? `${k.x},${k.y}`}${k.hold ? ` (hold ${k.hold}s)` : ''}`}));
 events.sort((a, b) => a.t - b.t);
 

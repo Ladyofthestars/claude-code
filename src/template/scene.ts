@@ -1,7 +1,7 @@
 // The whole scene as plain maths: where every picture, line, light, label and the camera
 // are at any moment. The renderer draws from this, and tools/check.ts uses the same code
 // to test every frame for cut-off pictures, the safe area and gaps with nothing new.
-import type {Anchor, DrawingDef, ItemDef, LabelDef, MagnifierDef, PictureDef, Settings, ThreadDef, UV, Words} from './types';
+import type {Anchor, DrawingDef, ItemDef, LabelDef, MagnifierDef, PictureDef, Settings, StreamDef, ThreadDef, UV, Words} from './types';
 import {bendControl, clamp01, easeInOut, easeOut, easeSine, lerp, monotoneSpline, outerTangents, pointAlong, quadBezier, smoothPolyline, type Pt} from './math';
 import {makeTimeResolver} from './time';
 
@@ -440,7 +440,102 @@ export const buildScene = (settings: Settings, words: Words) => {
 		return {x, y, size, text, opacity: k * guard, blur: (1 - k) * 8, scale: lerp(0.96, 1, kIn), align: l.align ?? 'center'};
 	};
 
-	return {settings, words, total, resolve, safe, frame, camAt, itemAt, anchorAt, threadAt, drawingAt, lightsAt, magnifierAt, labelAt, layerCam, toScreen};
+	// ---- Streams (flows of atoms) ------------------------------------------------------------
+	type Dot = {x: number; y: number; r: number; alpha: number; color: 'ink' | 'accent'};
+	const streamPolys = new Map<StreamDef, Pt[]>();
+	const streamAt = (S: StreamDef, t: number): Dot[] => {
+		const from = resolve(S.from);
+		const to = S.to === undefined ? undefined : resolve(S.to);
+		const {k} = presence(t, from, to, 0.8);
+		if (k <= 0) {
+			return [];
+		}
+		let poly = streamPolys.get(S);
+		if (!poly) {
+			const raw = S.points.map(([x, y]) => ({x, y}));
+			poly = S.curve ? smoothPolyline(raw, 16) : raw;
+			if (S.reverse) {
+				poly = [...poly].reverse();
+			}
+			streamPolys.set(S, poly);
+		}
+		const cam = camAt(t);
+		const n = S.count ?? 9;
+		const period = S.period ?? 3.2;
+		const size = (S.size ?? 14) * cam.z;
+		const spread = S.spread ?? 10;
+		const out: Dot[] = [];
+		for (let i = 0; i < n; i++) {
+			const seed = i * 2.399963;
+			// Each dot starts at its own moment, so the flow begins at the source and fills the path.
+			const age = (t - from) / period - i / n;
+			if (age < 0) {
+				continue;
+			}
+			const f = age % 1;
+			const p = pointAlong(poly, f);
+			const q = pointAlong(poly, Math.min(1, f + 0.01));
+			const len = Math.hypot(q.x - p.x, q.y - p.y) || 1;
+			const wobble = spread * Math.sin(seed * 3.1 + (t - from) * (0.9 + (i % 3) * 0.25));
+			const wp = {x: p.x - ((q.y - p.y) / len) * wobble, y: p.y + ((q.x - p.x) / len) * wobble};
+			const sp = toScreen(wp, cam);
+			const env = Math.sin(Math.PI * f);
+			const r = (size / 2) * (0.75 + 0.25 * Math.sin(seed * 5.3));
+			const g = edgeGuard({x0: sp.x - r, y0: sp.y - r, x1: sp.x + r, y1: sp.y + r});
+			const alpha = k * g * Math.min(1, env * 1.6);
+			if (alpha > 0.01) {
+				out.push({x: sp.x, y: sp.y, r, alpha, color: S.color ?? 'ink'});
+			}
+		}
+		return out;
+	};
+	const streamsAt = (t: number): Dot[] => (settings.streams ?? []).flatMap((S) => streamAt(S, t));
+
+	// ---- Dust (drifting specks of light behind everything) -------------------------------------
+	// Fixed pseudo-random specks on a tile that repeats across the page. They depend only on the
+	// camera and on the whole video's clock, so parts join without a jump.
+	const dustDef = settings.theme.dust;
+	const TILE = 1400;
+	const dustSeeds = dustDef
+		? Array.from({length: dustDef.count}, (_, i) => {
+				const h = (v: number) => {
+					const s = Math.sin(v * 12.9898 + i * 78.233) * 43758.5453;
+					return s - Math.floor(s);
+				};
+				return {x: h(1) * TILE, y: h(2) * TILE, s: 0.4 + h(3) * 0.9, ph: h(4) * Math.PI * 2, sp: 0.15 + h(5) * 0.35, vx: (h(6) - 0.5), vy: (h(7) - 0.5)};
+			})
+		: [];
+	const dustAt = (t: number) => {
+		if (!dustDef) {
+			return [];
+		}
+		const clock = (settings.clock ?? 0) + t;
+		const cam = camAt(t);
+		const p = dustDef.parallax;
+		const z = Math.pow(cam.z, p);
+		const tile = TILE * z;
+		const drift = dustDef.drift ?? 6;
+		const out: {x: number; y: number; r: number; alpha: number}[] = [];
+		for (const d of dustSeeds) {
+			const wx = d.x + d.vx * drift * clock;
+			const wy = d.y + d.vy * drift * clock;
+			let sx = cx + (wx - cam.x * p) * z;
+			let sy = cy + (wy - cam.y * p) * z;
+			sx = ((sx % tile) + tile) % tile;
+			sy = ((sy % tile) + tile) % tile;
+			const tw = 0.55 + 0.45 * Math.sin(clock * d.sp * Math.PI * 2 * 0.3 + d.ph);
+			for (let ox = sx - tile; ox < W + tile; ox += tile) {
+				for (let oy = sy - tile; oy < H + tile; oy += tile) {
+					if (ox > -10 && ox < W + 10 && oy > -10 && oy < H + 10) {
+						out.push({x: ox, y: oy, r: dustDef.size * d.s * Math.sqrt(z), alpha: tw * d.s});
+					}
+				}
+			}
+		}
+		return out;
+	};
+
+	return {settings, words, total, resolve, safe, frame, camAt, itemAt, anchorAt, threadAt, drawingAt, lightsAt, magnifierAt, labelAt, layerCam, toScreen, streamsAt, dustAt};
 };
 
 export type Scene = ReturnType<typeof buildScene>;

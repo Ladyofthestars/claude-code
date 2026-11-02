@@ -1,0 +1,32 @@
+bacteria {"aspect": 1.0, "content": [0.3076, 0.2451, 0.71, 0.7295]}
+blood_cell {"aspect": 1.0, "content": [0.2832, 0.332, 0.7129, 0.6631], "background": [252, 248, 236], "kept_parts": 2, "dropped_parts": 1}
+bone {"aspect": 1.0, "content": [0.0898, 0.2783, 0.9102, 0.7158], "background": [255, 255, 255], "kept_parts": 1, "dropped_parts": 0}
+bread {"aspect": 1.0, "content": [0.1641, 0.2568, 0.8359, 0.7432]}
+cloth {"aspect": 1.0, "content": [0.0684, 0.207, 0.9307, 0.79]}
+cloud {"aspect": 1.0, "content": [0.251, 0.2852, 0.752, 0.627]}
+coal {"aspect": 1.0, "content": [0.2891, 0.3262, 0.7109, 0.6738]}
+deer {"aspect": 1.0, "content": [0.2734, 0.2109, 0.7432, 0.7578]}
+dna {"aspect": 1.0, "content": [0.4229, 0.2773, 0.5771, 0.7227], "background": [255, 255, 255], "kept_parts": 1, "dropped_parts": 0}
+earth {"aspect": 1.0, "content": [0.2637, 0.2656, 0.7393, 0.7354], "background": [13, 33, 57], "kept_parts": 1, "dropped_parts": 0}
+fish {"aspect": 1.0, "content": [0.1309, 0.3496, 0.8887, 0.6455]}
+hourglass {"aspect": 1.0, "content": [0.3311, 0.1699, 0.6699, 0.8301], "background": [255, 255, 255], "kept_parts": 1, "dropped_parts": 0}
+leaf {"aspect": 1.0, "content": [0.3398, 0.2334, 0.6504, 0.8008]}
+log {"aspect": 1.0, "content": [0.3193, 0.3555, 0.709, 0.6436]}
+lungs {"aspect": 1.0, "content": [0.2012, 0.1836, 0.7979, 0.7988]}
+marcus_bust {"aspect": 1.0, "content": [0.2266, 0.0986, 0.7734, 0.9023]}
+mountain {"aspect": 1.0, "content": [0.0898, 0.2646, 0.9307, 0.7373]}
+mushroom {"aspect": 1.0, "content": [0.2969, 0.2393, 0.7021, 0.7588]}
+nebula {"aspect": 1.0, "content": [0.166, 0.1904, 0.8057, 0.7969], "background": [255, 255, 255], "kept_parts": 1, "dropped_parts": 0}
+open_hand {"aspect": 1.0, "content": [0.1689, 0.3086, 0.8271, 0.7266], "background": [8, 31, 56], "kept_parts": 1, "dropped_parts": 0}
+person {"aspect": 0.67089, "content": [0.3856, 0.2524, 0.6108, 0.7579], "background": [22, 43, 65], "kept_parts": 1, "dropped_parts": 0}
+planetary_nebula {"aspect": 1.0, "content": [0.2441, 0.248, 0.7549, 0.7559]}
+red_giant {"aspect": 1.0, "content": [0.2607, 0.2607, 0.7422, 0.7412], "background": [249, 244, 232], "kept_parts": 1, "dropped_parts": 0}
+roman_bust {"aspect": 1.0, "content": [0.3418, 0.207, 0.6641, 0.79]}
+shell {"aspect": 1.0, "content": [0.2998, 0.3457, 0.7012, 0.6562]}
+statue {"aspect": 1.0, "content": [0.3877, 0.1641, 0.6123, 0.8369]}
+sun {"aspect": 1.0, "content": [0.1113, 0.1445, 0.9092, 0.8438], "background": [241, 240, 235], "kept_parts": 1, "dropped_parts": 1}
+tree {"aspect": 1.0, "content": [0.1846, 0.2314, 0.8193, 0.7617]}
+venus {"aspect": 1.0, "content": [0.1328, 0.1328, 0.8682, 0.8672]}
+volcano {"aspect": 1.0, "content": [0.2705, 0.2217, 0.7422, 0.6553]}
+wheat {"aspect": 1.0, "content": [0.2695, 0.0889, 0.7227, 0.9199]}
+young_sun_disk {"aspect": 1.0, "content": [0.0732, 0.2969, 0.9365, 0.71], "background": [255, 255, 255], "kept_parts": 1, "dropped_parts": 0}
