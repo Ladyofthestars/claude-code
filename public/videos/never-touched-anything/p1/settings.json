@@ -454,7 +454,7 @@
    "width": 1.6,
    "fill": "accent",
    "fillOpacity": 0.8,
-   "out": "end-1.1"
+   "out": "3:So picture"
   },
   {
    "id": "circle7",
@@ -466,7 +466,7 @@
    "width": 1.6,
    "fill": "paper",
    "fillOpacity": 1,
-   "out": "end-1.1"
+   "out": "3:So picture"
   },
   {
    "id": "circle8",
@@ -478,7 +478,7 @@
    "width": 1.6,
    "fill": "accent",
    "fillOpacity": 0.8,
-   "out": "end-1.1"
+   "out": "3:So picture"
   },
   {
    "id": "circle9",
@@ -490,7 +490,7 @@
    "width": 1.6,
    "fill": "paper",
    "fillOpacity": 1,
-   "out": "end-1.1"
+   "out": "3:So picture"
   },
   {
    "id": "circle10",
@@ -502,7 +502,7 @@
    "width": 1.6,
    "fill": "accent",
    "fillOpacity": 0.8,
-   "out": "end-1.1"
+   "out": "3:So picture"
   },
   {
    "id": "circle11",
@@ -514,7 +514,7 @@
    "width": 1.6,
    "fill": "paper",
    "fillOpacity": 1,
-   "out": "end-1.1"
+   "out": "3:So picture"
   },
   {
    "id": "circle12",
@@ -526,7 +526,7 @@
    "width": 1.6,
    "fill": "accent",
    "fillOpacity": 0.8,
-   "out": "end-1.1"
+   "out": "3:So picture"
   },
   {
    "id": "line13",
@@ -781,7 +781,7 @@
    "width": 1.4,
    "color": "muted",
    "dashed": true,
-   "out": "end-1.1"
+   "out": "3:So picture"
   },
   {
    "id": "line15",
@@ -1036,7 +1036,7 @@
    "width": 1.4,
    "color": "muted",
    "dashed": true,
-   "out": "end-1.1"
+   "out": "3:So picture"
   },
   {
    "id": "line20",
@@ -1205,6 +1205,25 @@
    "fill": "accent",
    "fillOpacity": 0.7,
    "out": "6:So how"
+  },
+  {
+   "id": "line29",
+   "kind": "path",
+   "points": [
+    [
+     8630.0,
+     -295.0
+    ],
+    [
+     8630.0,
+     -25.0
+    ]
+   ],
+   "draw": "5:weight",
+   "width": 1.4,
+   "color": "accent",
+   "dashed": true,
+   "out": "6:So how"
   }
  ],
  "lights": [
@@ -1294,7 +1313,7 @@
    "from": "2:Each atom",
    "size": 112.0,
    "stagger": 0.0,
-   "to": "end-1.1"
+   "to": "3:So picture"
   },
   {
    "worldPoints": [
@@ -1462,7 +1481,7 @@
    "size": 30,
    "in": "2:protons",
    "color": "accent",
-   "out": "end-1.1"
+   "out": "3:So picture"
   },
   {
    "text": "NEUTRONS",
@@ -1471,7 +1490,7 @@
    "space": "world",
    "size": 30,
    "in": "2:protons+0.3",
-   "out": "end-1.1"
+   "out": "3:So picture"
   },
   {
    "text": "ELECTRONS  \u2212",
@@ -1480,7 +1499,7 @@
    "space": "world",
    "size": 35,
    "in": "2:Around it",
-   "out": "end-1.1"
+   "out": "3:So picture"
   },
   {
    "text": "A BLUEBERRY",
@@ -1517,7 +1536,7 @@
   {
    "text": "ALMOST ALL THE WEIGHT",
    "x": 8630.0,
-   "y": -70.0,
+   "y": -330.0,
    "space": "world",
    "size": 38,
    "in": "5:weight",
@@ -1799,7 +1818,7 @@
    "size": 22.4,
    "spread": 0,
    "curve": false,
-   "to": "end-1.1"
+   "to": "3:So picture"
   },
   {
    "points": [
@@ -2054,7 +2073,7 @@
    "size": 22.4,
    "spread": 0,
    "curve": false,
-   "to": "end-1.1"
+   "to": "3:So picture"
   },
   {
    "points": [

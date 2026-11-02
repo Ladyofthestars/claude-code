@@ -162,8 +162,10 @@ def part1(p):
     p.cam('1:An atom is', x=1300, y=20, zoom=1.0)
     # The parts of an atom
     ax = 2400
+    m_atom = mark(p)
     atom_model(p, ax, 0, '2:Each atom', s=1.4, labels=('2:protons', '2:Around it'))
     p.cam('2:Each atom', x=ax, y=20, zoom=1.0)
+    close(p, m_atom, '3:So picture')
     # The stadium and the blueberry
     sx = 3800
     m2 = mark(p)
@@ -190,7 +192,8 @@ def part1(p):
     p.label('{n} ELECTRONS', bx + 360, 170, '4:1,800', size=28, count={'to': 1800, 'duration': 1.4})
     p.cam('4:so light', x=bx, y=40, zoom=1.0)
     p.cam('4:Yet they', x=sx, y=0, zoom=0.92)
-    p.label('ALMOST ALL THE WEIGHT', sx, -70, '5:weight', size=30, color='accent')
+    p.label('ALMOST ALL THE WEIGHT', sx, -330, '5:weight', size=30, color='accent')
+    p.line([(sx, -295), (sx, -25)], '5:weight', width=1.4, color='accent', dashed=True)
     p.label('ALMOST ALL THE SPACE', sx, 330, '5:size', size=36)
     close(p, m2, '6:So how')
     question(p, sx, -330, '6:So how', size=110)
