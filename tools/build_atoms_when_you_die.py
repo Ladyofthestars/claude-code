@@ -653,6 +653,7 @@ def part7(p):
     chapter(p, 7, 'If the Earth')
     p.cam('start', x=0, y=0, zoom=0.82)
     p.pic('red_giant', 0, 0, h=760, at='1:If the Earth')
+    p.lights.append({'worldPoints': [[0, 0]], 'from': '1:If the Earth', 'to': '2:Its outer', 'size': 800, 'intensity': 0.45})
     p.circle(0, 0, 450, '1:outer layers', width=2.2, color='accent', duration=1.2)
     ring = [(430 * math.cos(a), 430 * math.sin(a)) for a in [i * 2 * math.pi / 40 for i in range(41)]]
     p.stream(ring, '1:its atoms', count=14, period=6.0, size=14, spread=12)
@@ -662,6 +663,7 @@ def part7(p):
     p.label('ALMOST HALF ITS MASS', 0, -680, '2:almost half', '2:Its outer-0.2', size=40, color='accent')
     p.cam('2:A star', x=0, y=-120, zoom=0.72)
     nx = 1700
+    m_neb = mark(p)
     p.pic('planetary_nebula', nx, 0, h=660, at='2:Its outer')
     p.glows([(nx, 0)], '2:white dwarf', size=60)
     p.label('WHITE DWARF', nx, 400, '2:white dwarf', size=34)
@@ -678,6 +680,7 @@ def part7(p):
     p.cam('3:The gas', x=cx - 500, y=0, zoom=0.8)
     p.cam('3:raw material', x=cx, y=60, zoom=0.92)
     dx = cx + 1300
+    close(p, m_neb, '3:One day')
     p.pic('young_sun_disk', dx, 0, w=760, at='3:gather and collapse')
     p.cam('3:One day', x=dx, y=0, zoom=0.95)
     sx = dx + 1250
