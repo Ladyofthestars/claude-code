@@ -1,6 +1,7 @@
 // Renders a still every half second and at the start of every narration line,
 // then joins them into contact sheets for review.
-// Usage: npx tsx tools/stills.ts [video-name] [out-dir]
+// Usage: npx tsx tools/stills.ts [video-name] [out-dir] [from-to,from-to ...]
+// The optional third argument limits the stills to time windows in seconds, e.g. "20-31,48-53".
 import fs from 'node:fs';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
@@ -10,6 +11,8 @@ import type {Words} from '../src/template/types';
 
 const video = process.argv[2] ?? 'new-earth';
 const outDir = process.argv[3] ?? path.join('out', 'stills');
+const windows = (process.argv[4] ?? '').split(',').filter(Boolean).map((w) => w.split('-').map(Number));
+const wanted = (t: number) => windows.length === 0 || windows.some(([a, b]) => t >= a && t <= b);
 const browser = '/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell';
 const browserExecutable = fs.existsSync(browser) ? browser : null;
 
@@ -38,7 +41,7 @@ const main = async () => {
 			shots.set(f, `${w.line}: "${words.words.slice(i, i + 3).map((x) => x.text).join(' ')}…"`);
 		}
 	});
-	const list = [...shots.entries()].sort((a, b) => a[0] - b[0]);
+	const list = [...shots.entries()].filter(([f]) => wanted(f / fps)).sort((a, b) => a[0] - b[0]);
 	const index: {frame: number; file: string; label: string}[] = [];
 	for (const [frame, label] of list) {
 		const file = path.join(outDir, `f${String(frame).padStart(5, '0')}.jpg`);

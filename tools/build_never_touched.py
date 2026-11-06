@@ -214,8 +214,10 @@ def part2(p):
     close(p, m, '2:They fired')
     # The gold foil experiment
     gx = 2000
+    m = mark(p)
     p.rect(gx - 620, 0, 150, 110, '2:They fired', width=2.2, fill='paper')
-    p.label('ALPHA PARTICLES', gx - 620, -120, '2:alpha particles', size=26, color='accent')
+    p.glows([(gx - 620, 0)], '2:tiny particles', size=34)
+    p.label('ALPHA PARTICLES', gx - 620, 120, '2:alpha particles', size=26, color='accent')
     p.rect(gx, 0, 16, 440, '2:gold foil', width=2.0, fill='accent', fillOpacity=0.6)
     p.label('GOLD FOIL', gx, -270, '2:gold foil', size=28)
     p.circle(gx, 0, 440, '2:glowing screen', width=1.6, color='muted', dashed=True)
@@ -226,22 +228,27 @@ def part2(p):
     p.glows([(gx - 430, -150)], '3:almost straight back', size=50)
     p.cam('2:They fired', x=gx - 250, y=0, zoom=0.95)
     p.cam('2:glowing screen', x=gx, y=0, zoom=0.92)
-    # What it meant: mostly empty atoms with tiny heavy centres
+    close(p, m, '4:Rutherford realized+0.6')
+    # What it meant: a close-up of the foil. Big, mostly empty atoms with tiny heavy centres;
+    # particles fly straight through the empty space, and only one near a centre is knocked off course.
     ax = gx + 1500
-    p.line([(gx + 20, -60), (ax - 380, -260)], '4:mostly empty space', width=1.2, color='muted', dashed=True)
-    p.line([(gx + 20, 60), (ax - 380, 260)], '4:mostly empty space', width=1.2, color='muted', dashed=True)
+    m = mark(p)
+    p.label('WHAT IT MEANT', ax, -465, '4:Rutherford realized', size=36, color='accent')
     for k in range(3):
-        y = -220 + 220 * k
-        p.circle(ax, y, 95, T('4:mostly empty space', 0.15 * k), width=1.4, color='muted', dashed=True)
-        p.glows([(ax, y)], T('4:tiny, heavy', 0.15 * k), size=26)
-        p.label('+', ax + 28, y - 26, T('4:positive charge', 0.15 * k), size=22, color='accent', spacing=0.02)
-    bend = p.line([(ax - 300, -30), (ax - 40, -10), (ax + 10, 10), (ax + 300, 140)], '4:knocked off', width=1.6, curve=True, color='accent')
-    p.travel(bend, '4:knocked off', dur=1.4, size=40)
-    p.label('WHAT IT MEANT', ax, -420, '4:Rutherford realized', size=36, color='accent')
-    p.label('THE SOLID WORLD WAS MOSTLY EMPTY', ax - 600, 470, '4:The solid world', size=36)
-    p.cam('4:Rutherford realized', x=ax - 300, y=0, zoom=0.82)
-    p.cam('4:mostly empty space', x=ax - 150, y=0, zoom=0.9)
-    p.cam('4:The solid world', x=ax - 600, y=40, zoom=0.82)
+        y = -265 + 265 * k
+        p.circle(ax, y, 122, T('4:mostly empty space', 0.15 * k), width=1.6, color='muted', dashed=True)
+        p.glows(scatter(ax, y, 170, 170, 3, seed=k + 3), T('4:mostly empty space+0.5', 0.15 * k), size=12)
+        p.glows([(ax, y)], T('4:tiny, heavy', 0.15 * k), size=30)
+        p.label('+', ax + 30, y - 30, T('4:positive charge', 0.15 * k), size=24, color='accent', spacing=0.02)
+    p.stream([(ax - 900, -132), (ax + 900, -132)], '4:Almost all of', count=6, period=2.6, size=12, spread=30, curve=False)
+    p.stream([(ax - 900, 132), (ax + 900, 132)], '4:Almost all of+0.4', count=6, period=2.6, size=12, spread=30, curve=False)
+    bend = p.line([(ax - 700, -20), (ax - 60, -8), (ax + 20, 20), (ax + 560, 300)], '4:knocked off', width=1.8, curve=True, color='accent')
+    p.travel(bend, '4:knocked off', dur=1.4, size=44)
+    p.label('THE SOLID WORLD WAS MOSTLY EMPTY', ax, 520, '4:The solid world', size=36)
+    p.cam('4:Rutherford realized', x=ax, y=0, zoom=0.86)
+    p.cam('4:mostly empty space', x=ax, y=0, zoom=0.95)
+    p.cam('4:The solid world', x=ax, y=0, zoom=0.82)
+    close(p, m, '5:So if')
     fx = ax + 1300
     floor(p, fx - 300, fx + 300, 160, '5:So if')
     p.pic('feet', fx, 30, h=240, at='5:So if')
@@ -258,7 +265,7 @@ def part3(p):
     p.label('ELECTRONS', 0, -280, '1:in the electrons', size=36, color='accent')
     p.cam('1:wrapped', x=0, y=0, zoom=1.12)
     for k, (dx, dy) in enumerate(((-200, -60), (190, -90), (-120, 170), (150, 150))):
-        p.label('−', dx, dy, T('1:negative charge', 0.12 * k), size=34, color='accent', spacing=0.02)
+        p.label('−', dx, dy, T('1:negative charge', 0.12 * k), size=50, color='accent', spacing=0.02)
     p.circle(650, 0, 110, "1:hard little", width=2.4, fill='paper')
     p.line([(560, -90), (740, 90)], "1:aren't hard+0.6", width=2.6, color='accent')
     p.line([(740, -90), (560, 90)], "1:aren't hard+0.6", width=2.6, color='accent')
@@ -279,12 +286,14 @@ def part3(p):
     p.cam('2:Charges of the same', x=qx, y=0, zoom=1.05)
     # Your feet and the floor, up close
     fx = qx + 1300
+    m = mark(p)
     floor(p, fx - 380, fx + 380, -40, '2:atoms of your feet')
     p.pic('feet', fx, -170, h=240, at='2:atoms of your feet')
-    two_rows(p, fx, 330, '2:atoms of the floor', n=6, r=30, gap=50, arrows_at='2:push back')
-    p.label('YOUR FEET', fx - 470, 250, '2:atoms of the floor', size=22)
-    p.label('THE FLOOR', fx - 470, 410, '2:atoms of the floor', size=22)
-    p.label('THE CLOSER, THE HARDER', fx, 560, '2:The closer', size=30, color='accent')
+    close(p, m, '2:atoms of the floor+0.4')
+    two_rows(p, fx, 330, '2:atoms of the floor', n=5, r=58, gap=110, arrows_at='2:push back')
+    p.label('YOUR FEET', fx - 560, 330 - 113, '2:atoms of the floor', size=26)
+    p.label('THE FLOOR', fx - 560, 330 + 113, '2:atoms of the floor', size=26)
+    p.label('THE CLOSER, THE HARDER', fx, 610, '2:The closer', size=32, color='accent')
     p.cam('2:atoms of your feet', x=fx, y=0, zoom=0.95)
     p.cam('2:atoms of the floor', x=fx, y=330, zoom=1.0)
     # The exclusion principle
@@ -311,7 +320,7 @@ def part3(p):
         p.arrow((x, 330), (x, 190), T('4:pushing you away', 0.12 * k), width=2.4, color='accent')
     p.label('MATTER FEELS SOLID', gx, -230, '4:feel solid', size=36)
     p.label('THE FLOOR PUSHES BACK', gx, 420, '4:pushing you away', size=32, color='accent')
-    question(p, gx + 420, -160, '5:So what', size=110)
+    question(p, gx + 480, -150, '5:So what', size=110)
     p.cam('4:Together', x=gx, y=80, zoom=1.0)
     p.cam('4:at the tiniest', x=gx, y=180, zoom=1.15)
     p.cam('5:So what', x=gx + 100, y=60, zoom=1.0)
@@ -326,7 +335,7 @@ def part4(p):
     p.label('CONTACT?', -250, -260, '1:feels like contact', size=40, color='accent')
     p.circle(520, 0, 250, '1:never merge', width=1.8)
     p.line([(-330, 40), (270, 0)], '1:never merge', width=1.2, color='muted', dashed=True)
-    two_rows(p, 520, 0, '1:never merge+0.2', n=4, r=26, gap=40, arrows_at='1:push each other apart')
+    two_rows(p, 520, 0, '1:never merge+0.2', n=4, r=40, gap=50, arrows_at='1:push each other apart')
     p.cam('1:Press', x=-250, y=0, zoom=1.0)
     p.cam('1:never merge', x=120, y=0, zoom=0.95)
     p.label('WHAT YOU FEEL IS THE PUSH', 120, 360, '2:What you feel', size=34)
@@ -334,11 +343,11 @@ def part4(p):
     # The electromagnetic force; magnets; electrons
     mx = 1600
     p.label('THE ELECTROMAGNETIC FORCE', mx, -330, '2:electromagnetic force', size=40, color='accent')
-    p.pic('magnets', mx, -20, w=520, at='2:Two magnets')
-    apart(p, mx - 40, -20, mx + 40, -20, '2:without ever touching')
-    charge(p, mx - 110, 260, '2:Electrons do', r=26)
-    charge(p, mx + 110, 260, '2:Electrons do+0.1', r=26)
-    apart(p, mx - 110, 260, mx + 110, 260, '2:Electrons do+0.3')
+    p.pic('magnets', mx, -20, w=600, at='2:behind magnets')
+    apart(p, mx - 320, -20, mx + 320, -20, '2:without ever touching')
+    charge(p, mx - 120, 270, '2:Electrons do', r=36)
+    charge(p, mx + 120, 270, '2:Electrons do+0.1', r=36)
+    apart(p, mx - 120, 270, mx + 120, 270, '2:Electrons do+0.3')
     p.cam('2:electromagnetic force', x=mx, y=0, zoom=0.95)
     # The comb and the paper
     cx = mx + 1200
@@ -351,7 +360,8 @@ def part4(p):
     p.cam('3:Comb your hair', x=cx, y=40, zoom=1.0)
     # Almost every force you feel; except gravity
     fx = cx + 1300
-    p.label('ALMOST EVERY FORCE YOU FEEL', fx + 250, -330, '4:almost every force', size=36)
+    p.label('ALMOST EVERY FORCE YOU FEEL', fx + 200, -330, '4:almost every force', size=36)
+    p.label('IS ONE FORCE', fx + 200, -262, '4:this one force', size=30, color='accent')
     p.pic('fist', fx - 250, 0, h=280, at='4:grip')
     p.pic('shoe', fx + 200, 40, w=320, at='4:friction')
     p.pic('rope', fx + 650, 10, h=230, at='4:pull of a rope')
@@ -367,7 +377,7 @@ def part4(p):
     p.lights.append({'worldPoints': [[hx, -60]], 'from': '5:get warm', 'size': 300, 'intensity': 0.55})
     for i in range(6):
         x = hx - 250 + 100 * i
-        p.stream(ring(x, 260, 18, 16), T('5:clinging', 0.06 * i), count=3, period=0.9, size=10, spread=6)
+        p.stream(ring(x, 260, 26, 16), T('5:clinging', 0.06 * i), count=3, period=0.9, size=13, spread=6)
     p.label('VIBRATION → HEAT', hx, 380, '5:heat', size=34, color='accent', upper=False)
     p.cam('5:Rub your hands', x=hx, y=40, zoom=1.0)
     # Leaning on a wall
@@ -404,6 +414,7 @@ def part5(p):
     p.cam('2:When the electrons', x=fx, y=0, zoom=1.0)
     # Up the nerves, the spinal cord, the thalamus, the cortex
     px = fx + 1300
+    m = mark(p)
     me = p.pic('person', px, 0, h=720, at='3:The signal')
     path = [p.pt(me, uv) for uv in [(0.4, 0.55), (0.42, 0.42), (0.47, 0.32), (0.5, 0.45), (0.5, 0.33), (0.5, 0.22)]]
     route = p.line(path, '3:races up', width=1.8, curve=True, color='accent', duration=2.2)
@@ -412,6 +423,7 @@ def part5(p):
     p.glows([p.pt(me, (0.5, 0.2))], '3:thalamus', size=60)
     p.label('THALAMUS', px + 300, -240, '3:thalamus', size=26, align='left', color='accent')
     p.cam('3:The signal', x=px + 150, y=0, zoom=0.95)
+    close(p, m, '3:somatosensory')
     bx = px + 1200
     p.pic('brain', bx, -40, h=400, at='3:somatosensory')
     strip = p.line([(bx - 20, -230), (bx + 20, -120), (bx + 10, 0)], '3:somatosensory', width=5, curve=True, color='accent', duration=1.0)
@@ -450,6 +462,7 @@ def part6(p):
     close(p, m, '2:There is a place')
     # A dying star's core collapses into a neutron star
     sx = 1500
+    m = mark(p)
     p.glows(scatter(sx + 300, -100, 1500, 700, 14, seed=12), '2:There is a place', size=30, stagger=0.08)
     p.label('WHERE THE SPACE IS GONE', sx + 250, -330, '2:that space is gone', '2:collapse', size=32, color='accent')
     p.pic('earth', sx, 0, h=380, at='2:When a giant')
@@ -459,18 +472,21 @@ def part6(p):
     p.label('LESS THAN 20 KM', sx + 560, -70, '2:less than 20', size=26, color='accent')
     p.label('IN LESS THAN A SECOND', sx + 560, 70, '2:less than a second', size=22)
     p.cam('2:There is a place', x=sx + 250, y=0, zoom=0.92)
+    close(p, m, "2:What's left+0.6")
     nx = sx + 1500
+    m = mark(p)
     p.pic('neutron_star', nx, 0, h=380, at="2:What's left")
     p.label('THE DENSEST OBJECTS IN THE UNIVERSE', nx, -320, '2:densest', size=30)
     p.label('ONE GIANT NUCLEUS', nx, 280, '2:giant atomic nucleus', size=34, color='accent')
     p.label('{n}% NEUTRONS', nx, 350, '2:95 percent', size=28, count={'to': 95, 'duration': 1.2})
     for i in range(12):
         r, c = divmod(i, 4)
-        p.circle(nx + 330 + c * 34 + (17 if r % 2 else 0), -40 + r * 30, 16, T('2:packed together', 0.04 * i), width=1.6, fill='paper')
+        p.circle(nx + 320 + c * 54 + (27 if r % 2 else 0), -50 + r * 48, 25, T('2:packed together', 0.04 * i), width=1.8, fill='paper')
     p.cam("2:What's left", x=nx, y=0, zoom=0.95)
+    close(p, m, "3:It's so dense+0.4")
     # A sugar cube of neutron star; all of humanity in less than a sugar cube
     cx = nx + 1300
-    p.pic('sugar_cube', cx, -20, h=240, at='3:sugar cube')
+    p.pic('sugar_cube', cx, -20, h=240, at='3:a piece')
     p.label('ABOUT {n} TONS', cx, 230, '3:a billion tons', size=34, color='accent', count={'to': 1000000000, 'duration': 1.6})
     p.cam("3:It's so dense", x=cx, y=40, zoom=1.0)
     hx = cx + 1600
@@ -495,8 +511,10 @@ def part7(p):
     p.cam('start', x=0, y=0, zoom=1.0)
     m = mark(p)
     p.pic('holding_hands', 0, -40, w=600, at='1:When you hold')
+    m2 = mark(p)
     p.circle(0, 320, 210, '1:never merge', width=1.6)
-    two_rows(p, 0, 320, '1:never merge+0.2', n=4, r=24, gap=40, arrows_at='1:push back')
+    two_rows(p, 0, 320, '1:never merge+0.2', n=4, r=36, gap=46, arrows_at='1:push back')
+    close(p, m2, '2:And yet')
     p.cam('1:When you hold', x=0, y=0, zoom=1.0)
     p.cam('1:never merge', x=0, y=150, zoom=0.9)
     p.glows([(-40, -60), (60, -40)], '2:warmth', size=90, stagger=0.4)
@@ -547,7 +565,7 @@ def part8(p):
     p.pic('holding_hands', 0, 80, w=560, at="1:Let's")
     p.label('YOU HAVE NEVER', 0, -300, '1:You have never', size=40)
     p.label('TOUCHED ANYTHING', 0, -230, '1:You have never+0.3', size=40, color='accent')
-    two_rows(p, 0, 420, '1:The atoms of your', n=4, r=24, gap=40)
+    two_rows(p, 0, 420, '1:The atoms of your', n=4, r=36, gap=46)
     p.glows([(-40, 60), (60, 80)], '2:felt everything', size=90, stagger=0.3)
     p.cam("1:Let's", x=0, y=0, zoom=1.0)
     p.cam('1:The atoms of your', x=0, y=200, zoom=0.9)
@@ -567,23 +585,24 @@ def part8(p):
     p.cam('2:every hand on', x=gx + 1700, y=0, zoom=0.86)
     p.cam('2:Not through contact', x=gx + 2800, y=0, zoom=0.95)
     bx = gx + 4000
+    m = mark(p)
     p.pic('brain', bx, -20, h=380, at='3:And what you made')
     for k, (txt, at, x, y) in enumerate((('COMFORT', '3:comfort', bx - 420, -220), ('LOVE', '3:the love', bx + 420, -220), ('STRENGTH', '3:the strength', bx, -340))):
         p.label(txt, x, y, at, size=30, color='accent')
     p.label('BUILT BY YOU', bx, 290, '3:built by you', size=36)
     p.cam('3:And what you made', x=bx, y=-40, zoom=0.95)
+    close(p, m, '4:So the next time+0.6')
     hx = bx + 1400
     p.pic('holding_hands', hx, -40, w=560, at='4:So the next time')
     for k in range(4):
         x = hx - 210 + 140 * k
         cloud(p, x, 230, 46, T('4:Two worlds', 0.1 * k), count=7, size=8)
     p.glows([(hx - 40, -60), (hx + 60, -40)], "4:someone's hand", size=80, stagger=0.3)
-    p.label('WHAT IS REALLY HAPPENING', hx, -330, '4:really happening', size=32)
+    p.label('WHAT IS REALLY HAPPENING', hx, -330, '4:really happening', '5:And yet', size=32)
     p.label('ALMOST ENTIRELY EMPTY', hx, 320, '4:almost entirely', size=26)
     p.label('HOLDING EACH OTHER UP', hx, 380, '4:holding each other', size=32, color='accent')
     p.cam('4:So the next time', x=hx, y=40, zoom=0.95)
-    p.label('YOU HAVE BEEN TOUCHED', hx, -330, '5:And yet', size=40)
-    p.labels[-2]['out'] = '5:And yet'
+    p.label('YOU HAVE BEEN TOUCHED', hx, -330, '5:And yet+0.5', size=40)
     p.label('BY EVERYTHING', hx, -260, '5:touched by everything', size=40, color='accent')
     p.cam("5:You've never", x=hx, y=0, zoom=0.88)
     p.cam('5:touched by everything@end', x=hx, y=0, zoom=0.8)

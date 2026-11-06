@@ -111,7 +111,7 @@
    "y": 112.7,
    "width": 955.6,
    "in": "3:The signal",
-   "out": "end-1.1"
+   "out": "3:somatosensory"
   },
   {
    "id": "brain6",
@@ -254,7 +254,7 @@
    "curve": true,
    "color": "accent",
    "duration": 2.2,
-   "out": "end-1.1"
+   "out": "3:somatosensory"
   },
   {
    "id": "line7",
@@ -450,7 +450,7 @@
    "from": "3:thalamus",
    "size": 60,
    "stagger": 0.0,
-   "to": "end-1.1"
+   "to": "3:somatosensory"
   },
   {
    "drawing": "line8",
@@ -545,7 +545,7 @@
    "size": 32,
    "in": "3:spinal cord",
    "align": "left",
-   "out": "end-1.1"
+   "out": "3:somatosensory"
   },
   {
    "text": "THALAMUS",
@@ -556,7 +556,7 @@
    "in": "3:thalamus",
    "color": "accent",
    "align": "left",
-   "out": "end-1.1"
+   "out": "3:somatosensory"
   },
   {
    "text": "SOMATOSENSORY CORTEX",
