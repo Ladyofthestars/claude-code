@@ -23,9 +23,9 @@ Tick each box as it is done. If work stops, continue from the first unticked box
 - [x] Builder for the 9 parts (`tools/build_never_touched.py`), following the shot list
 - [x] Frame check, empty-moment check and label check pass for every part
 - [x] Stills review and fixes (parts 2–8: scenes exit cleanly, bigger atoms, fixed overlapping end text, filled two empty moments)
-- [ ] Render, join, music, mix, loudness; final checks
+- [x] Render, join, music, mix, loudness; final checks (30,114 frames, 8:21.9, −14.8 LUFS, true peak −1.2 dB; swells on "Not even the hand", "neutron star", "touched by everything")
 
 ## Step 5: packaging
-- [ ] Thumbnail in the series style
-- [ ] Title, description, chapters, tags (`youtube.md`)
+- [x] Thumbnail in the series style
+- [x] Title, description, chapters, tags (`youtube.md`)
 - [ ] Copy under 100 MB; commit and push; send to the user
