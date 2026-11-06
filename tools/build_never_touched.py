@@ -236,7 +236,7 @@ def part2(p):
     p.label('WHAT IT MEANT', ax, -465, '4:Rutherford realized', size=36, color='accent')
     for k in range(3):
         y = -265 + 265 * k
-        p.circle(ax, y, 122, T('4:mostly empty space', 0.15 * k), width=1.6, color='muted', dashed=True)
+        p.circle(ax, y, 122, T('4:The gold atoms', 0.15 * k), width=1.6, color='muted', dashed=True)
         p.glows(scatter(ax, y, 170, 170, 3, seed=k + 3), T('4:mostly empty space+0.5', 0.15 * k), size=12)
         p.glows([(ax, y)], T('4:tiny, heavy', 0.15 * k), size=30)
         p.label('+', ax + 30, y - 30, T('4:positive charge', 0.15 * k), size=24, color='accent', spacing=0.02)
