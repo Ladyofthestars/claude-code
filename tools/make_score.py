@@ -290,6 +290,7 @@ def main():
     ap.add_argument('--swells', default='')
     ap.add_argument('--key', default='D')
     ap.add_argument('--seed', type=int, default=1)
+    ap.add_argument('--presets', default='', help='comma-separated preset names, one per section (optional)')
     a = ap.parse_args()
     total = a.seconds
     starts = [float(x) for x in a.sections.split(',') if x.strip()]
@@ -299,6 +300,10 @@ def main():
     # Key plan: home key, a lift up a tone in the middle (attention reset), back home for the end.
     n = len(starts)
     presets = [PRESETS[min(len(PRESETS) - 2, round(i * (len(PRESETS) - 2) / max(1, n - 2)))] for i in range(n - 1)] + [PRESETS[-1]]
+    if a.presets:
+        byname = {P['name']: P for P in PRESETS}
+        names = [x.strip() for x in a.presets.split(',')]
+        presets = [byname[names[min(i, len(names) - 1)]] for i in range(n)]
     out = np.zeros((int(total * SR) + SR, 2), np.float32)
     xfade = 1.6
     with tempfile.TemporaryDirectory() as wd:

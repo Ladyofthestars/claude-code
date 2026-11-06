@@ -71,6 +71,9 @@ export interface ItemDef {
 	in?: TimeRef;
 	out?: TimeRef;
 	fade?: number;
+	// A full-screen painting: never faded at the frame edge, and it dissolves in and out without
+	// shrinking or blurring (so its edges never show).
+	fullBleed?: boolean;
 }
 
 export interface CameraKey {

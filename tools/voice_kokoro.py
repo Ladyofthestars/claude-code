@@ -64,6 +64,7 @@ def main():
     ap.add_argument('script')
     ap.add_argument('out')
     ap.add_argument('--only', default='', help='comma-separated paragraph numbers to (re)record')
+    ap.add_argument('--speed', type=float, default=SPEED, help='speaking speed (channel default 1.02)')
     a = ap.parse_args()
     from kokoro import KPipeline
 
@@ -83,7 +84,7 @@ def main():
         for word, ph in PRONOUNCE.items():
             text = re.sub(rf'\b{word}\b', f'[{word}](/{ph}/)', text)
         first_ts = None
-        for r in pipe(text, voice=voice, speed=SPEED):
+        for r in pipe(text, voice=voice, speed=a.speed):
             if first_ts is None:
                 timed = [tk.start_ts for tk in r.tokens if tk.start_ts is not None]
                 first_ts = t + (timed[0] if timed else 0.0)

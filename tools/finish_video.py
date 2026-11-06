@@ -47,7 +47,7 @@ def main():
     while i < len(args):
         if args[i] == '--score':
             opts['score'] = True
-        elif args[i] in ('--key', '--seed'):
+        elif args[i] in ('--key', '--seed', '--presets', '--cues'):
             opts[args[i][2:]] = args[i + 1]
             i += 1
         else:
@@ -85,14 +85,31 @@ def main():
     py = sys.executable
     sw = ','.join(f'{t:.3f}' for t in times)
     if opts.get('score'):
-        subprocess.run([py, 'tools/make_score.py', '--seconds', f'{total:.3f}', '--out', f'{out}/music.wav', '--swells', sw,
-                        '--sections', ','.join(f'{offsets[n]:.3f}' for n in parts),
-                        '--key', opts.get('key', 'D'), '--seed', opts.get('seed', '1')], check=True)
+        starts = [offsets[n] for n in parts]
+        for cue in [c for c in opts.get('cues', '').split(',') if c.strip()]:
+            n, line, phrase = cue.split(':', 2)
+            words = json.load(open(f'{root}/p{n}/words.json'))
+            starts.append(offsets[int(n)] + phrase_time(words, int(line), phrase))
+        cmd = [py, 'tools/make_score.py', '--seconds', f'{total:.3f}', '--out', f'{out}/music.wav', '--swells', sw,
+               '--sections', ','.join(f'{t:.3f}' for t in sorted(starts)),
+               '--key', opts.get('key', 'D'), '--seed', opts.get('seed', '1')]
+        if opts.get('presets'):
+            cmd += ['--presets', opts['presets']]
+        subprocess.run(cmd, check=True)
     else:
         subprocess.run([py, 'tools/make_music.py', '--seconds', f'{total:.3f}', '--out', f'{out}/music.wav', '--swells', sw], check=True)
+    # Sound effects (if the video has any) join the voice, so the music ducks under them too.
+    voice_in = f'{out}/voice.wav'
+    if os.path.exists(f'{root}/sfx.json'):
+        subprocess.run([py, 'tools/make_sfx.py', video, '--seconds', f'{total:.3f}', '--out', f'{out}/sfx.wav',
+                        '--offsets', ','.join(f'{offsets[n]:.3f}' for n in parts)], check=True)
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', f'{out}/voice.wav', '-i', f'{out}/sfx.wav', '-filter_complex',
+                        '[0:a]aformat=channel_layouts=stereo[v];[v][1:a]amix=inputs=2:normalize=0:duration=first[a]',
+                        '-map', '[a]', '-ar', str(SR), f'{out}/voice_sfx.wav'], check=True)
+        voice_in = f'{out}/voice_sfx.wav'
     # Duck the music under the voice, mix, and normalise for YouTube.
     subprocess.run([
-        'ffmpeg', '-v', 'error', '-y', '-i', f'{out}/voice.wav', '-i', f'{out}/music.wav', '-filter_complex',
+        'ffmpeg', '-v', 'error', '-y', '-i', voice_in, '-i', f'{out}/music.wav', '-filter_complex',
         '[0:a]aformat=channel_layouts=stereo,asplit=2[v][sc];'
         '[1:a][sc]sidechaincompress=threshold=0.015:ratio=6:attack=40:release=1000:makeup=1[m];'
         '[v]volume=1.0[vv];[m]volume=0.22[mm];'

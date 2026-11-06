@@ -1,0 +1,17 @@
+phone_touch {"aspect": 1.79104, "content": [0, 0, 1, 1], "file": "phone_touch.jpg"}
+touch_gap {"aspect": 1.79104, "content": [0, 0, 1, 1], "file": "touch_gap.jpg"}
+foot_floor {"aspect": 1.68955, "content": [0, 0, 1, 1], "file": "foot_floor.jpg"}
+hands_held {"aspect": 1.79104, "content": [0, 0, 1, 1], "file": "hands_held.jpg"}
+empty_atom {"aspect": 1.79104, "content": [0, 0, 1, 1], "file": "empty_atom.jpg"}
+earth_night {"aspect": 1.91847, "content": [0, 0, 1, 1], "file": "earth_night.jpg"}
+sugar_cube_glow {"aspect": 2.14286, "content": [0, 0, 1, 1], "file": "sugar_cube_glow.jpg"}
+hand_table {"aspect": 2.13905, "content": [0, 0, 1, 1], "file": "hand_table.jpg"}
+punch {"aspect": 1.79104, "content": [0, 0, 1, 1], "file": "punch.jpg"}
+embrace {"aspect": 2.36453, "content": [0, 0, 1, 1], "file": "embrace.jpg"}
+manchester {"aspect": 1.79104, "content": [0, 0, 1, 1], "file": "manchester.jpg"}
+student_lab {"aspect": 1.79104, "content": [0, 0, 1, 1], "file": "student_lab.jpg"}
+gold_foil {"aspect": 2.41088, "content": [0, 0, 1, 1], "file": "gold_foil.jpg"}
+professor {"aspect": 1.79104, "content": [0, 0, 1, 1], "file": "professor.jpg"}
+shell_paper {"aspect": 1.79104, "content": [0, 0, 1, 1], "file": "shell_paper.jpg"}
+nucleus_glow {"aspect": 2.6936, "content": [0, 0, 1, 1], "file": "nucleus_glow.jpg"}
+vignette {"aspect": 1.79104, "content": [0, 0, 1, 1]}

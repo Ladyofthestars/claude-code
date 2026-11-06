@@ -1,0 +1,690 @@
+{
+ "title": "Pilot: You have never touched anything",
+ "size": {
+  "width": 1920,
+  "height": 1080
+ },
+ "audio": "narration.mp3",
+ "words": "words.json",
+ "tailSeconds": 0,
+ "safeArea": {
+  "top": 0.06,
+  "bottom": 0.06,
+  "side": 0.05
+ },
+ "theme": {
+  "background": "#04070e",
+  "dotColor": "rgba(0, 0, 0, 0)",
+  "dotSpacing": 40,
+  "dotSize": 0.1,
+  "dotParallax": 0.75,
+  "ink": "#ffffff",
+  "accent": "#ffc865",
+  "lightBlend": "screen",
+  "font": "Montserrat",
+  "labelGlow": "rgba(0, 0, 0, 0.95)",
+  "dust": {
+   "count": 70,
+   "color": "#ffe2b0",
+   "size": 2.0,
+   "parallax": 0.45,
+   "drift": 7
+  }
+ },
+ "pictures": {
+  "earth_night": {
+   "src": "/videos/pilot-touch/images/earth_night.jpg",
+   "aspect": 1.91847,
+   "content": [
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "embrace": {
+   "src": "/videos/pilot-touch/images/embrace.jpg",
+   "aspect": 2.36453,
+   "content": [
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "empty_atom": {
+   "src": "/videos/pilot-touch/images/empty_atom.jpg",
+   "aspect": 1.79104,
+   "content": [
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "foot_floor": {
+   "src": "/videos/pilot-touch/images/foot_floor.jpg",
+   "aspect": 1.68955,
+   "content": [
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "gold_foil": {
+   "src": "/videos/pilot-touch/images/gold_foil.jpg",
+   "aspect": 2.41088,
+   "content": [
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "hand_table": {
+   "src": "/videos/pilot-touch/images/hand_table.jpg",
+   "aspect": 2.13905,
+   "content": [
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "hands_held": {
+   "src": "/videos/pilot-touch/images/hands_held.jpg",
+   "aspect": 1.79104,
+   "content": [
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "manchester": {
+   "src": "/videos/pilot-touch/images/manchester.jpg",
+   "aspect": 1.79104,
+   "content": [
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "nucleus_glow": {
+   "src": "/videos/pilot-touch/images/nucleus_glow.jpg",
+   "aspect": 2.6936,
+   "content": [
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "phone_touch": {
+   "src": "/videos/pilot-touch/images/phone_touch.jpg",
+   "aspect": 1.79104,
+   "content": [
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "professor": {
+   "src": "/videos/pilot-touch/images/professor.jpg",
+   "aspect": 1.79104,
+   "content": [
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "punch": {
+   "src": "/videos/pilot-touch/images/punch.jpg",
+   "aspect": 1.79104,
+   "content": [
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "shell_paper": {
+   "src": "/videos/pilot-touch/images/shell_paper.jpg",
+   "aspect": 1.79104,
+   "content": [
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "student_lab": {
+   "src": "/videos/pilot-touch/images/student_lab.jpg",
+   "aspect": 1.79104,
+   "content": [
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "sugar_cube_glow": {
+   "src": "/videos/pilot-touch/images/sugar_cube_glow.jpg",
+   "aspect": 2.14286,
+   "content": [
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "touch_gap": {
+   "src": "/videos/pilot-touch/images/touch_gap.jpg",
+   "aspect": 1.79104,
+   "content": [
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "vignette": {
+   "src": "/videos/pilot-touch/images/vignette.png",
+   "aspect": 1.79104,
+   "content": [
+    0,
+    0,
+    1,
+    1
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "phone_touch1",
+   "picture": "phone_touch",
+   "x": 0.0,
+   "y": 0.0,
+   "width": 2120.0,
+   "out": "1:You never+0.4",
+   "fade": 0.35,
+   "fullBleed": true
+  },
+  {
+   "id": "touch_gap2",
+   "picture": "touch_gap",
+   "x": 0.0,
+   "y": 0.0,
+   "width": 2120.0,
+   "in": "1:You never",
+   "out": "1:Not the floor+0.4",
+   "fade": 0.35,
+   "fullBleed": true
+  },
+  {
+   "id": "foot_floor3",
+   "picture": "foot_floor",
+   "x": 0.0,
+   "y": 0.0,
+   "width": 2120.0,
+   "in": "1:Not the floor",
+   "out": "1:Not even the+0.4",
+   "fade": 0.35,
+   "fullBleed": true
+  },
+  {
+   "id": "hands_held4",
+   "picture": "hands_held",
+   "x": 0.0,
+   "y": 0.0,
+   "width": 2120.0,
+   "in": "1:Not even the",
+   "out": "2:Because every+0.4",
+   "fade": 0.35,
+   "fullBleed": true
+  },
+  {
+   "id": "empty_atom5",
+   "picture": "empty_atom",
+   "x": 0.0,
+   "y": 0.0,
+   "width": 2120.0,
+   "in": "2:Because every",
+   "out": "2:Squeeze the+0.4",
+   "fade": 0.35,
+   "fullBleed": true
+  },
+  {
+   "id": "earth_night6",
+   "picture": "earth_night",
+   "x": 0.0,
+   "y": 0.0,
+   "width": 2129.5,
+   "in": "2:Squeeze the",
+   "out": "2:would fit+0.4",
+   "fade": 0.35,
+   "fullBleed": true
+  },
+  {
+   "id": "sugar_cube_glow7",
+   "picture": "sugar_cube_glow",
+   "x": 0.0,
+   "y": 0.0,
+   "width": 2378.6,
+   "in": "2:would fit",
+   "out": "3:So why+0.4",
+   "fade": 0.35,
+   "fullBleed": true
+  },
+  {
+   "id": "hand_table8",
+   "picture": "hand_table",
+   "x": 0.0,
+   "y": 0.0,
+   "width": 2374.3,
+   "in": "3:So why",
+   "out": "3:Why does a punch+0.4",
+   "fade": 0.35,
+   "fullBleed": true
+  },
+  {
+   "id": "punch9",
+   "picture": "punch",
+   "x": 0.0,
+   "y": 0.0,
+   "width": 2120.0,
+   "in": "3:Why does a punch",
+   "out": "3:And if nothing+0.4",
+   "fade": 0.35,
+   "fullBleed": true
+  },
+  {
+   "id": "embrace10",
+   "picture": "embrace",
+   "x": 0.0,
+   "y": 0.0,
+   "width": 2624.6,
+   "in": "3:And if nothing",
+   "out": "4:To find out+0.4",
+   "fade": 0.35,
+   "fullBleed": true
+  },
+  {
+   "id": "manchester11",
+   "picture": "manchester",
+   "x": 0.0,
+   "y": 0.0,
+   "width": 2120.0,
+   "in": "4:To find out",
+   "out": "4:student named+0.4",
+   "fade": 0.35,
+   "fullBleed": true
+  },
+  {
+   "id": "student_lab12",
+   "picture": "student_lab",
+   "x": 0.0,
+   "y": 0.0,
+   "width": 2120.0,
+   "in": "4:student named",
+   "out": "4:firing tiny+0.4",
+   "fade": 0.35,
+   "fullBleed": true
+  },
+  {
+   "id": "gold_foil13",
+   "picture": "gold_foil",
+   "x": 0.0,
+   "y": 0.0,
+   "width": 2676.1,
+   "in": "4:firing tiny",
+   "out": "5:His professor+0.4",
+   "fade": 0.35,
+   "fullBleed": true
+  },
+  {
+   "id": "professor14",
+   "picture": "professor",
+   "x": 0.0,
+   "y": 0.0,
+   "width": 2120.0,
+   "in": "5:His professor",
+   "out": "5:like firing+0.4",
+   "fade": 0.35,
+   "fullBleed": true
+  },
+  {
+   "id": "shell_paper15",
+   "picture": "shell_paper",
+   "x": 0.0,
+   "y": 0.0,
+   "width": 2120.0,
+   "in": "5:like firing",
+   "out": "5:So what was+0.4",
+   "fade": 0.35,
+   "fullBleed": true
+  },
+  {
+   "id": "nucleus_glow16",
+   "picture": "nucleus_glow",
+   "x": 0.0,
+   "y": 0.0,
+   "width": 2989.9,
+   "in": "5:So what was",
+   "out": "end-0.6",
+   "fade": 0.35,
+   "fullBleed": true
+  },
+  {
+   "id": "vignette17",
+   "picture": "vignette",
+   "x": 0.0,
+   "y": 0.0,
+   "width": 2400.0,
+   "fade": 0.3,
+   "fullBleed": true
+  }
+ ],
+ "camera": [
+  {
+   "at": "start",
+   "x": -28,
+   "y": 0,
+   "zoom": 1.0
+  },
+  {
+   "at": "1:You never",
+   "x": 30,
+   "y": 0,
+   "zoom": 1.08
+  },
+  {
+   "at": "1:Not the floor",
+   "x": -18,
+   "y": 0,
+   "zoom": 1.0
+  },
+  {
+   "at": "1:Not even the",
+   "x": 24,
+   "y": 0,
+   "zoom": 1.08
+  },
+  {
+   "at": "2:Because every",
+   "x": -28,
+   "y": 0,
+   "zoom": 1.0
+  },
+  {
+   "at": "2:Squeeze the",
+   "x": 30,
+   "y": 0,
+   "zoom": 1.08
+  },
+  {
+   "at": "2:would fit",
+   "x": -18,
+   "y": 0,
+   "zoom": 1.0
+  },
+  {
+   "at": "3:So why",
+   "x": 24,
+   "y": 0,
+   "zoom": 1.08
+  },
+  {
+   "at": "3:Why does a punch",
+   "x": -28,
+   "y": 0,
+   "zoom": 1.0
+  },
+  {
+   "at": "3:And if nothing",
+   "x": 30,
+   "y": 0,
+   "zoom": 1.08
+  },
+  {
+   "at": "4:To find out",
+   "x": -18,
+   "y": 0,
+   "zoom": 1.0
+  },
+  {
+   "at": "4:student named",
+   "x": 24,
+   "y": 0,
+   "zoom": 1.08
+  },
+  {
+   "at": "4:firing tiny",
+   "x": -28,
+   "y": 0,
+   "zoom": 1.0
+  },
+  {
+   "at": "5:His professor",
+   "x": 30,
+   "y": 0,
+   "zoom": 1.08
+  },
+  {
+   "at": "5:like firing",
+   "x": -18,
+   "y": 0,
+   "zoom": 1.0
+  },
+  {
+   "at": "5:So what was",
+   "x": 24,
+   "y": 0,
+   "zoom": 1.08
+  },
+  {
+   "at": "end",
+   "x": 0,
+   "y": 0,
+   "zoom": 1.0
+  }
+ ],
+ "threads": [],
+ "drawings": [],
+ "lights": [
+  {
+   "worldPoints": [
+    [
+     0,
+     -10
+    ]
+   ],
+   "from": "2:a sugar cube",
+   "size": 320,
+   "stagger": 0.0,
+   "to": "3:So why"
+  },
+  {
+   "worldPoints": [
+    [
+     -339,
+     166
+    ]
+   ],
+   "from": "4:comes flying",
+   "size": 260,
+   "stagger": 0.0,
+   "to": "5:His professor"
+  }
+ ],
+ "magnifiers": [],
+ "labels": [
+  {
+   "text": "YOU'RE NOT.",
+   "x": 960,
+   "y": 540,
+   "space": "screen",
+   "size": 120,
+   "in": "1:You're not",
+   "out": "1:You never+0.6",
+   "color": "accent",
+   "spacing": 0.06
+  },
+  {
+   "text": "NOT ONCE.",
+   "x": 960,
+   "y": 540,
+   "space": "screen",
+   "size": 120,
+   "in": "1:Not once",
+   "out": "2:Because every",
+   "color": "accent",
+   "spacing": 0.06
+  },
+  {
+   "text": "ALMOST ENTIRELY EMPTY",
+   "x": 960,
+   "y": 780,
+   "space": "screen",
+   "size": 80,
+   "in": "2:almost entirely",
+   "out": "2:Squeeze the",
+   "spacing": 0.06
+  },
+  {
+   "text": "{n} PEOPLE",
+   "x": 960,
+   "y": 780,
+   "space": "screen",
+   "size": 84,
+   "in": "2:every person",
+   "out": "2:would fit",
+   "spacing": 0.06,
+   "count": {
+    "to": 8000000000,
+    "duration": 1.6
+   }
+  },
+  {
+   "text": "IN ONE SUGAR CUBE",
+   "x": 960,
+   "y": 780,
+   "space": "screen",
+   "size": 92,
+   "in": "2:a sugar cube",
+   "out": "3:So why",
+   "color": "accent",
+   "spacing": 0.06
+  },
+  {
+   "text": "WHY DON'T YOU SINK IN?",
+   "x": 960,
+   "y": 780,
+   "space": "screen",
+   "size": 80,
+   "in": "3:sink into",
+   "out": "3:Why does a punch",
+   "spacing": 0.06
+  },
+  {
+   "text": "WHY DOES IT HURT?",
+   "x": 960,
+   "y": 780,
+   "space": "screen",
+   "size": 88,
+   "in": "3:punch still",
+   "out": "3:And if nothing",
+   "spacing": 0.06
+  },
+  {
+   "text": "SO WHAT IS TOUCH?",
+   "x": 960,
+   "y": 780,
+   "space": "screen",
+   "size": 96,
+   "in": "3:holds you",
+   "out": "4:To find out",
+   "color": "accent",
+   "spacing": 0.06
+  },
+  {
+   "text": "MANCHESTER \u00b7 1909",
+   "x": 960,
+   "y": 160,
+   "space": "screen",
+   "size": 72,
+   "in": "4:Manchester",
+   "out": "4:student named",
+   "spacing": 0.06
+  },
+  {
+   "text": "ERNEST MARSDEN, 20",
+   "x": 960,
+   "y": 160,
+   "space": "screen",
+   "size": 72,
+   "in": "4:Ernest Marsden",
+   "out": "4:firing tiny",
+   "spacing": 0.06
+  },
+  {
+   "text": "GOLD FOIL \u00b7 THINNER THAN A HAIR",
+   "x": 960,
+   "y": 160,
+   "space": "screen",
+   "size": 64,
+   "in": "4:thinner than",
+   "out": "4:And every few",
+   "spacing": 0.06
+  },
+  {
+   "text": "ONE IN THOUSANDS CAME STRAIGHT BACK",
+   "x": 960,
+   "y": 780,
+   "space": "screen",
+   "size": 64,
+   "in": "4:comes flying",
+   "out": "5:His professor",
+   "color": "accent",
+   "spacing": 0.06
+  },
+  {
+   "text": "ERNEST RUTHERFORD",
+   "x": 960,
+   "y": 160,
+   "space": "screen",
+   "size": 72,
+   "in": "5:Ernest Rutherford",
+   "out": "5:like firing",
+   "spacing": 0.06
+  },
+  {
+   "text": "LIKE A SHELL BOUNCING OFF TISSUE PAPER",
+   "x": 960,
+   "y": 780,
+   "space": "screen",
+   "size": 60,
+   "in": "5:bounce back",
+   "out": "5:So what was",
+   "color": "accent",
+   "spacing": 0.06
+  },
+  {
+   "text": "SO WHAT WAS IT HITTING?",
+   "x": 960,
+   "y": 540,
+   "space": "screen",
+   "size": 100,
+   "in": "5:So what was",
+   "out": "end-0.6",
+   "color": "accent",
+   "spacing": 0.06
+  }
+ ],
+ "streams": [],
+ "clock": 0.0
+}

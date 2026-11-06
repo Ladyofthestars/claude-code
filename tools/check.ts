@@ -33,6 +33,13 @@ for (let f = 0; f < frames; f++) {
 	for (const it of settings.items) {
 		const s = scene.itemAt(it.id, t);
 		const c = s.content;
+		if (it.fullBleed) {
+			// A full-screen painting must cover the whole frame whenever it shows.
+			if (s.opacity > 0.02 && (c.x0 > 0.5 || c.y0 > 0.5 || c.x1 < FRAME.width - 0.5 || c.y1 < FRAME.height - 0.5)) {
+				note(`${it.id}: full-screen painting does not cover the frame`, t, `box ${c.x0.toFixed(0)},${c.y0.toFixed(0)} – ${c.x1.toFixed(0)},${c.y1.toFixed(0)}`);
+			}
+			continue;
+		}
 		if (s.opacity > 0.02 && (c.x0 < -tol || c.y0 < -tol || c.x1 > FRAME.width + tol || c.y1 > FRAME.height + tol)) {
 			note(`${it.id}: cut off at the frame edge`, t, `box ${c.x0.toFixed(0)},${c.y0.toFixed(0)} – ${c.x1.toFixed(0)},${c.y1.toFixed(0)}, opacity ${s.opacity.toFixed(2)}`);
 		}

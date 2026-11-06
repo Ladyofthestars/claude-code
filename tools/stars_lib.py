@@ -38,7 +38,7 @@ class Pictures:
         for line in open(os.path.join(folder, 'manifest.txt')):
             name, js = line.split(' ', 1)
             d = json.loads(js)
-            self.info[name] = {'src': f'{url_prefix}/{name}.png', 'aspect': d['aspect'], 'content': d['content']}
+            self.info[name] = {'src': f"{url_prefix}/{d.get('file', name + '.png')}", 'aspect': d['aspect'], 'content': d['content']}
         self._outlines = {}
 
     def outline(self, name, a=0.0, b=1.0, n=48, shrink=0.0):
@@ -96,6 +96,12 @@ class Part:
         return f'{p}{self._k}'
 
     # ---- pictures -----------------------------------------------------------------
+    def painting(self, name, at, out=None, width=2120, fade=0.35, id=None):
+        """A full-screen painting centred on the page origin, covering the frame with room to drift."""
+        id = self.pic(name, 0, 0, w=width, at=at, out=out, id=id, fade=fade)
+        self.items[-1]['fullBleed'] = True
+        return id
+
     def pic(self, name, cx, cy, h=None, w=None, at=None, out=None, depth=None, id=None, fade=None):
         """Place a picture so its drawn content is centred at (cx, cy) with content height h (or width w)."""
         p = self.pics.info[name]

@@ -205,7 +205,8 @@ export const buildScene = (settings: Settings, words: Words) => {
 		const it = getItem(id);
 		const {k, kIn, kOut} = presence(t, it.tIn, it.tOut, it.fade);
 		const cam = layerCam(it.depth, it.tIn ?? 0, t);
-		const scale = (kIn < 1 ? lerp(0.96, 1, kIn) : 1) * (kOut < 1 ? lerp(0.97, 1, kOut) : 1);
+		const fb = it.def.fullBleed === true;
+		const scale = fb ? 1 : (kIn < 1 ? lerp(0.96, 1, kIn) : 1) * (kOut < 1 ? lerp(0.97, 1, kOut) : 1);
 		const c = toScreen({x: it.def.x, y: it.def.y}, cam);
 		const w = it.def.width * cam.z * scale;
 		const h = it.height * cam.z * scale;
@@ -220,8 +221,8 @@ export const buildScene = (settings: Settings, words: Words) => {
 			top,
 			width: w,
 			height: h,
-			opacity: k * edgeGuard(content),
-			blur: (1 - k) * 10 + (it.depth - 1) * 3,
+			opacity: fb ? k : k * edgeGuard(content),
+			blur: fb ? 0 : (1 - k) * 10 + (it.depth - 1) * 3,
 			depth: it.depth,
 			zoom: cam.z * scale,
 			content,
