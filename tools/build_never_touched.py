@@ -342,6 +342,7 @@ def part4(p):
     close(p, m, '2:electromagnetic force')
     # The electromagnetic force; magnets; electrons
     mx = 1600
+    m = mark(p)
     p.label('THE ELECTROMAGNETIC FORCE', mx, -330, '2:electromagnetic force', size=40, color='accent')
     p.pic('magnets', mx, -20, w=600, at='2:behind magnets')
     apart(p, mx - 320, -20, mx + 320, -20, '2:without ever touching')
@@ -349,8 +350,10 @@ def part4(p):
     charge(p, mx + 120, 270, '2:Electrons do+0.1', r=36)
     apart(p, mx - 120, 270, mx + 120, 270, '2:Electrons do+0.3')
     p.cam('2:electromagnetic force', x=mx, y=0, zoom=0.95)
+    close(p, m, '3:Comb your hair+0.6')
     # The comb and the paper
     cx = mx + 1200
+    m = mark(p)
     p.pic('comb', cx, -150, w=520, at='3:Comb your hair')
     scraps = [(cx - 160, 230), (cx - 40, 250), (cx + 80, 225), (cx + 190, 245)]
     for k, (x, y) in enumerate(scraps):
@@ -358,6 +361,7 @@ def part4(p):
         p.line([(x, y - 20), (x + 10, -100)], T('3:without touching', 0.1 * k), width=1.2, color='accent', dashed=True)
     p.label('ACROSS A GAP', cx, 360, '3:across a gap', size=32, color='accent')
     p.cam('3:Comb your hair', x=cx, y=40, zoom=1.0)
+    close(p, m, '4:In fact+0.6')
     # Almost every force you feel; except gravity
     fx = cx + 1300
     p.label('ALMOST EVERY FORCE YOU FEEL', fx + 200, -330, '4:almost every force', size=36)
@@ -423,9 +427,9 @@ def part5(p):
     p.glows([p.pt(me, (0.5, 0.2))], '3:thalamus', size=60)
     p.label('THALAMUS', px + 300, -240, '3:thalamus', size=26, align='left', color='accent')
     p.cam('3:The signal', x=px + 150, y=0, zoom=0.95)
-    close(p, m, '3:somatosensory')
+    close(p, m, '3:From there+0.6')
     bx = px + 1200
-    p.pic('brain', bx, -40, h=400, at='3:somatosensory')
+    p.pic('brain', bx, -40, h=400, at='3:From there+0.3')
     strip = p.line([(bx - 20, -230), (bx + 20, -120), (bx + 10, 0)], '3:somatosensory', width=5, curve=True, color='accent', duration=1.0)
     p.label('SOMATOSENSORY CORTEX', bx, 260, '3:somatosensory', size=30)
     face = p.line([(bx - 260, 120), (bx - 120, 40), (bx - 20, -60)], '3:Touch from your face', width=1.6, curve=True, dashed=True, color='accent')

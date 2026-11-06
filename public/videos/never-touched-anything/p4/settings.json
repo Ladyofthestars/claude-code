@@ -142,7 +142,7 @@
    "y": 58.3,
    "width": 1186.2,
    "in": "2:behind magnets",
-   "out": "end-1.1"
+   "out": "3:Comb your hair+0.6"
   },
   {
    "id": "comb23",
@@ -151,7 +151,7 @@
    "y": -69.6,
    "width": 766.2,
    "in": "3:Comb your hair",
-   "out": "end-1.1"
+   "out": "4:In fact+0.6"
   },
   {
    "id": "fist32",
@@ -442,7 +442,7 @@
    "arrow": true,
    "width": 2.2,
    "color": "accent",
-   "out": "end-1.1"
+   "out": "3:Comb your hair+0.6"
   },
   {
    "id": "line18",
@@ -461,7 +461,7 @@
    "arrow": true,
    "width": 2.2,
    "color": "accent",
-   "out": "end-1.1"
+   "out": "3:Comb your hair+0.6"
   },
   {
    "id": "circle19",
@@ -473,7 +473,7 @@
    "width": 2.2,
    "fill": "accent",
    "fillOpacity": 0.35,
-   "out": "end-1.1"
+   "out": "3:Comb your hair+0.6"
   },
   {
    "id": "circle20",
@@ -485,7 +485,7 @@
    "width": 2.2,
    "fill": "accent",
    "fillOpacity": 0.35,
-   "out": "end-1.1"
+   "out": "3:Comb your hair+0.6"
   },
   {
    "id": "line21",
@@ -504,7 +504,7 @@
    "arrow": true,
    "width": 2.2,
    "color": "accent",
-   "out": "end-1.1"
+   "out": "3:Comb your hair+0.6"
   },
   {
    "id": "line22",
@@ -523,7 +523,7 @@
    "arrow": true,
    "width": 2.2,
    "color": "accent",
-   "out": "end-1.1"
+   "out": "3:Comb your hair+0.6"
   },
   {
    "id": "rect24",
@@ -535,7 +535,7 @@
    "draw": "3:scraps of paper",
    "width": 1.6,
    "fill": "paper",
-   "out": "end-1.1"
+   "out": "4:In fact+0.6"
   },
   {
    "id": "line25",
@@ -554,7 +554,7 @@
    "width": 1.2,
    "color": "accent",
    "dashed": true,
-   "out": "end-1.1"
+   "out": "4:In fact+0.6"
   },
   {
    "id": "rect26",
@@ -566,7 +566,7 @@
    "draw": "3:scraps of paper+0.1",
    "width": 1.6,
    "fill": "paper",
-   "out": "end-1.1"
+   "out": "4:In fact+0.6"
   },
   {
    "id": "line27",
@@ -585,7 +585,7 @@
    "width": 1.2,
    "color": "accent",
    "dashed": true,
-   "out": "end-1.1"
+   "out": "4:In fact+0.6"
   },
   {
    "id": "rect28",
@@ -597,7 +597,7 @@
    "draw": "3:scraps of paper+0.2",
    "width": 1.6,
    "fill": "paper",
-   "out": "end-1.1"
+   "out": "4:In fact+0.6"
   },
   {
    "id": "line29",
@@ -616,7 +616,7 @@
    "width": 1.2,
    "color": "accent",
    "dashed": true,
-   "out": "end-1.1"
+   "out": "4:In fact+0.6"
   },
   {
    "id": "rect30",
@@ -628,7 +628,7 @@
    "draw": "3:scraps of paper+0.3",
    "width": 1.6,
    "fill": "paper",
-   "out": "end-1.1"
+   "out": "4:In fact+0.6"
   },
   {
    "id": "line31",
@@ -647,7 +647,7 @@
    "width": 1.2,
    "color": "accent",
    "dashed": true,
-   "out": "end-1.1"
+   "out": "4:In fact+0.6"
   },
   {
    "id": "rect44",
@@ -972,7 +972,7 @@
    "size": 50,
    "in": "2:electromagnetic force",
    "color": "accent",
-   "out": "end-1.1"
+   "out": "3:Comb your hair+0.6"
   },
   {
    "text": "\u2212",
@@ -983,7 +983,7 @@
    "in": "2:Electrons do+0.15",
    "spacing": 0.02,
    "upper": false,
-   "out": "end-1.1"
+   "out": "3:Comb your hair+0.6"
   },
   {
    "text": "\u2212",
@@ -994,7 +994,7 @@
    "in": "2:Electrons do+0.25",
    "spacing": 0.02,
    "upper": false,
-   "out": "end-1.1"
+   "out": "3:Comb your hair+0.6"
   },
   {
    "text": "ACROSS A GAP",
@@ -1004,7 +1004,7 @@
    "size": 40,
    "in": "3:across a gap",
    "color": "accent",
-   "out": "end-1.1"
+   "out": "4:In fact+0.6"
   },
   {
    "text": "ALMOST EVERY FORCE YOU FEEL",
