@@ -24,14 +24,14 @@ Tick each box as it is done. If work stops, continue from the first unticked box
 - [x] Check word for word against `script.md` (timings), and proof-listened with speech recognition (`tools/proof_listen.py`): no real errors. Total 8:48.8
 
 ## Step 4: animation
-- [ ] Template: blue theme (gradient page, glowing white ink, text glow, drifting light dust) and atom streams
-- [ ] Settings for each part (9 parts), following the shot list
-- [ ] Frame check passes for every part
-- [ ] Stills review and fixes
-- [ ] Render, join, music, mix, loudness
-- [ ] Final checks
+- [x] Template: blue theme (gradient page, glowing white ink, text glow, drifting light dust) and atom streams
+- [x] Settings for each part (9 parts), following the shot list
+- [x] Frame check passes for every part
+- [x] Stills review and fixes
+- [x] Render, join, music, mix, loudness
+- [x] Final checks
 
 ## Step 5: packaging
-- [ ] Thumbnail (the star-filled figure from video 1, now dissolving into stardust)
-- [ ] Title, description, chapters, tags (`youtube.md`)
-- [ ] Copy under 100 MB; commit and push; send to the user
+- [x] Thumbnail (the star-filled figure from video 1, now dissolving into stardust)
+- [x] Title, description, chapters, tags (`youtube.md`)
+- [x] Copy under 100 MB; commit and push; send to the user
