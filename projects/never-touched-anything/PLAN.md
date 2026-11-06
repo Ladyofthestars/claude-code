@@ -22,7 +22,7 @@ Tick each box as it is done. If work stops, continue from the first unticked box
 ## Step 4: animation
 - [x] Builder for the 9 parts (`tools/build_never_touched.py`), following the shot list
 - [x] Frame check, empty-moment check and label check pass for every part
-- [ ] Stills review and fixes
+- [x] Stills review and fixes (parts 2–8: scenes exit cleanly, bigger atoms, fixed overlapping end text, filled two empty moments)
 - [ ] Render, join, music, mix, loudness; final checks
 
 ## Step 5: packaging
