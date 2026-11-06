@@ -9,6 +9,8 @@
 
 Usage: python tools/finish_video.py made-of-stars "2:1:Big Bang" "5:4:blown apart" "6:2:crash"
        (each swell = part:paragraph:phrase)
+       Add --score [--key D] [--seed 1] for the chapter-by-chapter soundtrack played by sampled
+       instruments (tools/make_score.py) instead of the simple piano bed (tools/make_music.py).
 """
 import json
 import math
@@ -38,8 +40,21 @@ def phrase_time(words, line, phrase):
 
 
 def main():
-    video = sys.argv[1]
-    swells = sys.argv[2:]
+    args = sys.argv[1:]
+    opts = {}
+    rest = []
+    i = 0
+    while i < len(args):
+        if args[i] == '--score':
+            opts['score'] = True
+        elif args[i] in ('--key', '--seed'):
+            opts[args[i][2:]] = args[i + 1]
+            i += 1
+        else:
+            rest.append(args[i])
+        i += 1
+    video = rest[0]
+    swells = rest[1:]
     root = f'public/videos/{video}'
     out = f'out/{video}'
     os.makedirs(out, exist_ok=True)
@@ -68,7 +83,13 @@ def main():
         words = json.load(open(f'{root}/p{n}/words.json'))
         times.append(offsets[int(n)] + phrase_time(words, int(line), phrase))
     py = sys.executable
-    subprocess.run([py, 'tools/make_music.py', '--seconds', f'{total:.3f}', '--out', f'{out}/music.wav', '--swells', ','.join(f'{t:.3f}' for t in times)], check=True)
+    sw = ','.join(f'{t:.3f}' for t in times)
+    if opts.get('score'):
+        subprocess.run([py, 'tools/make_score.py', '--seconds', f'{total:.3f}', '--out', f'{out}/music.wav', '--swells', sw,
+                        '--sections', ','.join(f'{offsets[n]:.3f}' for n in parts),
+                        '--key', opts.get('key', 'D'), '--seed', opts.get('seed', '1')], check=True)
+    else:
+        subprocess.run([py, 'tools/make_music.py', '--seconds', f'{total:.3f}', '--out', f'{out}/music.wav', '--swells', sw], check=True)
     # Duck the music under the voice, mix, and normalise for YouTube.
     subprocess.run([
         'ffmpeg', '-v', 'error', '-y', '-i', f'{out}/voice.wav', '-i', f'{out}/music.wav', '-filter_complex',

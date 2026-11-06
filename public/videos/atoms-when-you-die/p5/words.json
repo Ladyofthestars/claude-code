@@ -1,1370 +1,803 @@
 {
- "duration": 73.958,
+ "duration": 44.15,
  "source": "Kokoro-82M (open source, Apache 2.0), voice am_michael 0.7 + am_onyx 0.3, speed 1.02, one paragraph at a time, word timestamps",
  "words": [
   {
    "text": "Your",
-   "start": 2.6,
-   "end": 2.759,
+   "start": 2.68,
+   "end": 2.843,
    "line": 1,
    "sentence": true
   },
   {
    "text": "bones",
-   "start": 2.759,
-   "end": 3.197,
+   "start": 2.843,
+   "end": 3.28,
    "line": 1,
    "sentence": false
   },
   {
    "text": "are",
-   "start": 3.197,
-   "end": 3.297,
+   "start": 3.28,
+   "end": 3.38,
    "line": 1,
    "sentence": false
   },
   {
    "text": "built",
-   "start": 3.297,
-   "end": 3.572,
+   "start": 3.38,
+   "end": 3.655,
    "line": 1,
    "sentence": false
   },
   {
    "text": "mostly",
-   "start": 3.572,
-   "end": 3.972,
+   "start": 3.655,
+   "end": 4.055,
    "line": 1,
    "sentence": false
   },
   {
    "text": "from",
-   "start": 3.972,
-   "end": 4.184,
+   "start": 4.055,
+   "end": 4.268,
    "line": 1,
    "sentence": false
   },
   {
    "text": "calcium",
-   "start": 4.184,
-   "end": 4.747,
+   "start": 4.268,
+   "end": 4.83,
    "line": 1,
    "sentence": false
   },
   {
    "text": "and",
-   "start": 4.747,
-   "end": 4.884,
+   "start": 4.83,
+   "end": 4.968,
    "line": 1,
    "sentence": false
   },
   {
    "text": "phosphorus",
-   "start": 4.884,
-   "end": 6.072,
-   "line": 1,
-   "sentence": false
-  },
-  {
-   "text": "Phosphorus",
-   "start": 6.072,
-   "end": 6.809,
-   "line": 1,
-   "sentence": true
-  },
-  {
-   "text": "is",
-   "start": 6.809,
-   "end": 6.972,
-   "line": 1,
-   "sentence": false
-  },
-  {
-   "text": "in",
-   "start": 6.972,
-   "end": 7.097,
-   "line": 1,
-   "sentence": false
-  },
-  {
-   "text": "your",
-   "start": 7.097,
-   "end": 7.284,
-   "line": 1,
-   "sentence": false
-  },
-  {
-   "text": "DNA",
-   "start": 7.284,
-   "end": 7.822,
-   "line": 1,
-   "sentence": false
-  },
-  {
-   "text": "too",
-   "start": 7.822,
-   "end": 8.547,
+   "start": 4.968,
+   "end": 6.155,
    "line": 1,
    "sentence": false
   },
   {
    "text": "And",
-   "start": 8.547,
-   "end": 8.709,
+   "start": 6.155,
+   "end": 6.343,
    "line": 1,
    "sentence": true
   },
   {
    "text": "phosphorus",
-   "start": 8.709,
-   "end": 9.397,
+   "start": 6.343,
+   "end": 7.168,
    "line": 1,
    "sentence": false
   },
   {
    "text": "is",
-   "start": 9.397,
-   "end": 9.547,
+   "start": 7.168,
+   "end": 7.33,
    "line": 1,
    "sentence": false
   },
   {
    "text": "one",
-   "start": 9.547,
-   "end": 9.684,
+   "start": 7.33,
+   "end": 7.468,
    "line": 1,
    "sentence": false
   },
   {
    "text": "of",
-   "start": 9.684,
-   "end": 9.759,
+   "start": 7.468,
+   "end": 7.543,
    "line": 1,
    "sentence": false
   },
   {
    "text": "the",
-   "start": 9.759,
-   "end": 9.897,
+   "start": 7.543,
+   "end": 7.68,
    "line": 1,
    "sentence": false
   },
   {
    "text": "slowest",
-   "start": 9.897,
-   "end": 10.409,
+   "start": 7.68,
+   "end": 8.193,
    "line": 1,
    "sentence": false
   },
   {
    "text": "travelers",
-   "start": 10.409,
-   "end": 11.009,
+   "start": 8.193,
+   "end": 8.793,
    "line": 1,
    "sentence": false
   },
   {
    "text": "on",
-   "start": 11.009,
-   "end": 11.197,
+   "start": 8.793,
+   "end": 8.98,
    "line": 1,
    "sentence": false
   },
   {
    "text": "Earth",
-   "start": 11.197,
-   "end": 11.538,
+   "start": 8.98,
+   "end": 9.322,
    "line": 1,
    "sentence": false
   },
   {
    "text": "Rain",
-   "start": 12.337,
-   "end": 12.625,
+   "start": 10.152,
+   "end": 10.464,
    "line": 2,
    "sentence": true
   },
   {
    "text": "and",
-   "start": 12.625,
-   "end": 12.737,
+   "start": 10.464,
+   "end": 10.577,
    "line": 2,
    "sentence": false
   },
   {
    "text": "rivers",
-   "start": 12.737,
-   "end": 13.15,
+   "start": 10.577,
+   "end": 10.989,
    "line": 2,
    "sentence": false
   },
   {
    "text": "carry",
-   "start": 13.15,
-   "end": 13.475,
+   "start": 10.989,
+   "end": 11.327,
    "line": 2,
    "sentence": false
   },
   {
    "text": "it",
-   "start": 13.475,
-   "end": 13.587,
+   "start": 11.327,
+   "end": 11.452,
    "line": 2,
    "sentence": false
   },
   {
    "text": "to",
-   "start": 13.587,
-   "end": 13.687,
+   "start": 11.452,
+   "end": 11.552,
    "line": 2,
    "sentence": false
   },
   {
    "text": "the",
-   "start": 13.687,
-   "end": 13.837,
+   "start": 11.552,
+   "end": 11.702,
    "line": 2,
    "sentence": false
   },
   {
    "text": "sea",
-   "start": 13.837,
-   "end": 14.65,
-   "line": 2,
-   "sentence": false
-  },
-  {
-   "text": "There",
-   "start": 14.65,
-   "end": 14.975,
-   "line": 2,
-   "sentence": true
-  },
-  {
-   "text": "it's",
-   "start": 14.975,
-   "end": 15.162,
-   "line": 2,
-   "sentence": false
-  },
-  {
-   "text": "taken",
-   "start": 15.162,
-   "end": 15.45,
-   "line": 2,
-   "sentence": false
-  },
-  {
-   "text": "up",
-   "start": 15.45,
-   "end": 15.637,
-   "line": 2,
-   "sentence": false
-  },
-  {
-   "text": "by",
-   "start": 15.637,
-   "end": 15.862,
-   "line": 2,
-   "sentence": false
-  },
-  {
-   "text": "sea",
-   "start": 15.862,
-   "end": 16.087,
-   "line": 2,
-   "sentence": false
-  },
-  {
-   "text": "life",
-   "start": 16.087,
-   "end": 16.862,
-   "line": 2,
-   "sentence": false
-  },
-  {
-   "text": "When",
-   "start": 16.862,
-   "end": 17.012,
-   "line": 2,
-   "sentence": true
-  },
-  {
-   "text": "those",
-   "start": 17.012,
-   "end": 17.262,
-   "line": 2,
-   "sentence": false
-  },
-  {
-   "text": "creatures",
-   "start": 17.262,
-   "end": 17.725,
-   "line": 2,
-   "sentence": false
-  },
-  {
-   "text": "die",
-   "start": 17.725,
-   "end": 18.112,
-   "line": 2,
-   "sentence": false
-  },
-  {
-   "text": "their",
-   "start": 18.112,
-   "end": 18.287,
-   "line": 2,
-   "sentence": false
-  },
-  {
-   "text": "remains",
-   "start": 18.287,
-   "end": 18.812,
-   "line": 2,
-   "sentence": false
-  },
-  {
-   "text": "sink",
-   "start": 18.812,
-   "end": 19.237,
-   "line": 2,
-   "sentence": false
-  },
-  {
-   "text": "and",
-   "start": 19.237,
-   "end": 19.387,
-   "line": 2,
-   "sentence": false
-  },
-  {
-   "text": "settle",
-   "start": 19.387,
-   "end": 19.762,
-   "line": 2,
-   "sentence": false
-  },
-  {
-   "text": "on",
-   "start": 19.762,
-   "end": 19.875,
-   "line": 2,
-   "sentence": false
-  },
-  {
-   "text": "the",
-   "start": 19.875,
-   "end": 20.0,
-   "line": 2,
-   "sentence": false
-  },
-  {
-   "text": "ocean",
-   "start": 20.0,
-   "end": 20.425,
-   "line": 2,
-   "sentence": false
-  },
-  {
-   "text": "floor",
-   "start": 20.425,
-   "end": 20.955,
+   "start": 11.702,
+   "end": 12.689,
    "line": 2,
    "sentence": false
   },
   {
    "text": "Once",
-   "start": 21.716,
-   "end": 21.928,
-   "line": 3,
+   "start": 12.689,
+   "end": 12.939,
+   "line": 2,
    "sentence": true
   },
   {
    "text": "it",
-   "start": 21.928,
-   "end": 22.016,
+   "start": 12.939,
+   "end": 13.027,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "gets",
+   "start": 13.027,
+   "end": 13.277,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "there",
+   "start": 13.277,
+   "end": 13.727,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "a",
+   "start": 13.727,
+   "end": 13.852,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "phosphorus",
+   "start": 13.852,
+   "end": 14.439,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "atom",
+   "start": 14.439,
+   "end": 14.789,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "stays",
+   "start": 14.789,
+   "end": 15.327,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "on",
+   "start": 15.327,
+   "end": 15.539,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "average",
+   "start": 15.539,
+   "end": 16.302,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "for",
+   "start": 16.302,
+   "end": 16.439,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "twenty",
+   "start": 16.439,
+   "end": 16.789,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "thousand",
+   "start": 16.789,
+   "end": 17.277,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "to",
+   "start": 17.277,
+   "end": 17.377,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "a",
+   "start": 17.377,
+   "end": 17.452,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "hundred",
+   "start": 17.452,
+   "end": 17.864,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "thousand",
+   "start": 17.864,
+   "end": 18.302,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "years",
+   "start": 18.302,
+   "end": 18.898,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "Your",
+   "start": 19.728,
+   "end": 19.878,
+   "line": 3,
+   "sentence": true
+  },
+  {
+   "text": "calcium",
+   "start": 19.878,
+   "end": 20.428,
    "line": 3,
    "sentence": false
   },
   {
-   "text": "reaches",
-   "start": 22.016,
-   "end": 22.378,
+   "text": "may",
+   "start": 20.428,
+   "end": 20.615,
    "line": 3,
    "sentence": false
   },
   {
-   "text": "the",
-   "start": 22.378,
-   "end": 22.528,
+   "text": "end",
+   "start": 20.615,
+   "end": 20.84,
    "line": 3,
    "sentence": false
   },
   {
-   "text": "ocean",
-   "start": 22.528,
-   "end": 23.303,
+   "text": "up",
+   "start": 20.84,
+   "end": 21.015,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "in",
+   "start": 21.015,
+   "end": 21.09,
    "line": 3,
    "sentence": false
   },
   {
    "text": "a",
-   "start": 23.303,
-   "end": 23.441,
+   "start": 21.09,
+   "end": 21.19,
    "line": 3,
    "sentence": false
   },
   {
-   "text": "phosphorus",
-   "start": 23.441,
-   "end": 24.053,
+   "text": "seashell",
+   "start": 21.19,
+   "end": 22.178,
    "line": 3,
    "sentence": false
   },
   {
-   "text": "atom",
-   "start": 24.053,
-   "end": 24.391,
+   "text": "When",
+   "start": 22.178,
+   "end": 22.315,
+   "line": 3,
+   "sentence": true
+  },
+  {
+   "text": "the",
+   "start": 22.315,
+   "end": 22.403,
    "line": 3,
    "sentence": false
   },
   {
-   "text": "stays",
-   "start": 24.391,
-   "end": 24.766,
+   "text": "creature",
+   "start": 22.403,
+   "end": 22.803,
    "line": 3,
    "sentence": false
   },
   {
-   "text": "there",
-   "start": 24.766,
-   "end": 24.978,
+   "text": "dies",
+   "start": 22.803,
+   "end": 23.253,
    "line": 3,
    "sentence": false
   },
   {
-   "text": "for",
-   "start": 24.978,
-   "end": 25.416,
+   "text": "its",
+   "start": 23.253,
+   "end": 23.44,
    "line": 3,
    "sentence": false
   },
   {
-   "text": "on",
-   "start": 25.416,
-   "end": 25.628,
+   "text": "shell",
+   "start": 23.44,
+   "end": 23.803,
    "line": 3,
    "sentence": false
   },
   {
-   "text": "average",
-   "start": 25.628,
-   "end": 26.528,
-   "line": 3,
-   "sentence": false
-  },
-  {
-   "text": "twenty",
-   "start": 26.528,
-   "end": 26.878,
-   "line": 3,
-   "sentence": false
-  },
-  {
-   "text": "thousand",
-   "start": 26.878,
-   "end": 27.391,
+   "text": "sinks",
+   "start": 23.803,
+   "end": 24.178,
    "line": 3,
    "sentence": false
   },
   {
    "text": "to",
-   "start": 27.391,
-   "end": 27.491,
+   "start": 24.178,
+   "end": 24.265,
    "line": 3,
-   "sentence": false
-  },
-  {
-   "text": "a",
-   "start": 27.491,
-   "end": 27.591,
-   "line": 3,
-   "sentence": false
-  },
-  {
-   "text": "hundred",
-   "start": 27.591,
-   "end": 28.028,
-   "line": 3,
-   "sentence": false
-  },
-  {
-   "text": "thousand",
-   "start": 28.028,
-   "end": 28.466,
-   "line": 3,
-   "sentence": false
-  },
-  {
-   "text": "years",
-   "start": 28.466,
-   "end": 29.089,
-   "line": 3,
-   "sentence": false
-  },
-  {
-   "text": "Calcium",
-   "start": 29.862,
-   "end": 30.387,
-   "line": 4,
-   "sentence": true
-  },
-  {
-   "text": "has",
-   "start": 30.387,
-   "end": 30.587,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "a",
-   "start": 30.587,
-   "end": 30.699,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "long",
-   "start": 30.699,
-   "end": 31.062,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "road",
-   "start": 31.062,
-   "end": 31.412,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "too",
-   "start": 31.412,
-   "end": 32.137,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "In",
-   "start": 32.137,
-   "end": 32.224,
-   "line": 4,
-   "sentence": true
-  },
-  {
-   "text": "the",
-   "start": 32.224,
-   "end": 32.337,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "sea",
-   "start": 32.337,
-   "end": 32.662,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "it's",
-   "start": 32.662,
-   "end": 32.862,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "built",
-   "start": 32.862,
-   "end": 33.099,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "into",
-   "start": 33.099,
-   "end": 33.387,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "shells",
-   "start": 33.387,
-   "end": 34.212,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "Over",
-   "start": 34.212,
-   "end": 34.474,
-   "line": 4,
-   "sentence": true
-  },
-  {
-   "text": "time",
-   "start": 34.474,
-   "end": 35.112,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "shells",
-   "start": 35.112,
-   "end": 35.499,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "on",
-   "start": 35.499,
-   "end": 35.599,
-   "line": 4,
    "sentence": false
   },
   {
    "text": "the",
-   "start": 35.599,
-   "end": 35.724,
-   "line": 4,
+   "start": 24.265,
+   "end": 24.403,
+   "line": 3,
    "sentence": false
   },
   {
    "text": "ocean",
-   "start": 35.724,
-   "end": 36.149,
-   "line": 4,
+   "start": 24.403,
+   "end": 24.815,
+   "line": 3,
    "sentence": false
   },
   {
    "text": "floor",
-   "start": 36.149,
-   "end": 36.487,
-   "line": 4,
+   "start": 24.815,
+   "end": 25.64,
+   "line": 3,
    "sentence": false
   },
   {
-   "text": "become",
-   "start": 36.487,
-   "end": 36.862,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "limestone",
-   "start": 36.862,
-   "end": 38.087,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "Limestone",
-   "start": 38.087,
-   "end": 38.837,
-   "line": 4,
+   "text": "Over",
+   "start": 25.64,
+   "end": 25.915,
+   "line": 3,
    "sentence": true
   },
   {
-   "text": "is",
-   "start": 38.837,
-   "end": 38.987,
-   "line": 4,
+   "text": "time",
+   "start": 25.915,
+   "end": 26.565,
+   "line": 3,
    "sentence": false
   },
   {
-   "text": "the",
-   "start": 38.987,
-   "end": 39.124,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "largest",
-   "start": 39.124,
-   "end": 39.612,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "store",
-   "start": 39.612,
-   "end": 39.874,
-   "line": 4,
+   "text": "layers",
+   "start": 26.565,
+   "end": 27.015,
+   "line": 3,
    "sentence": false
   },
   {
    "text": "of",
-   "start": 39.874,
-   "end": 39.999,
-   "line": 4,
+   "start": 27.015,
+   "end": 27.153,
+   "line": 3,
    "sentence": false
   },
   {
-   "text": "carbon",
-   "start": 39.999,
-   "end": 40.424,
-   "line": 4,
+   "text": "shells",
+   "start": 27.153,
+   "end": 27.578,
+   "line": 3,
    "sentence": false
   },
   {
-   "text": "on",
-   "start": 40.424,
-   "end": 40.549,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "our",
-   "start": 40.549,
-   "end": 40.687,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "planet",
-   "start": 40.687,
-   "end": 41.227,
-   "line": 4,
-   "sentence": false
-  },
-  {
-   "text": "And",
-   "start": 41.977,
-   "end": 42.085,
-   "line": 5,
-   "sentence": true
-  },
-  {
-   "text": "over",
-   "start": 42.085,
-   "end": 42.335,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "millions",
-   "start": 42.335,
-   "end": 42.785,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "of",
-   "start": 42.785,
-   "end": 42.872,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "years",
-   "start": 42.872,
-   "end": 43.472,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "the",
-   "start": 43.472,
-   "end": 43.572,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "ground",
-   "start": 43.572,
-   "end": 43.96,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "itself",
-   "start": 43.96,
-   "end": 44.385,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "rises",
-   "start": 44.385,
-   "end": 45.41,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "Old",
-   "start": 45.41,
-   "end": 45.71,
-   "line": 5,
-   "sentence": true
-  },
-  {
-   "text": "sea",
-   "start": 45.71,
-   "end": 45.997,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "floor",
-   "start": 45.997,
-   "end": 46.422,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "is",
-   "start": 46.422,
-   "end": 46.585,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "lifted",
-   "start": 46.585,
-   "end": 46.91,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "up",
-   "start": 46.91,
-   "end": 47.085,
-   "line": 5,
+   "text": "turn",
+   "start": 27.578,
+   "end": 27.84,
+   "line": 3,
    "sentence": false
   },
   {
    "text": "into",
-   "start": 47.085,
-   "end": 47.347,
-   "line": 5,
+   "start": 27.84,
+   "end": 28.078,
+   "line": 3,
    "sentence": false
   },
   {
-   "text": "land",
-   "start": 47.347,
-   "end": 48.272,
-   "line": 5,
+   "text": "limestone",
+   "start": 28.078,
+   "end": 28.879,
+   "line": 3,
    "sentence": false
   },
   {
-   "text": "Atoms",
-   "start": 48.272,
-   "end": 48.747,
-   "line": 5,
+   "text": "And",
+   "start": 29.709,
+   "end": 29.821,
+   "line": 4,
    "sentence": true
   },
   {
-   "text": "that",
-   "start": 48.747,
-   "end": 48.86,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "were",
-   "start": 48.86,
-   "end": 48.997,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "once",
-   "start": 48.997,
-   "end": 49.272,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "part",
-   "start": 49.272,
-   "end": 49.485,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "of",
-   "start": 49.485,
-   "end": 49.56,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "a",
-   "start": 49.56,
-   "end": 49.635,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "body",
-   "start": 49.635,
-   "end": 50.022,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "can",
-   "start": 50.022,
-   "end": 50.21,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "end",
-   "start": 50.21,
-   "end": 50.435,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "up",
-   "start": 50.435,
-   "end": 50.61,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "in",
-   "start": 50.61,
-   "end": 50.685,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "the",
-   "start": 50.685,
-   "end": 50.785,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "stone",
-   "start": 50.785,
-   "end": 51.185,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "of",
-   "start": 51.185,
-   "end": 51.26,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "a",
-   "start": 51.26,
-   "end": 51.347,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "mountain",
-   "start": 51.347,
-   "end": 51.939,
-   "line": 5,
-   "sentence": false
-  },
-  {
-   "text": "Some",
-   "start": 52.741,
-   "end": 52.966,
-   "line": 6,
-   "sentence": true
-  },
-  {
-   "text": "carbon",
-   "start": 52.966,
-   "end": 53.366,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "takes",
-   "start": 53.366,
-   "end": 53.628,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "an",
-   "start": 53.628,
-   "end": 53.753,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "even",
-   "start": 53.753,
-   "end": 54.078,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "stranger",
-   "start": 54.078,
-   "end": 54.591,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "road",
-   "start": 54.591,
-   "end": 55.491,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "When",
-   "start": 55.491,
-   "end": 55.641,
-   "line": 6,
-   "sentence": true
-  },
-  {
-   "text": "living",
-   "start": 55.641,
-   "end": 55.953,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "things",
-   "start": 55.953,
-   "end": 56.278,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "are",
-   "start": 56.278,
-   "end": 56.403,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "buried",
-   "start": 56.403,
-   "end": 56.878,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "deep",
-   "start": 56.878,
-   "end": 57.166,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "underground",
-   "start": 57.166,
-   "end": 58.141,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "their",
-   "start": 58.141,
-   "end": 58.328,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "carbon",
-   "start": 58.328,
-   "end": 58.741,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "can",
-   "start": 58.741,
-   "end": 58.853,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "be",
-   "start": 58.853,
-   "end": 58.991,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "locked",
-   "start": 58.991,
-   "end": 59.291,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "away",
-   "start": 59.291,
-   "end": 59.616,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "for",
-   "start": 59.616,
-   "end": 59.778,
-   "line": 6,
+   "text": "over",
+   "start": 29.821,
+   "end": 30.071,
+   "line": 4,
    "sentence": false
   },
   {
    "text": "millions",
-   "start": 59.778,
-   "end": 60.203,
-   "line": 6,
+   "start": 30.071,
+   "end": 30.496,
+   "line": 4,
    "sentence": false
   },
   {
    "text": "of",
-   "start": 60.203,
-   "end": 60.291,
-   "line": 6,
+   "start": 30.496,
+   "end": 30.584,
+   "line": 4,
    "sentence": false
   },
   {
    "text": "years",
-   "start": 60.291,
-   "end": 61.203,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "That's",
-   "start": 61.203,
-   "end": 61.491,
-   "line": 6,
-   "sentence": true
-  },
-  {
-   "text": "how",
-   "start": 61.491,
-   "end": 61.678,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "coal",
-   "start": 61.678,
-   "end": 62.066,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "formed",
-   "start": 62.066,
-   "end": 63.103,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "The",
-   "start": 63.103,
-   "end": 63.278,
-   "line": 6,
-   "sentence": true
-  },
-  {
-   "text": "energy",
-   "start": 63.278,
-   "end": 63.741,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "in",
-   "start": 63.741,
-   "end": 63.828,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "a",
-   "start": 63.828,
-   "end": 63.916,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "lump",
-   "start": 63.916,
-   "end": 64.128,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "of",
-   "start": 64.128,
-   "end": 64.253,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "coal",
-   "start": 64.253,
-   "end": 64.541,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "today",
-   "start": 64.541,
-   "end": 65.078,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "is",
-   "start": 65.078,
-   "end": 65.278,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "sunlight",
-   "start": 65.278,
-   "end": 65.841,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "that",
-   "start": 65.841,
-   "end": 66.028,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "plants",
-   "start": 66.028,
-   "end": 66.403,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "caught",
-   "start": 66.403,
-   "end": 66.691,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "between",
-   "start": 66.691,
-   "end": 67.053,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "200",
-   "start": 67.053,
-   "end": 67.678,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "and",
-   "start": 67.678,
-   "end": 67.803,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "350",
-   "start": 67.803,
-   "end": 68.703,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "million",
-   "start": 68.703,
-   "end": 69.091,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "years",
-   "start": 69.091,
-   "end": 69.391,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "ago",
-   "start": 69.391,
-   "end": 69.816,
-   "line": 6,
-   "sentence": false
-  },
-  {
-   "text": "So",
-   "start": 70.61,
-   "end": 70.723,
-   "line": 7,
-   "sentence": true
-  },
-  {
-   "text": "does",
-   "start": 70.723,
-   "end": 70.873,
-   "line": 7,
+   "start": 30.584,
+   "end": 31.159,
+   "line": 4,
    "sentence": false
   },
   {
    "text": "the",
-   "start": 70.873,
-   "end": 71.023,
-   "line": 7,
+   "start": 31.159,
+   "end": 31.259,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "ground",
+   "start": 31.259,
+   "end": 31.621,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "itself",
+   "start": 31.621,
+   "end": 32.034,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "rises",
+   "start": 32.034,
+   "end": 33.046,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "Old",
+   "start": 33.046,
+   "end": 33.346,
+   "line": 4,
+   "sentence": true
+  },
+  {
+   "text": "sea",
+   "start": 33.346,
+   "end": 33.634,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "floor",
+   "start": 33.634,
+   "end": 34.034,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "is",
+   "start": 34.034,
+   "end": 34.196,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "lifted",
+   "start": 34.196,
+   "end": 34.521,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "up",
+   "start": 34.521,
+   "end": 34.671,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "into",
+   "start": 34.671,
+   "end": 34.934,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "land",
+   "start": 34.934,
+   "end": 35.846,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "The",
+   "start": 35.846,
+   "end": 35.996,
+   "line": 4,
+   "sentence": true
+  },
+  {
+   "text": "calcium",
+   "start": 35.996,
+   "end": 36.559,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "that",
+   "start": 36.559,
+   "end": 36.684,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "held",
+   "start": 36.684,
+   "end": 36.921,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 36.921,
+   "end": 37.009,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "up",
+   "start": 37.009,
+   "end": 37.209,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "for",
+   "start": 37.209,
+   "end": 37.321,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "a",
+   "start": 37.321,
+   "end": 37.409,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "lifetime",
+   "start": 37.409,
+   "end": 38.084,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "could",
+   "start": 38.084,
+   "end": 38.296,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "one",
+   "start": 38.296,
+   "end": 38.534,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "day",
+   "start": 38.534,
+   "end": 38.834,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "be",
+   "start": 38.834,
+   "end": 38.996,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "part",
+   "start": 38.996,
+   "end": 39.246,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 39.246,
+   "end": 39.321,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "a",
+   "start": 39.321,
+   "end": 39.409,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "mountain",
+   "start": 39.409,
+   "end": 39.972,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "So",
+   "start": 40.802,
+   "end": 40.915,
+   "line": 5,
+   "sentence": true
+  },
+  {
+   "text": "does",
+   "start": 40.915,
+   "end": 41.065,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 41.065,
+   "end": 41.215,
+   "line": 5,
    "sentence": false
   },
   {
    "text": "Earth",
-   "start": 71.023,
-   "end": 71.31,
-   "line": 7,
+   "start": 41.215,
+   "end": 41.502,
+   "line": 5,
    "sentence": false
   },
   {
    "text": "keep",
-   "start": 71.31,
-   "end": 71.548,
-   "line": 7,
+   "start": 41.502,
+   "end": 41.74,
+   "line": 5,
    "sentence": false
   },
   {
    "text": "our",
-   "start": 71.548,
-   "end": 71.723,
-   "line": 7,
+   "start": 41.74,
+   "end": 41.915,
+   "line": 5,
    "sentence": false
   },
   {
    "text": "atoms",
-   "start": 71.723,
-   "end": 72.123,
-   "line": 7,
+   "start": 41.915,
+   "end": 42.315,
+   "line": 5,
    "sentence": false
   },
   {
    "text": "forever",
-   "start": 72.123,
-   "end": 72.758,
-   "line": 7,
+   "start": 42.315,
+   "end": 42.95,
+   "line": 5,
    "sentence": false
   }
  ]

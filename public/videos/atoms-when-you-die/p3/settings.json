@@ -409,31 +409,31 @@
    "zoom": 0.78
   },
   {
-   "at": 60.494,
+   "at": 60.574,
    "x": 26500.0,
    "y": -350.0,
    "zoom": 0.78
   },
   {
-   "at": 61.794,
+   "at": 61.874,
    "x": 28600.0,
    "y": -390.0,
    "zoom": 1.0
   },
   {
-   "at": 63.965,
+   "at": 66.012,
    "x": 28600.0,
    "y": -390.0,
    "zoom": 1.0
   },
   {
-   "at": 65.265,
+   "at": 67.312,
    "x": 28817.0,
    "y": -113.5,
    "zoom": 1.25
   },
   {
-   "at": 66.458,
+   "at": 68.438,
    "x": 28817.0,
    "y": -113.5,
    "zoom": 1.25
@@ -2308,7 +2308,7 @@
    "cx": 28392.5,
    "cy": -174.3,
    "r": 15,
-   "draw": "6:But a few",
+   "draw": "6:But one kind",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2319,7 +2319,7 @@
    "cx": 28527.9,
    "cy": -610.5,
    "r": 15,
-   "draw": "6:But a few+0.04",
+   "draw": "6:But one kind+0.04",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2330,7 +2330,7 @@
    "cx": 28416.8,
    "cy": -380.6,
    "r": 15,
-   "draw": "6:But a few+0.08",
+   "draw": "6:But one kind+0.08",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2341,7 +2341,7 @@
    "cx": 28963.0,
    "cy": -111.4,
    "r": 15,
-   "draw": "6:But a few+0.12",
+   "draw": "6:But one kind+0.12",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2352,7 +2352,7 @@
    "cx": 28706.0,
    "cy": -553.5,
    "r": 15,
-   "draw": "6:But a few+0.16",
+   "draw": "6:But one kind+0.16",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2363,7 +2363,7 @@
    "cx": 28965.8,
    "cy": -503.2,
    "r": 15,
-   "draw": "6:But a few+0.2",
+   "draw": "6:But one kind+0.2",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2374,7 +2374,7 @@
    "cx": 28769.3,
    "cy": -135.4,
    "r": 15,
-   "draw": "6:But a few+0.24",
+   "draw": "6:But one kind+0.24",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2385,7 +2385,7 @@
    "cx": 28258.8,
    "cy": -560.8,
    "r": 15,
-   "draw": "6:But a few+0.28",
+   "draw": "6:But one kind+0.28",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2396,7 +2396,7 @@
    "cx": 28910.1,
    "cy": -532.1,
    "r": 15,
-   "draw": "6:But a few+0.32",
+   "draw": "6:But one kind+0.32",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2407,7 +2407,7 @@
    "cx": 28203.0,
    "cy": -409.3,
    "r": 15,
-   "draw": "6:But a few+0.36",
+   "draw": "6:But one kind+0.36",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2418,7 +2418,7 @@
    "cx": 28407.6,
    "cy": -563.3,
    "r": 15,
-   "draw": "6:But a few+0.4",
+   "draw": "6:But one kind+0.4",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2429,7 +2429,7 @@
    "cx": 28817.0,
    "cy": -113.5,
    "r": 15,
-   "draw": "6:But a few+0.44",
+   "draw": "6:But one kind+0.44",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2440,7 +2440,7 @@
    "cx": 28718.9,
    "cy": -245.0,
    "r": 15,
-   "draw": "6:But a few+0.48",
+   "draw": "6:But one kind+0.48",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2451,7 +2451,7 @@
    "cx": 28269.8,
    "cy": -188.7,
    "r": 15,
-   "draw": "6:But a few+0.52",
+   "draw": "6:But one kind+0.52",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2462,7 +2462,7 @@
    "cx": 28206.9,
    "cy": -252.8,
    "r": 15,
-   "draw": "6:But a few+0.56",
+   "draw": "6:But one kind+0.56",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2473,7 +2473,7 @@
    "cx": 28337.0,
    "cy": -319.8,
    "r": 15,
-   "draw": "6:But a few+0.6",
+   "draw": "6:But one kind+0.6",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2484,7 +2484,7 @@
    "cx": 28591.2,
    "cy": -342.9,
    "r": 15,
-   "draw": "6:But a few+0.64",
+   "draw": "6:But one kind+0.64",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2495,7 +2495,7 @@
    "cx": 28546.6,
    "cy": -481.4,
    "r": 15,
-   "draw": "6:But a few+0.68",
+   "draw": "6:But one kind+0.68",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2506,7 +2506,7 @@
    "cx": 28292.7,
    "cy": -152.1,
    "r": 15,
-   "draw": "6:But a few+0.72",
+   "draw": "6:But one kind+0.72",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2517,7 +2517,7 @@
    "cx": 28173.7,
    "cy": -562.4,
    "r": 15,
-   "draw": "6:But a few+0.76",
+   "draw": "6:But one kind+0.76",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2528,7 +2528,7 @@
    "cx": 28272.7,
    "cy": -114.8,
    "r": 15,
-   "draw": "6:But a few+0.8",
+   "draw": "6:But one kind+0.8",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2539,7 +2539,7 @@
    "cx": 28709.5,
    "cy": -507.9,
    "r": 15,
-   "draw": "6:But a few+0.84",
+   "draw": "6:But one kind+0.84",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2550,7 +2550,7 @@
    "cx": 28860.3,
    "cy": -360.1,
    "r": 15,
-   "draw": "6:But a few+0.88",
+   "draw": "6:But one kind+0.88",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2561,7 +2561,7 @@
    "cx": 28323.9,
    "cy": -225.9,
    "r": 15,
-   "draw": "6:But a few+0.92",
+   "draw": "6:But one kind+0.92",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2572,7 +2572,7 @@
    "cx": 28307.6,
    "cy": -448.0,
    "r": 15,
-   "draw": "6:But a few+0.96",
+   "draw": "6:But one kind+0.96",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2583,7 +2583,7 @@
    "cx": 28237.8,
    "cy": -277.0,
    "r": 15,
-   "draw": "6:But a few+1.0",
+   "draw": "6:But one kind+1.0",
    "width": 1.8,
    "fill": "paper",
    "out": "end-1.1"
@@ -2598,6 +2598,55 @@
    "width": 1.8,
    "fill": "accent",
    "fillOpacity": 0.9,
+   "out": "end-1.1"
+  },
+  {
+   "id": "circle63",
+   "kind": "circle",
+   "cx": 28817.0,
+   "cy": -113.5,
+   "r": 70,
+   "draw": "6:keeping time",
+   "width": 1.8,
+   "color": "accent",
+   "dashed": true,
+   "duration": 1.2,
+   "out": "end-1.1"
+  },
+  {
+   "id": "line64",
+   "kind": "path",
+   "points": [
+    [
+     28817.0,
+     -113.5
+    ],
+    [
+     28817.0,
+     -165.5
+    ]
+   ],
+   "draw": "6:keeping time+0.3",
+   "width": 2.4,
+   "color": "accent",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line65",
+   "kind": "path",
+   "points": [
+    [
+     28817.0,
+     -113.5
+    ],
+    [
+     28853.0,
+     -103.5
+    ]
+   ],
+   "draw": "6:keeping time+0.5",
+   "width": 2.4,
+   "color": "accent",
    "out": "end-1.1"
   }
  ],
@@ -2669,7 +2718,7 @@
      -113.5
     ]
    ],
-   "from": "6:They change",
+   "from": "6:something different",
    "size": 110,
    "stagger": 0.0,
    "to": "end-1.1"
@@ -2791,8 +2840,8 @@
   },
   {
    "text": "?",
-   "x": 28947.0,
-   "y": -233.5,
+   "x": 28967.0,
+   "y": -243.5,
    "space": "world",
    "size": 112,
    "in": "6:So which",

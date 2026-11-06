@@ -36,7 +36,7 @@ TITLES = {
     1: 'ARE YOUR ATOMS REALLY YOURS?',
     2: 'WHAT HAPPENS WHEN YOU DIE?',
     3: 'WHERE DOES IT GO NEXT?',
-    4: 'WHICH ATOMS CHANGE?',
+    4: 'WHICH ATOM KEEPS TIME?',
     5: 'WHERE DO YOUR BONES GO?',
     6: 'DOES THE EARTH KEEP THEM FOREVER?',
     7: 'WHERE DO THEY GO IN THE END?',
@@ -406,12 +406,16 @@ def part3(p):
     fx = ex + 2700
     field = scatter(fx, 0, 900, 560, 26, seed=3)
     for i, (x, y) in enumerate(field):
-        p.circle(x, y, 15, T('6:But a few', 0.04 * i), width=1.8, fill='paper')
+        p.circle(x, y, 15, T('6:But one kind', 0.04 * i), width=1.8, fill='paper')
     gold = field[11]
     p.circle(gold[0], gold[1], 15, '6:something different', width=1.8, fill='accent', fillOpacity=0.9)
-    p.glows([gold], '6:They change', size=110)
-    question(p, gold[0] + 130, gold[1] - 120, '6:So which', size=90)
-    p.cam('6:But a few', x=fx, y=0, zoom=1.0)
+    p.glows([gold], '6:something different', size=110)
+    # A clock face appears around it: it starts keeping time
+    p.circle(gold[0], gold[1], 70, '6:keeping time', width=1.8, color='accent', dashed=True, duration=1.2)
+    p.line([(gold[0], gold[1]), (gold[0], gold[1] - 52)], '6:keeping time+0.3', width=2.4, color='accent')
+    p.line([(gold[0], gold[1]), (gold[0] + 36, gold[1] + 10)], '6:keeping time+0.5', width=2.4, color='accent')
+    question(p, gold[0] + 150, gold[1] - 130, '6:So which', size=90)
+    p.cam('6:But one kind', x=fx, y=0, zoom=1.0)
     p.cam('6:So which', x=gold[0], y=gold[1], zoom=1.25)
     p.end_all()
 
@@ -419,172 +423,165 @@ def part3(p):
 def part4(p):
     chapter(p, 4, 'Most')
     p.cam('start', x=0, y=0, zoom=1.0)
-    field = scatter(0, 0, 900, 500, 24, seed=7)
+    # A screen full of ordinary, stable carbon; one atom glows gold
+    m = mark(p)
+    field = scatter(0, 0, 1500, 720, 34, seed=7)
+    g0 = field[16]
+    field = [q for i, q in enumerate(field) if i == 16 or math.hypot(q[0] - g0[0], q[1] - g0[1]) > 90]
     for i, (x, y) in enumerate(field):
-        p.circle(x, y, 15, T('1:Most of the', 0.04 * i), width=1.8, fill='paper', out='2:It\'s made')
-    p.label('CARBON-12', 0, 340, '1:body is@end', "2:It's made", size=44, upper=False)
-    p.label('STABLE', 0, -340, '1:stable', "2:It's made", size=40, color='accent')
-    # Carbon-14
-    cx = 760
-    p.circle(cx, 0, 54, '2:part of it is@end', width=2.4, fill='accent', fillOpacity=0.75)
-    p.label('C', cx, 0, '2:part of it is@end+0.15', size=34, upper=False, spacing=0.02)
-    p.glows([(cx, 0)], '2:radioactive', size=150)
-    p.label('CARBON-14', cx, 130, '2:part of it is@end+0.2', size=40, color='accent', upper=False)
-    p.label('RADIOACTIVE', cx, 190, '2:radioactive', size=26, weight=500)
-    p.cam('2:But a very', x=420, y=0, zoom=1.0)
+        p.circle(x, y, 20, T('1:Most of your', 0.03 * i), width=2.0, fill='paper')
+    p.label('CARBON-12', 0, 440, '1:Most of your+0.4', size=44, upper=False)
+    p.label('STABLE · CAN LAST FOREVER', 0, -440, '1:stable', size=38, color='accent')
+    gold = g0
+    p.circle(gold[0], gold[1], 20, '1:a tiny part', width=2.2, fill='accent', fillOpacity=0.9)
+    p.glows([gold], '1:a tiny part', size=150)
+    p.label('CARBON-14', gold[0], gold[1] + 80, '1:tiny part of it is@end', size=36, color='accent', upper=False)
+    p.label('RADIOACTIVE', gold[0], gold[1] + 130, "1:It's radioactive", size=24, weight=500)
+    p.cam('1:Most of your', x=0, y=0, zoom=0.95)
+    p.cam('1:a tiny part', x=gold[0], y=gold[1] + 40, zoom=1.6)
+    close(p, m, '1:made high+0.5')
     # Made in the sky: rays from space strike nitrogen
-    sx, sy = 1500, -760
-    m_sky = mark(p)
-    p.glows([(sx - 380, sy - 330), (sx + 120, sy - 380), (sx + 420, sy - 260)], '2:high in the sky', size=36, stagger=0.15)
-    for k in range(3):
-        p.line([(sx - 260 + 120 * k, sy - 420), (sx - 20 + 20 * k, sy - 60)], T('2:rays from space', 0.12 * k), width=1.6, color='accent', dashed=True)
-    atom(p, sx, sy, 'N', '2:high in the sky', r=40)
-    p.arrow((sx + 60, sy), (sx + 230, sy), '2:nitrogen in the air', width=2.0)
-    p.circle(sx + 300, sy, 40, '2:in the air+0.2', width=2.2, fill='accent', fillOpacity=0.75)
-    p.label('C', sx + 300, sy, '2:in the air+0.35', size=30, upper=False, spacing=0.02)
-    p.label('MADE IN THE SKY', sx + 150, sy + 150, '2:made in the sky', size=40)
-    p.cam("2:It's made", x=sx + 120, y=sy - 60, zoom=1.0)
-    # Taken in with food while alive; the level stays the same
-    wx = 2500
-    close(p, m_sky, "2:While you're")
-    m_level = mark(p)
-    p.pic('wheat', wx, 0, h=420, at='2:your food')
-    me = p.pic('person', wx + 650, 0, h=700, at="2:While you're", id='me', out='3:that stops+0.2')
-    p.arrow((wx + 180, 0), (wx + 450, 0), '2:taking it in', width=2.0)
-    p.stream([(wx + 120, -40), (wx + 450, -20), p.pt(me, CHEST)], '2:taking it in', '3:that stops', count=6, period=2.6, size=14, spread=6, color='accent')
-    lvl = p.line([(wx + 1000, -120), (wx + 1400, -120)], '2:stays the same', width=2.4, color='accent', duration=1.2)
-    p.label('CARBON-14 LEVEL', wx + 1200, -190, '2:stays the same', '3:After 5,730-0.2', size=26, upper=False)
-    p.cam("2:While you're", x=wx + 500, y=0, zoom=0.9)
-    p.cam('2:stays the same', x=wx + 700, y=-20, zoom=0.9)
-    # Decay: half every 5,730 years
-    atom(p, wx + 650, -420, 'C', '3:And the@end', r=34, accent=True)
-    p.drawings[-1]['out'] = '3:nitrogen'
-    p.labels[-1]['out'] = '3:nitrogen'
-    atom(p, wx + 650, -420, 'N', '3:nitrogen', r=34)
-    gx, gy = wx + 1000, 260
-    close(p, m_level, '3:After 5,730')
-    m_graph = mark(p)
-    p.arrow((gx, gy), (gx + 1150, gy), '3:After 5,730', width=2.0)
-    p.arrow((gx, gy), (gx, gy - 520), '3:After 5,730', width=2.0)
-    half = 420
-
-    def decay(a, b):
-        return [(gx + t * half, gy - 480 * 0.5 ** t) for t in [a + (b - a) * i / 24 for i in range(25)]]
-    c1 = p.line(decay(0, 1), '3:After 5,730+0.3', width=2.6, color='accent', duration=1.4)
-    p.line([(gx + half, gy), (gx + half, gy - 240)], '3:half of it', width=1.4, dashed=True, color='muted')
-    p.label('5,730 YEARS', gx + half, gy + 50, '3:half of it', size=22, upper=False)
-    p.label('½', gx + half + 50, gy - 270, '3:half of it', size=34, upper=False, spacing=0.02)
-    p.line(decay(1, 2), '3:After another', width=2.6, color='accent', duration=1.4)
-    p.line([(gx + 2 * half, gy), (gx + 2 * half, gy - 120)], "3:half of what's", width=1.4, dashed=True, color='muted')
-    p.label('11,460 YEARS', gx + 2 * half, gy + 50, "3:half of what's", size=22, upper=False)
-    p.label('¼', gx + 2 * half + 50, gy - 150, "3:half of what's", size=34, upper=False, spacing=0.02)
-    p.cam('3:When you die', x=wx + 650, y=-150, zoom=0.95)
-    p.cam('3:After 5,730', x=gx + 500, y=0, zoom=1.0)
-    # A clock that starts when a life ends: radiocarbon dating
-    hx = gx + 1800
-    close(p, m_graph, '4:like a clock')
-    p.pic('hourglass', hx, -30, h=480, at='4:like a clock')
-    p.label('HOW LONG AGO?', hx, 320, '4:how long ago', size=40, color='accent')
-    rx = hx + 900
-    p.label('RADIOCARBON DATING', rx, -260, '4:radiocarbon dating', size=40)
-    p.label('UP TO {n} YEARS', rx, -180, '4:50,000', size=34, color='accent', count={'to': 50000, 'duration': 1.4})
-    p.pic('bone', rx - 380, 120, w=300, at='4:ancient bones')
-    p.pic('log', rx, 130, h=200, at='4:wood')
-    p.pic('cloth', rx + 380, 130, w=300, at='4:cloth')
-    p.cam("4:It's like", x=hx, y=0, zoom=1.0)
-    p.cam('4:They call', x=rx - 200, y=-40, zoom=0.9)
-    p.cam("4:It's how", x=rx, y=0, zoom=0.92)
-    # A few change; almost everything moves on, some very slowly
-    fx = rx + 1600
-    field = scatter(fx, 0, 760, 460, 20, seed=11)
-    for i, (x, y) in enumerate(field):
-        p.circle(x, y, 14, T('5:A few', 0.03 * i), width=1.8, fill='accent' if i % 6 == 0 else 'paper', fillOpacity=0.85 if i % 6 == 0 else 1, out='5:Almost everything+0.6')
-    p.glows([q for i, q in enumerate(field) if i % 6 == 0], '5:slowly change', '5:Almost everything+0.6', size=70, stagger=0.1)
-    p.stream([(fx - 200, 0), (fx + 400, -60), (fx + 1000, 20)], '5:Almost everything', count=14, period=2.4, size=14, spread=60)
-    p.stream([(fx + 200, 200), (fx + 600, 220), (fx + 1000, 210)], '5:very, very', count=5, period=14, size=14, spread=10, color='accent')
-    p.label('JUST MOVES ON', fx + 400, -330, '5:moves on', '5:So where', size=34)
-    p.label('VERY, VERY SLOWLY', fx + 600, 320, '5:very, very', size=30)
-    bone = p.pic('bone', fx + 1500, -40, w=440, at='5:So where')
-    question(p, fx + 1500, -300, '5:So where', size=110)
-    p.cam('5:A few', x=fx, y=0, zoom=1.0)
-    p.cam('5:Almost everything', x=fx + 400, y=0, zoom=0.92)
-    p.cam('5:So where', x=fx + 1300, y=-60, zoom=0.95)
+    sx, sy = 1500, -900
+    m = mark(p)
+    p.glows([(sx - 420, sy - 330), (sx + 120, sy - 400), (sx + 460, sy - 280)], '1:made high', size=40, stagger=0.15)
+    for k in range(4):
+        p.line([(sx - 330 + 110 * k, sy - 440), (sx - 30 + 20 * k, sy - 60)], T('1:rays from space', 0.1 * k), width=1.8, color='accent', dashed=True)
+    atom(p, sx, sy, 'N', '1:made high+0.3', r=46)
+    p.arrow((sx + 70, sy), (sx + 250, sy), '1:strike nitrogen', width=2.2)
+    p.circle(sx + 330, sy, 46, '1:strike nitrogen+0.3', width=2.4, fill='accent', fillOpacity=0.8)
+    p.label('C', sx + 330, sy, '1:strike nitrogen+0.45', size=34, upper=False, spacing=0.02)
+    p.glows([(sx + 330, sy)], '1:strike nitrogen+0.4', size=120)
+    p.label('MADE IN THE SKY', sx + 160, sy + 170, '1:made high+0.4', size=44, color='accent')
+    p.cam('1:made high', x=sx + 150, y=sy - 60, zoom=1.0)
+    close(p, m, "2:While you're")
+    # Taken in with food while alive; at death the intake stops and a clock starts
+    wx = 2600
+    m = mark(p)
+    p.pic('wheat', wx - 150, 0, h=460, at="2:While you're")
+    me = p.pic('person', wx + 520, 0, h=720, at="2:While you're", id='me', out='2:that stops+0.4')
+    p.stream([(wx - 20, -60), (wx + 260, -40), p.pt(me, CHEST)], '2:taking it in', '2:that stops', count=8, period=2.2, size=16, spread=8, color='accent')
+    p.glow(me, CHEST, '2:your food', '2:that stops', size=80)
+    p.label('TAKEN IN WITH YOUR FOOD', wx + 180, 430, '2:your food', '2:that stops+0.4', size=30)
+    hx = wx + 520
+    p.pic('hourglass', hx, -20, h=560, at='2:a clock starts')
+    p.glows([(hx, -20)], '2:a clock starts', size=260)
+    p.label('THE CLOCK STARTS', hx, 340, '2:clock starts ticking', size=44, color='accent')
+    p.cam("2:While you're", x=wx + 200, y=0, zoom=0.9)
+    p.cam('2:a clock starts', x=hx, y=0, zoom=1.12)
+    close(p, m, '3:Every 5,730+0.6')
+    # Half of what's left turns into nitrogen every 5,730 years
+    gx = hx + 1500
+    m = mark(p)
+    pitch, r = 96, 30
+    cells = [(gx - 1.5 * pitch + c * pitch, -60 - 1.5 * pitch + rr * pitch) for rr in range(4) for c in range(4)]
+    order = [5, 10, 0, 15, 3, 12, 6, 9, 1, 14, 7, 8, 2, 13, 4, 11]
+    flips = {}
+    for k, idx in enumerate(order):
+        flips[idx] = '3:half of what\'s' if k < 8 else ('3:turns back' if k < 12 else ('3:into nitrogen' if k < 14 else None))
+    for i, (x, y) in enumerate(cells):
+        t = flips[i]
+        p.circle(x, y, r, T('3:Every 5,730', 0.03 * i), t, width=2.2, fill='accent', fillOpacity=0.9)
+        if t:
+            p.circle(x, y, r, t, width=2.2, fill='paper')
+    p.glows([cells[i] for i in order[14:]], '3:into nitrogen+0.3', size=90)
+    p.label('5,730 YEARS', gx, -400, '3:Every 5,730', '3:turns back', size=48, color='accent', upper=False)
+    p.label('11,460 YEARS', gx, -400, '3:turns back', '3:into nitrogen', size=48, color='accent', upper=False)
+    p.label('17,190 YEARS', gx, -400, '3:into nitrogen', '3:By measuring', size=48, color='accent', upper=False)
+    p.label('HALF TURNS BACK INTO NITROGEN', gx, 290, "3:half of what's", '3:By measuring', size=30)
+    p.cam('3:Every 5,730', x=gx, y=-60, zoom=1.15)
+    # Measuring what's left tells how long ago something died: radiocarbon dating
+    p.label('HOW LONG AGO DID IT DIE?', gx, -400, '3:By measuring', size=40)
+    p.label('UP TO {n} YEARS', gx, 290, '3:up to about', size=44, color='accent', count={'to': 50000, 'duration': 1.4})
+    p.cam('3:By measuring', x=gx, y=-40, zoom=1.0)
+    close(p, m, "3:It's how")
+    bx = gx + 1400
+    m = mark(p)
+    p.pic('bone', bx, -40, w=720, at="3:It's how")
+    p.glows([(bx - 120, -60), (bx + 160, -20)], '3:ancient bones', size=90, stagger=0.3)
+    p.label('ANCIENT BONES, DATED', bx, 260, '3:ancient bones', size=40, color='accent')
+    p.cam("3:It's how", x=bx, y=0, zoom=1.0)
+    close(p, m, '4:But the rest')
+    # The rest of you moves on
+    rx = bx + 1500
+    me = p.pic('person', rx, 0, h=700, at='4:But the rest', out='4:So where')
+    for k, (dx, dy) in enumerate(((-620, -300), (640, -260), (-560, 320), (600, 330))):
+        p.stream([p.pt(me, CHEST), (rx + dx * 0.5, dy * 0.6), (rx + dx, dy)], T('4:keep still', 0.12 * k), '4:So where+0.6', count=7, period=2.4, size=15, spread=10, color='accent' if k % 2 else None)
+    p.label("ALWAYS ON THE MOVE", rx, -420, "4:doesn't keep still", '4:So where', size=38)
+    p.pic('bone', rx, -20, w=560, at='4:So where')
+    question(p, rx + 380, -260, '4:So where', size=120)
+    p.cam('4:But the rest', x=rx, y=0, zoom=0.9)
+    p.cam('4:So where', x=rx + 100, y=-60, zoom=1.0)
     p.end_all()
 
 
 def part5(p):
     chapter(p, 5, 'Your bones')
     p.cam('start', x=0, y=0, zoom=0.95)
-    p.pic('bone', 0, -40, w=560, at='1:Your bones')
-    p.tile('Ca', 'CALCIUM', -150, 210, '1:calcium', s=110)
-    p.tile('P', 'PHOSPHORUS', 150, 210, '1:calcium and phosphorus', s=110)
-    p.pic('dna', 820, -20, h=440, at='1:DNA')
-    p.tile('P', None, 1050, -170, '1:DNA+0.3', s=70)
-    p.stream([(-200, 380), (400, 400), (1000, 380)], '1:slowest', count=4, period=12, size=16, spread=6, color='accent')
-    p.label('ONE OF THE SLOWEST TRAVELERS', 400, -360, '1:slowest', '2:Rain-0.2', size=34)
-    p.cam('1:Phosphorus is in', x=420, y=0, zoom=0.9)
-    p.cam('1:slowest', x=420, y=0, zoom=0.88)
-    # Rain and rivers to the sea; sea life; remains sink to the ocean floor
-    cx = 1800
-    p.pic('cloud', cx, -380, h=220, at='2:Rain')
-    river = p.line([(cx + 60, -200), (cx + 220, -40), (cx + 520, 40), (cx + 860, 100)], '2:rivers', width=2.2, curve=True, duration=1.2)
-    p.stream([(cx + 60, -200), (cx + 220, -40), (cx + 520, 40), (cx + 860, 100)], '2:carry it', '3:Once', count=8, period=3.0, size=13, spread=6, color='accent')
-    sea = cx + 1350
-    waves(p, sea - 450, sea + 550, 110, '2:the sea', n=3)
-    fish = p.pic('fish', sea + 50, 360, w=260, at='2:sea life')
-    p.stream([(cx + 860, 110), (sea - 150, 250), (sea - 40, 360)], '2:taken up', '3:Once', count=6, period=2.4, size=12, spread=6, color='accent')
-    sink = p.line([(sea + 50, 440), (sea + 120, 600), (sea + 60, 770)], '2:remains sink', width=1.6, curve=True, dashed=True, color='muted')
-    p.travel(sink, '2:remains sink', dur=1.6, size=40)
-    floor = layers(p, sea - 600, sea + 700, 820, '2:ocean floor', n=2, gap=30)
-    p.cam('2:Rain', x=cx + 350, y=-60, zoom=0.88)
-    p.cam('2:There', x=sea, y=200, zoom=0.95)
-    p.cam('2:When those', x=sea, y=500, zoom=0.92)
-    # 20,000 to 100,000 years in the ocean
-    p.label('ONE PHOSPHORUS ATOM STAYS IN THE OCEAN', sea + 560, 470, '3:a phosphorus atom', '4:Calcium-0.2', size=26, weight=500)
-    p.label('20,000 – 100,000 YEARS', sea + 560, 560, '3:twenty thousand', '4:Calcium-0.2', size=52, color='accent', spacing=0.1)
-    p.cam('3:Once', x=sea + 300, y=560, zoom=0.95)
-    # Calcium into shells; shells into limestone, the largest store of carbon
-    lx = sea + 1300
-    m_shell = mark(p)
-    p.tile('Ca', None, lx - 380, 600, '4:Calcium has', s=90)
-    road = p.line([(lx - 330, 600), (lx - 230, 540), (lx - 130, 600)], '4:long road', width=1.6, curve=True, dashed=True, color='muted')
-    p.travel(road, '4:long road', dur=1.4, size=46)
-    p.pic('shell', lx, 600, h=240, at='4:built into shells')
-    lim = layers(p, lx - 650, lx + 650, 820, '4:Over time', n=5, gap=32, step=0.25)
-    p.label('LIMESTONE', lx, 1010, '4:become limestone', size=36)
-    p.label('THE LARGEST STORE OF CARBON ON EARTH', lx, 420, '4:Limestone is the', '5:And over-0.2', size=30, color='accent')
-    p.cam('4:Calcium', x=lx - 150, y=650, zoom=0.98)
-    p.cam('4:Over time', x=lx, y=780, zoom=0.92)
-    # The ground rises; old sea floor becomes a mountain
-    for k in range(3):
-        x = lx - 400 + 400 * k
-        p.arrow((x, 900), (x, 640), T('5:the ground itself', 0.15 * k), width=2.4)
-    close(p, m_shell, '5:lifted up')
-    m_mtn = mark(p)
-    mtn = p.pic('mountain', lx, 330, w=760, at='5:lifted up')
-    into = p.line([(lx - 520, 960), (lx - 300, 700), (lx - 60, 420)], '5:stone of a mountain', width=1.6, curve=True, dashed=True, color='muted')
-    p.travel(into, '5:stone of a mountain', dur=1.6, size=46)
-    p.cam('5:And over', x=lx, y=620, zoom=0.72)
-    p.cam('5:Atoms that', x=lx, y=420, zoom=0.92)
-    # Coal: carbon locked away; sunlight caught 200–350 million years ago
-    kx = lx + 1500
-    close(p, m_mtn, '6:Some carbon')
-    atom(p, kx - 400, 300, 'C', '6:Some carbon', r=32, accent=True)
-    p.pic('leaf', kx, 610, h=260, at='6:living things')
-    layers(p, kx - 450, kx + 450, 440, '6:buried deep', n=4, gap=-30, step=0.2)
-    coal = p.pic('coal', kx + 650, 500, h=230, at='6:how coal formed')
-    p.glows([(kx + 650, -100)], '6:sunlight', size=170)
-    beam = p.line([(kx + 640, -40), (kx + 760, 200), (kx + 660, 400)], '6:plants caught', width=1.8, curve=True, color='accent', dashed=True)
-    p.travel(beam, '6:plants caught', dur=1.6, size=50)
-    p.label('200–350 MILLION YEARS AGO', kx + 650, 690, '6:between 200', size=34, color='accent')
-    p.cam('6:Some carbon', x=kx - 100, y=420, zoom=0.95)
-    p.cam("6:That's how", x=kx + 400, y=420, zoom=0.95)
-    p.cam('6:The energy', x=kx + 600, y=300, zoom=0.82)
+    m = mark(p)
+    p.pic('bone', 0, -60, w=700, at='1:Your bones')
+    p.tile('Ca', 'CALCIUM', -170, 240, '1:calcium', s=120)
+    p.tile('P', 'PHOSPHORUS', 170, 240, '1:calcium and phosphorus', s=120, fill='accent')
+    p.glows([(170, 240)], '1:And phosphorus is', size=140)
+    p.label('ONE OF THE SLOWEST TRAVELERS ON EARTH', 0, -400, '1:slowest travelers', size=36, color='accent')
+    p.stream([(-700, 470), (0, 500), (700, 470)], '1:slowest travelers', count=4, period=11, size=18, spread=6, color='accent')
+    p.cam('1:Your bones', x=0, y=0, zoom=1.0)
+    p.cam('1:And phosphorus is', x=80, y=0, zoom=0.92)
+    close(p, m, '2:Rain')
+    # Rain and rivers to the sea, where phosphorus stays 20,000 to 100,000 years
+    cx = 1700
+    m = mark(p)
+    p.pic('cloud', cx, -400, h=260, at='2:Rain')
+    p.stream([(cx - 80, -280), (cx - 60, -120)], '2:Rain', '2:Once it', count=6, period=0.9, size=10, spread=60)
+    river = [(cx + 40, -200), (cx + 240, -40), (cx + 560, 40), (cx + 900, 110)]
+    p.line(river, '2:rivers', width=2.6, curve=True, duration=1.2)
+    p.stream(river, '2:carry it', count=9, period=2.6, size=14, spread=6, color='accent')
+    sea = cx + 1400
+    waves(p, sea - 550, sea + 650, 120, '2:the sea', n=3)
+    p.pic('fish', sea + 260, 360, w=280, at='2:the sea+0.3')
+    p.stream([(sea - 120, 200), (sea - 20, 420), (sea + 120, 600), (sea + 20, 800)], '2:Once it', count=3, period=9, size=18, spread=20, color='accent')
+    p.label('IN THE OCEAN FOR', sea + 40, -300, '2:a phosphorus atom', size=30)
+    p.label('20,000 – 100,000 YEARS', sea + 40, -210, '2:twenty thousand', size=60, color='accent', spacing=0.1)
+    p.cam('2:Rain', x=cx + 400, y=-60, zoom=0.9)
+    p.cam('2:Once it', x=sea + 40, y=80, zoom=0.92)
+    close(p, m, '3:Your calcium')
+    # Calcium into a seashell; the shell sinks; shells pile up and become limestone
+    lx = sea + 1400
+    m = mark(p)
+    p.tile('Ca', None, lx - 520, -120, '3:Your calcium', s=100)
+    into = p.line([(lx - 460, -120), (lx - 300, -200), (lx - 130, -120)], '3:end up', width=1.8, curve=True, dashed=True, color='muted')
+    p.travel(into, '3:end up', dur=1.2, size=50)
+    shell = p.pic('shell', lx, -100, h=340, at='3:seashell')
+    p.glows([(lx, -100)], '3:seashell', size=180)
+    sink = p.line([(lx, 60), (lx + 60, 260), (lx, 470)], '3:its shell sinks', '3:Over time', width=1.8, curve=True, dashed=True, color='muted')
+    p.travel(sink, '3:its shell sinks', dur=1.4, size=50)
+    layers(p, lx - 700, lx + 700, 520, '3:ocean floor', n=2, gap=30)
+    layers(p, lx - 700, lx + 700, 580, '3:layers of shells', n=5, gap=30, step=0.2)
+    p.label('LIMESTONE', lx, 790, '3:into limestone', size=48, color='accent')
+    p.cam('3:Your calcium', x=lx - 200, y=-100, zoom=1.05)
+    p.cam('3:its shell sinks', x=lx, y=220, zoom=0.88)
+    p.cam('3:layers of shells', x=lx, y=280, zoom=0.8)
+    # The ground rises: old sea floor becomes a mountain
+    for k in range(4):
+        x = lx - 540 + 360 * k
+        p.arrow((x, 940), (x, 640), T('4:the ground itself', 0.12 * k), width=2.6, color='accent')
+    close(p, m, '4:lifted up')
+    m = mark(p)
+    p.pic('mountain', lx, 300, w=1000, at='4:lifted up')
+    p.label('OLD SEA FLOOR', lx, 700, '4:Old sea floor', '4:The calcium', size=34)
+    bone = p.pic('bone', lx - 760, 640, w=300, at='4:The calcium')
+    path = p.line([(lx - 620, 600), (lx - 420, 360), (lx - 120, 170)], '4:held you up', width=1.8, curve=True, dashed=True, color='accent')
+    p.travel(path, '4:held you up', dur=1.6, size=56)
+    p.glows([(lx - 120, 170)], '4:part of a mountain', size=160)
+    p.label('PART OF A MOUNTAIN', lx, -150, '4:part of a mountain', size=48, color='accent')
+    p.cam('4:And over', x=lx, y=640, zoom=0.82)
+    p.cam('4:lifted up', x=lx, y=300, zoom=0.82)
+    p.cam('4:The calcium', x=lx - 200, y=300, zoom=0.86)
+    close(p, m, '5:So does')
     # Does the Earth keep our atoms forever?
-    ex = kx + 1900
-    p.pic('earth', ex, 300, h=480, at='7:Earth')
-    question(p, ex + 380, 80, '7:forever', size=110)
-    p.cam('7:So does', x=ex, y=300, zoom=0.92)
+    ex = lx + 1500
+    p.pic('earth', ex, 0, h=520, at='5:So does')
+    question(p, ex + 400, -220, '5:forever', size=120)
+    p.cam('5:So does', x=ex, y=0, zoom=0.95)
     p.end_all()
 
 

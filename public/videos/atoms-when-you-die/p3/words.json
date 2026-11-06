@@ -1,5 +1,5 @@
 {
- "duration": 66.458,
+ "duration": 68.438,
  "source": "Kokoro-82M (open source, Apache 2.0), voice am_michael 0.7 + am_onyx 0.3, speed 1.02, one paragraph at a time, word timestamps",
  "words": [
   {
@@ -1257,113 +1257,155 @@
   },
   {
    "text": "But",
-   "start": 60.494,
-   "end": 60.59,
+   "start": 60.574,
+   "end": 60.699,
    "line": 6,
    "sentence": true
   },
   {
-   "text": "a",
-   "start": 60.59,
-   "end": 60.665,
+   "text": "one",
+   "start": 60.699,
+   "end": 60.924,
    "line": 6,
    "sentence": false
   },
   {
-   "text": "few",
-   "start": 60.665,
-   "end": 60.89,
+   "text": "kind",
+   "start": 60.924,
+   "end": 61.112,
    "line": 6,
    "sentence": false
   },
   {
    "text": "of",
-   "start": 60.89,
-   "end": 60.965,
+   "start": 61.112,
+   "end": 61.249,
    "line": 6,
    "sentence": false
   },
   {
-   "text": "your",
-   "start": 60.965,
-   "end": 61.14,
+   "text": "atom",
+   "start": 61.249,
+   "end": 61.624,
    "line": 6,
    "sentence": false
   },
   {
-   "text": "atoms",
-   "start": 61.14,
-   "end": 61.577,
+   "text": "in",
+   "start": 61.624,
+   "end": 61.787,
    "line": 6,
    "sentence": false
   },
   {
-   "text": "do",
-   "start": 61.577,
-   "end": 61.752,
+   "text": "you",
+   "start": 61.787,
+   "end": 61.999,
+   "line": 6,
+   "sentence": false
+  },
+  {
+   "text": "does",
+   "start": 61.999,
+   "end": 62.174,
    "line": 6,
    "sentence": false
   },
   {
    "text": "something",
-   "start": 61.752,
-   "end": 62.14,
+   "start": 62.174,
+   "end": 62.562,
    "line": 6,
    "sentence": false
   },
   {
    "text": "different",
-   "start": 62.14,
-   "end": 62.927,
+   "start": 62.562,
+   "end": 63.437,
    "line": 6,
    "sentence": false
   },
   {
-   "text": "They",
-   "start": 62.927,
-   "end": 63.127,
+   "text": "After",
+   "start": 63.437,
+   "end": 63.749,
    "line": 6,
    "sentence": true
   },
   {
-   "text": "change",
-   "start": 63.127,
-   "end": 63.965,
+   "text": "you",
+   "start": 63.749,
+   "end": 63.912,
+   "line": 6,
+   "sentence": false
+  },
+  {
+   "text": "die",
+   "start": 63.912,
+   "end": 64.274,
+   "line": 6,
+   "sentence": false
+  },
+  {
+   "text": "it",
+   "start": 64.274,
+   "end": 64.399,
+   "line": 6,
+   "sentence": false
+  },
+  {
+   "text": "starts",
+   "start": 64.399,
+   "end": 64.774,
+   "line": 6,
+   "sentence": false
+  },
+  {
+   "text": "keeping",
+   "start": 64.774,
+   "end": 65.187,
+   "line": 6,
+   "sentence": false
+  },
+  {
+   "text": "time",
+   "start": 65.187,
+   "end": 66.012,
    "line": 6,
    "sentence": false
   },
   {
    "text": "So",
-   "start": 63.965,
-   "end": 64.152,
+   "start": 66.012,
+   "end": 66.199,
    "line": 6,
    "sentence": true
   },
   {
    "text": "which",
-   "start": 64.152,
-   "end": 64.377,
+   "start": 66.199,
+   "end": 66.449,
    "line": 6,
    "sentence": false
   },
   {
-   "text": "ones",
-   "start": 64.377,
-   "end": 64.69,
+   "text": "atom",
+   "start": 66.449,
+   "end": 66.824,
    "line": 6,
    "sentence": false
   },
   {
-   "text": "are",
-   "start": 64.69,
-   "end": 64.877,
+   "text": "is",
+   "start": 66.824,
+   "end": 66.987,
    "line": 6,
    "sentence": false
   },
   {
-   "text": "they",
-   "start": 64.877,
-   "end": 65.258,
+   "text": "it",
+   "start": 66.987,
+   "end": 67.238,
    "line": 6,
    "sentence": false
   }

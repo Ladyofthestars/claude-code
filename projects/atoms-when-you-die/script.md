@@ -50,31 +50,25 @@ Look: the same hand-drawn science-book style as video 1, now on deep blue, with 
 
 > The air works the same way. Every breath you breathe out mixes into the air of the whole planet. That's why your breath holds a little of Caesar's. And one day, people who aren't born yet will breathe in a little of yours.
 
-> But a few of your atoms do something different. They change. So which ones are they?
+> But one kind of atom in you does something different. After you die, it starts keeping time. So which atom is it?
 
-### Part 4: Which atoms change?
-> Most of the carbon in your body is carbon-12. It's stable, and it can stay the same forever.
+### Part 4: Which atom keeps time?
+> Most of your carbon is stable. It can stay the same forever. But a tiny part of it is carbon-14. It's radioactive, and it's made high in the sky, when rays from space strike nitrogen in the air.
 
-> But a very small part of it is carbon-14, a radioactive kind of carbon. It's made high in the sky, when rays from space strike nitrogen in the air. So even this part of you was made in the sky. While you're alive, you keep taking it in with your food, so the amount in you stays the same.
+> While you're alive, you keep taking it in with your food. When you die, that stops, and a clock starts ticking.
 
-> When you die, that stops. And the carbon-14 slowly turns back into nitrogen. After 5,730 years, half of it is gone. After another 5,730 years, half of what's left.
+> Every 5,730 years, half of what's left turns back into nitrogen. By measuring how much is left, scientists can tell how long ago something died, up to about 50,000 years. It's how we know the age of ancient bones.
 
-> It's like a clock that starts the moment a life ends. Scientists read this clock to tell how long ago something lived. They call it radiocarbon dating, and it works for remains up to about 50,000 years old. It's how we know the age of ancient bones, wood and cloth.
-
-> A few radioactive atoms like these slowly change. Almost everything else just moves on. And some of it moves very, very slowly. So where do your bones go?
+> But the rest of you doesn't keep still. So where do your bones go?
 
 ### Part 5: Where do your bones go?
-> Your bones are built mostly from calcium and phosphorus. Phosphorus is in your DNA too. And phosphorus is one of the slowest travelers on Earth.
+> Your bones are built mostly from calcium and phosphorus. And phosphorus is one of the slowest travelers on Earth.
 
-> Rain and rivers carry it to the sea. There, it's taken up by sea life. When those creatures die, their remains sink, and settle on the ocean floor.
+> Rain and rivers carry it to the sea. Once it gets there, a phosphorus atom stays, on average, for twenty thousand to a hundred thousand years.
 
-> Once it reaches the ocean, a phosphorus atom stays there for, on average, twenty thousand to a hundred thousand years.
+> Your calcium may end up in a seashell. When the creature dies, its shell sinks to the ocean floor. Over time, layers of shells turn into limestone.
 
-> Calcium has a long road too. In the sea, it's built into shells. Over time, shells on the ocean floor become limestone. Limestone is the largest store of carbon on our planet.
-
-> And over millions of years, the ground itself rises. Old sea floor is lifted up into land. Atoms that were once part of a body can end up in the stone of a mountain.
-
-> Some carbon takes an even stranger road. When living things are buried deep underground, their carbon can be locked away for millions of years. That's how coal formed. The energy in a lump of coal today is sunlight that plants caught between 200 and 350 million years ago.
+> And over millions of years, the ground itself rises. Old sea floor is lifted up into land. The calcium that held you up for a lifetime could one day be part of a mountain.
 
 > So does the Earth keep our atoms forever?
 
@@ -193,50 +187,22 @@ Something new appears at least every 5 seconds. "Atoms" are small glowing dots; 
 | 3.6.2 | They change. | The gold atom pulses | Hold |
 | 3.6.3 | So which ones are they? | Label "?" | Hold |
 
-### Part 4: Which atoms change?
+### Part 4: Which atom keeps time?
 | # | Sentence | On screen | Camera |
 |---|---|---|---|
-| 4.1.1 | Most of the carbon in your body is carbon-12. | A field of atoms; label "CARBON-12" | Hold |
-| 4.1.2 | It's stable, and it can stay the same forever. | Label "STABLE" | Hold |
-| 4.2.1 | But a very small part of it is carbon-14, a radioactive kind of carbon. | One gold atom; label "CARBON-14" | Push in |
-| 4.2.2 | It's made high in the sky, when rays from space strike nitrogen in the air. | Lines fall from the top; tile N becomes tile C in the sky | Pan up |
-| 4.2.3 | So even this part of you was made in the sky. | Label "MADE IN THE SKY" | Hold |
-| 4.2.4 | While you're alive, you keep taking it in with your food, so the amount in you stays the same. | `wheat` → `person`; a level line beside the person stays flat | Pan |
-| 4.3.1 | When you die, that stops. | The person dims | Hold |
-| 4.3.2 | And the carbon-14 slowly turns back into nitrogen. | Tile C (gold) turns into tile N | Push in |
-| 4.3.3 | After 5,730 years, half of it is gone. | A falling curve draws itself; marker at half; label "5,730 YEARS" counting | Hold |
-| 4.3.4 | After another 5,730 years, half of what's left. | The curve continues to a quarter; second marker | Hold |
-| 4.4.1 | It's like a clock that starts the moment a life ends. | `hourglass` | Push in |
-| 4.4.2 | Scientists read this clock to tell how long ago something lived. | Label "HOW LONG AGO?" | Hold |
-| 4.4.3 | They call it radiocarbon dating, and it works for remains up to about 50,000 years old. | Label "RADIOCARBON DATING"; label "UP TO 50,000 YEARS" counting | Hold |
-| 4.4.4 | It's how we know the age of ancient bones, wood and cloth. | `bone`, `log`, `cloth`, one per word | Pan |
-| 4.5.1 | A few radioactive atoms like these slowly change. | Gold atoms flicker | Hold |
-| 4.5.2 | Almost everything else just moves on. | White atoms stream away | Pan |
-| 4.5.3 | And some of it moves very, very slowly. | The stream slows to a crawl | Hold |
-| 4.5.4 | So where do your bones go? | `bone`; label "?" | Push in |
+| 4.1 | Most of your carbon is stable … carbon-14 … made high in the sky … | A screen full of carbon atoms, "STABLE · CAN LAST FOREVER"; one turns gold ("CARBON-14", "RADIOACTIVE"); rays from space hit N and make C, "MADE IN THE SKY" | Push in on the gold atom; rise to the sky |
+| 4.2 | While you're alive … a clock starts ticking. | `wheat` → `person`, gold dots flowing in ("TAKEN IN WITH YOUR FOOD"); the person fades; a big glowing `hourglass`, "THE CLOCK STARTS" | Push in |
+| 4.3 | Every 5,730 years, half of what's left … 50,000 years … ancient bones. | 16 gold atoms; half turn to nitrogen each step with "5,730 / 11,460 / 17,190 YEARS"; "HOW LONG AGO DID IT DIE?", counter "UP TO 50,000 YEARS"; big `bone`, "ANCIENT BONES, DATED" | Hold, then cut |
+| 4.4 | But the rest of you doesn't keep still. So where do your bones go? | `person` with atoms streaming away, "ALWAYS ON THE MOVE"; `bone` + "?" | Hold |
 
 ### Part 5: Where do your bones go?
 | # | Sentence | On screen | Camera |
 |---|---|---|---|
-| 5.1.1 | Your bones are built mostly from calcium and phosphorus. | `bone`; tiles Ca and P | Hold |
-| 5.1.2 | Phosphorus is in your DNA too. | `dna`; tile P joined to it | Pan |
-| 5.1.3 | And phosphorus is one of the slowest travelers on Earth. | One atom moving very slowly; label "ONE OF THE SLOWEST TRAVELERS" | Hold |
-| 5.2.1 | Rain and rivers carry it to the sea. | `cloud`, rain lines, a river path to wave lines | Pan |
-| 5.2.2 | There, it's taken up by sea life. | `fish`; atoms enter it | Pan |
-| 5.2.3 | When those creatures die, their remains sink, and settle on the ocean floor. | A dashed path sinks to a sea-floor band | Pan down |
-| 5.3.1 | Once it reaches the ocean, a phosphorus atom stays there for, on average, twenty thousand to a hundred thousand years. | Big label "20,000 – 100,000 YEARS" | Hold |
-| 5.4.1 | Calcium has a long road too. | Tile Ca | Hold |
-| 5.4.2 | In the sea, it's built into shells. | `shell` | Push in |
-| 5.4.3 | Over time, shells on the ocean floor become limestone. | Layers draw themselves on the sea floor; label "LIMESTONE" | Pan |
-| 5.4.4 | Limestone is the largest store of carbon on our planet. | Label "THE LARGEST STORE OF CARBON ON EARTH" | Hold |
-| 5.5.1 | And over millions of years, the ground itself rises. | Arrows push the layers upward | Pull back |
-| 5.5.2 | Old sea floor is lifted up into land. | `mountain` rises from the layers | Hold |
-| 5.5.3 | Atoms that were once part of a body can end up in the stone of a mountain. | A light travels into the mountain | Push in |
-| 5.6.1 | Some carbon takes an even stranger road. | Tile C on a new path | Pan |
-| 5.6.2 | When living things are buried deep underground, their carbon can be locked away for millions of years. | Ground layers draw over a buried `leaf` | Hold |
-| 5.6.3 | That's how coal formed. | `coal` | Push in |
-| 5.6.4 | The energy in a lump of coal today is sunlight that plants caught between 200 and 350 million years ago. | `sun` glow → curved line → coal; label "200–350 MILLION YEARS AGO" | Hold |
-| 5.7.1 | So does the Earth keep our atoms forever? | `earth`; label "?" | Pull back |
+| 5.1 | Your bones … calcium and phosphorus … slowest travelers. | Big `bone`; tiles Ca and P (P glowing); "ONE OF THE SLOWEST TRAVELERS ON EARTH" with slow dots | Hold |
+| 5.2 | Rain and rivers … twenty thousand to a hundred thousand years. | `cloud`, rain, a river of gold dots to the sea, `fish`, a dot slowly sinking; "IN THE OCEAN FOR 20,000 – 100,000 YEARS" | Pan |
+| 5.3 | Your calcium may end up in a seashell … limestone. | Tile Ca flies into a glowing `shell`; the shell sinks; layers build up; "LIMESTONE" | Follow down |
+| 5.4 | And over millions of years … part of a mountain. | Arrows push up; `mountain` rises ("OLD SEA FLOOR"); a gold dot travels from a small `bone` into the mountain; "PART OF A MOUNTAIN" | Pull back |
+| 5.5 | So does the Earth keep our atoms forever? | `earth` + "?" | Hold |
 
 ### Part 6: Does the Earth keep them forever?
 | # | Sentence | On screen | Camera |

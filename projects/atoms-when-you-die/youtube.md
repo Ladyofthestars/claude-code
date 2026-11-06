@@ -1,6 +1,6 @@
 # YouTube upload: "What Happens to Your Atoms When You Die?" (Unbreakable Path, video 2)
 
-Files: `out/atoms-when-you-die/atoms-when-you-die.mp4` (1920x1080, 60 fps, 8:49, full quality), `out/atoms-when-you-die/atoms-when-you-die-small.mp4` (the same video in under 100 MB, easy to save and upload from a phone) and `packaging/atoms-when-you-die/thumbnail.png` (1280x720).
+Files: `out/atoms-when-you-die/atoms-when-you-die.mp4` (1920x1080, 60 fps, 7:54, full quality), `out/atoms-when-you-die/atoms-when-you-die-small.mp4` (the same video in under 100 MB, easy to save and upload from a phone) and `packaging/atoms-when-you-die/thumbnail.png` (1280x720).
 
 ## Title (use this)
 **What Happens to Your Atoms When You Die?**
@@ -10,7 +10,13 @@ People already search this exact question, so the title can find new viewers as 
 Backup title, if you want to test one later: **Where Your Atoms Go When You Die**
 
 ## Thumbnail
-`packaging/atoms-when-you-die/thumbnail.png`. The same star-filled figure as video 1's thumbnail, now dissolving upward into gold and white stardust on deep blue, with "WHEN YOU DIE," in white and "NOTHING IS LOST" in big glowing gold. Seen next to video 1's "YOU ARE STARDUST", the two read as a series. To change it, run `tools/make_thumbnail_atoms.py`.
+Three options in `packaging/atoms-when-you-die/options/` (side by side, with phone-size previews, in `compare.jpg`):
+- **C (recommended): "YOUR NEXT BILLION YEARS"**: a skeleton under a tree, with glowing gold atoms rising through the roots and branches into a star. A specific, strange promise that the title explains.
+- **A: "IT'S NOT THE END"**: a gravestone with a river of gold atoms pouring out of a crack and up into a galaxy. Instantly about death, with a twist. (The video means it literally: your atoms carry on.)
+- **B: "BACK TO THE STARS"**: a figure made of stars dissolving into stardust that flows into a newborn star.
+
+Best: upload all three with YouTube's "Test & compare" (in the thumbnail section when you upload). YouTube shows them to different viewers and keeps the one with the most watch time.
+The paintings are in `packaging/atoms-when-you-die/art/` (made with Gemini); to change the words, run `tools/make_thumbnail_poster.py`. The older star-figure thumbnail is still at `packaging/atoms-when-you-die/thumbnail.png`.
 
 ## Description (paste as is)
 
@@ -25,11 +31,11 @@ Chapters
 0:30 Are your atoms really yours?
 1:24 What happens when you die?
 2:19 Where does it go next?
-3:26 Which atoms change?
-4:36 Where do your bones go?
-5:50 Does the Earth keep them forever?
-6:52 Where do they go in the end?
-8:01 Nothing is lost
+3:28 Which atom keeps time?
+4:11 Where do your bones go?
+4:55 Does the Earth keep them forever?
+5:57 Where do they go in the end?
+7:07 Nothing is lost
 
 Sources
 - OpenStax Biology 2e, 46.1 and 46.3 (decomposers; biogeochemical cycles): https://openstax.org/books/biology-2e/pages/46-3-biogeochemical-cycles
