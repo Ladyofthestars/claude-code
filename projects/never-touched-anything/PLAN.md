@@ -28,4 +28,4 @@ Tick each box as it is done. If work stops, continue from the first unticked box
 ## Step 5: packaging
 - [x] Thumbnail in the series style
 - [x] Title, description, chapters, tags (`youtube.md`)
-- [ ] Copy under 100 MB; commit and push; send to the user
+- [x] Copy under 100 MB (96 MB, all 30,114 frames); commit and push; send to the user
