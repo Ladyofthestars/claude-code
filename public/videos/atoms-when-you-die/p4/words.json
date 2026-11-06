@@ -1,0 +1,790 @@
+{
+ "duration": 43.439,
+ "source": "Kokoro-82M (open source, Apache 2.0), voice am_michael 0.7 + am_onyx 0.3, speed 1.02, one paragraph at a time, word timestamps",
+ "words": [
+  {
+   "text": "Most",
+   "start": 2.68,
+   "end": 2.893,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "of",
+   "start": 2.893,
+   "end": 2.968,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 2.968,
+   "end": 3.105,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "carbon",
+   "start": 3.105,
+   "end": 3.505,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "is",
+   "start": 3.505,
+   "end": 3.643,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "stable",
+   "start": 3.643,
+   "end": 4.38,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "It",
+   "start": 4.38,
+   "end": 4.492,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "can",
+   "start": 4.492,
+   "end": 4.63,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "stay",
+   "start": 4.63,
+   "end": 4.905,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 4.905,
+   "end": 5.043,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "same",
+   "start": 5.043,
+   "end": 5.393,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "forever",
+   "start": 5.393,
+   "end": 6.33,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "But",
+   "start": 6.33,
+   "end": 6.467,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "a",
+   "start": 6.467,
+   "end": 6.568,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "tiny",
+   "start": 6.568,
+   "end": 7.018,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "part",
+   "start": 7.018,
+   "end": 7.293,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 7.293,
+   "end": 7.38,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "it",
+   "start": 7.38,
+   "end": 7.505,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "is",
+   "start": 7.505,
+   "end": 7.668,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "carbon-14",
+   "start": 7.668,
+   "end": 9.13,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "It's",
+   "start": 9.13,
+   "end": 9.393,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "radioactive",
+   "start": 9.393,
+   "end": 10.318,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "and",
+   "start": 10.318,
+   "end": 10.418,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "it's",
+   "start": 10.418,
+   "end": 10.58,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "made",
+   "start": 10.58,
+   "end": 10.843,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "high",
+   "start": 10.843,
+   "end": 11.117,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "in",
+   "start": 11.117,
+   "end": 11.193,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 11.193,
+   "end": 11.293,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "sky",
+   "start": 11.293,
+   "end": 11.955,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "when",
+   "start": 11.955,
+   "end": 12.168,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "rays",
+   "start": 12.168,
+   "end": 12.58,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "from",
+   "start": 12.58,
+   "end": 12.793,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "space",
+   "start": 12.793,
+   "end": 13.205,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "strike",
+   "start": 13.205,
+   "end": 13.555,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "nitrogen",
+   "start": 13.555,
+   "end": 14.105,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "in",
+   "start": 14.105,
+   "end": 14.193,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 14.193,
+   "end": 14.343,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "air",
+   "start": 14.343,
+   "end": 14.774,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "While",
+   "start": 15.604,
+   "end": 15.779,
+   "line": 2,
+   "sentence": true
+  },
+  {
+   "text": "you're",
+   "start": 15.779,
+   "end": 15.929,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "alive",
+   "start": 15.929,
+   "end": 16.429,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 16.429,
+   "end": 16.554,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "keep",
+   "start": 16.554,
+   "end": 16.804,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "taking",
+   "start": 16.804,
+   "end": 17.117,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "it",
+   "start": 17.117,
+   "end": 17.192,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "in",
+   "start": 17.192,
+   "end": 17.292,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "with",
+   "start": 17.292,
+   "end": 17.417,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 17.417,
+   "end": 17.579,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "food",
+   "start": 17.579,
+   "end": 18.429,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "When",
+   "start": 18.429,
+   "end": 18.579,
+   "line": 2,
+   "sentence": true
+  },
+  {
+   "text": "you",
+   "start": 18.579,
+   "end": 18.742,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "die",
+   "start": 18.742,
+   "end": 19.204,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "that",
+   "start": 19.204,
+   "end": 19.442,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "stops",
+   "start": 19.442,
+   "end": 19.942,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "and",
+   "start": 19.942,
+   "end": 20.042,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "a",
+   "start": 20.042,
+   "end": 20.117,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "clock",
+   "start": 20.117,
+   "end": 20.529,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "starts",
+   "start": 20.529,
+   "end": 20.879,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "ticking",
+   "start": 20.879,
+   "end": 21.377,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "Every",
+   "start": 22.207,
+   "end": 22.507,
+   "line": 3,
+   "sentence": true
+  },
+  {
+   "text": "5,730",
+   "start": 22.507,
+   "end": 24.332,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "years",
+   "start": 24.332,
+   "end": 25.045,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "half",
+   "start": 25.045,
+   "end": 25.32,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 25.32,
+   "end": 25.407,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "what's",
+   "start": 25.407,
+   "end": 25.695,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "left",
+   "start": 25.695,
+   "end": 26.007,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "turns",
+   "start": 26.007,
+   "end": 26.357,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "back",
+   "start": 26.357,
+   "end": 26.645,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "into",
+   "start": 26.645,
+   "end": 26.882,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "nitrogen",
+   "start": 26.882,
+   "end": 28.07,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "By",
+   "start": 28.07,
+   "end": 28.257,
+   "line": 3,
+   "sentence": true
+  },
+  {
+   "text": "measuring",
+   "start": 28.257,
+   "end": 28.707,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "how",
+   "start": 28.707,
+   "end": 28.882,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "much",
+   "start": 28.882,
+   "end": 29.132,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "is",
+   "start": 29.132,
+   "end": 29.295,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "left",
+   "start": 29.295,
+   "end": 29.957,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "scientists",
+   "start": 29.957,
+   "end": 30.657,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "can",
+   "start": 30.657,
+   "end": 30.832,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "tell",
+   "start": 30.832,
+   "end": 31.082,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "how",
+   "start": 31.082,
+   "end": 31.295,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "long",
+   "start": 31.295,
+   "end": 31.607,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "ago",
+   "start": 31.607,
+   "end": 31.945,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "something",
+   "start": 31.945,
+   "end": 32.32,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "died",
+   "start": 32.32,
+   "end": 33.057,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "up",
+   "start": 33.057,
+   "end": 33.257,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "to",
+   "start": 33.257,
+   "end": 33.407,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "about",
+   "start": 33.407,
+   "end": 33.745,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "50,000",
+   "start": 33.745,
+   "end": 34.557,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "years",
+   "start": 34.557,
+   "end": 35.432,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "It's",
+   "start": 35.432,
+   "end": 35.607,
+   "line": 3,
+   "sentence": true
+  },
+  {
+   "text": "how",
+   "start": 35.607,
+   "end": 35.807,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "we",
+   "start": 35.807,
+   "end": 35.957,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "know",
+   "start": 35.957,
+   "end": 36.157,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 36.157,
+   "end": 36.32,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "age",
+   "start": 36.32,
+   "end": 36.67,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 36.67,
+   "end": 36.795,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "ancient",
+   "start": 36.795,
+   "end": 37.207,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "bones",
+   "start": 37.207,
+   "end": 37.927,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "But",
+   "start": 38.757,
+   "end": 38.869,
+   "line": 4,
+   "sentence": true
+  },
+  {
+   "text": "the",
+   "start": 38.869,
+   "end": 38.982,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "rest",
+   "start": 38.982,
+   "end": 39.244,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 39.244,
+   "end": 39.332,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 39.332,
+   "end": 39.482,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "doesn't",
+   "start": 39.482,
+   "end": 39.782,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "keep",
+   "start": 39.782,
+   "end": 40.044,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "still",
+   "start": 40.044,
+   "end": 40.794,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "So",
+   "start": 40.794,
+   "end": 41.007,
+   "line": 4,
+   "sentence": true
+  },
+  {
+   "text": "where",
+   "start": 41.007,
+   "end": 41.144,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "do",
+   "start": 41.144,
+   "end": 41.244,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 41.244,
+   "end": 41.394,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "bones",
+   "start": 41.394,
+   "end": 41.807,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "go",
+   "start": 41.807,
+   "end": 42.239,
+   "line": 4,
+   "sentence": false
+  }
+ ]
+}

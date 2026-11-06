@@ -1,0 +1,24 @@
+blueberry {"aspect": 1.0, "content": [0.2617, 0.2529, 0.7471, 0.75]}
+brain {"aspect": 1.0, "content": [0.1953, 0.2295, 0.8057, 0.7705]}
+chair {"aspect": 1.0, "content": [0.293, 0.1592, 0.708, 0.8408]}
+comb {"aspect": 1.0, "content": [0.1641, 0.4219, 0.8428, 0.5771]}
+earth {"aspect": 1.0, "content": [0.2637, 0.2656, 0.7393, 0.7354], "background": [13, 33, 57], "kept_parts": 1, "dropped_parts": 0}
+feet {"aspect": 1.0, "content": [0.2676, 0.3408, 0.709, 0.667]}
+finger_press {"aspect": 1.0, "content": [0.2178, 0.3721, 0.7705, 0.6299]}
+fist {"aspect": 1.0, "content": [0.3311, 0.2236, 0.668, 0.8301], "background": [10, 31, 53], "kept_parts": 1, "dropped_parts": 0}
+hands_rubbing {"aspect": 1.0, "content": [0.3545, 0.3652, 0.6426, 0.6328]}
+handshake {"aspect": 1.0, "content": [0.167, 0.3652, 0.8359, 0.6484]}
+holding_hands {"aspect": 1.0, "content": [0.2842, 0.3623, 0.7031, 0.6426]}
+hug {"aspect": 1.0, "content": [0.4229, 0.3301, 0.5889, 0.6797]}
+magnets {"aspect": 1.0, "content": [0.2471, 0.4111, 0.7529, 0.5918]}
+microscope {"aspect": 1.0, "content": [0.3125, 0.1426, 0.6875, 0.8564]}
+neutron_star {"aspect": 1.0, "content": [0.2842, 0.2158, 0.7061, 0.751], "background": [247, 244, 233], "kept_parts": 1, "dropped_parts": 0}
+open_hand {"aspect": 1.0, "content": [0.1689, 0.3086, 0.8271, 0.7266], "background": [8, 31, 56], "kept_parts": 1, "dropped_parts": 0}
+person {"aspect": 0.67089, "content": [0.3856, 0.2524, 0.6108, 0.7579], "background": [22, 43, 65], "kept_parts": 1, "dropped_parts": 0}
+philosopher_bust {"aspect": 1.0, "content": [0.2246, 0.082, 0.8506, 0.916]}
+phone {"aspect": 1.0, "content": [0.3828, 0.1992, 0.6172, 0.8018]}
+rope {"aspect": 1.0, "content": [0.0664, 0.1689, 0.9326, 0.8486]}
+shoe {"aspect": 1.0, "content": [0.1016, 0.2988, 0.8818, 0.6875]}
+skin {"aspect": 1.0, "content": [0.2588, 0.2461, 0.7461, 0.7734]}
+stadium {"aspect": 1.0, "content": [0.0918, 0.1973, 0.9072, 0.8057]}
+sugar_cube {"aspect": 1.0, "content": [0.332, 0.3447, 0.666, 0.665], "background": [247, 244, 234], "kept_parts": 1, "dropped_parts": 1}

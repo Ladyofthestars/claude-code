@@ -1,0 +1,580 @@
+{
+ "duration": 25.52,
+ "source": "ElevenLabs, voice Brian (nPczCjzI2devNBz1zQrb), eleven_multilingual_v2, one paragraph at a time with previous/next text, character timestamps",
+ "words": [
+  {
+   "text": "Almost",
+   "start": 0.35,
+   "end": 0.756,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "every",
+   "start": 0.838,
+   "end": 1.128,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "atom",
+   "start": 1.198,
+   "end": 1.441,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "in",
+   "start": 1.488,
+   "end": 1.546,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 1.581,
+   "end": 1.685,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "body",
+   "start": 1.732,
+   "end": 1.975,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "is",
+   "start": 2.022,
+   "end": 2.103,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "older",
+   "start": 2.15,
+   "end": 2.359,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "than",
+   "start": 2.393,
+   "end": 2.509,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 2.533,
+   "end": 2.602,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "Earth",
+   "start": 2.649,
+   "end": 3.02,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "The",
+   "start": 3.427,
+   "end": 3.554,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "hydrogen",
+   "start": 3.624,
+   "end": 4.158,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "in",
+   "start": 4.216,
+   "end": 4.286,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 4.355,
+   "end": 4.46,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "was",
+   "start": 4.53,
+   "end": 4.657,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "made",
+   "start": 4.727,
+   "end": 4.89,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "in",
+   "start": 4.913,
+   "end": 4.959,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 4.994,
+   "end": 5.064,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "first",
+   "start": 5.11,
+   "end": 5.342,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "few",
+   "start": 5.389,
+   "end": 5.528,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "minutes",
+   "start": 5.574,
+   "end": 5.818,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 5.842,
+   "end": 5.9,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 5.946,
+   "end": 6.016,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "universe",
+   "start": 6.074,
+   "end": 6.643,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "The",
+   "start": 7.107,
+   "end": 7.246,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "iron",
+   "start": 7.339,
+   "end": 7.676,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "in",
+   "start": 7.722,
+   "end": 7.792,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 7.838,
+   "end": 7.955,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "blood",
+   "start": 8.001,
+   "end": 8.245,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "came",
+   "start": 8.303,
+   "end": 8.489,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "from",
+   "start": 8.523,
+   "end": 8.651,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "stars",
+   "start": 8.744,
+   "end": 9.139,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "that",
+   "start": 9.174,
+   "end": 9.301,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "blew",
+   "start": 9.348,
+   "end": 9.533,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "up",
+   "start": 9.58,
+   "end": 9.673,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "long",
+   "start": 9.754,
+   "end": 9.963,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "ago",
+   "start": 10.009,
+   "end": 10.3,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "and",
+   "start": 10.381,
+   "end": 10.474,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "far",
+   "start": 10.544,
+   "end": 10.741,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "away",
+   "start": 10.787,
+   "end": 12.006,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "So",
+   "start": 12.756,
+   "end": 12.919,
+   "line": 2,
+   "sentence": true
+  },
+  {
+   "text": "where",
+   "start": 12.965,
+   "end": 13.104,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "did",
+   "start": 13.128,
+   "end": 13.22,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 13.244,
+   "end": 13.313,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "rest",
+   "start": 13.371,
+   "end": 13.557,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 13.604,
+   "end": 13.662,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 13.708,
+   "end": 13.778,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "come",
+   "start": 13.859,
+   "end": 14.068,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "from",
+   "start": 14.114,
+   "end": 14.544,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "By",
+   "start": 15.078,
+   "end": 15.229,
+   "line": 2,
+   "sentence": true
+  },
+  {
+   "text": "the",
+   "start": 15.275,
+   "end": 15.345,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "end",
+   "start": 15.415,
+   "end": 15.519,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 15.566,
+   "end": 15.612,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "this",
+   "start": 15.647,
+   "end": 15.775,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "video",
+   "start": 15.844,
+   "end": 16.46,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "you'll",
+   "start": 16.68,
+   "end": 16.878,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "know",
+   "start": 16.924,
+   "end": 17.052,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "where",
+   "start": 17.087,
+   "end": 17.249,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "each",
+   "start": 17.307,
+   "end": 17.504,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "part",
+   "start": 17.574,
+   "end": 17.772,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 17.806,
+   "end": 17.853,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 17.899,
+   "end": 17.969,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "was",
+   "start": 18.027,
+   "end": 18.143,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "made",
+   "start": 18.213,
+   "end": 18.689,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "And",
+   "start": 19.095,
+   "end": 19.246,
+   "line": 2,
+   "sentence": true
+  },
+  {
+   "text": "you'll",
+   "start": 19.316,
+   "end": 19.536,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "see",
+   "start": 19.617,
+   "end": 19.861,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "that",
+   "start": 19.896,
+   "end": 20.012,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "you're",
+   "start": 20.047,
+   "end": 20.256,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "not",
+   "start": 20.314,
+   "end": 20.477,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "separate",
+   "start": 20.558,
+   "end": 20.999,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "from",
+   "start": 21.034,
+   "end": 21.162,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 21.208,
+   "end": 21.278,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "sky",
+   "start": 21.313,
+   "end": 21.603,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "above",
+   "start": 21.661,
+   "end": 21.928,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 21.963,
+   "end": 22.288,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "You",
+   "start": 22.624,
+   "end": 22.752,
+   "line": 2,
+   "sentence": true
+  },
+  {
+   "text": "are",
+   "start": 22.799,
+   "end": 22.915,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "made",
+   "start": 22.984,
+   "end": 23.182,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 23.217,
+   "end": 23.263,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "stars",
+   "start": 23.309,
+   "end": 24.32,
+   "line": 2,
+   "sentence": false
+  }
+ ]
+}

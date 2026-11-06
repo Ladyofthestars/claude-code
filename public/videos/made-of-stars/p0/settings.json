@@ -1,0 +1,678 @@
+{
+ "title": "You Are Made of Stars",
+ "size": {
+  "width": 1920,
+  "height": 1080
+ },
+ "audio": "narration.mp3",
+ "words": "words.json",
+ "tailSeconds": 0,
+ "safeArea": {
+  "top": 0.06,
+  "bottom": 0.06,
+  "side": 0.05
+ },
+ "theme": {
+  "background": "#ffffff",
+  "dotColor": "rgba(36, 38, 43, 0.11)",
+  "dotSpacing": 40,
+  "dotSize": 1.7,
+  "dotParallax": 0.75,
+  "ink": "#24262b",
+  "accent": "#5b8fd8",
+  "lightBlend": "normal",
+  "font": "Montserrat"
+ },
+ "pictures": {
+  "blood_cell": {
+   "src": "/videos/made-of-stars/images/blood_cell.png",
+   "aspect": 1.0,
+   "content": [
+    0.2832,
+    0.332,
+    0.7129,
+    0.6631
+   ]
+  },
+  "earth": {
+   "src": "/videos/made-of-stars/images/earth.png",
+   "aspect": 1.0,
+   "content": [
+    0.2637,
+    0.2656,
+    0.7393,
+    0.7354
+   ]
+  },
+  "hourglass": {
+   "src": "/videos/made-of-stars/images/hourglass.png",
+   "aspect": 1.0,
+   "content": [
+    0.3311,
+    0.1699,
+    0.6699,
+    0.8301
+   ]
+  },
+  "person": {
+   "src": "/videos/made-of-stars/images/person.png",
+   "aspect": 0.67089,
+   "content": [
+    0.3856,
+    0.2524,
+    0.6108,
+    0.7579
+   ]
+  },
+  "supernova": {
+   "src": "/videos/made-of-stars/images/supernova.png",
+   "aspect": 1.0,
+   "content": [
+    0.1572,
+    0.1826,
+    0.8174,
+    0.8174
+   ]
+  },
+  "water_glass": {
+   "src": "/videos/made-of-stars/images/water_glass.png",
+   "aspect": 1.0,
+   "content": [
+    0.3643,
+    0.3193,
+    0.6318,
+    0.6826
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "me",
+   "picture": "person",
+   "x": -278.3,
+   "y": -27.3,
+   "width": 955.6,
+   "in": "1:Almost",
+   "out": "1:hydrogen"
+  },
+  {
+   "id": "earth1",
+   "picture": "earth",
+   "x": 278.9,
+   "y": -60.4,
+   "width": 702.4,
+   "in": "1:older",
+   "out": "2:So-0.4"
+  },
+  {
+   "id": "water_glass2",
+   "picture": "water_glass",
+   "x": 871.6,
+   "y": 109.2,
+   "width": 825.8,
+   "in": "1:hydrogen",
+   "out": "2:So-0.4"
+  },
+  {
+   "id": "hourglass4",
+   "picture": "hourglass",
+   "x": 1299.7,
+   "y": -140.0,
+   "width": 636.2,
+   "in": "1:first few",
+   "out": "2:So-0.4"
+  },
+  {
+   "id": "blood_cell5",
+   "picture": "blood_cell",
+   "x": 1721.0,
+   "y": 151.3,
+   "width": 513.4,
+   "in": "1:iron",
+   "out": "2:So-0.4"
+  },
+  {
+   "id": "supernova7",
+   "picture": "supernova",
+   "x": 2329.6,
+   "y": -140.0,
+   "width": 756.1,
+   "in": "1:stars that",
+   "out": "2:So-0.4"
+  },
+  {
+   "id": "me_b",
+   "picture": "person",
+   "x": 3121.7,
+   "y": -27.3,
+   "width": 955.6,
+   "in": "2:So",
+   "out": "end-1.1"
+  }
+ ],
+ "camera": [
+  {
+   "at": "start",
+   "x": 0.0,
+   "y": 0.0,
+   "zoom": 0.95
+  },
+  {
+   "at": "1:Earth@end",
+   "x": 0.0,
+   "y": 0.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "1:hydrogen-0.1",
+   "x": 0.0,
+   "y": 0.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "1:universe@end",
+   "x": 1040.0,
+   "y": 20.0,
+   "zoom": 0.92
+  },
+  {
+   "at": "1:iron-0.2",
+   "x": 1040.0,
+   "y": 20.0,
+   "zoom": 0.92
+  },
+  {
+   "at": "1:far away@end",
+   "x": 1920.0,
+   "y": 20.0,
+   "zoom": 0.9
+  },
+  {
+   "at": "2:So-0.3",
+   "x": 1920.0,
+   "y": 20.0,
+   "zoom": 0.9
+  },
+  {
+   "at": "2:come from@end",
+   "x": 3120.0,
+   "y": 10.0,
+   "zoom": 0.92
+  },
+  {
+   "at": "2:stars@end",
+   "x": 3120.0,
+   "y": 20.0,
+   "zoom": 0.95
+  },
+  {
+   "at": "end",
+   "x": 3120.0,
+   "y": 20.0,
+   "zoom": 0.95
+  }
+ ],
+ "threads": [],
+ "drawings": [
+  {
+   "id": "rect3",
+   "kind": "rect",
+   "x": 870.0,
+   "y": -250.0,
+   "w": 110,
+   "h": 110,
+   "draw": "1:hydrogen+0.3",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "1:hydrogen+0.4",
+   "out": "2:So-0.4"
+  },
+  {
+   "id": "rect6",
+   "kind": "rect",
+   "x": 1720.0,
+   "y": -170.0,
+   "w": 110,
+   "h": 110,
+   "draw": "1:iron+0.3",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "1:iron+0.4",
+   "out": "2:So-0.4"
+  },
+  {
+   "id": "line8",
+   "kind": "path",
+   "points": [
+    [
+     2150.0,
+     -80.0
+    ],
+    [
+     1980.0,
+     20.0
+    ],
+    [
+     1810.0,
+     120.0
+    ]
+   ],
+   "draw": "1:blew",
+   "dashed": true,
+   "color": "muted",
+   "curve": true,
+   "out": "2:So-0.4"
+  },
+  {
+   "id": "line9",
+   "kind": "path",
+   "points": [
+    [
+     3073.3,
+     -179.2
+    ],
+    [
+     2728.0,
+     -263.4
+    ]
+   ],
+   "draw": "2:rest",
+   "color": "muted",
+   "width": 1.8,
+   "duration": 0.7,
+   "out": "end-1.1"
+  },
+  {
+   "id": "rect10",
+   "kind": "rect",
+   "x": 2660.0,
+   "y": -280.0,
+   "w": 105,
+   "h": 105,
+   "draw": "2:By the end",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "2:By the end+0.1",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line11",
+   "kind": "path",
+   "points": [
+    [
+     3073.8,
+     -158.3
+    ],
+    [
+     2677.1,
+     -40.0
+    ]
+   ],
+   "draw": "2:rest+0.12",
+   "color": "muted",
+   "width": 1.8,
+   "duration": 0.7,
+   "out": "end-1.1"
+  },
+  {
+   "id": "rect12",
+   "kind": "rect",
+   "x": 2610.0,
+   "y": -20.0,
+   "w": 105,
+   "h": 105,
+   "draw": "2:By the end+0.35",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "2:By the end+0.45",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line13",
+   "kind": "path",
+   "points": [
+    [
+     3082.5,
+     -142.9
+    ],
+    [
+     2711.9,
+     193.0
+    ]
+   ],
+   "draw": "2:rest+0.24",
+   "color": "muted",
+   "width": 1.8,
+   "duration": 0.7,
+   "out": "end-1.1"
+  },
+  {
+   "id": "rect14",
+   "kind": "rect",
+   "x": 2660.0,
+   "y": 240.0,
+   "w": 105,
+   "h": 105,
+   "draw": "2:By the end+0.7",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "2:By the end+0.8",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line15",
+   "kind": "path",
+   "points": [
+    [
+     3151.9,
+     -174.0
+    ],
+    [
+     3510.4,
+     -212.5
+    ]
+   ],
+   "draw": "2:rest+0.36",
+   "color": "muted",
+   "width": 1.8,
+   "duration": 0.7,
+   "out": "end-1.1"
+  },
+  {
+   "id": "rect16",
+   "kind": "rect",
+   "x": 3580.0,
+   "y": -220.0,
+   "w": 105,
+   "h": 105,
+   "draw": "2:By the end+1.05",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "2:By the end+1.15",
+   "out": "end-1.1"
+  },
+  {
+   "id": "line17",
+   "kind": "path",
+   "points": [
+    [
+     3144.2,
+     -145.8
+    ],
+    [
+     3523.9,
+     138.1
+    ]
+   ],
+   "draw": "2:rest+0.48",
+   "color": "muted",
+   "width": 1.8,
+   "duration": 0.7,
+   "out": "end-1.1"
+  },
+  {
+   "id": "rect18",
+   "kind": "rect",
+   "x": 3580.0,
+   "y": 180.0,
+   "w": 105,
+   "h": 105,
+   "draw": "2:By the end+1.4",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "2:By the end+1.5",
+   "out": "end-1.1"
+  }
+ ],
+ "lights": [
+  {
+   "drawing": "line8",
+   "from": "1:blew up",
+   "duration": 1.3,
+   "size": 60
+  },
+  {
+   "drawing": "line9",
+   "from": "2:not separate",
+   "duration": 1.0,
+   "size": 46,
+   "reverse": true
+  },
+  {
+   "drawing": "line11",
+   "from": "2:not separate+0.22",
+   "duration": 1.0,
+   "size": 46,
+   "reverse": true
+  },
+  {
+   "drawing": "line13",
+   "from": "2:not separate+0.44",
+   "duration": 1.0,
+   "size": 46,
+   "reverse": true
+  },
+  {
+   "drawing": "line15",
+   "from": "2:not separate+0.66",
+   "duration": 1.0,
+   "size": 46,
+   "reverse": true
+  },
+  {
+   "drawing": "line17",
+   "from": "2:not separate+0.88",
+   "duration": 1.0,
+   "size": 46,
+   "reverse": true
+  },
+  {
+   "item": "me_b",
+   "at": [
+    0.49,
+    0.4
+   ],
+   "from": "2:made of stars",
+   "size": 90,
+   "to": "end-1.1"
+  }
+ ],
+ "magnifiers": [],
+ "labels": [
+  {
+   "text": "OLDER THAN THE EARTH",
+   "x": 0.0,
+   "y": 410.0,
+   "space": "world",
+   "size": 50,
+   "in": "1:older than",
+   "out": "1:hydrogen-0.3"
+  },
+  {
+   "text": "H",
+   "x": 870.0,
+   "y": -261.0,
+   "space": "world",
+   "size": 40,
+   "in": "1:hydrogen+0.55",
+   "out": "2:So-0.4",
+   "spacing": 0.02,
+   "upper": false
+  },
+  {
+   "text": "HYDROGEN",
+   "x": 870.0,
+   "y": -217.0,
+   "space": "world",
+   "size": 15,
+   "in": "1:hydrogen+0.65",
+   "out": "2:So-0.4",
+   "weight": 500,
+   "spacing": 0.08
+  },
+  {
+   "text": "FIRST FEW MINUTES",
+   "x": 1090.0,
+   "y": 380.0,
+   "space": "world",
+   "size": 45,
+   "in": "1:few minutes",
+   "out": "2:So-0.4"
+  },
+  {
+   "text": "Fe",
+   "x": 1720.0,
+   "y": -181.0,
+   "space": "world",
+   "size": 40,
+   "in": "1:iron+0.55",
+   "out": "2:So-0.4",
+   "spacing": 0.02,
+   "upper": false
+  },
+  {
+   "text": "IRON",
+   "x": 1720.0,
+   "y": -137.0,
+   "space": "world",
+   "size": 15,
+   "in": "1:iron+0.65",
+   "out": "2:So-0.4",
+   "weight": 500,
+   "spacing": 0.08
+  },
+  {
+   "text": "H",
+   "x": 2660.0,
+   "y": -290.5,
+   "space": "world",
+   "size": 38,
+   "in": "2:By the end+0.25",
+   "spacing": 0.02,
+   "upper": false,
+   "out": "end-1.1"
+  },
+  {
+   "text": "HYDROGEN",
+   "x": 2660.0,
+   "y": -248.5,
+   "space": "world",
+   "size": 14,
+   "in": "2:By the end+0.35",
+   "weight": 500,
+   "spacing": 0.08,
+   "out": "end-1.1"
+  },
+  {
+   "text": "C",
+   "x": 2610.0,
+   "y": -30.5,
+   "space": "world",
+   "size": 38,
+   "in": "2:By the end+0.6",
+   "spacing": 0.02,
+   "upper": false,
+   "out": "end-1.1"
+  },
+  {
+   "text": "CARBON",
+   "x": 2610.0,
+   "y": 11.5,
+   "space": "world",
+   "size": 14,
+   "in": "2:By the end+0.7",
+   "weight": 500,
+   "spacing": 0.08,
+   "out": "end-1.1"
+  },
+  {
+   "text": "O",
+   "x": 2660.0,
+   "y": 229.5,
+   "space": "world",
+   "size": 38,
+   "in": "2:By the end+0.95",
+   "spacing": 0.02,
+   "upper": false,
+   "out": "end-1.1"
+  },
+  {
+   "text": "OXYGEN",
+   "x": 2660.0,
+   "y": 271.5,
+   "space": "world",
+   "size": 14,
+   "in": "2:By the end+1.05",
+   "weight": 500,
+   "spacing": 0.08,
+   "out": "end-1.1"
+  },
+  {
+   "text": "Fe",
+   "x": 3580.0,
+   "y": -230.5,
+   "space": "world",
+   "size": 38,
+   "in": "2:By the end+1.3",
+   "spacing": 0.02,
+   "upper": false,
+   "out": "end-1.1"
+  },
+  {
+   "text": "IRON",
+   "x": 3580.0,
+   "y": -188.5,
+   "space": "world",
+   "size": 14,
+   "in": "2:By the end+1.4",
+   "weight": 500,
+   "spacing": 0.08,
+   "out": "end-1.1"
+  },
+  {
+   "text": "Au",
+   "x": 3580.0,
+   "y": 169.5,
+   "space": "world",
+   "size": 38,
+   "in": "2:By the end+1.65",
+   "spacing": 0.02,
+   "upper": false,
+   "out": "end-1.1"
+  },
+  {
+   "text": "GOLD",
+   "x": 3580.0,
+   "y": 211.5,
+   "space": "world",
+   "size": 14,
+   "in": "2:By the end+1.75",
+   "weight": 500,
+   "spacing": 0.08,
+   "out": "end-1.1"
+  },
+  {
+   "text": "YOU ARE MADE OF STARS",
+   "x": 3120.0,
+   "y": 450.0,
+   "space": "world",
+   "size": 58,
+   "in": "2:made of stars",
+   "out": "end-0.8"
+  }
+ ]
+}

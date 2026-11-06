@@ -1,0 +1,1541 @@
+{
+ "title": "What Happens to Your Atoms When You Die? \u2014 part 4",
+ "size": {
+  "width": 1920,
+  "height": 1080
+ },
+ "audio": "narration.mp3",
+ "words": "words.json",
+ "tailSeconds": 0,
+ "safeArea": {
+  "top": 0.06,
+  "bottom": 0.06,
+  "side": 0.05
+ },
+ "theme": {
+  "background": "#0c1d3a",
+  "backgroundImage": "radial-gradient(ellipse 70% 65% at 50% 42%, rgba(46, 92, 168, 0.55) 0%, rgba(24, 52, 104, 0.28) 45%, rgba(6, 14, 32, 0) 75%), radial-gradient(ellipse 130% 110% at 50% 50%, rgba(0, 0, 0, 0) 55%, rgba(2, 6, 16, 0.7) 100%)",
+  "dotColor": "rgba(190, 215, 255, 0.10)",
+  "dotSpacing": 40,
+  "dotSize": 1.5,
+  "dotParallax": 0.75,
+  "ink": "#eef4ff",
+  "accent": "#ffc865",
+  "lightBlend": "screen",
+  "font": "Montserrat",
+  "labelGlow": "rgba(130, 175, 255, 0.55)",
+  "drawingGlow": "rgba(130, 175, 255, 0.55)",
+  "dust": {
+   "count": 60,
+   "color": "#cfe0ff",
+   "size": 1.8,
+   "parallax": 0.45,
+   "drift": 5
+  }
+ },
+ "pictures": {
+  "bone": {
+   "src": "/videos/atoms-when-you-die/images/bone.png",
+   "aspect": 1.0,
+   "content": [
+    0.0898,
+    0.2783,
+    0.9102,
+    0.7158
+   ]
+  },
+  "hourglass": {
+   "src": "/videos/atoms-when-you-die/images/hourglass.png",
+   "aspect": 1.0,
+   "content": [
+    0.3311,
+    0.1699,
+    0.6699,
+    0.8301
+   ]
+  },
+  "person": {
+   "src": "/videos/atoms-when-you-die/images/person.png",
+   "aspect": 0.67089,
+   "content": [
+    0.3856,
+    0.2524,
+    0.6108,
+    0.7579
+   ]
+  },
+  "wheat": {
+   "src": "/videos/atoms-when-you-die/images/wheat.png",
+   "aspect": 1.0,
+   "content": [
+    0.2695,
+    0.0889,
+    0.7227,
+    0.9199
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "wheat42",
+   "picture": "wheat",
+   "x": 31269.2,
+   "y": -115.9,
+   "width": 553.5,
+   "in": "2:While you're",
+   "out": "3:Every 5,730+0.6"
+  },
+  {
+   "id": "me",
+   "picture": "person",
+   "x": 31938.7,
+   "y": -120.8,
+   "width": 955.6,
+   "in": "2:While you're",
+   "out": "2:that stops+0.4"
+  },
+  {
+   "id": "hourglass44",
+   "picture": "hourglass",
+   "x": 31936.6,
+   "y": -133.5,
+   "width": 848.2,
+   "in": "2:a clock starts",
+   "out": "3:Every 5,730+0.6"
+  },
+  {
+   "id": "bone75",
+   "picture": "bone",
+   "x": 34837.0,
+   "y": -150.9,
+   "width": 877.6,
+   "in": "3:It's how",
+   "out": "4:But the rest"
+  },
+  {
+   "id": "person76",
+   "picture": "person",
+   "x": 36338.7,
+   "y": -120.6,
+   "width": 929.0,
+   "in": "4:But the rest",
+   "out": "4:So where"
+  },
+  {
+   "id": "bone81",
+   "picture": "bone",
+   "x": 36337.0,
+   "y": -131.5,
+   "width": 682.6,
+   "in": "4:So where",
+   "out": "end-1.1"
+  }
+ ],
+ "camera": [
+  {
+   "at": 0.0,
+   "x": 28817.0,
+   "y": -113.5,
+   "zoom": 1.25
+  },
+  {
+   "at": 2.68,
+   "x": 28817.0,
+   "y": -113.5,
+   "zoom": 1.25
+  },
+  {
+   "at": 5.28,
+   "x": 28817.0,
+   "y": -113.5,
+   "zoom": 0.95
+  },
+  {
+   "at": 6.467,
+   "x": 28817.0,
+   "y": -113.5,
+   "zoom": 0.95
+  },
+  {
+   "at": 7.767,
+   "x": 29109.8,
+   "y": -212.3,
+   "zoom": 1.6
+  },
+  {
+   "at": 10.58,
+   "x": 29109.8,
+   "y": -212.3,
+   "zoom": 1.6
+  },
+  {
+   "at": 11.88,
+   "x": 30467.0,
+   "y": -1073.5,
+   "zoom": 1.0
+  },
+  {
+   "at": 15.604,
+   "x": 30467.0,
+   "y": -1073.5,
+   "zoom": 1.0
+  },
+  {
+   "at": 16.904,
+   "x": 31617.0,
+   "y": -113.5,
+   "zoom": 0.9
+  },
+  {
+   "at": 20.042,
+   "x": 31617.0,
+   "y": -113.5,
+   "zoom": 0.9
+  },
+  {
+   "at": 21.342,
+   "x": 31937.0,
+   "y": -113.5,
+   "zoom": 1.12
+  },
+  {
+   "at": 22.207,
+   "x": 31937.0,
+   "y": -113.5,
+   "zoom": 1.12
+  },
+  {
+   "at": 23.507,
+   "x": 33437.0,
+   "y": -173.5,
+   "zoom": 1.15
+  },
+  {
+   "at": 28.07,
+   "x": 33437.0,
+   "y": -173.5,
+   "zoom": 1.15
+  },
+  {
+   "at": 30.67,
+   "x": 33437.0,
+   "y": -153.5,
+   "zoom": 1.0
+  },
+  {
+   "at": 35.432,
+   "x": 33437.0,
+   "y": -153.5,
+   "zoom": 1.0
+  },
+  {
+   "at": 36.732,
+   "x": 34837.0,
+   "y": -113.5,
+   "zoom": 1.0
+  },
+  {
+   "at": 38.757,
+   "x": 34837.0,
+   "y": -113.5,
+   "zoom": 1.0
+  },
+  {
+   "at": 40.057,
+   "x": 36337.0,
+   "y": -113.5,
+   "zoom": 0.9
+  },
+  {
+   "at": 40.794,
+   "x": 36337.0,
+   "y": -113.5,
+   "zoom": 0.9
+  },
+  {
+   "at": 43.289,
+   "x": 36437.0,
+   "y": -173.5,
+   "zoom": 1.0
+  },
+  {
+   "at": 43.439,
+   "x": 36437.0,
+   "y": -173.5,
+   "zoom": 1.0
+  }
+ ],
+ "threads": [],
+ "drawings": [
+  {
+   "id": "circle1",
+   "kind": "circle",
+   "cx": 28250.3,
+   "cy": -343.0,
+   "r": 20,
+   "draw": "1:Most of your",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle2",
+   "kind": "circle",
+   "cx": 28228.5,
+   "cy": -305.9,
+   "r": 20,
+   "draw": "1:Most of your+0.03",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle3",
+   "kind": "circle",
+   "cx": 29423.4,
+   "cy": -382.8,
+   "r": 20,
+   "draw": "1:Most of your+0.06",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle4",
+   "kind": "circle",
+   "cx": 28879.2,
+   "cy": -226.0,
+   "r": 20,
+   "draw": "1:Most of your+0.09",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle5",
+   "kind": "circle",
+   "cx": 29253.4,
+   "cy": -212.6,
+   "r": 20,
+   "draw": "1:Most of your+0.12",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle6",
+   "kind": "circle",
+   "cx": 28635.3,
+   "cy": -184.3,
+   "r": 20,
+   "draw": "1:Most of your+0.15",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle7",
+   "kind": "circle",
+   "cx": 29186.2,
+   "cy": 161.6,
+   "r": 20,
+   "draw": "1:Most of your+0.18",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle8",
+   "kind": "circle",
+   "cx": 28152.6,
+   "cy": -313.2,
+   "r": 20,
+   "draw": "1:Most of your+0.21",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle9",
+   "kind": "circle",
+   "cx": 29325.7,
+   "cy": -113.1,
+   "r": 20,
+   "draw": "1:Most of your+0.24",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle10",
+   "kind": "circle",
+   "cx": 29469.8,
+   "cy": 9.0,
+   "r": 20,
+   "draw": "1:Most of your+0.27",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle11",
+   "kind": "circle",
+   "cx": 28287.7,
+   "cy": -254.9,
+   "r": 20,
+   "draw": "1:Most of your+0.3",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle12",
+   "kind": "circle",
+   "cx": 29439.5,
+   "cy": 55.5,
+   "r": 20,
+   "draw": "1:Most of your+0.33",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle13",
+   "kind": "circle",
+   "cx": 28216.8,
+   "cy": -32.4,
+   "r": 20,
+   "draw": "1:Most of your+0.36",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle14",
+   "kind": "circle",
+   "cx": 28859.8,
+   "cy": -409.6,
+   "r": 20,
+   "draw": "1:Most of your+0.39",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle15",
+   "kind": "circle",
+   "cx": 29427.5,
+   "cy": -314.8,
+   "r": 20,
+   "draw": "1:Most of your+0.42",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle16",
+   "kind": "circle",
+   "cx": 28915.9,
+   "cy": -22.0,
+   "r": 20,
+   "draw": "1:Most of your+0.45",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle17",
+   "kind": "circle",
+   "cx": 29109.8,
+   "cy": -252.3,
+   "r": 20,
+   "draw": "1:Most of your+0.48",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle18",
+   "kind": "circle",
+   "cx": 29309.5,
+   "cy": 55.9,
+   "r": 20,
+   "draw": "1:Most of your+0.51",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle19",
+   "kind": "circle",
+   "cx": 29150.6,
+   "cy": -436.3,
+   "r": 20,
+   "draw": "1:Most of your+0.54",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle20",
+   "kind": "circle",
+   "cx": 29541.5,
+   "cy": 134.7,
+   "r": 20,
+   "draw": "1:Most of your+0.57",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle21",
+   "kind": "circle",
+   "cx": 28392.7,
+   "cy": -250.2,
+   "r": 20,
+   "draw": "1:Most of your+0.6",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle22",
+   "kind": "circle",
+   "cx": 28319.7,
+   "cy": 60.7,
+   "r": 20,
+   "draw": "1:Most of your+0.63",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle23",
+   "kind": "circle",
+   "cx": 28177.4,
+   "cy": -221.3,
+   "r": 20,
+   "draw": "1:Most of your+0.66",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle24",
+   "kind": "circle",
+   "cx": 29005.4,
+   "cy": -77.1,
+   "r": 20,
+   "draw": "1:Most of your+0.69",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle25",
+   "kind": "circle",
+   "cx": 29205.1,
+   "cy": 207.7,
+   "r": 20,
+   "draw": "1:Most of your+0.72",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle26",
+   "kind": "circle",
+   "cx": 29263.5,
+   "cy": -282.9,
+   "r": 20,
+   "draw": "1:Most of your+0.75",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle27",
+   "kind": "circle",
+   "cx": 28330.8,
+   "cy": 11.3,
+   "r": 20,
+   "draw": "1:Most of your+0.78",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle28",
+   "kind": "circle",
+   "cx": 28542.2,
+   "cy": -233.1,
+   "r": 20,
+   "draw": "1:Most of your+0.81",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle29",
+   "kind": "circle",
+   "cx": 28485.4,
+   "cy": 28.0,
+   "r": 20,
+   "draw": "1:Most of your+0.84",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle30",
+   "kind": "circle",
+   "cx": 28105.5,
+   "cy": 6.5,
+   "r": 20,
+   "draw": "1:Most of your+0.87",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle31",
+   "kind": "circle",
+   "cx": 28425.4,
+   "cy": -281.9,
+   "r": 20,
+   "draw": "1:Most of your+0.9",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle32",
+   "kind": "circle",
+   "cx": 28835.3,
+   "cy": 245.2,
+   "r": 20,
+   "draw": "1:Most of your+0.93",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle33",
+   "kind": "circle",
+   "cx": 28699.9,
+   "cy": 245.1,
+   "r": 20,
+   "draw": "1:Most of your+0.96",
+   "width": 2.0,
+   "fill": "paper",
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "circle34",
+   "kind": "circle",
+   "cx": 29109.8,
+   "cy": -252.3,
+   "r": 20,
+   "draw": "1:a tiny part",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.9,
+   "out": "1:made high+0.5"
+  },
+  {
+   "id": "line35",
+   "kind": "path",
+   "points": [
+    [
+     29987.0,
+     -1453.5
+    ],
+    [
+     30287.0,
+     -1073.5
+    ]
+   ],
+   "draw": "1:rays from space",
+   "width": 1.8,
+   "color": "accent",
+   "dashed": true,
+   "out": "2:While you're"
+  },
+  {
+   "id": "line36",
+   "kind": "path",
+   "points": [
+    [
+     30097.0,
+     -1453.5
+    ],
+    [
+     30307.0,
+     -1073.5
+    ]
+   ],
+   "draw": "1:rays from space+0.1",
+   "width": 1.8,
+   "color": "accent",
+   "dashed": true,
+   "out": "2:While you're"
+  },
+  {
+   "id": "line37",
+   "kind": "path",
+   "points": [
+    [
+     30207.0,
+     -1453.5
+    ],
+    [
+     30327.0,
+     -1073.5
+    ]
+   ],
+   "draw": "1:rays from space+0.2",
+   "width": 1.8,
+   "color": "accent",
+   "dashed": true,
+   "out": "2:While you're"
+  },
+  {
+   "id": "line38",
+   "kind": "path",
+   "points": [
+    [
+     30317.0,
+     -1453.5
+    ],
+    [
+     30347.0,
+     -1073.5
+    ]
+   ],
+   "draw": "1:rays from space+0.3",
+   "width": 1.8,
+   "color": "accent",
+   "dashed": true,
+   "out": "2:While you're"
+  },
+  {
+   "id": "circle39",
+   "kind": "circle",
+   "cx": 30317.0,
+   "cy": -1013.5,
+   "r": 46,
+   "draw": "1:made high+0.3",
+   "width": 2.2,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "out": "2:While you're"
+  },
+  {
+   "id": "line40",
+   "kind": "path",
+   "points": [
+    [
+     30387.0,
+     -1013.5
+    ],
+    [
+     30567.0,
+     -1013.5
+    ]
+   ],
+   "draw": "1:strike nitrogen",
+   "arrow": true,
+   "width": 2.2,
+   "out": "2:While you're"
+  },
+  {
+   "id": "circle41",
+   "kind": "circle",
+   "cx": 30647.0,
+   "cy": -1013.5,
+   "r": 46,
+   "draw": "1:strike nitrogen+0.3",
+   "width": 2.4,
+   "fill": "accent",
+   "fillOpacity": 0.8,
+   "out": "2:While you're"
+  },
+  {
+   "id": "circle45",
+   "kind": "circle",
+   "cx": 33293.0,
+   "cy": -317.5,
+   "r": 30,
+   "draw": "3:Every 5,730",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.9,
+   "out": "3:half of what's"
+  },
+  {
+   "id": "circle46",
+   "kind": "circle",
+   "cx": 33293.0,
+   "cy": -317.5,
+   "r": 30,
+   "draw": "3:half of what's",
+   "width": 2.2,
+   "fill": "paper",
+   "out": "3:It's how"
+  },
+  {
+   "id": "circle47",
+   "kind": "circle",
+   "cx": 33389.0,
+   "cy": -317.5,
+   "r": 30,
+   "draw": "3:Every 5,730+0.03",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.9,
+   "out": "3:turns back"
+  },
+  {
+   "id": "circle48",
+   "kind": "circle",
+   "cx": 33389.0,
+   "cy": -317.5,
+   "r": 30,
+   "draw": "3:turns back",
+   "width": 2.2,
+   "fill": "paper",
+   "out": "3:It's how"
+  },
+  {
+   "id": "circle49",
+   "kind": "circle",
+   "cx": 33485.0,
+   "cy": -317.5,
+   "r": 30,
+   "draw": "3:Every 5,730+0.06",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.9,
+   "out": "3:into nitrogen"
+  },
+  {
+   "id": "circle50",
+   "kind": "circle",
+   "cx": 33485.0,
+   "cy": -317.5,
+   "r": 30,
+   "draw": "3:into nitrogen",
+   "width": 2.2,
+   "fill": "paper",
+   "out": "3:It's how"
+  },
+  {
+   "id": "circle51",
+   "kind": "circle",
+   "cx": 33581.0,
+   "cy": -317.5,
+   "r": 30,
+   "draw": "3:Every 5,730+0.09",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.9,
+   "out": "3:half of what's"
+  },
+  {
+   "id": "circle52",
+   "kind": "circle",
+   "cx": 33581.0,
+   "cy": -317.5,
+   "r": 30,
+   "draw": "3:half of what's",
+   "width": 2.2,
+   "fill": "paper",
+   "out": "3:It's how"
+  },
+  {
+   "id": "circle53",
+   "kind": "circle",
+   "cx": 33293.0,
+   "cy": -221.5,
+   "r": 30,
+   "draw": "3:Every 5,730+0.12",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.9,
+   "out": "3:It's how"
+  },
+  {
+   "id": "circle54",
+   "kind": "circle",
+   "cx": 33389.0,
+   "cy": -221.5,
+   "r": 30,
+   "draw": "3:Every 5,730+0.15",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.9,
+   "out": "3:half of what's"
+  },
+  {
+   "id": "circle55",
+   "kind": "circle",
+   "cx": 33389.0,
+   "cy": -221.5,
+   "r": 30,
+   "draw": "3:half of what's",
+   "width": 2.2,
+   "fill": "paper",
+   "out": "3:It's how"
+  },
+  {
+   "id": "circle56",
+   "kind": "circle",
+   "cx": 33485.0,
+   "cy": -221.5,
+   "r": 30,
+   "draw": "3:Every 5,730+0.18",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.9,
+   "out": "3:half of what's"
+  },
+  {
+   "id": "circle57",
+   "kind": "circle",
+   "cx": 33485.0,
+   "cy": -221.5,
+   "r": 30,
+   "draw": "3:half of what's",
+   "width": 2.2,
+   "fill": "paper",
+   "out": "3:It's how"
+  },
+  {
+   "id": "circle58",
+   "kind": "circle",
+   "cx": 33581.0,
+   "cy": -221.5,
+   "r": 30,
+   "draw": "3:Every 5,730+0.21",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.9,
+   "out": "3:turns back"
+  },
+  {
+   "id": "circle59",
+   "kind": "circle",
+   "cx": 33581.0,
+   "cy": -221.5,
+   "r": 30,
+   "draw": "3:turns back",
+   "width": 2.2,
+   "fill": "paper",
+   "out": "3:It's how"
+  },
+  {
+   "id": "circle60",
+   "kind": "circle",
+   "cx": 33293.0,
+   "cy": -125.5,
+   "r": 30,
+   "draw": "3:Every 5,730+0.24",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.9,
+   "out": "3:turns back"
+  },
+  {
+   "id": "circle61",
+   "kind": "circle",
+   "cx": 33293.0,
+   "cy": -125.5,
+   "r": 30,
+   "draw": "3:turns back",
+   "width": 2.2,
+   "fill": "paper",
+   "out": "3:It's how"
+  },
+  {
+   "id": "circle62",
+   "kind": "circle",
+   "cx": 33389.0,
+   "cy": -125.5,
+   "r": 30,
+   "draw": "3:Every 5,730+0.27",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.9,
+   "out": "3:half of what's"
+  },
+  {
+   "id": "circle63",
+   "kind": "circle",
+   "cx": 33389.0,
+   "cy": -125.5,
+   "r": 30,
+   "draw": "3:half of what's",
+   "width": 2.2,
+   "fill": "paper",
+   "out": "3:It's how"
+  },
+  {
+   "id": "circle64",
+   "kind": "circle",
+   "cx": 33485.0,
+   "cy": -125.5,
+   "r": 30,
+   "draw": "3:Every 5,730+0.3",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.9,
+   "out": "3:half of what's"
+  },
+  {
+   "id": "circle65",
+   "kind": "circle",
+   "cx": 33485.0,
+   "cy": -125.5,
+   "r": 30,
+   "draw": "3:half of what's",
+   "width": 2.2,
+   "fill": "paper",
+   "out": "3:It's how"
+  },
+  {
+   "id": "circle66",
+   "kind": "circle",
+   "cx": 33581.0,
+   "cy": -125.5,
+   "r": 30,
+   "draw": "3:Every 5,730+0.33",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.9,
+   "out": "3:It's how"
+  },
+  {
+   "id": "circle67",
+   "kind": "circle",
+   "cx": 33293.0,
+   "cy": -29.5,
+   "r": 30,
+   "draw": "3:Every 5,730+0.36",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.9,
+   "out": "3:half of what's"
+  },
+  {
+   "id": "circle68",
+   "kind": "circle",
+   "cx": 33293.0,
+   "cy": -29.5,
+   "r": 30,
+   "draw": "3:half of what's",
+   "width": 2.2,
+   "fill": "paper",
+   "out": "3:It's how"
+  },
+  {
+   "id": "circle69",
+   "kind": "circle",
+   "cx": 33389.0,
+   "cy": -29.5,
+   "r": 30,
+   "draw": "3:Every 5,730+0.39",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.9,
+   "out": "3:into nitrogen"
+  },
+  {
+   "id": "circle70",
+   "kind": "circle",
+   "cx": 33389.0,
+   "cy": -29.5,
+   "r": 30,
+   "draw": "3:into nitrogen",
+   "width": 2.2,
+   "fill": "paper",
+   "out": "3:It's how"
+  },
+  {
+   "id": "circle71",
+   "kind": "circle",
+   "cx": 33485.0,
+   "cy": -29.5,
+   "r": 30,
+   "draw": "3:Every 5,730+0.42",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.9,
+   "out": "3:turns back"
+  },
+  {
+   "id": "circle72",
+   "kind": "circle",
+   "cx": 33485.0,
+   "cy": -29.5,
+   "r": 30,
+   "draw": "3:turns back",
+   "width": 2.2,
+   "fill": "paper",
+   "out": "3:It's how"
+  },
+  {
+   "id": "circle73",
+   "kind": "circle",
+   "cx": 33581.0,
+   "cy": -29.5,
+   "r": 30,
+   "draw": "3:Every 5,730+0.45",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.9,
+   "out": "3:half of what's"
+  },
+  {
+   "id": "circle74",
+   "kind": "circle",
+   "cx": 33581.0,
+   "cy": -29.5,
+   "r": 30,
+   "draw": "3:half of what's",
+   "width": 2.2,
+   "fill": "paper",
+   "out": "3:It's how"
+  }
+ ],
+ "lights": [
+  {
+   "worldPoints": [
+    [
+     29109.8,
+     -252.3
+    ]
+   ],
+   "from": "1:a tiny part",
+   "size": 150,
+   "stagger": 0.0,
+   "to": "1:made high+0.5"
+  },
+  {
+   "worldPoints": [
+    [
+     29897.0,
+     -1343.5
+    ],
+    [
+     30437.0,
+     -1413.5
+    ],
+    [
+     30777.0,
+     -1293.5
+    ]
+   ],
+   "from": "1:made high",
+   "size": 40,
+   "stagger": 0.15,
+   "to": "2:While you're"
+  },
+  {
+   "worldPoints": [
+    [
+     30647.0,
+     -1013.5
+    ]
+   ],
+   "from": "1:strike nitrogen+0.4",
+   "size": 120,
+   "stagger": 0.0,
+   "to": "2:While you're"
+  },
+  {
+   "item": "me",
+   "at": [
+    0.49,
+    0.4
+   ],
+   "from": "2:your food",
+   "size": 80,
+   "to": "2:that stops"
+  },
+  {
+   "worldPoints": [
+    [
+     31937.0,
+     -133.5
+    ]
+   ],
+   "from": "2:a clock starts",
+   "size": 260,
+   "stagger": 0.0,
+   "to": "3:Every 5,730+0.6"
+  },
+  {
+   "worldPoints": [
+    [
+     33293.0,
+     -221.5
+    ],
+    [
+     33581.0,
+     -125.5
+    ]
+   ],
+   "from": "3:into nitrogen+0.3",
+   "size": 90,
+   "stagger": 0.0,
+   "to": "3:It's how"
+  },
+  {
+   "worldPoints": [
+    [
+     34717.0,
+     -173.5
+    ],
+    [
+     34997.0,
+     -133.5
+    ]
+   ],
+   "from": "3:ancient bones",
+   "size": 90,
+   "stagger": 0.3,
+   "to": "4:But the rest"
+  }
+ ],
+ "magnifiers": [],
+ "labels": [
+  {
+   "text": "CHAPTER 4",
+   "x": 960,
+   "y": 470,
+   "space": "screen",
+   "size": 28,
+   "in": 0.25,
+   "out": "1:Most-0.55",
+   "color": "accent",
+   "spacing": 0.5
+  },
+  {
+   "text": "WHICH ATOM KEEPS TIME?",
+   "x": 960,
+   "y": 548,
+   "space": "screen",
+   "size": 58,
+   "in": 0.45,
+   "out": "1:Most-0.55"
+  },
+  {
+   "text": "CARBON-12",
+   "x": 28817.0,
+   "y": 326.5,
+   "space": "world",
+   "size": 55,
+   "in": "1:Most of your+0.4",
+   "upper": false,
+   "out": "1:made high+0.5"
+  },
+  {
+   "text": "STABLE \u00b7 CAN LAST FOREVER",
+   "x": 28817.0,
+   "y": -553.5,
+   "space": "world",
+   "size": 48,
+   "in": "1:stable",
+   "color": "accent",
+   "out": "1:made high+0.5"
+  },
+  {
+   "text": "CARBON-14",
+   "x": 29109.8,
+   "y": -172.3,
+   "space": "world",
+   "size": 45,
+   "in": "1:tiny part of it is@end",
+   "color": "accent",
+   "upper": false,
+   "out": "1:made high+0.5"
+  },
+  {
+   "text": "RADIOACTIVE",
+   "x": 29109.8,
+   "y": -122.3,
+   "space": "world",
+   "size": 30,
+   "in": "1:It's radioactive",
+   "weight": 500,
+   "out": "1:made high+0.5"
+  },
+  {
+   "text": "N",
+   "x": 30317.0,
+   "y": -1013.5,
+   "space": "world",
+   "size": 36,
+   "in": "1:made high+0.45",
+   "spacing": 0.02,
+   "upper": false,
+   "out": "2:While you're"
+  },
+  {
+   "text": "C",
+   "x": 30647.0,
+   "y": -1013.5,
+   "space": "world",
+   "size": 42,
+   "in": "1:strike nitrogen+0.45",
+   "spacing": 0.02,
+   "upper": false,
+   "out": "2:While you're"
+  },
+  {
+   "text": "MADE IN THE SKY",
+   "x": 30477.0,
+   "y": -843.5,
+   "space": "world",
+   "size": 55,
+   "in": "1:made high+0.4",
+   "color": "accent",
+   "out": "2:While you're"
+  },
+  {
+   "text": "TAKEN IN WITH YOUR FOOD",
+   "x": 31597.0,
+   "y": 316.5,
+   "space": "world",
+   "size": 38,
+   "in": "2:your food",
+   "out": "2:that stops+0.4"
+  },
+  {
+   "text": "THE CLOCK STARTS",
+   "x": 31937.0,
+   "y": 226.5,
+   "space": "world",
+   "size": 55,
+   "in": "2:clock starts ticking",
+   "color": "accent",
+   "out": "3:Every 5,730+0.6"
+  },
+  {
+   "text": "5,730 YEARS",
+   "x": 33437.0,
+   "y": -513.5,
+   "space": "world",
+   "size": 60,
+   "in": "3:Every 5,730",
+   "out": "3:turns back",
+   "color": "accent",
+   "upper": false
+  },
+  {
+   "text": "11,460 YEARS",
+   "x": 33437.0,
+   "y": -513.5,
+   "space": "world",
+   "size": 60,
+   "in": "3:turns back",
+   "out": "3:into nitrogen",
+   "color": "accent",
+   "upper": false
+  },
+  {
+   "text": "17,190 YEARS",
+   "x": 33437.0,
+   "y": -513.5,
+   "space": "world",
+   "size": 60,
+   "in": "3:into nitrogen",
+   "out": "3:By measuring",
+   "color": "accent",
+   "upper": false
+  },
+  {
+   "text": "HALF TURNS BACK INTO NITROGEN",
+   "x": 33437.0,
+   "y": 176.5,
+   "space": "world",
+   "size": 38,
+   "in": "3:half of what's",
+   "out": "3:By measuring"
+  },
+  {
+   "text": "HOW LONG AGO DID IT DIE?",
+   "x": 33437.0,
+   "y": -513.5,
+   "space": "world",
+   "size": 50,
+   "in": "3:By measuring",
+   "out": "3:It's how"
+  },
+  {
+   "text": "UP TO {n} YEARS",
+   "x": 33437.0,
+   "y": 176.5,
+   "space": "world",
+   "size": 55,
+   "in": "3:up to about",
+   "color": "accent",
+   "count": {
+    "to": 50000,
+    "duration": 1.4
+   },
+   "out": "3:It's how"
+  },
+  {
+   "text": "ANCIENT BONES, DATED",
+   "x": 34837.0,
+   "y": 146.5,
+   "space": "world",
+   "size": 50,
+   "in": "3:ancient bones",
+   "color": "accent",
+   "out": "4:But the rest"
+  },
+  {
+   "text": "ALWAYS ON THE MOVE",
+   "x": 36337.0,
+   "y": -533.5,
+   "space": "world",
+   "size": 48,
+   "in": "4:doesn't keep still",
+   "out": "4:So where"
+  },
+  {
+   "text": "?",
+   "x": 36717.0,
+   "y": -373.5,
+   "space": "world",
+   "size": 150,
+   "in": "4:So where",
+   "color": "accent",
+   "spacing": 0.02,
+   "out": "end-1.1"
+  }
+ ],
+ "streams": [
+  {
+   "points": [
+    [
+     31397.0,
+     -173.5
+    ],
+    [
+     31677.0,
+     -153.5
+    ],
+    [
+     31929.2,
+     -263.3
+    ]
+   ],
+   "from": "2:taking it in",
+   "count": 8,
+   "period": 2.2,
+   "size": 16,
+   "spread": 8,
+   "curve": true,
+   "to": "2:that stops",
+   "color": "accent"
+  },
+  {
+   "points": [
+    [
+     36329.4,
+     -259.1
+    ],
+    [
+     36027.0,
+     -293.5
+    ],
+    [
+     35717.0,
+     -413.5
+    ]
+   ],
+   "from": "4:keep still",
+   "count": 7,
+   "period": 2.4,
+   "size": 15,
+   "spread": 10,
+   "curve": true,
+   "to": "4:So where+0.6"
+  },
+  {
+   "points": [
+    [
+     36329.4,
+     -259.1
+    ],
+    [
+     36657.0,
+     -269.5
+    ],
+    [
+     36977.0,
+     -373.5
+    ]
+   ],
+   "from": "4:keep still+0.12",
+   "count": 7,
+   "period": 2.4,
+   "size": 15,
+   "spread": 10,
+   "curve": true,
+   "to": "4:So where+0.6",
+   "color": "accent"
+  },
+  {
+   "points": [
+    [
+     36329.4,
+     -259.1
+    ],
+    [
+     36057.0,
+     78.5
+    ],
+    [
+     35777.0,
+     206.5
+    ]
+   ],
+   "from": "4:keep still+0.24",
+   "count": 7,
+   "period": 2.4,
+   "size": 15,
+   "spread": 10,
+   "curve": true,
+   "to": "4:So where+0.6"
+  },
+  {
+   "points": [
+    [
+     36329.4,
+     -259.1
+    ],
+    [
+     36637.0,
+     84.5
+    ],
+    [
+     36937.0,
+     216.5
+    ]
+   ],
+   "from": "4:keep still+0.36",
+   "count": 7,
+   "period": 2.4,
+   "size": 15,
+   "spread": 10,
+   "curve": true,
+   "to": "4:So where+0.6",
+   "color": "accent"
+  }
+ ],
+ "clock": 208.35
+}

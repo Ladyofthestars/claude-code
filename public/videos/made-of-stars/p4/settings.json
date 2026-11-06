@@ -1,0 +1,1267 @@
+{
+ "title": "You Are Made of Stars \u2014 part 4",
+ "size": {
+  "width": 1920,
+  "height": 1080
+ },
+ "audio": "narration.mp3",
+ "words": "words.json",
+ "tailSeconds": 0,
+ "safeArea": {
+  "top": 0.06,
+  "bottom": 0.06,
+  "side": 0.05
+ },
+ "theme": {
+  "background": "#ffffff",
+  "dotColor": "rgba(36, 38, 43, 0.11)",
+  "dotSpacing": 40,
+  "dotSize": 1.7,
+  "dotParallax": 0.75,
+  "ink": "#24262b",
+  "accent": "#5b8fd8",
+  "lightBlend": "normal",
+  "font": "Montserrat"
+ },
+ "pictures": {
+  "blood_cell": {
+   "src": "/videos/made-of-stars/images/blood_cell.png",
+   "aspect": 1.0,
+   "content": [
+    0.2832,
+    0.332,
+    0.7129,
+    0.6631
+   ]
+  },
+  "nebula": {
+   "src": "/videos/made-of-stars/images/nebula.png",
+   "aspect": 1.0,
+   "content": [
+    0.166,
+    0.1904,
+    0.8057,
+    0.7969
+   ]
+  },
+  "person": {
+   "src": "/videos/made-of-stars/images/person.png",
+   "aspect": 0.67089,
+   "content": [
+    0.3856,
+    0.2524,
+    0.6108,
+    0.7579
+   ]
+  },
+  "red_giant": {
+   "src": "/videos/made-of-stars/images/red_giant.png",
+   "aspect": 1.0,
+   "content": [
+    0.2607,
+    0.2607,
+    0.7422,
+    0.7412
+   ]
+  },
+  "sun": {
+   "src": "/videos/made-of-stars/images/sun.png",
+   "aspect": 1.0,
+   "content": [
+    0.1113,
+    0.1445,
+    0.9092,
+    0.8438
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "red_giant1",
+   "picture": "red_giant",
+   "x": 14988.3,
+   "y": -1581.1,
+   "width": 1165.5,
+   "in": "1:Carbon",
+   "out": "end-1.1"
+  },
+  {
+   "id": "sun4",
+   "picture": "sun",
+   "x": 13583.8,
+   "y": -1576.5,
+   "width": 600.6,
+   "in": "1:When a",
+   "out": "end-1.1"
+  },
+  {
+   "id": "nebula27",
+   "picture": "nebula",
+   "x": 18952.1,
+   "y": -1574.6,
+   "width": 857.4,
+   "in": "4:In the",
+   "out": "end-1.1"
+  },
+  {
+   "id": "person39",
+   "picture": "person",
+   "x": 20091.4,
+   "y": -1566.1,
+   "width": 796.3,
+   "in": "4:Put simply",
+   "out": "end-1.1"
+  },
+  {
+   "id": "sun41",
+   "picture": "sun",
+   "x": 20836.5,
+   "y": -1748.0,
+   "width": 343.2,
+   "in": "5:But a star",
+   "out": "end-1.1"
+  },
+  {
+   "id": "blood_cell42",
+   "picture": "blood_cell",
+   "x": 20840.7,
+   "y": -1349.1,
+   "width": 362.4,
+   "in": "5:iron",
+   "out": "end-1.1"
+  }
+ ],
+ "camera": [
+  {
+   "at": "start",
+   "x": 14990.0,
+   "y": -1580.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "1:Carbon-0.2",
+   "x": 14990.0,
+   "y": -1580.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "1:old@end",
+   "x": 15110.0,
+   "y": -1580.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "1:When-0.3",
+   "x": 15110.0,
+   "y": -1580.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "1:center@end",
+   "x": 13590.0,
+   "y": -1580.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "1:heats up@end",
+   "x": 13590.0,
+   "y": -1580.0,
+   "zoom": 1.05
+  },
+  {
+   "at": "1:giant@end",
+   "x": 14290.0,
+   "y": -1560.0,
+   "zoom": 0.62
+  },
+  {
+   "at": "2:hotter@end",
+   "x": 14990.0,
+   "y": -1580.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "2:degrees@end",
+   "x": 15190.0,
+   "y": -1640.0,
+   "zoom": 0.92
+  },
+  {
+   "at": "2:atom@end",
+   "x": 15420.0,
+   "y": -1580.0,
+   "zoom": 0.9
+  },
+  {
+   "at": "3:Why-0.3",
+   "x": 15420.0,
+   "y": -1580.0,
+   "zoom": 0.9
+  },
+  {
+   "at": "3:not two@end",
+   "x": 17310.0,
+   "y": -1580.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "3:lasts@end",
+   "x": 17390.0,
+   "y": -1580.0,
+   "zoom": 0.95
+  },
+  {
+   "at": "3:oxygen@end",
+   "x": 17890.0,
+   "y": -1530.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "4:In the",
+   "x": 18640.0,
+   "y": -1580.0,
+   "zoom": 0.85
+  },
+  {
+   "at": "4:space@end",
+   "x": 18940.0,
+   "y": -1580.0,
+   "zoom": 0.9
+  },
+  {
+   "at": "4:the stars@end",
+   "x": 18940.0,
+   "y": -1580.0,
+   "zoom": 0.82
+  },
+  {
+   "at": "4:simply@end",
+   "x": 19540.0,
+   "y": -1560.0,
+   "zoom": 0.82
+  },
+  {
+   "at": "5:But-0.3",
+   "x": 19540.0,
+   "y": -1560.0,
+   "zoom": 0.82
+  },
+  {
+   "at": "5:further@end",
+   "x": 20640.0,
+   "y": -1560.0,
+   "zoom": 0.92
+  },
+  {
+   "at": "5:from@end",
+   "x": 20890.0,
+   "y": -1540.0,
+   "zoom": 1.0
+  },
+  {
+   "at": "end",
+   "x": 20890.0,
+   "y": -1540.0,
+   "zoom": 1.0
+  }
+ ],
+ "threads": [],
+ "drawings": [
+  {
+   "id": "rect2",
+   "kind": "rect",
+   "x": 15460.0,
+   "y": -1800.0,
+   "w": 100,
+   "h": 100,
+   "draw": "1:Carbon+0.4",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "1:Carbon+0.5",
+   "out": "1:When-0.2"
+  },
+  {
+   "id": "circle3",
+   "kind": "circle",
+   "cx": 13590.0,
+   "cy": -1580.0,
+   "r": 150,
+   "draw": "1:core shrinks",
+   "width": 1.6,
+   "color": "accent",
+   "duration": 0.6,
+   "out": "1:outer-0.2"
+  },
+  {
+   "id": "circle4",
+   "kind": "circle",
+   "cx": 13590.0,
+   "cy": -1580.0,
+   "r": 110,
+   "draw": "1:core shrinks+0.3",
+   "width": 1.6,
+   "color": "accent",
+   "duration": 0.6,
+   "out": "1:outer-0.2"
+  },
+  {
+   "id": "circle5",
+   "kind": "circle",
+   "cx": 13590.0,
+   "cy": -1580.0,
+   "r": 75,
+   "draw": "1:core shrinks+0.6",
+   "width": 1.6,
+   "color": "accent",
+   "duration": 0.6,
+   "out": "1:outer-0.2"
+  },
+  {
+   "id": "circle6",
+   "kind": "circle",
+   "cx": 14990.0,
+   "cy": -1580.0,
+   "r": 320,
+   "draw": "1:spread out",
+   "width": 1.4,
+   "color": "muted",
+   "duration": 0.8,
+   "out": "2:Deep-0.2"
+  },
+  {
+   "id": "circle7",
+   "kind": "circle",
+   "cx": 14990.0,
+   "cy": -1580.0,
+   "r": 380,
+   "draw": "1:spread out+0.3",
+   "width": 1.4,
+   "color": "muted",
+   "duration": 0.8,
+   "out": "2:Deep-0.2"
+  },
+  {
+   "id": "circle9",
+   "kind": "circle",
+   "cx": 15810.0,
+   "cy": -1710.0,
+   "r": 28,
+   "draw": "2:Three+0.6",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.3,
+   "out": "2:carbon atom"
+  },
+  {
+   "id": "line10",
+   "kind": "path",
+   "points": [
+    [
+     15810.0,
+     -1677.5
+    ],
+    [
+     15810.0,
+     -1612.5
+    ]
+   ],
+   "draw": "2:slam",
+   "width": 1.4,
+   "color": "muted",
+   "duration": 0.5,
+   "out": "2:carbon atom"
+  },
+  {
+   "id": "circle11",
+   "kind": "circle",
+   "cx": 15922.6,
+   "cy": -1515.0,
+   "r": 28,
+   "draw": "2:Three+0.72",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.3,
+   "out": "2:carbon atom"
+  },
+  {
+   "id": "line12",
+   "kind": "path",
+   "points": [
+    [
+     15894.4,
+     -1531.3
+    ],
+    [
+     15838.1,
+     -1563.8
+    ]
+   ],
+   "draw": "2:slam",
+   "width": 1.4,
+   "color": "muted",
+   "duration": 0.5,
+   "out": "2:carbon atom"
+  },
+  {
+   "id": "circle13",
+   "kind": "circle",
+   "cx": 15697.4,
+   "cy": -1515.0,
+   "r": 28,
+   "draw": "2:Three+0.84",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.3,
+   "out": "2:carbon atom"
+  },
+  {
+   "id": "line14",
+   "kind": "path",
+   "points": [
+    [
+     15725.6,
+     -1531.3
+    ],
+    [
+     15781.9,
+     -1563.8
+    ]
+   ],
+   "draw": "2:slam",
+   "width": 1.4,
+   "color": "muted",
+   "duration": 0.5,
+   "out": "2:carbon atom"
+  },
+  {
+   "id": "circle15",
+   "kind": "circle",
+   "cx": 15810.0,
+   "cy": -1580.0,
+   "r": 48,
+   "draw": "2:one carbon",
+   "width": 2.6,
+   "fill": "accent",
+   "fillOpacity": 0.4,
+   "out": "3:Why-0.3"
+  },
+  {
+   "id": "circle16",
+   "kind": "circle",
+   "cx": 16920.0,
+   "cy": -1580.0,
+   "r": 26,
+   "draw": "3:not two",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.25,
+   "out": "4:In the-0.2"
+  },
+  {
+   "id": "circle17",
+   "kind": "circle",
+   "cx": 17060.0,
+   "cy": -1580.0,
+   "r": 26,
+   "draw": "3:not two+0.1",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.25,
+   "out": "4:In the-0.2"
+  },
+  {
+   "id": "circle18",
+   "kind": "circle",
+   "cx": 17630.0,
+   "cy": -1665.0,
+   "r": 26,
+   "draw": "3:Why three",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.25,
+   "out": "4:In the-0.2"
+  },
+  {
+   "id": "circle19",
+   "kind": "circle",
+   "cx": 17703.6,
+   "cy": -1537.5,
+   "r": 26,
+   "draw": "3:Why three+0.1",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.25,
+   "out": "4:In the-0.2"
+  },
+  {
+   "id": "circle20",
+   "kind": "circle",
+   "cx": 17556.4,
+   "cy": -1537.5,
+   "r": 26,
+   "draw": "3:Why three+0.2",
+   "width": 2.2,
+   "fill": "accent",
+   "fillOpacity": 0.25,
+   "out": "4:In the-0.2"
+  },
+  {
+   "id": "line21",
+   "kind": "path",
+   "points": [
+    [
+     16920.0,
+     -1580.0
+    ],
+    [
+     16980.0,
+     -1580.0
+    ]
+   ],
+   "draw": "3:join",
+   "width": 1.2,
+   "color": "muted",
+   "duration": 0.3,
+   "out": "3:falls apart+0.8"
+  },
+  {
+   "id": "line22",
+   "kind": "path",
+   "points": [
+    [
+     17060.0,
+     -1580.0
+    ],
+    [
+     17000.0,
+     -1580.0
+    ]
+   ],
+   "draw": "3:join",
+   "width": 1.2,
+   "color": "muted",
+   "duration": 0.3,
+   "out": "3:falls apart+0.8"
+  },
+  {
+   "id": "circle23",
+   "kind": "circle",
+   "cx": 18230.0,
+   "cy": -1580.0,
+   "r": 46,
+   "draw": "3:carbon atom",
+   "width": 2.6,
+   "fill": "accent",
+   "fillOpacity": 0.3,
+   "out": "4:In the-0.2"
+  },
+  {
+   "id": "circle24",
+   "kind": "circle",
+   "cx": 18040.0,
+   "cy": -1690.0,
+   "r": 26,
+   "draw": "3:one more helium",
+   "width": 2.2,
+   "out": "3:makes oxygen"
+  },
+  {
+   "id": "line25",
+   "kind": "path",
+   "points": [
+    [
+     18065.0,
+     -1675.0
+    ],
+    [
+     18180.0,
+     -1605.0
+    ]
+   ],
+   "draw": "3:grab",
+   "width": 1.4,
+   "color": "muted",
+   "duration": 0.5,
+   "out": "3:makes oxygen"
+  },
+  {
+   "id": "rect26",
+   "kind": "rect",
+   "x": 18230.0,
+   "y": -1370.0,
+   "w": 110,
+   "h": 110,
+   "draw": "3:oxygen",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "3:oxygen+0.1",
+   "out": "4:In the-0.2"
+  },
+  {
+   "id": "circle28",
+   "kind": "circle",
+   "cx": 18940.0,
+   "cy": -1580.0,
+   "r": 200,
+   "draw": "4:pushes",
+   "width": 1.4,
+   "color": "muted",
+   "duration": 0.9,
+   "out": "4:Put simply-0.2"
+  },
+  {
+   "id": "circle29",
+   "kind": "circle",
+   "cx": 18940.0,
+   "cy": -1580.0,
+   "r": 290,
+   "draw": "4:pushes+0.3",
+   "width": 1.4,
+   "color": "muted",
+   "duration": 0.9,
+   "out": "4:Put simply-0.2"
+  },
+  {
+   "id": "circle30",
+   "kind": "circle",
+   "cx": 18940.0,
+   "cy": -1580.0,
+   "r": 380,
+   "draw": "4:pushes+0.6",
+   "width": 1.4,
+   "color": "muted",
+   "duration": 0.9,
+   "out": "4:Put simply-0.2"
+  },
+  {
+   "id": "line31",
+   "kind": "path",
+   "points": [
+    [
+     18888.0,
+     -1610.0
+    ],
+    [
+     18754.0,
+     -1761.7
+    ],
+    [
+     18656.6,
+     -1955.0
+    ]
+   ],
+   "draw": "4:drifts",
+   "width": 1.2,
+   "color": "muted",
+   "curve": true,
+   "dashed": true,
+   "out": "4:Put simply-0.2"
+  },
+  {
+   "id": "line32",
+   "kind": "path",
+   "points": [
+    [
+     18970.0,
+     -1632.0
+    ],
+    [
+     19121.7,
+     -1766.0
+    ],
+    [
+     19315.0,
+     -1863.4
+    ]
+   ],
+   "draw": "4:drifts+0.1",
+   "width": 1.2,
+   "color": "muted",
+   "curve": true,
+   "dashed": true,
+   "out": "4:Put simply-0.2"
+  },
+  {
+   "id": "line33",
+   "kind": "path",
+   "points": [
+    [
+     18996.4,
+     -1559.5
+    ],
+    [
+     19154.7,
+     -1433.4
+    ],
+    [
+     19284.2,
+     -1260.0
+    ]
+   ],
+   "draw": "4:drifts+0.2",
+   "width": 1.2,
+   "color": "muted",
+   "curve": true,
+   "dashed": true,
+   "out": "4:Put simply-0.2"
+  },
+  {
+   "id": "line34",
+   "kind": "path",
+   "points": [
+    [
+     18929.6,
+     -1520.9
+    ],
+    [
+     18832.9,
+     -1343.1
+    ],
+    [
+     18684.6,
+     -1185.5
+    ]
+   ],
+   "draw": "4:drifts+0.3",
+   "width": 1.2,
+   "color": "muted",
+   "curve": true,
+   "dashed": true,
+   "out": "4:Put simply-0.2"
+  },
+  {
+   "id": "line35",
+   "kind": "path",
+   "points": [
+    [
+     18880.9,
+     -1569.6
+    ],
+    [
+     18680.7,
+     -1599.6
+    ],
+    [
+     18481.9,
+     -1685.1
+    ]
+   ],
+   "draw": "4:drifts+0.4",
+   "width": 1.2,
+   "color": "muted",
+   "curve": true,
+   "dashed": true,
+   "out": "4:Put simply-0.2"
+  },
+  {
+   "id": "rect36",
+   "kind": "rect",
+   "x": 18656.6,
+   "y": -1955.0,
+   "w": 64,
+   "h": 64,
+   "draw": "4:between",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "4:between+0.1",
+   "out": "4:Put simply-0.2"
+  },
+  {
+   "id": "rect37",
+   "kind": "rect",
+   "x": 19315.0,
+   "y": -1863.4,
+   "w": 64,
+   "h": 64,
+   "draw": "4:between+0.15",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "4:between+0.25",
+   "out": "4:Put simply-0.2"
+  },
+  {
+   "id": "rect38",
+   "kind": "rect",
+   "x": 19284.2,
+   "y": -1260.0,
+   "w": 64,
+   "h": 64,
+   "draw": "4:between+0.3",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "4:between+0.4",
+   "out": "4:Put simply-0.2"
+  },
+  {
+   "id": "line40",
+   "kind": "path",
+   "points": [
+    [
+     19200.0,
+     -1660.0
+    ],
+    [
+     19640.0,
+     -1840.0
+    ],
+    [
+     20083.5,
+     -1684.8
+    ]
+   ],
+   "draw": "4:carbon in your",
+   "width": 1.6,
+   "color": "muted",
+   "curve": true,
+   "dashed": true,
+   "out": "end-1.1"
+  },
+  {
+   "id": "rect43",
+   "kind": "rect",
+   "x": 21070.0,
+   "y": -1350.0,
+   "w": 100,
+   "h": 100,
+   "draw": "5:iron+0.3",
+   "width": 2.6,
+   "duration": 0.6,
+   "fill": "paper",
+   "fillOpacity": 1,
+   "fillAt": "5:iron+0.4",
+   "dashed": true,
+   "color": "muted",
+   "out": "end-1.1"
+  }
+ ],
+ "lights": [
+  {
+   "worldPoints": [
+    [
+     13590.0,
+     -1580.0
+    ]
+   ],
+   "from": "1:heats up",
+   "size": 130,
+   "stagger": 0.0,
+   "to": "end-1.1"
+  },
+  {
+   "worldPoints": [
+    [
+     14990.0,
+     -1580.0
+    ]
+   ],
+   "from": "2:Deep",
+   "size": 200,
+   "stagger": 0.0,
+   "to": "end-1.1"
+  },
+  {
+   "drawing": "line10",
+   "from": "2:slam+0.2",
+   "duration": 0.7,
+   "size": 40
+  },
+  {
+   "drawing": "line12",
+   "from": "2:slam+0.2",
+   "duration": 0.7,
+   "size": 40
+  },
+  {
+   "drawing": "line14",
+   "from": "2:slam+0.2",
+   "duration": 0.7,
+   "size": 40
+  },
+  {
+   "drawing": "line21",
+   "from": "3:join",
+   "duration": 0.6,
+   "size": 36
+  },
+  {
+   "drawing": "line22",
+   "from": "3:join",
+   "duration": 0.6,
+   "size": 36
+  },
+  {
+   "drawing": "line21",
+   "from": "3:falls apart",
+   "duration": 0.6,
+   "size": 36,
+   "reverse": true
+  },
+  {
+   "drawing": "line22",
+   "from": "3:falls apart",
+   "duration": 0.6,
+   "size": 36,
+   "reverse": true
+  },
+  {
+   "worldPoints": [
+    [
+     17630.0,
+     -1580.0
+    ]
+   ],
+   "from": "3:same time",
+   "size": 110,
+   "stagger": 0.0,
+   "to": "4:In the-0.2"
+  },
+  {
+   "drawing": "line25",
+   "from": "3:grab+0.3",
+   "duration": 0.8,
+   "size": 40
+  },
+  {
+   "drawing": "line31",
+   "from": "4:drifts",
+   "duration": 1.6,
+   "size": 40
+  },
+  {
+   "drawing": "line32",
+   "from": "4:drifts+0.1",
+   "duration": 1.6,
+   "size": 40
+  },
+  {
+   "drawing": "line33",
+   "from": "4:drifts+0.2",
+   "duration": 1.6,
+   "size": 40
+  },
+  {
+   "drawing": "line34",
+   "from": "4:drifts+0.3",
+   "duration": 1.6,
+   "size": 40
+  },
+  {
+   "drawing": "line35",
+   "from": "4:drifts+0.4",
+   "duration": 1.6,
+   "size": 40
+  },
+  {
+   "drawing": "line40",
+   "from": "4:carbon in your",
+   "duration": 1.6,
+   "size": 56
+  },
+  {
+   "item": "person39",
+   "at": [
+    0.49,
+    0.4
+   ],
+   "from": "4:made inside",
+   "size": 80,
+   "to": "end-1.1"
+  },
+  {
+   "worldPoints": [
+    [
+     21070.0,
+     -1358.0
+    ]
+   ],
+   "from": "5:blood",
+   "size": 70,
+   "stagger": 0.0,
+   "to": "end-1.1"
+  }
+ ],
+ "magnifiers": [
+  {
+   "source": {
+    "item": "red_giant1",
+    "at": [
+     0.5,
+     0.5
+    ],
+    "radius": 30
+   },
+   "x": 15810.0,
+   "y": -1580.0,
+   "radius": 240,
+   "open": "2:Three",
+   "contents": [],
+   "close": "3:Why-0.3"
+  }
+ ],
+ "labels": [
+  {
+   "text": "CHAPTER 4",
+   "x": 960,
+   "y": 470,
+   "space": "screen",
+   "size": 28,
+   "in": 0.25,
+   "out": "1:Carbon-0.55",
+   "color": "accent",
+   "spacing": 0.5
+  },
+  {
+   "text": "WHERE DOES CARBON COME FROM?",
+   "x": 960,
+   "y": 548,
+   "space": "screen",
+   "size": 55,
+   "in": 0.45,
+   "out": "1:Carbon-0.55"
+  },
+  {
+   "text": "C",
+   "x": 15460.0,
+   "y": -1810.0,
+   "space": "world",
+   "size": 36,
+   "in": "1:Carbon+0.65",
+   "out": "1:When-0.2",
+   "spacing": 0.02,
+   "upper": false
+  },
+  {
+   "text": "CARBON",
+   "x": 15460.0,
+   "y": -1770.0,
+   "space": "world",
+   "size": 14,
+   "in": "1:Carbon+0.75",
+   "out": "1:When-0.2",
+   "weight": 500,
+   "spacing": 0.08
+  },
+  {
+   "text": "SUN TODAY",
+   "x": 13590.0,
+   "y": -1280.0,
+   "space": "world",
+   "size": 40,
+   "in": "1:outer",
+   "out": "end-1.1"
+  },
+  {
+   "text": "RED GIANT",
+   "x": 14990.0,
+   "y": -1220.0,
+   "space": "world",
+   "size": 40,
+   "in": "1:red giant",
+   "out": "end-1.1"
+  },
+  {
+   "text": "{n} MILLION DEGREES",
+   "x": 14990.0,
+   "y": -1960.0,
+   "space": "world",
+   "size": 62,
+   "in": "2:100",
+   "out": "3:Why-0.2",
+   "count": {
+    "to": 100,
+    "duration": 1.2
+   }
+  },
+  {
+   "text": "He",
+   "x": 15810.0,
+   "y": -1710.0,
+   "space": "world",
+   "size": 25,
+   "in": "2:Three+0.7",
+   "out": "2:carbon atom",
+   "upper": false
+  },
+  {
+   "text": "He",
+   "x": 15922.6,
+   "y": -1515.0,
+   "space": "world",
+   "size": 25,
+   "in": "2:Three+0.82",
+   "out": "2:carbon atom",
+   "upper": false
+  },
+  {
+   "text": "He",
+   "x": 15697.4,
+   "y": -1515.0,
+   "space": "world",
+   "size": 25,
+   "in": "2:Three+0.94",
+   "out": "2:carbon atom",
+   "upper": false
+  },
+  {
+   "text": "C",
+   "x": 15810.0,
+   "y": -1580.0,
+   "space": "world",
+   "size": 45,
+   "in": "2:one carbon+0.2",
+   "out": "3:Why-0.3",
+   "upper": false
+  },
+  {
+   "text": "TWO",
+   "x": 16990.0,
+   "y": -1770.0,
+   "space": "world",
+   "size": 45,
+   "in": "3:not two",
+   "out": "4:In the-0.2"
+  },
+  {
+   "text": "THREE",
+   "x": 17630.0,
+   "y": -1770.0,
+   "space": "world",
+   "size": 45,
+   "in": "3:Why three",
+   "out": "4:In the-0.2"
+  },
+  {
+   "text": "FALLS APART",
+   "x": 16990.0,
+   "y": -1410.0,
+   "space": "world",
+   "size": 38,
+   "in": "3:falls apart",
+   "out": "4:In the-0.2"
+  },
+  {
+   "text": "LASTS",
+   "x": 17630.0,
+   "y": -1410.0,
+   "space": "world",
+   "size": 38,
+   "in": "3:lasts",
+   "out": "4:In the-0.2"
+  },
+  {
+   "text": "C",
+   "x": 18230.0,
+   "y": -1580.0,
+   "space": "world",
+   "size": 40,
+   "in": "3:carbon atom+0.2",
+   "out": "4:In the-0.2",
+   "upper": false
+  },
+  {
+   "text": "O",
+   "x": 18230.0,
+   "y": -1381.0,
+   "space": "world",
+   "size": 40,
+   "in": "3:oxygen+0.25",
+   "out": "4:In the-0.2",
+   "spacing": 0.02,
+   "upper": false
+  },
+  {
+   "text": "OXYGEN",
+   "x": 18230.0,
+   "y": -1337.0,
+   "space": "world",
+   "size": 15,
+   "in": "3:oxygen+0.35",
+   "out": "4:In the-0.2",
+   "weight": 500,
+   "spacing": 0.08
+  },
+  {
+   "text": "C",
+   "x": 18656.6,
+   "y": -1955.0,
+   "space": "world",
+   "size": 28,
+   "in": "4:between+0.25",
+   "out": "4:Put simply-0.2",
+   "spacing": 0.02,
+   "upper": false
+  },
+  {
+   "text": "C",
+   "x": 19315.0,
+   "y": -1863.4,
+   "space": "world",
+   "size": 28,
+   "in": "4:between+0.4",
+   "out": "4:Put simply-0.2",
+   "spacing": 0.02,
+   "upper": false
+  },
+  {
+   "text": "C",
+   "x": 19284.2,
+   "y": -1260.0,
+   "space": "world",
+   "size": 28,
+   "in": "4:between+0.55",
+   "out": "4:Put simply-0.2",
+   "spacing": 0.02,
+   "upper": false
+  },
+  {
+   "text": "MADE INSIDE A STAR",
+   "x": 20090.0,
+   "y": -1160.0,
+   "space": "world",
+   "size": 42,
+   "in": "4:inside a star",
+   "out": "end-1.1"
+  },
+  {
+   "text": "STOPS HERE",
+   "x": 20840.0,
+   "y": -1590.0,
+   "space": "world",
+   "size": 40,
+   "in": "5:any further",
+   "out": "end-1.1"
+  },
+  {
+   "text": "Fe",
+   "x": 21070.0,
+   "y": -1360.0,
+   "space": "world",
+   "size": 36,
+   "in": "5:iron+0.55",
+   "spacing": 0.02,
+   "upper": false,
+   "out": "end-1.1"
+  },
+  {
+   "text": "IRON",
+   "x": 21070.0,
+   "y": -1320.0,
+   "space": "world",
+   "size": 14,
+   "in": "5:iron+0.65",
+   "weight": 500,
+   "spacing": 0.08,
+   "out": "end-1.1"
+  }
+ ]
+}

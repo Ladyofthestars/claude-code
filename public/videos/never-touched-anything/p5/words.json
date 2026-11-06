@@ -1,0 +1,1168 @@
+{
+ "duration": 62.603,
+ "source": "Kokoro-82M (open source, Apache 2.0), voice am_michael 0.7 + am_onyx 0.3, speed 1.02, one paragraph at a time, word timestamps",
+ "words": [
+  {
+   "text": "Your",
+   "start": 2.615,
+   "end": 2.778,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "skin",
+   "start": 2.778,
+   "end": 3.165,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "is",
+   "start": 3.165,
+   "end": 3.328,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "full",
+   "start": 3.328,
+   "end": 3.553,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 3.553,
+   "end": 3.678,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "tiny",
+   "start": 3.678,
+   "end": 4.078,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "sensors",
+   "start": 4.078,
+   "end": 4.953,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "Some",
+   "start": 4.953,
+   "end": 5.215,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "respond",
+   "start": 5.215,
+   "end": 5.715,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "to",
+   "start": 5.715,
+   "end": 5.84,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "pressure",
+   "start": 5.84,
+   "end": 6.678,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "Others",
+   "start": 6.678,
+   "end": 7.04,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "respond",
+   "start": 7.04,
+   "end": 7.54,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "to",
+   "start": 7.54,
+   "end": 7.64,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "vibration",
+   "start": 7.64,
+   "end": 8.39,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "or",
+   "start": 8.39,
+   "end": 8.54,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "to",
+   "start": 8.54,
+   "end": 8.678,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "stretch",
+   "start": 8.678,
+   "end": 9.553,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "Some",
+   "start": 9.553,
+   "end": 9.715,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "even",
+   "start": 9.715,
+   "end": 10.015,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "notice",
+   "start": 10.015,
+   "end": 10.415,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "when",
+   "start": 10.415,
+   "end": 10.553,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "a",
+   "start": 10.553,
+   "end": 10.665,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "single",
+   "start": 10.665,
+   "end": 11.065,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "hair",
+   "start": 11.065,
+   "end": 11.34,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "moves",
+   "start": 11.34,
+   "end": 12.278,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "Scientists",
+   "start": 12.278,
+   "end": 12.965,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "call",
+   "start": 12.965,
+   "end": 13.265,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "them",
+   "start": 13.265,
+   "end": 13.465,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "mechanoreceptors",
+   "start": 13.465,
+   "end": 14.668,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "When",
+   "start": 15.42,
+   "end": 15.533,
+   "line": 2,
+   "sentence": true
+  },
+  {
+   "text": "the",
+   "start": 15.533,
+   "end": 15.67,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "electrons",
+   "start": 15.67,
+   "end": 16.308,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 16.308,
+   "end": 16.383,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 16.383,
+   "end": 16.533,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "fingertip",
+   "start": 16.533,
+   "end": 17.083,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "push",
+   "start": 17.083,
+   "end": 17.37,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "against",
+   "start": 17.37,
+   "end": 17.708,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 17.708,
+   "end": 17.82,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "electrons",
+   "start": 17.82,
+   "end": 18.433,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 18.433,
+   "end": 18.508,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 18.508,
+   "end": 18.608,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "table",
+   "start": 18.608,
+   "end": 19.37,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 19.37,
+   "end": 19.595,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "skin",
+   "start": 19.595,
+   "end": 19.995,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "is",
+   "start": 19.995,
+   "end": 20.158,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "pressed",
+   "start": 20.158,
+   "end": 20.545,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "in",
+   "start": 20.545,
+   "end": 20.845,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "just",
+   "start": 20.845,
+   "end": 21.058,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "a",
+   "start": 21.058,
+   "end": 21.145,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "little",
+   "start": 21.145,
+   "end": 22.083,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "Those",
+   "start": 22.083,
+   "end": 22.358,
+   "line": 2,
+   "sentence": true
+  },
+  {
+   "text": "sensors",
+   "start": 22.358,
+   "end": 22.883,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "notice",
+   "start": 22.883,
+   "end": 23.57,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "and",
+   "start": 23.57,
+   "end": 23.683,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "they",
+   "start": 23.683,
+   "end": 23.833,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "send",
+   "start": 23.833,
+   "end": 24.108,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "a",
+   "start": 24.108,
+   "end": 24.22,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "signal",
+   "start": 24.22,
+   "end": 24.802,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "The",
+   "start": 25.563,
+   "end": 25.675,
+   "line": 3,
+   "sentence": true
+  },
+  {
+   "text": "signal",
+   "start": 25.675,
+   "end": 26.088,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "races",
+   "start": 26.088,
+   "end": 26.475,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "up",
+   "start": 26.475,
+   "end": 26.65,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 26.65,
+   "end": 26.788,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "nerves",
+   "start": 26.788,
+   "end": 27.338,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "through",
+   "start": 27.338,
+   "end": 27.538,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 27.538,
+   "end": 27.725,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "spinal",
+   "start": 27.725,
+   "end": 28.2,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "cord",
+   "start": 28.2,
+   "end": 28.888,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "to",
+   "start": 28.888,
+   "end": 28.988,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "a",
+   "start": 28.988,
+   "end": 29.1,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "relay",
+   "start": 29.1,
+   "end": 29.488,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "station",
+   "start": 29.488,
+   "end": 30.013,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "deep",
+   "start": 30.013,
+   "end": 30.3,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "in",
+   "start": 30.3,
+   "end": 30.375,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 30.375,
+   "end": 30.513,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "brain",
+   "start": 30.513,
+   "end": 30.938,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "called",
+   "start": 30.938,
+   "end": 31.2,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 31.2,
+   "end": 31.325,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "thalamus",
+   "start": 31.325,
+   "end": 32.475,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "From",
+   "start": 32.475,
+   "end": 32.663,
+   "line": 3,
+   "sentence": true
+  },
+  {
+   "text": "there",
+   "start": 32.663,
+   "end": 33.138,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "it",
+   "start": 33.138,
+   "end": 33.263,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "goes",
+   "start": 33.263,
+   "end": 33.538,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "to",
+   "start": 33.538,
+   "end": 33.638,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "a",
+   "start": 33.638,
+   "end": 33.75,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "strip",
+   "start": 33.75,
+   "end": 34.075,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 34.075,
+   "end": 34.15,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 34.15,
+   "end": 34.288,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "brain",
+   "start": 34.288,
+   "end": 34.713,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "called",
+   "start": 34.713,
+   "end": 35.0,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 35.0,
+   "end": 35.125,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "somatosensory",
+   "start": 35.125,
+   "end": 35.988,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "cortex",
+   "start": 35.988,
+   "end": 37.125,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "Touch",
+   "start": 37.125,
+   "end": 37.388,
+   "line": 3,
+   "sentence": true
+  },
+  {
+   "text": "from",
+   "start": 37.388,
+   "end": 37.525,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 37.525,
+   "end": 37.675,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "face",
+   "start": 37.675,
+   "end": 38.013,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "takes",
+   "start": 38.013,
+   "end": 38.25,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "its",
+   "start": 38.25,
+   "end": 38.45,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "own",
+   "start": 38.45,
+   "end": 38.775,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "route",
+   "start": 38.775,
+   "end": 39.375,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "through",
+   "start": 39.375,
+   "end": 39.625,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "nerves",
+   "start": 39.625,
+   "end": 40.038,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "in",
+   "start": 40.038,
+   "end": 40.163,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 40.163,
+   "end": 40.338,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "head",
+   "start": 40.338,
+   "end": 40.784,
+   "line": 3,
+   "sentence": false
+  },
+  {
+   "text": "Only",
+   "start": 41.551,
+   "end": 41.826,
+   "line": 4,
+   "sentence": true
+  },
+  {
+   "text": "there",
+   "start": 41.826,
+   "end": 42.026,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "does",
+   "start": 42.026,
+   "end": 42.188,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "it",
+   "start": 42.188,
+   "end": 42.263,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "become",
+   "start": 42.263,
+   "end": 42.626,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "something",
+   "start": 42.626,
+   "end": 42.976,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "you're",
+   "start": 42.976,
+   "end": 43.151,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "aware",
+   "start": 43.151,
+   "end": 43.538,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 43.538,
+   "end": 44.001,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "The",
+   "start": 44.001,
+   "end": 44.126,
+   "line": 4,
+   "sentence": true
+  },
+  {
+   "text": "hard",
+   "start": 44.126,
+   "end": 44.488,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "edge",
+   "start": 44.488,
+   "end": 45.201,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "The",
+   "start": 45.201,
+   "end": 45.351,
+   "line": 4,
+   "sentence": true
+  },
+  {
+   "text": "smooth",
+   "start": 45.351,
+   "end": 45.851,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "surface",
+   "start": 45.851,
+   "end": 46.776,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "The",
+   "start": 46.776,
+   "end": 46.913,
+   "line": 4,
+   "sentence": true
+  },
+  {
+   "text": "warmth",
+   "start": 46.913,
+   "end": 47.313,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 47.313,
+   "end": 47.401,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "another",
+   "start": 47.401,
+   "end": 47.776,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "hand",
+   "start": 47.776,
+   "end": 48.513,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "Every",
+   "start": 48.513,
+   "end": 48.863,
+   "line": 4,
+   "sentence": true
+  },
+  {
+   "text": "touch",
+   "start": 48.863,
+   "end": 49.201,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 49.201,
+   "end": 49.288,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "have",
+   "start": 49.288,
+   "end": 49.426,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "ever",
+   "start": 49.426,
+   "end": 49.726,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "felt",
+   "start": 49.726,
+   "end": 50.051,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "was",
+   "start": 50.051,
+   "end": 50.238,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "built",
+   "start": 50.238,
+   "end": 50.551,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "inside",
+   "start": 50.551,
+   "end": 51.038,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 51.038,
+   "end": 51.176,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "brain",
+   "start": 51.176,
+   "end": 51.715,
+   "line": 4,
+   "sentence": false
+  },
+  {
+   "text": "So",
+   "start": 52.509,
+   "end": 52.684,
+   "line": 5,
+   "sentence": true
+  },
+  {
+   "text": "the",
+   "start": 52.684,
+   "end": 52.809,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "world",
+   "start": 52.809,
+   "end": 53.134,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 53.134,
+   "end": 53.296,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "touch",
+   "start": 53.296,
+   "end": 53.659,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "is",
+   "start": 53.659,
+   "end": 53.834,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "really",
+   "start": 53.834,
+   "end": 54.184,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "a",
+   "start": 54.184,
+   "end": 54.296,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "pattern",
+   "start": 54.296,
+   "end": 54.746,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 54.746,
+   "end": 54.871,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "forces",
+   "start": 54.871,
+   "end": 55.746,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "translated",
+   "start": 55.746,
+   "end": 56.484,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "by",
+   "start": 56.484,
+   "end": 56.659,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 56.659,
+   "end": 56.821,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "brain",
+   "start": 56.821,
+   "end": 57.834,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "And",
+   "start": 57.834,
+   "end": 57.971,
+   "line": 5,
+   "sentence": true
+  },
+  {
+   "text": "if",
+   "start": 57.971,
+   "end": 58.134,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "atoms",
+   "start": 58.134,
+   "end": 58.609,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "are",
+   "start": 58.609,
+   "end": 58.734,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "this",
+   "start": 58.734,
+   "end": 58.971,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "empty",
+   "start": 58.971,
+   "end": 59.671,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "how",
+   "start": 59.671,
+   "end": 59.884,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "much",
+   "start": 59.884,
+   "end": 60.121,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 60.121,
+   "end": 60.209,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 60.209,
+   "end": 60.359,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "is",
+   "start": 60.359,
+   "end": 60.521,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "actually",
+   "start": 60.521,
+   "end": 60.959,
+   "line": 5,
+   "sentence": false
+  },
+  {
+   "text": "there",
+   "start": 60.959,
+   "end": 61.403,
+   "line": 5,
+   "sentence": false
+  }
+ ]
+}

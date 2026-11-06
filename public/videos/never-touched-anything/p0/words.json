@@ -1,0 +1,517 @@
+{
+ "duration": 25.764,
+ "source": "Kokoro-82M (open source, Apache 2.0), voice am_michael 0.7 + am_onyx 0.3, speed 1.02, one paragraph at a time, word timestamps",
+ "words": [
+  {
+   "text": "You",
+   "start": 0.352,
+   "end": 0.44,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "have",
+   "start": 0.44,
+   "end": 0.602,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "never",
+   "start": 0.602,
+   "end": 0.94,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "actually",
+   "start": 0.94,
+   "end": 1.39,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "touched",
+   "start": 1.39,
+   "end": 1.79,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "anything",
+   "start": 1.79,
+   "end": 2.74,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "Not",
+   "start": 2.74,
+   "end": 2.977,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "the",
+   "start": 2.977,
+   "end": 3.127,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "floor",
+   "start": 3.127,
+   "end": 3.552,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "under",
+   "start": 3.552,
+   "end": 3.777,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 3.777,
+   "end": 3.977,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "feet",
+   "start": 3.977,
+   "end": 4.665,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "Not",
+   "start": 4.665,
+   "end": 4.927,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "this",
+   "start": 4.927,
+   "end": 5.115,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "screen",
+   "start": 5.115,
+   "end": 6.065,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "Not",
+   "start": 6.065,
+   "end": 6.29,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "even",
+   "start": 6.29,
+   "end": 6.54,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 6.54,
+   "end": 6.64,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "hand",
+   "start": 6.64,
+   "end": 6.99,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 6.99,
+   "end": 7.115,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "someone",
+   "start": 7.115,
+   "end": 7.502,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 7.502,
+   "end": 7.665,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "love",
+   "start": 7.665,
+   "end": 8.427,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "The",
+   "start": 8.427,
+   "end": 8.602,
+   "line": 1,
+   "sentence": true
+  },
+  {
+   "text": "atoms",
+   "start": 8.602,
+   "end": 9.015,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 9.015,
+   "end": 9.102,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "your",
+   "start": 9.102,
+   "end": 9.252,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "body",
+   "start": 9.252,
+   "end": 9.627,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "have",
+   "start": 9.627,
+   "end": 9.815,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "never",
+   "start": 9.815,
+   "end": 10.127,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "met",
+   "start": 10.127,
+   "end": 10.352,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 10.352,
+   "end": 10.515,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "atoms",
+   "start": 10.515,
+   "end": 10.94,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "of",
+   "start": 10.94,
+   "end": 11.065,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "anything",
+   "start": 11.065,
+   "end": 11.577,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "else",
+   "start": 11.577,
+   "end": 12.127,
+   "line": 1,
+   "sentence": false
+  },
+  {
+   "text": "And",
+   "start": 12.877,
+   "end": 13.02,
+   "line": 2,
+   "sentence": true
+  },
+  {
+   "text": "yet",
+   "start": 13.02,
+   "end": 13.27,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 13.27,
+   "end": 13.408,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "feel",
+   "start": 13.408,
+   "end": 13.683,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "everything",
+   "start": 13.683,
+   "end": 14.783,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "So",
+   "start": 14.783,
+   "end": 14.97,
+   "line": 2,
+   "sentence": true
+  },
+  {
+   "text": "what's",
+   "start": 14.97,
+   "end": 15.233,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "really",
+   "start": 15.233,
+   "end": 15.545,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "going",
+   "start": 15.545,
+   "end": 15.845,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "on",
+   "start": 15.845,
+   "end": 16.058,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "when",
+   "start": 16.058,
+   "end": 16.195,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 16.195,
+   "end": 16.333,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "touch",
+   "start": 16.333,
+   "end": 16.62,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "something",
+   "start": 16.62,
+   "end": 17.583,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "In",
+   "start": 17.583,
+   "end": 17.72,
+   "line": 2,
+   "sentence": true
+  },
+  {
+   "text": "this",
+   "start": 17.72,
+   "end": 17.945,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "video",
+   "start": 17.945,
+   "end": 18.495,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "we'll",
+   "start": 18.495,
+   "end": 18.695,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "go",
+   "start": 18.695,
+   "end": 18.895,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "inside",
+   "start": 18.895,
+   "end": 19.308,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 19.308,
+   "end": 19.458,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "atom",
+   "start": 19.458,
+   "end": 20.083,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "find",
+   "start": 20.083,
+   "end": 20.42,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "out",
+   "start": 20.42,
+   "end": 20.645,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "why",
+   "start": 20.645,
+   "end": 20.845,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "you",
+   "start": 20.845,
+   "end": 20.945,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "don't",
+   "start": 20.945,
+   "end": 21.183,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "fall",
+   "start": 21.183,
+   "end": 21.495,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "through",
+   "start": 21.495,
+   "end": 21.695,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "the",
+   "start": 21.695,
+   "end": 21.845,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "floor",
+   "start": 21.845,
+   "end": 22.52,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "and",
+   "start": 22.52,
+   "end": 22.633,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "discover",
+   "start": 22.633,
+   "end": 23.145,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "what",
+   "start": 23.145,
+   "end": 23.383,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "touch",
+   "start": 23.383,
+   "end": 23.733,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "really",
+   "start": 23.733,
+   "end": 24.083,
+   "line": 2,
+   "sentence": false
+  },
+  {
+   "text": "is",
+   "start": 24.083,
+   "end": 24.564,
+   "line": 2,
+   "sentence": false
+  }
+ ]
+}
